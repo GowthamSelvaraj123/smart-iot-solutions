@@ -1,201 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Smart IoT Solutions</title>
-  <meta name="description" content="Contact Smart IoT Solutions in Coimbatore for a free site visit and smart home quote." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Smart IoT Solutions</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS (CDN for development) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#cfa85e',
+                        dark: '#121417',
+                        light: '#fbfbfb'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/home.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Smart IoT Solutions home">
-        <span class="logo-mark" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        </span>
-        <span class="logo-text">SMART IoT<span>Solutions</span></span>
-      </a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="solutions.html">Solutions</a>
-        <a href="projects.html">Projects</a>
-        <a class="active" href="contact.html">Contact Us</a>
-      </nav>
-      <a class="btn btn-gold btn-sm header-cta" href="contact.html">Get a Quote</a>
-    </div>
-  </header>
 
-  <main>
-    <section class="page-hero">
-      <div class="page-hero-bg" aria-hidden="true" style="background:linear-gradient(120deg,rgba(26,26,26,.92),rgba(26,26,26,.7)),url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80') center/cover;"></div>
-      <div class="container">
-        <div class="breadcrumb"><a href="index.html">Home</a> / Contact Us</div>
-        <h1>Let's build smarter together</h1>
-        <p>Free site visit · Personalized solution · Expert guidance across South India.</p>
-      </div>
-    </section>
+<body class="bg-white">
 
-    <section class="contact-section">
-      <div class="container">
-        <div class="contact-grid reveal">
-          <aside class="contact-info">
-            <h2>Get in touch</h2>
-            <p>Share your project details and our team will respond within one business day.</p>
-            <ul class="contact-list">
-              <li>
-                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.35a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.75.34 1.54.57 2.35.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                <div><strong>Phone</strong><a href="tel:+919876543210">+91 98765 43210</a></div>
-              </li>
-              <li>
-                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></span>
-                <div><strong>Email</strong><a href="mailto:hello@smartiotsolutions.in">hello@smartiotsolutions.in</a></div>
-              </li>
-              <li>
-                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-                <div><strong>Office</strong><span>RS Puram, Coimbatore,<br />Tamil Nadu 641002</span></div>
-              </li>
-              <li>
-                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
-                <div><strong>Hours</strong><span>Mon – Sat · 9:30 AM – 7:00 PM</span></div>
-              </li>
-            </ul>
-            <div class="socials">
-              <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-              <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-              <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
-              <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.6C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
+    <!-- NAVIGATION -->
+    <nav class="navbar py-4">
+        <div class="container flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+                <img src="images/smart-iot-solutions.png" alt="Smart IoT Solution" class="h-12 object-contain">
+            </a>
+
+            <!-- Links -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="solutions.html" class="nav-link flex items-center gap-1">Solutions <i
+                        class="fas fa-chevron-down text-xs"></i></a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
             </div>
-          </aside>
 
-          <div class="contact-form-wrap">
-            <h2 class="section-title" style="font-size:1.5rem;margin-bottom:0.35rem;">Request a quote</h2>
-            <p style="color:var(--text-light);margin-bottom:1.5rem;">Fill in the form and we'll get back to you shortly.</p>
-            <form id="contact-form">
-              <div class="form-grid">
-                <div class="form-group">
-                  <label for="name">Full name</label>
-                  <input id="name" name="name" type="text" placeholder="Your name" required />
-                </div>
-                <div class="form-group">
-                  <label for="phone">Phone</label>
-                  <input id="phone" name="phone" type="tel" placeholder="+91" required />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input id="email" name="email" type="email" placeholder="you@example.com" required />
-                </div>
-                <div class="form-group">
-                  <label for="interest">I'm interested in</label>
-                  <select id="interest" name="interest">
-                    <option>Essential package</option>
-                    <option selected>Premium package</option>
-                    <option>Luxury Villa package</option>
-                    <option>Custom / Commercial</option>
-                    <option>Site visit only</option>
-                  </select>
-                </div>
-                <div class="form-group full">
-                  <label for="city">City / Location</label>
-                  <input id="city" name="city" type="text" placeholder="e.g. Coimbatore" />
-                </div>
-                <div class="form-group full">
-                  <label for="message">Project details</label>
-                  <textarea id="message" name="message" placeholder="Property type, size, and what you'd like to automate..."></textarea>
-                </div>
-                <div class="form-group full">
-                  <button class="btn btn-gold" type="submit">Send Message</button>
-                  <div id="form-success" class="form-success">Thank you! We'll contact you within one business day.</div>
-                </div>
-              </div>
-            </form>
-          </div>
+            <!-- Action -->
+            <div class="hidden md:block">
+                <a href="#" class="btn-outline-gold px-6 py-2.5 flex items-center gap-2 font-medium">
+                    <i class="fas fa-phone-alt text-sm"></i> Get a Quote
+                </a>
+            </div>
         </div>
+    </nav>
 
-        <div class="map-embed reveal">
-          <iframe title="Smart IoT Solutions office location" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=RS%20Puram%20Coimbatore&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+
+    <section class="relative pt-32 pb-20 bg-[#121417] overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80" alt="Contact Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#121417] via-[#121417]/90 to-transparent"></div>
         </div>
-      </div>
+        <div class="container relative z-10">
+            <div class="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.2em] uppercase mb-4 flex items-center gap-3">
+                <a href="index.html" class="text-gray-400 hover:text-white transition">HOME</a> 
+                <span class="text-gray-600">/</span> CONTACT US
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style="font-family: var(--font-heading)">
+                Let's build <span class="text-[#d0a353] font-serif">smarter.</span>
+            </h1>
+            <p class="text-gray-300 max-w-xl text-sm leading-relaxed">
+                Free site visit. Personalized solution. Expert guidance across South India. Drop us a message and our team will get back to you within 24 hours.
+            </p>
+        </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-top">
-      <div class="footer-contact-grid">
-        <div class="footer-block">
-          <h4>Get in Touch</h4>
-          <p><a href="tel:+919876543210">+91 98765 43210</a><br />
-          <a href="mailto:hello@smartiotsolutions.in">hello@smartiotsolutions.in</a><br />
-          RS Puram, Coimbatore, Tamil Nadu 641002</p>
+    <section class="py-24 bg-white relative">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- Contact Info -->
+                <div class="lg:col-span-5">
+                    <h2 class="text-3xl font-bold mb-8 text-gray-900" style="font-family: var(--font-heading)">
+                        Get in Touch
+                    </h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 bg-[#d0a353]/5">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm mb-1">Phone</h4>
+                                <p class="text-gray-600 text-sm"><a href="tel:+919876543210" class="hover:text-[#d0a353] transition">+91 98765 43210</a></p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 bg-[#d0a353]/5">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm mb-1">Email</h4>
+                                <p class="text-gray-600 text-sm"><a href="mailto:hello@smartiotsolutions.in" class="hover:text-[#d0a353] transition">hello@smartiotsolutions.in</a></p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 bg-[#d0a353]/5">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm mb-1">Office</h4>
+                                <p class="text-gray-600 text-sm leading-relaxed">RS Puram, Coimbatore,<br>Tamil Nadu 641002</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-[#f9f8f4] rounded-2xl p-8 lg:p-12 border border-[#d0a353]/20 shadow-xl">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-900">Request a Quote</h3>
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Full Name</label>
+                                    <input type="text" name="user_name" class="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm focus:outline-none focus:border-[#d0a353]" placeholder="Your name" required>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Phone</label>
+                                    <input type="tel" name="user_phone" class="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm focus:outline-none focus:border-[#d0a353]" placeholder="+91" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Email</label>
+                                <input type="email" name="user_email" class="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm focus:outline-none focus:border-[#d0a353]" placeholder="you@example.com" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">I'm interested in</label>
+                                <select name="interest" class="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm focus:outline-none focus:border-[#d0a353] text-gray-600">
+                                    <option value="Premium Home Package">Premium Home Package</option>
+                                    <option value="Luxury Villa Package">Luxury Villa Package</option>
+                                    <option value="Commercial / Office">Commercial / Office</option>
+                                    <option value="Security & Gate">Security & Gate</option>
+                                    <option value="Site Visit Only">Site Visit Only</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Message</label>
+                                <textarea name="message" class="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm focus:outline-none focus:border-[#d0a353] h-32 resize-none" placeholder="Tell us about your project..." required></textarea>
+                            </div>
+                            <div id="form-status" class="text-xs font-bold hidden"></div>
+                            <button type="submit" id="submit-button" class="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-8 py-3.5 rounded text-sm font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition uppercase tracking-wider w-full">
+                                Send Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-block">
-          <h4>Scan to Connect</h4>
-          <div class="qr-box" aria-label="QR code placeholder"></div>
+    </section>
+
+
+<!-- CTA BANNER -->
+    <section class="relative bg-[#0c121e] overflow-hidden">
+        <!-- Left Background Image with Gradient fade -->
+        <div class="absolute top-0 left-0 bottom-0 w-1/2 z-0">
+            <img src="images/hero_pool_1786093934613.png" alt="Smart Home" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#0c121e]/80 to-[#0c121e]"></div>
         </div>
-        <div class="footer-block">
-          <h4>Follow Us</h4>
-          <div class="socials">
-            <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-            <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
-            <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.6C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
-          </div>
+        
+        <!-- Golden Sweeping Curve on Right -->
+        <div class="absolute bottom-0 right-0 w-1/3 h-full z-0 opacity-20 pointer-events-none" style="background: radial-gradient(circle at bottom right, transparent 0%, transparent 40%, rgba(208,163,83,0.3) 41%, transparent 42%);"></div>
+    
+        <div class="container relative z-10 py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Spacer for the image side -->
+            <div class="lg:col-span-5 hidden lg:block"></div>
+            
+            <!-- Center Content -->
+            <div class="lg:col-span-4 text-white text-center lg:text-left">
+                <h2 class="text-4xl lg:text-[2.75rem] mb-4 font-bold leading-tight" style="font-family: var(--font-heading)">
+                    Let's Build Your<br>
+                    <span class="text-[#d0a353] font-serif tracking-wide">Smart Home</span>
+                </h2>
+                <p class="text-[0.8rem] text-gray-300 mb-8 max-w-md mx-auto lg:mx-0 leading-relaxed pr-4">
+                    Schedule a free consultation and let our experts design the perfect automation solution for your space.
+                </p>
+                
+                <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+                    <a href="#" class="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-4 py-2.5 rounded text-[0.65rem] font-bold whitespace-nowrap shadow-md hover:shadow-lg transition flex items-center gap-2">
+                        <i class="far fa-calendar-alt"></i> SCHEDULE FREE CONSULTATION
+                    </a>
+                    <a href="#" class="border border-[#d0a353] text-[#d0a353] px-4 py-2.5 rounded text-[0.65rem] font-bold whitespace-nowrap hover:bg-[#d0a353] hover:text-white transition flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-lg"></i> WHATSAPP US
+                    </a>
+                    <a href="#" class="border border-[#d0a353] text-[#d0a353] px-4 py-2.5 rounded text-[0.65rem] font-bold whitespace-nowrap hover:bg-[#d0a353] hover:text-white transition flex items-center gap-2">
+                        <i class="fas fa-phone-alt"></i> CALL NOW
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right Content List -->
+            <div class="lg:col-span-3 pl-0 lg:pl-10 border-t lg:border-t-0 lg:border-l border-white/10 pt-8 lg:pt-0">
+                <ul class="space-y-6">
+                    <li class="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
+                        <i class="fas fa-shield-alt text-[#d0a353] text-xl w-6 text-center"></i>
+                        Free Site Visit
+                    </li>
+                    <li class="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
+                        <i class="fas fa-user-cog text-[#d0a353] text-xl w-6 text-center"></i>
+                        Personalized Solution
+                    </li>
+                    <li class="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
+                        <i class="fas fa-certificate text-[#d0a353] text-xl w-6 text-center"></i>
+                        Expert Guidance
+                    </li>
+                    <li class="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
+                        <i class="fas fa-shield-check text-[#d0a353] text-xl w-6 text-center"></i>
+                        Best Price Guarantee
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-block">
-          <h4>Our Location</h4>
-          <div class="mini-map">
-            <iframe title="Office map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Coimbatore&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-          </div>
+    </section>
+
+    <!-- CONTACT INFO BAND -->
+    <section class="bg-[#fdfcf9] py-12 border-b-4 border-[#0b101a]">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- GET IN TOUCH -->
+                <div>
+                    <h4 class="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">GET IN TOUCH</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i class="fas fa-phone-alt text-[10px]"></i></div>
+                            <span class="text-sm font-bold text-gray-700 mt-1">+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i class="fas fa-envelope text-[10px]"></i></div>
+                            <a href="mailto:info@smartsolutioniot.com" class="text-[0.8rem] font-bold text-gray-700 mt-1 hover:text-[#d0a353]">info@smartsolutioniot.com</a>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i class="fas fa-map-marker-alt text-[10px]"></i></div>
+                            <div class="text-[0.7rem] font-medium text-gray-600 leading-relaxed pt-1 pr-4">
+                                No. 123, 1st Floor, Tech Park,<br>Coimbatore - 641062, Tamil Nadu, India
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i class="far fa-clock text-[10px]"></i></div>
+                            <span class="text-[0.8rem] font-bold text-gray-700 mt-1">Mon - Sat : 9:00 AM - 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- SCAN TO CONNECT -->
+                <div class="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
+                    <h4 class="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">SCAN TO CONNECT</h4>
+                    <p class="text-[0.8rem] text-gray-700 mb-4 max-w-[180px]">Scan the QR code to chat with us on WhatsApp</p>
+                    <div class="inline-block border border-gray-200 p-2 rounded-lg bg-white shadow-sm relative">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://wa.me/919876543210" alt="WhatsApp QR" class="w-20 h-20">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white rounded-full p-0.5 shadow-sm">
+                                <i class="fab fa-whatsapp text-green-500 text-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FOLLOW US -->
+                <div class="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
+                    <h4 class="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">FOLLOW US</h4>
+                    <div class="flex gap-3 mt-4">
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i class="fab fa-instagram text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i class="fab fa-linkedin-in text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i class="fab fa-youtube text-sm"></i></a>
+                    </div>
+                </div>
+                
+                <!-- OUR LOCATION -->
+                <div class="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
+                    <h4 class="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">OUR LOCATION</h4>
+                    <div class="rounded-xl overflow-hidden border border-gray-200 shadow-sm relative h-32 max-w-xs">
+                        <img src="https://via.placeholder.com/400x200/e0e0e0/666666?text=Map+View" alt="Map View" class="w-full h-full object-cover opacity-80">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-white/30">
+                            <i class="fas fa-map-marker-alt text-red-500 text-3xl drop-shadow-md"></i>
+                            <span class="text-[0.55rem] font-bold text-red-600 bg-white/90 px-2 py-0.5 rounded shadow mt-1">Smart Solution IoT</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-      </div>
-      <div class="footer-main">
-        <div class="footer-brand">
-          <a class="logo" href="index.html">
-            <span class="logo-mark" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></span>
-            <span class="logo-text">SMART IoT<span>Solutions</span></span>
-          </a>
-          <p>Premium automation for homes and businesses — designed in Coimbatore, delivered across South India.</p>
+    </section>
+
+    <!-- MAIN FOOTER -->
+    <footer class="bg-[#0b101a] pt-16 pb-6">
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
+            
+            <!-- Logo & About -->
+            <div class="lg:col-span-4 lg:pr-6">
+                <a href="#" class="inline-flex items-center mb-6">
+                    <img src="images/smart-iot-solutions.png" alt="Smart IoT Solution" class="h-16 object-contain">
+                </a>
+                <p class="text-[0.75rem] text-gray-400 leading-relaxed pr-4">
+                    Delivering smarter, safer and more connected spaces through innovative IoT and automation solutions.
+                </p>
+            </div>
+
+            <!-- OUR SERVICES -->
+            <div class="lg:col-span-3">
+                <h4 class="text-white text-xs font-bold tracking-wide uppercase mb-6">OUR SERVICES</h4>
+                <div class="grid grid-cols-2 gap-x-2 gap-y-3">
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Home Automation</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Smart Lock Systems</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Gate Automation</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Intercom Solutions</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Door Automation</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> IoT Integration</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> CCTV Surveillance</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Maintenance & Support</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5 col-span-2"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Access Control</a>
+                </div>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="lg:col-span-2">
+                <h4 class="text-white text-xs font-bold tracking-wide uppercase mb-6">QUICK LINKS</h4>
+                <div class="grid grid-cols-2 gap-x-2 gap-y-3">
+                    <div class="flex flex-col gap-3">
+                        <a href="index.html" class="text-[0.65rem] text-gray-400 hover:text-white">Home</a>
+                        <a href="about.html" class="text-[0.65rem] text-gray-400 hover:text-white">About Us</a>
+                        <a href="solutions.html" class="text-[0.65rem] text-gray-400 hover:text-white">Solutions</a>
+                        <a href="products.html" class="text-[0.65rem] text-gray-400 hover:text-white">Products</a>
+                        <a href="projects.html" class="text-[0.65rem] text-gray-400 hover:text-white">Our Projects</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"><i class="fas fa-chevron-right text-gray-600 text-[8px]"></i> Why Choose Us</a>
+                        <a href="#" class="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"><i class="fas fa-chevron-right text-gray-600 text-[8px]"></i> Blog</a>
+                        <a href="#" class="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"><i class="fas fa-chevron-right text-gray-600 text-[8px]"></i> Careers</a>
+                        <a href="contact.html" class="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"><i class="fas fa-chevron-right text-gray-600 text-[8px]"></i> Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEWSLETTER -->
+            <div class="lg:col-span-3 pl-0 lg:pl-4">
+                <h4 class="text-[#d0a353] text-xs font-bold tracking-wide uppercase mb-6">NEWSLETTER</h4>
+                <p class="text-[0.7rem] text-gray-400 mb-4">Stay updated with our latest solutions and offers.</p>
+                <form class="flex rounded overflow-hidden h-10 border border-gray-700 focus-within:border-[#d0a353]">
+                    <input type="email" placeholder="Enter your email" class="bg-[#121824] px-4 w-full text-xs text-white outline-none">
+                    <button type="submit" class="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-[#0b101a] px-4 text-[0.65rem] font-bold tracking-wide hover:opacity-90 transition">SUBSCRIBE</button>
+                </form>
+            </div>
         </div>
-        <div class="footer-links">
-          <h4>Our Services</h4>
-          <a href="solutions.html">Home Automation</a>
-          <a href="solutions.html">Lighting Control</a>
-          <a href="solutions.html">Security & CCTV</a>
-          <a href="solutions.html">Gate Automation</a>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="container border-t border-gray-800 pt-6 mt-8 flex flex-wrap justify-between items-center text-[0.65rem] text-gray-400">
+            <div>&copy; 2024 Smart Solution IoT. All Rights Reserved.</div>
+            <div class="flex items-center justify-center gap-6 my-3 lg:my-0">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <span class="text-gray-700">|</span>
+                <a href="#" class="hover:text-white">Terms & Conditions</a>
+                <span class="text-gray-700">|</span>
+                <a href="#" class="hover:text-white">Sitemap</a>
+            </div>
+            <div>Designed with <i class="fas fa-heart text-[#d0a353] mx-1"></i> for a smarter tomorrow</div>
         </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="footer-links">
-          <h4>Support</h4>
-          <a href="contact.html">FAQ</a>
-          <a href="contact.html">Privacy Policy</a>
-          <a href="contact.html">Terms of Service</a>
-        </div>
-        <div class="newsletter">
-          <h4>Newsletter</h4>
-          <p>Tips & offers for smarter living.</p>
-          <form class="newsletter-form" onsubmit="event.preventDefault();">
-            <input type="email" placeholder="Your email" required aria-label="Email" />
-            <button class="btn btn-gold" type="submit">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <span>&copy; <span id="year">2026</span> Smart IoT Solutions. All rights reserved.</span>
-      <span>Designed with <span class="heart">♥</span> for smarter living.</span>
-    </div>
-  </footer>
-  <script src="js/main.js"></script>
+    </footer>
+
+    <script>
+        // Hero 3D Carousel Logic
+        const heroCards = document.querySelectorAll('#heroCardsContainer .carousel-card');
+        let currentIndex = 0;
+        const totalCards = heroCards.length;
+        let autoPlayInterval;
+
+        function updateCarousel() {
+            heroCards.forEach((card, index) => {
+                // Remove all specific classes
+                card.className = 'carousel-card';
+
+                if (index === currentIndex) {
+                    card.classList.add('carousel-card-center');
+                } else if (index === (currentIndex + 1) % totalCards) {
+                    card.classList.add('carousel-card-right');
+                } else if (index === (currentIndex - 1 + totalCards) % totalCards) {
+                    card.classList.add('carousel-card-left');
+                } else {
+                    card.classList.add('carousel-card-hidden');
+                }
+            });
+        }
+
+        function heroNext() {
+            currentIndex = (currentIndex + 1) % totalCards;
+            updateCarousel();
+            resetAutoPlay();
+        }
+
+        function heroPrev() {
+            currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+            updateCarousel();
+            resetAutoPlay();
+        }
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(heroNext, 5000);
+        }
+
+        function resetAutoPlay() {
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            updateCarousel();
+            startAutoPlay();
+        });
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("BX1ostrQWF7pI7uzI");
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const submitBtn = document.getElementById('submit-button');
+            const statusDiv = document.getElementById('form-status');
+            
+            submitBtn.innerText = 'Sending...';
+            submitBtn.disabled = true;
+            statusDiv.classList.add('hidden');
+            
+            emailjs.sendForm('service_otzlaeg', 'template_xucowdw', this)
+                .then(function() {
+                    statusDiv.innerText = "Message sent successfully! We will get back to you soon.";
+                    statusDiv.className = "text-xs font-bold text-green-600 mb-4 block";
+                    document.getElementById('contact-form').reset();
+                    submitBtn.innerText = 'Send Request';
+                    submitBtn.disabled = false;
+                }, function(error) {
+                    statusDiv.innerText = "Failed to send the message. Please try again or contact us directly. Error: " + JSON.stringify(error);
+                    statusDiv.className = "text-xs font-bold text-red-600 mb-4 block";
+                    submitBtn.innerText = 'Send Request';
+                    submitBtn.disabled = false;
+                });
+        });
+    </script>
 </body>
+
 </html>

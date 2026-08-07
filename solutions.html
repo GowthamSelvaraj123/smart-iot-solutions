@@ -1,237 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Solutions | Smart IoT Solutions</title>
-  <meta name="description" content="Home automation, lighting, climate, security, gate automation and more from Smart IoT Solutions." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions | Smart IoT Solutions</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS (CDN for development) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#cfa85e',
+                        dark: '#121417',
+                        light: '#fbfbfb'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/home.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Smart IoT Solutions home">
-        <span class="logo-mark" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        </span>
-        <span class="logo-text">SMART IoT<span>Solutions</span></span>
-      </a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a class="active" href="solutions.html">Solutions</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact Us</a>
-      </nav>
-      <a class="btn btn-gold btn-sm header-cta" href="contact.html">Get a Quote</a>
-    </div>
-  </header>
 
-  <main>
-    <section class="page-hero">
-      <div class="page-hero-bg" aria-hidden="true" style="background:linear-gradient(120deg,rgba(26,26,26,.92),rgba(26,26,26,.7)),url('https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1600&q=80') center/cover;"></div>
-      <div class="container">
-        <div class="breadcrumb"><a href="index.html">Home</a> / Solutions</div>
-        <h1>Smart solutions for every space</h1>
-        <p>Lighting, climate, security, entertainment, and access — unified in one system you control from anywhere.</p>
-      </div>
+<body class="bg-white">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar py-4">
+        <div class="container flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+                <img src="images/smart-iot-solutions.png" alt="Smart IoT Solution" class="h-12 object-contain">
+            </a>
+
+            <!-- Links -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="solutions.html" class="nav-link active flex items-center gap-1">Solutions <i
+                        class="fas fa-chevron-down text-xs"></i></a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+
+            <!-- Action -->
+            <div class="hidden md:block">
+                <a href="#" class="btn-outline-gold px-6 py-2.5 flex items-center gap-2 font-medium">
+                    <i class="fas fa-phone-alt text-sm"></i> Get a Quote
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="relative pt-32 pb-20 bg-[#121417] overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="images/hero_background_1786093261462.png" alt="Solutions Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#121417] via-[#121417]/90 to-transparent"></div>
+        </div>
+        <div class="container relative z-10">
+            <div class="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.2em] uppercase mb-4 flex items-center gap-3">
+                <a href="index.html" class="text-gray-400 hover:text-white transition">HOME</a> 
+                <span class="text-gray-600">/</span> SOLUTIONS
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style="font-family: var(--font-heading)">
+                Comprehensive <span class="text-[#d0a353] font-serif">Solutions.</span>
+            </h1>
+            <p class="text-gray-300 max-w-xl text-sm leading-relaxed">
+                We engineer intelligent ecosystems tailored to the specific needs of residential, commercial, and hospitality environments. Experience the perfect synergy of comfort, security, and efficiency.
+            </p>
+        </div>
     </section>
 
-    <section class="service-strip">
-      <div class="container service-strip-grid">
-        <div class="service-strip-item"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>Home Automation</div>
-        <div class="service-strip-item"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></span>Lighting Control</div>
-        <div class="service-strip-item"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg></span>Climate Control</div>
-        <div class="service-strip-item"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></span>Security & CCTV</div>
-        <div class="service-strip-item"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>Gate Automation</div>
-        <div class="service-strip-item"><span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></span>Smart Devices</div>
-      </div>
+    <!-- RESIDENTIAL AUTOMATION -->
+    <section class="py-24 bg-white relative border-b border-gray-100">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="inline-flex items-center gap-3 text-[0.65rem] font-bold text-[#d0a353] tracking-[0.2em] uppercase mb-4">
+                        <span class="w-8 h-[1px] bg-[#d0a353]"></span> RESIDENTIAL
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 leading-tight" style="font-family: var(--font-heading)">
+                        Transform your house into a <span class="text-[#d0a353] font-serif italic">responsive home.</span>
+                    </h2>
+                    <p class="text-gray-600 text-sm mb-8 leading-relaxed">
+                        Imagine a home that anticipates your needs. Wake up to natural light as smart curtains open, enjoy the perfect climate when you return from work, and secure your entire perimeter with a single "Goodnight" command. Our residential solutions merge luxury with unparalleled convenience.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-[#d0a353] mt-1"></i>
+                            <div>
+                                <strong class="block text-gray-900 text-sm mb-1">Intelligent Lighting & Climate</strong>
+                                <span class="text-xs text-gray-500">Create mood-based scenes and automatically adjust ACs based on room occupancy.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-[#d0a353] mt-1"></i>
+                            <div>
+                                <strong class="block text-gray-900 text-sm mb-1">Home Theater & Multi-Room Audio</strong>
+                                <span class="text-xs text-gray-500">Immersive audiovisual experiences distributed perfectly throughout your living spaces.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-[#d0a353] mt-1"></i>
+                            <div>
+                                <strong class="block text-gray-900 text-sm mb-1">Advanced Security & Access</strong>
+                                <span class="text-xs text-gray-500">Biometric locks, video doorbells, and AI-powered perimeter cameras accessible from your phone.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block bg-[#121417] text-white px-8 py-3 rounded text-xs font-bold uppercase tracking-wider hover:bg-[#d0a353] transition duration-300">Consult for your home</a>
+                </div>
+                <div class="order-1 lg:order-2 relative">
+                    <img src="images/smart_home_villa_1786093285055.png" alt="Residential Automation" class="rounded-xl shadow-2xl w-full h-[500px] object-cover">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-xl border border-gray-100 flex items-center gap-4 z-20">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-[#ca9740] to-[#dfb45e] flex items-center justify-center text-white text-xl"><i class="fas fa-mobile-alt"></i></div>
+                        <div>
+                            <div class="text-xs text-gray-500 font-bold uppercase tracking-wider">Control Everything</div>
+                            <div class="text-sm font-bold text-gray-900">From One App</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="solution-detail">
-      <div class="container detail-list">
-        <article class="detail-row reveal">
-          <div class="detail-media">
-            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1000&q=80" alt="Smart lighting living room" />
-          </div>
-          <div class="detail-copy">
-            <p class="section-eyebrow">01</p>
-            <h2>Lighting Control</h2>
-            <p>Create mood scenes, schedules, and occupancy-based lighting for every room — including gardens and façades.</p>
-            <div class="feature-chips">
-              <span class="chip">Dimming & scenes</span>
-              <span class="chip">Voice control</span>
-              <span class="chip">Outdoor lighting</span>
+    <!-- COMMERCIAL AUTOMATION -->
+    <section class="py-24 bg-[#f9f8f4] relative border-b border-gray-100">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="images/auto_office_1786094016416.png" alt="Commercial Automation" class="rounded-xl shadow-2xl w-full h-[500px] object-cover">
+                    <div class="absolute -top-6 -right-6 bg-white p-4 rounded-lg shadow-xl border border-gray-100 flex items-center gap-4 z-20">
+                        <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white text-xl"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <div class="text-xs text-gray-500 font-bold uppercase tracking-wider">Energy Savings</div>
+                            <div class="text-sm font-bold text-gray-900">Up to 30% reduction</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="inline-flex items-center gap-3 text-[0.65rem] font-bold text-[#d0a353] tracking-[0.2em] uppercase mb-4">
+                        <span class="w-8 h-[1px] bg-[#d0a353]"></span> COMMERCIAL
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 leading-tight" style="font-family: var(--font-heading)">
+                        Smart infrastructure for <span class="text-[#d0a353] font-serif italic">modern business.</span>
+                    </h2>
+                    <p class="text-gray-600 text-sm mb-8 leading-relaxed">
+                        Optimize your workplace with intelligent systems that boost productivity, reduce energy costs, and ensure absolute security. From corporate boardrooms to sprawling tech parks, we deliver robust, scalable automation.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-[#d0a353] mt-1"></i>
+                            <div>
+                                <strong class="block text-gray-900 text-sm mb-1">Boardroom & AV Integration</strong>
+                                <span class="text-xs text-gray-500">One-touch presentation modes, motorized screens, and crystal-clear conferencing audio.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-[#d0a353] mt-1"></i>
+                            <div>
+                                <strong class="block text-gray-900 text-sm mb-1">Biometric Access & Attendance</strong>
+                                <span class="text-xs text-gray-500">Manage employee access across multiple zones with centralized, tamper-proof reporting.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-[#d0a353] mt-1"></i>
+                            <div>
+                                <strong class="block text-gray-900 text-sm mb-1">Energy & Asset Management</strong>
+                                <span class="text-xs text-gray-500">Automated HVAC schedules and lighting that turns off when zones are unoccupied.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block bg-[#121417] text-white px-8 py-3 rounded text-xs font-bold uppercase tracking-wider hover:bg-[#d0a353] transition duration-300">Upgrade your office</a>
+                </div>
             </div>
-          </div>
-        </article>
-
-        <article class="detail-row reveal">
-          <div class="detail-media">
-            <img src="https://images.unsplash.com/photo-1631545806609-35b8a0f0c1f3?auto=format&fit=crop&w=1000&q=80" alt="Climate control thermostat" />
-          </div>
-          <div class="detail-copy">
-            <p class="section-eyebrow">02</p>
-            <h2>Climate Control</h2>
-            <p>Smart AC and thermostat integration that keeps comfort high and energy bills low — room by room.</p>
-            <div class="feature-chips">
-              <span class="chip">AC automation</span>
-              <span class="chip">Zone control</span>
-              <span class="chip">Energy saving</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="detail-row reveal">
-          <div class="detail-media">
-            <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1000&q=80" alt="Security camera system" />
-          </div>
-          <div class="detail-copy">
-            <p class="section-eyebrow">03</p>
-            <h2>Security & CCTV</h2>
-            <p>Cameras, sensors, and alerts that notify you instantly — with remote viewing from your phone.</p>
-            <div class="feature-chips">
-              <span class="chip">HD CCTV</span>
-              <span class="chip">Motion alerts</span>
-              <span class="chip">Door sensors</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="detail-row reveal">
-          <div class="detail-media">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1000&q=80" alt="Automated gate entrance" />
-          </div>
-          <div class="detail-copy">
-            <p class="section-eyebrow">04</p>
-            <h2>Gate & Access Control</h2>
-            <p>Open gates, doors, and locks from your phone or via RFID — with visitor logs when you need them.</p>
-            <div class="feature-chips">
-              <span class="chip">Gate motors</span>
-              <span class="chip">Smart locks</span>
-              <span class="chip">Video door phone</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="detail-row reveal">
-          <div class="detail-media">
-            <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=1000&q=80" alt="Home entertainment system" />
-          </div>
-          <div class="detail-copy">
-            <p class="section-eyebrow">05</p>
-            <h2>Entertainment & Curtains</h2>
-            <p>One-touch movie mode: lights dim, curtains close, AV powers on. Multi-room audio included.</p>
-            <div class="feature-chips">
-              <span class="chip">Home theatre</span>
-              <span class="chip">Curtain motors</span>
-              <span class="chip">Multi-room audio</span>
-            </div>
-          </div>
-        </article>
-      </div>
+        </div>
     </section>
 
-    <section class="pricing-section">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="section-eyebrow">Packages</p>
-          <h2 class="section-title">Choose a starting package</h2>
-          <p class="section-lead">Every package can be customized after your free site visit.</p>
+    <!-- OUR PROCESS -->
+    <section class="py-24 bg-white relative">
+        <div class="container text-center max-w-4xl">
+            <div class="inline-flex items-center gap-3 text-[0.65rem] font-bold text-[#d0a353] tracking-[0.2em] uppercase mb-4">
+                <span class="w-8 h-[1px] bg-[#d0a353]"></span> HOW WE WORK <span class="w-8 h-[1px] bg-[#d0a353]"></span>
+            </div>
+            <h2 class="text-3xl lg:text-4xl font-bold mb-16 text-gray-900" style="font-family: var(--font-heading)">
+                A seamless process from concept to completion.
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="relative">
+                    <div class="w-16 h-16 mx-auto bg-[#f9f8f4] border border-[#d0a353]/30 rounded-full flex items-center justify-center text-[#d0a353] text-xl font-bold mb-4 z-10 relative">01</div>
+                    <div class="hidden md:block absolute top-8 left-[60%] w-full h-[1px] bg-gray-200 z-0"></div>
+                    <h4 class="font-bold text-gray-900 mb-2">Consultation</h4>
+                    <p class="text-xs text-gray-500 px-2">We visit your site, understand your lifestyle, and outline possibilities.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="relative">
+                    <div class="w-16 h-16 mx-auto bg-[#f9f8f4] border border-[#d0a353]/30 rounded-full flex items-center justify-center text-[#d0a353] text-xl font-bold mb-4 z-10 relative">02</div>
+                    <div class="hidden md:block absolute top-8 left-[60%] w-full h-[1px] bg-gray-200 z-0"></div>
+                    <h4 class="font-bold text-gray-900 mb-2">Design & BOQ</h4>
+                    <p class="text-xs text-gray-500 px-2">We provide detailed wiring schematics and transparent pricing.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="relative">
+                    <div class="w-16 h-16 mx-auto bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white shadow-lg rounded-full flex items-center justify-center text-xl font-bold mb-4 z-10 relative">03</div>
+                    <div class="hidden md:block absolute top-8 left-[60%] w-full h-[1px] bg-gray-200 z-0"></div>
+                    <h4 class="font-bold text-gray-900 mb-2">Installation</h4>
+                    <p class="text-xs text-gray-500 px-2">Our engineers execute clean, precision-driven installations.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="relative">
+                    <div class="w-16 h-16 mx-auto bg-[#121417] text-[#d0a353] shadow-lg rounded-full flex items-center justify-center text-xl font-bold mb-4 z-10 relative"><i class="fas fa-check"></i></div>
+                    <h4 class="font-bold text-gray-900 mb-2">Handover & Support</h4>
+                    <p class="text-xs text-gray-500 px-2">Full system walkthroughs and reliable 24/7 post-sale support.</p>
+                </div>
+            </div>
         </div>
-        <div class="pricing-grid">
-          <div class="price-card reveal">
-            <div class="plan">Essential</div>
-            <div class="amount">₹ 99,000 <small>onwards</small></div>
-            <p class="desc">Apartments & starter kits.</p>
-            <ul>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Smart lighting</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Smart lock</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> App control</li>
-            </ul>
-            <a class="btn btn-gold" href="contact.html">Get Started</a>
-          </div>
-          <div class="price-card featured reveal">
-            <div class="plan">Premium</div>
-            <div class="amount">₹ 1,79,000 <small>onwards</small></div>
-            <p class="desc">Most popular family homes.</p>
-            <ul>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Climate + curtains</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Video door phone</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Voice ready</li>
-            </ul>
-            <a class="btn btn-gold" href="contact.html">Get Started</a>
-          </div>
-          <div class="price-card reveal">
-            <div class="plan">Luxury Villa</div>
-            <div class="amount">₹ 3,49,000 <small>onwards</small></div>
-            <p class="desc">Full estate automation.</p>
-            <ul>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> AV & multi-room</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Energy management</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Gate & outdoor</li>
-            </ul>
-            <a class="btn btn-gold" href="contact.html">Get Started</a>
-          </div>
-          <div class="price-card reveal">
-            <div class="plan">Custom</div>
-            <div class="amount">Get Quote</div>
-            <p class="desc">Commercial & unique builds.</p>
-            <ul>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Custom integration</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Multi-site</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> 24/7 support</li>
-            </ul>
-            <a class="btn btn-dark" href="contact.html">Contact Us</a>
-          </div>
-        </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-top">
-      <div class="footer-main" style="padding-top:0;">
-        <div class="footer-brand">
-          <a class="logo" href="index.html">
-            <span class="logo-mark" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></span>
-            <span class="logo-text">SMART IoT<span>Solutions</span></span>
-          </a>
-          <p>Premium automation for homes and businesses.</p>
+
+<!-- CTA BANNER -->
+    <section class="relative bg-[#0c121e] overflow-hidden">
+        <!-- Left Background Image with Gradient fade -->
+        <div class="absolute top-0 left-0 bottom-0 w-1/2 z-0">
+            <img src="images/hero_pool_1786093934613.png" alt="Smart Home" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#0c121e]/80 to-[#0c121e]"></div>
         </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
+        
+        <!-- Golden Sweeping Curve on Right -->
+        <div class="absolute bottom-0 right-0 w-1/3 h-full z-0 opacity-20 pointer-events-none" style="background: radial-gradient(circle at bottom right, transparent 0%, transparent 40%, rgba(208,163,83,0.3) 41%, transparent 42%);"></div>
+    
+        <div class="container relative z-10 py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Spacer for the image side -->
+            <div class="lg:col-span-5 hidden lg:block"></div>
+            
+            <!-- Center Content -->
+            <div class="lg:col-span-4 text-white text-center lg:text-left">
+                <h2 class="text-4xl lg:text-[2.75rem] mb-4 font-bold leading-tight" style="font-family: var(--font-heading)">
+                    Let's Build Your<br>
+                    <span class="text-[#d0a353] font-serif tracking-wide">Smart Home</span>
+                </h2>
+                <p class="text-[0.8rem] text-gray-300 mb-8 max-w-md mx-auto lg:mx-0 leading-relaxed pr-4">
+                    Schedule a free consultation and let our experts design the perfect automation solution for your space.
+                </p>
+                
+                <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+                    <a href="#" class="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-4 py-2.5 rounded text-[0.65rem] font-bold whitespace-nowrap shadow-md hover:shadow-lg transition flex items-center gap-2">
+                        <i class="far fa-calendar-alt"></i> SCHEDULE FREE CONSULTATION
+                    </a>
+                    <a href="#" class="border border-[#d0a353] text-[#d0a353] px-4 py-2.5 rounded text-[0.65rem] font-bold whitespace-nowrap hover:bg-[#d0a353] hover:text-white transition flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-lg"></i> WHATSAPP US
+                    </a>
+                    <a href="#" class="border border-[#d0a353] text-[#d0a353] px-4 py-2.5 rounded text-[0.65rem] font-bold whitespace-nowrap hover:bg-[#d0a353] hover:text-white transition flex items-center gap-2">
+                        <i class="fas fa-phone-alt"></i> CALL NOW
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right Content List -->
+            <div class="lg:col-span-3 pl-0 lg:pl-10 border-t lg:border-t-0 lg:border-l border-white/10 pt-8 lg:pt-0">
+                <ul class="space-y-6">
+                    <li class="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
+                        <i class="fas fa-shield-alt text-[#d0a353] text-xl w-6 text-center"></i>
+                        Free Site Visit
+                    </li>
+                    <li class="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
+                        <i class="fas fa-user-cog text-[#d0a353] text-xl w-6 text-center"></i>
+                        Personalized Solution
+                    </li>
+                    <li class="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
+                        <i class="fas fa-certificate text-[#d0a353] text-xl w-6 text-center"></i>
+                        Expert Guidance
+                    </li>
+                    <li class="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
+                        <i class="fas fa-shield-check text-[#d0a353] text-xl w-6 text-center"></i>
+                        Best Price Guarantee
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-links">
-          <h4>Services</h4>
-          <a href="solutions.html">Lighting</a>
-          <a href="solutions.html">Security</a>
-          <a href="solutions.html">Climate</a>
+    </section>
+
+    <!-- CONTACT INFO BAND -->
+    <section class="bg-[#fdfcf9] py-12 border-b-4 border-[#0b101a]">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- GET IN TOUCH -->
+                <div>
+                    <h4 class="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">GET IN TOUCH</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i class="fas fa-phone-alt text-[10px]"></i></div>
+                            <span class="text-sm font-bold text-gray-700 mt-1">+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i class="fas fa-envelope text-[10px]"></i></div>
+                            <a href="mailto:info@smartsolutioniot.com" class="text-[0.8rem] font-bold text-gray-700 mt-1 hover:text-[#d0a353]">info@smartsolutioniot.com</a>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i class="fas fa-map-marker-alt text-[10px]"></i></div>
+                            <div class="text-[0.7rem] font-medium text-gray-600 leading-relaxed pt-1 pr-4">
+                                No. 123, 1st Floor, Tech Park,<br>Coimbatore - 641062, Tamil Nadu, India
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i class="far fa-clock text-[10px]"></i></div>
+                            <span class="text-[0.8rem] font-bold text-gray-700 mt-1">Mon - Sat : 9:00 AM - 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- SCAN TO CONNECT -->
+                <div class="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
+                    <h4 class="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">SCAN TO CONNECT</h4>
+                    <p class="text-[0.8rem] text-gray-700 mb-4 max-w-[180px]">Scan the QR code to chat with us on WhatsApp</p>
+                    <div class="inline-block border border-gray-200 p-2 rounded-lg bg-white shadow-sm relative">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://wa.me/919876543210" alt="WhatsApp QR" class="w-20 h-20">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white rounded-full p-0.5 shadow-sm">
+                                <i class="fab fa-whatsapp text-green-500 text-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FOLLOW US -->
+                <div class="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
+                    <h4 class="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">FOLLOW US</h4>
+                    <div class="flex gap-3 mt-4">
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i class="fab fa-instagram text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i class="fab fa-linkedin-in text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i class="fab fa-youtube text-sm"></i></a>
+                    </div>
+                </div>
+                
+                <!-- OUR LOCATION -->
+                <div class="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
+                    <h4 class="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">OUR LOCATION</h4>
+                    <div class="rounded-xl overflow-hidden border border-gray-200 shadow-sm relative h-32 max-w-xs">
+                        <img src="https://via.placeholder.com/400x200/e0e0e0/666666?text=Map+View" alt="Map View" class="w-full h-full object-cover opacity-80">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-white/30">
+                            <i class="fas fa-map-marker-alt text-red-500 text-3xl drop-shadow-md"></i>
+                            <span class="text-[0.55rem] font-bold text-red-600 bg-white/90 px-2 py-0.5 rounded shadow mt-1">Smart Solution IoT</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-        <div class="footer-links">
-          <h4>Contact</h4>
-          <a href="tel:+919876543210">+91 98765 43210</a>
-          <a href="mailto:hello@smartiotsolutions.in">hello@smartiotsolutions.in</a>
+    </section>
+
+    <!-- MAIN FOOTER -->
+    <footer class="bg-[#0b101a] pt-16 pb-6">
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
+            
+            <!-- Logo & About -->
+            <div class="lg:col-span-4 lg:pr-6">
+                <a href="#" class="inline-flex items-center mb-6">
+                    <img src="images/smart-iot-solutions.png" alt="Smart IoT Solution" class="h-16 object-contain">
+                </a>
+                <p class="text-[0.75rem] text-gray-400 leading-relaxed pr-4">
+                    Delivering smarter, safer and more connected spaces through innovative IoT and automation solutions.
+                </p>
+            </div>
+
+            <!-- OUR SERVICES -->
+            <div class="lg:col-span-3">
+                <h4 class="text-white text-xs font-bold tracking-wide uppercase mb-6">OUR SERVICES</h4>
+                <div class="grid grid-cols-2 gap-x-2 gap-y-3">
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Home Automation</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Smart Lock Systems</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Gate Automation</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Intercom Solutions</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Door Automation</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> IoT Integration</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> CCTV Surveillance</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Maintenance & Support</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5 col-span-2"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Access Control</a>
+                </div>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="lg:col-span-2">
+                <h4 class="text-white text-xs font-bold tracking-wide uppercase mb-6">QUICK LINKS</h4>
+                <div class="grid grid-cols-2 gap-x-2 gap-y-3">
+                    <div class="flex flex-col gap-3">
+                        <a href="index.html" class="text-[0.65rem] text-gray-400 hover:text-white">Home</a>
+                        <a href="about.html" class="text-[0.65rem] text-gray-400 hover:text-white">About Us</a>
+                        <a href="solutions.html" class="text-[0.65rem] text-gray-400 hover:text-white">Solutions</a>
+                        <a href="products.html" class="text-[0.65rem] text-gray-400 hover:text-white">Products</a>
+                        <a href="projects.html" class="text-[0.65rem] text-gray-400 hover:text-white">Our Projects</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"><i class="fas fa-chevron-right text-gray-600 text-[8px]"></i> Why Choose Us</a>
+                        <a href="#" class="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"><i class="fas fa-chevron-right text-gray-600 text-[8px]"></i> Blog</a>
+                        <a href="#" class="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"><i class="fas fa-chevron-right text-gray-600 text-[8px]"></i> Careers</a>
+                        <a href="contact.html" class="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"><i class="fas fa-chevron-right text-gray-600 text-[8px]"></i> Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEWSLETTER -->
+            <div class="lg:col-span-3 pl-0 lg:pl-4">
+                <h4 class="text-[#d0a353] text-xs font-bold tracking-wide uppercase mb-6">NEWSLETTER</h4>
+                <p class="text-[0.7rem] text-gray-400 mb-4">Stay updated with our latest solutions and offers.</p>
+                <form class="flex rounded overflow-hidden h-10 border border-gray-700 focus-within:border-[#d0a353]">
+                    <input type="email" placeholder="Enter your email" class="bg-[#121824] px-4 w-full text-xs text-white outline-none">
+                    <button type="submit" class="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-[#0b101a] px-4 text-[0.65rem] font-bold tracking-wide hover:opacity-90 transition">SUBSCRIBE</button>
+                </form>
+            </div>
         </div>
-        <div class="newsletter">
-          <h4>Ready?</h4>
-          <a class="btn btn-gold btn-sm" href="contact.html">Get a Quote</a>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="container border-t border-gray-800 pt-6 mt-8 flex flex-wrap justify-between items-center text-[0.65rem] text-gray-400">
+            <div>&copy; 2024 Smart Solution IoT. All Rights Reserved.</div>
+            <div class="flex items-center justify-center gap-6 my-3 lg:my-0">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <span class="text-gray-700">|</span>
+                <a href="#" class="hover:text-white">Terms & Conditions</a>
+                <span class="text-gray-700">|</span>
+                <a href="#" class="hover:text-white">Sitemap</a>
+            </div>
+            <div>Designed with <i class="fas fa-heart text-[#d0a353] mx-1"></i> for a smarter tomorrow</div>
         </div>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <span>&copy; <span id="year">2026</span> Smart IoT Solutions. All rights reserved.</span>
-      <span>Designed with <span class="heart">♥</span> for smarter living.</span>
-    </div>
-  </footer>
-  <script src="js/main.js"></script>
+    </footer>
+
+    <script>
+        // Hero 3D Carousel Logic
+        const heroCards = document.querySelectorAll('#heroCardsContainer .carousel-card');
+        let currentIndex = 0;
+        const totalCards = heroCards.length;
+        let autoPlayInterval;
+
+        function updateCarousel() {
+            heroCards.forEach((card, index) => {
+                // Remove all specific classes
+                card.className = 'carousel-card';
+
+                if (index === currentIndex) {
+                    card.classList.add('carousel-card-center');
+                } else if (index === (currentIndex + 1) % totalCards) {
+                    card.classList.add('carousel-card-right');
+                } else if (index === (currentIndex - 1 + totalCards) % totalCards) {
+                    card.classList.add('carousel-card-left');
+                } else {
+                    card.classList.add('carousel-card-hidden');
+                }
+            });
+        }
+
+        function heroNext() {
+            currentIndex = (currentIndex + 1) % totalCards;
+            updateCarousel();
+            resetAutoPlay();
+        }
+
+        function heroPrev() {
+            currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+            updateCarousel();
+            resetAutoPlay();
+        }
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(heroNext, 5000);
+        }
+
+        function resetAutoPlay() {
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            updateCarousel();
+            startAutoPlay();
+        });
+    </script>
+
 </body>
+
 </html>

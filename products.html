@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Smart IoT Solutions</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS (CDN for development) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#cfa85e',
+                        dark: '#121417',
+                        light: '#fbfbfb'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body class="bg-white">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar py-4">
+        <div class="container flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+                <img src="images/smart-iot-solutions.png" alt="Smart IoT Solution" class="h-12 object-contain">
+            </a>
+
+            <!-- Links -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="solutions.html" class="nav-link flex items-center gap-1">Solutions <i
+                        class="fas fa-chevron-down text-xs"></i></a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+
+            <!-- Action -->
+            <div class="hidden md:block">
+                <a href="#" class="btn-outline-gold px-6 py-2.5 flex items-center gap-2 font-medium">
+                    <i class="fas fa-phone-alt text-sm"></i> Get a Quote
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="relative pt-32 pb-20 bg-[#121417] overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1600&q=80" alt="Products Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#121417] via-[#121417]/90 to-transparent"></div>
+        </div>
+        <div class="container relative z-10">
+            <div class="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.2em] uppercase mb-4 flex items-center gap-3">
+                <a href="index.html" class="text-gray-400 hover:text-white transition">HOME</a> 
+                <span class="text-gray-600">/</span> PRODUCTS
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style="font-family: var(--font-heading)">
+                Premium <span class="text-[#d0a353] font-serif">Hardware.</span>
+            </h1>
+            <p class="text-gray-300 max-w-xl text-sm leading-relaxed">
+                A smart system is only as good as the hardware that runs it. We partner with the world's most reliable and secure brands to bring you state-of-the-art automation hardware.
+            </p>
+        </div>
+    </section>
+
+    <!-- BRAND PARTNERS -->
+    <section class="py-12 bg-white border-b border-gray-100">
+        <div class="container text-center">
+            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-6">Our Technology Partners</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition duration-500">
+                <div class="text-xl font-bold font-serif text-black">Control4</div>
+                <div class="text-xl font-bold font-sans text-blue-800">CRESTRON</div>
+                <div class="text-xl font-bold text-gray-800 tracking-wider">KNX</div>
+                <div class="text-xl font-bold text-yellow-600">Yale</div>
+                <div class="text-xl font-black italic text-blue-600">LUTRON</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT CATALOG -->
+    <section class="py-24 bg-[#f9f8f4] relative">
+        <div class="container">
+            
+            <!-- Category 1 -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2 border-l-4 border-[#d0a353] pl-4">Smart Interfaces & Controls</h2>
+                <p class="text-sm text-gray-500 mb-8 pl-5 max-w-2xl">The touchpoints of your home. Elegant glass panels, responsive touch screens, and intuitive remotes.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pl-5">
+                    <div class="bg-white border border-gray-100 rounded-xl p-8 hover:shadow-xl hover:border-[#d0a353]/30 transition group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-[#f9f8f4] text-[#d0a353] text-[10px] font-bold px-3 py-1 rounded-bl-lg">Bestseller</div>
+                        <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&w=400&q=80" alt="Smart Switch" class="w-40 h-40 object-cover rounded-full mx-auto mb-6 group-hover:scale-105 transition shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 text-center">Glass Touch Panels</h3>
+                        <ul class="text-xs text-gray-500 mb-6 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Capacitive touch sensing</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Retrofit friendly (no new wiring)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Custom backlight colors</li>
+                        </ul>
+                        <a href="contact.html" class="block text-center border border-[#d0a353] text-[#d0a353] rounded py-2 text-xs font-bold uppercase tracking-wider hover:bg-[#d0a353] hover:text-white transition">Get Quote</a>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-100 rounded-xl p-8 hover:shadow-xl hover:border-[#d0a353]/30 transition group relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80" alt="Control Tablet" class="w-40 h-40 object-cover rounded-full mx-auto mb-6 group-hover:scale-105 transition shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 text-center">In-Wall Touch Screens</h3>
+                        <ul class="text-xs text-gray-500 mb-6 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> 7" to 10" HD displays</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Integrated intercom functionality</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Centralized whole-home control</li>
+                        </ul>
+                        <a href="contact.html" class="block text-center border border-[#d0a353] text-[#d0a353] rounded py-2 text-xs font-bold uppercase tracking-wider hover:bg-[#d0a353] hover:text-white transition">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Category 2 -->
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2 border-l-4 border-[#d0a353] pl-4">Security & Access Control</h2>
+                <p class="text-sm text-gray-500 mb-8 pl-5 max-w-2xl">Robust, enterprise-grade security adapted for both luxury homes and corporate spaces.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pl-5">
+                    <div class="bg-white border border-gray-100 rounded-xl p-8 hover:shadow-xl hover:border-[#d0a353]/30 transition group relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1557438159-51eecce36926?auto=format&fit=crop&w=400&q=80" alt="Smart Lock" class="w-40 h-40 object-cover rounded-full mx-auto mb-6 group-hover:scale-105 transition shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 text-center">Biometric Door Locks</h3>
+                        <ul class="text-xs text-gray-500 mb-6 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> 5-way access (Fingerprint, PIN, App, RFID, Key)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Real-time entry logs</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Anti-tamper alarm</li>
+                        </ul>
+                        <a href="contact.html" class="block text-center border border-[#d0a353] text-[#d0a353] rounded py-2 text-xs font-bold uppercase tracking-wider hover:bg-[#d0a353] hover:text-white transition">Get Quote</a>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-100 rounded-xl p-8 hover:shadow-xl hover:border-[#d0a353]/30 transition group relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=400&q=80" alt="IP Camera" class="w-40 h-40 object-cover rounded-full mx-auto mb-6 group-hover:scale-105 transition shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 text-center">AI Perimeter Cameras</h3>
+                        <ul class="text-xs text-gray-500 mb-6 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> 4K Ultra HD & Color Night Vision</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Human/Vehicle AI detection</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Two-way audio communication</li>
+                        </ul>
+                        <a href="contact.html" class="block text-center border border-[#d0a353] text-[#d0a353] rounded py-2 text-xs font-bold uppercase tracking-wider hover:bg-[#d0a353] hover:text-white transition">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+<!-- CTA BANNER -->
+    <section class="relative bg-[#0c121e] overflow-hidden">
+        <!-- Left Background Image with Gradient fade -->
+        <div class="absolute top-0 left-0 bottom-0 w-1/2 z-0">
+            <img src="images/hero_pool_1786093934613.png" alt="Smart Home" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#0c121e]/80 to-[#0c121e]"></div>
+        </div>
+        
+        <!-- Golden Sweeping Curve on Right -->
+        <div class="absolute bottom-0 right-0 w-1/3 h-full z-0 opacity-20 pointer-events-none" style="background: radial-gradient(circle at bottom right, transparent 0%, transparent 40%, rgba(208,163,83,0.3) 41%, transparent 42%);"></div>
+    
+        <div class="container relative z-10 py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Spacer for the image side -->
+            <div class="lg:col-span-5 hidden lg:block"></div>
+            
+            <!-- Center Content -->
+            <div class="lg:col-span-4 text-white text-center lg:text-left">
+                <h2 class="text-4xl lg:text-[2.75rem] mb-4 font-bold leading-tight" style="font-family: var(--font-heading)">
+                    Let's Build Your<br>
+                    <span class="text-[#d0a353] font-serif tracking-wide">Smart Home</span>
+                </h2>
+                <p class="text-[0.8rem] text-gray-300 mb-8 max-w-md mx-auto lg:mx-0 leading-relaxed pr-4">
+                    Schedule a free consultation and let our experts design the perfect automation solution for your space.
+                </p>
+                
+                <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+                    <a href="#" class="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-4 py-2.5 rounded text-[0.65rem] font-bold whitespace-nowrap shadow-md hover:shadow-lg transition flex items-center gap-2">
+                        <i class="far fa-calendar-alt"></i> SCHEDULE FREE CONSULTATION
+                    </a>
+                    <a href="#" class="border border-[#d0a353] text-[#d0a353] px-4 py-2.5 rounded text-[0.65rem] font-bold whitespace-nowrap hover:bg-[#d0a353] hover:text-white transition flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-lg"></i> WHATSAPP US
+                    </a>
+                    <a href="#" class="border border-[#d0a353] text-[#d0a353] px-4 py-2.5 rounded text-[0.65rem] font-bold whitespace-nowrap hover:bg-[#d0a353] hover:text-white transition flex items-center gap-2">
+                        <i class="fas fa-phone-alt"></i> CALL NOW
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right Content List -->
+            <div class="lg:col-span-3 pl-0 lg:pl-10 border-t lg:border-t-0 lg:border-l border-white/10 pt-8 lg:pt-0">
+                <ul class="space-y-6">
+                    <li class="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
+                        <i class="fas fa-shield-alt text-[#d0a353] text-xl w-6 text-center"></i>
+                        Free Site Visit
+                    </li>
+                    <li class="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
+                        <i class="fas fa-user-cog text-[#d0a353] text-xl w-6 text-center"></i>
+                        Personalized Solution
+                    </li>
+                    <li class="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
+                        <i class="fas fa-certificate text-[#d0a353] text-xl w-6 text-center"></i>
+                        Expert Guidance
+                    </li>
+                    <li class="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
+                        <i class="fas fa-shield-check text-[#d0a353] text-xl w-6 text-center"></i>
+                        Best Price Guarantee
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO BAND -->
+    <section class="bg-[#fdfcf9] py-12 border-b-4 border-[#0b101a]">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- GET IN TOUCH -->
+                <div>
+                    <h4 class="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">GET IN TOUCH</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i class="fas fa-phone-alt text-[10px]"></i></div>
+                            <span class="text-sm font-bold text-gray-700 mt-1">+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i class="fas fa-envelope text-[10px]"></i></div>
+                            <a href="mailto:info@smartsolutioniot.com" class="text-[0.8rem] font-bold text-gray-700 mt-1 hover:text-[#d0a353]">info@smartsolutioniot.com</a>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i class="fas fa-map-marker-alt text-[10px]"></i></div>
+                            <div class="text-[0.7rem] font-medium text-gray-600 leading-relaxed pt-1 pr-4">
+                                No. 123, 1st Floor, Tech Park,<br>Coimbatore - 641062, Tamil Nadu, India
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i class="far fa-clock text-[10px]"></i></div>
+                            <span class="text-[0.8rem] font-bold text-gray-700 mt-1">Mon - Sat : 9:00 AM - 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- SCAN TO CONNECT -->
+                <div class="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
+                    <h4 class="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">SCAN TO CONNECT</h4>
+                    <p class="text-[0.8rem] text-gray-700 mb-4 max-w-[180px]">Scan the QR code to chat with us on WhatsApp</p>
+                    <div class="inline-block border border-gray-200 p-2 rounded-lg bg-white shadow-sm relative">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://wa.me/919876543210" alt="WhatsApp QR" class="w-20 h-20">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white rounded-full p-0.5 shadow-sm">
+                                <i class="fab fa-whatsapp text-green-500 text-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FOLLOW US -->
+                <div class="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
+                    <h4 class="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">FOLLOW US</h4>
+                    <div class="flex gap-3 mt-4">
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i class="fab fa-instagram text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i class="fab fa-linkedin-in text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i class="fab fa-youtube text-sm"></i></a>
+                    </div>
+                </div>
+                
+                <!-- OUR LOCATION -->
+                <div class="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
+                    <h4 class="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">OUR LOCATION</h4>
+                    <div class="rounded-xl overflow-hidden border border-gray-200 shadow-sm relative h-32 max-w-xs">
+                        <img src="https://via.placeholder.com/400x200/e0e0e0/666666?text=Map+View" alt="Map View" class="w-full h-full object-cover opacity-80">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-white/30">
+                            <i class="fas fa-map-marker-alt text-red-500 text-3xl drop-shadow-md"></i>
+                            <span class="text-[0.55rem] font-bold text-red-600 bg-white/90 px-2 py-0.5 rounded shadow mt-1">Smart Solution IoT</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN FOOTER -->
+    <footer class="bg-[#0b101a] pt-16 pb-6">
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
+            
+            <!-- Logo & About -->
+            <div class="lg:col-span-4 lg:pr-6">
+                <a href="#" class="inline-flex items-center mb-6">
+                    <img src="images/smart-iot-solutions.png" alt="Smart IoT Solution" class="h-16 object-contain">
+                </a>
+                <p class="text-[0.75rem] text-gray-400 leading-relaxed pr-4">
+                    Delivering smarter, safer and more connected spaces through innovative IoT and automation solutions.
+                </p>
+            </div>
+
+            <!-- OUR SERVICES -->
+            <div class="lg:col-span-3">
+                <h4 class="text-white text-xs font-bold tracking-wide uppercase mb-6">OUR SERVICES</h4>
+                <div class="grid grid-cols-2 gap-x-2 gap-y-3">
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Home Automation</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Smart Lock Systems</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Gate Automation</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Intercom Solutions</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Door Automation</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> IoT Integration</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> CCTV Surveillance</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Maintenance & Support</a>
+                    <a href="#" class="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5 col-span-2"><i class="fas fa-chevron-right text-[#d0a353] text-[8px]"></i> Access Control</a>
+                </div>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="lg:col-span-2">
+                <h4 class="text-white text-xs font-bold tracking-wide uppercase mb-6">QUICK LINKS</h4>
+                <div class="grid grid-cols-2 gap-x-2 gap-y-3">
+                    <div class="flex flex-col gap-3">
+                        <a href="index.html" class="text-[0.65rem] text-gray-400 hover:text-white">Home</a>
+                        <a href="about.html" class="text-[0.65rem] text-gray-400 hover:text-white">About Us</a>
+                        <a href="solutions.html" class="text-[0.65rem] text-gray-400 hover:text-white">Solutions</a>
+                        <a href="products.html" class="text-[0.65rem] text-gray-400 hover:text-white">Products</a>
+                        <a href="projects.html" class="text-[0.65rem] text-gray-400 hover:text-white">Our Projects</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"><i class="fas fa-chevron-right text-gray-600 text-[8px]"></i> Why Choose Us</a>
+                        <a href="#" class="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"><i class="fas fa-chevron-right text-gray-600 text-[8px]"></i> Blog</a>
+                        <a href="#" class="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"><i class="fas fa-chevron-right text-gray-600 text-[8px]"></i> Careers</a>
+                        <a href="contact.html" class="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"><i class="fas fa-chevron-right text-gray-600 text-[8px]"></i> Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEWSLETTER -->
+            <div class="lg:col-span-3 pl-0 lg:pl-4">
+                <h4 class="text-[#d0a353] text-xs font-bold tracking-wide uppercase mb-6">NEWSLETTER</h4>
+                <p class="text-[0.7rem] text-gray-400 mb-4">Stay updated with our latest solutions and offers.</p>
+                <form class="flex rounded overflow-hidden h-10 border border-gray-700 focus-within:border-[#d0a353]">
+                    <input type="email" placeholder="Enter your email" class="bg-[#121824] px-4 w-full text-xs text-white outline-none">
+                    <button type="submit" class="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-[#0b101a] px-4 text-[0.65rem] font-bold tracking-wide hover:opacity-90 transition">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="container border-t border-gray-800 pt-6 mt-8 flex flex-wrap justify-between items-center text-[0.65rem] text-gray-400">
+            <div>&copy; 2024 Smart Solution IoT. All Rights Reserved.</div>
+            <div class="flex items-center justify-center gap-6 my-3 lg:my-0">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <span class="text-gray-700">|</span>
+                <a href="#" class="hover:text-white">Terms & Conditions</a>
+                <span class="text-gray-700">|</span>
+                <a href="#" class="hover:text-white">Sitemap</a>
+            </div>
+            <div>Designed with <i class="fas fa-heart text-[#d0a353] mx-1"></i> for a smarter tomorrow</div>
+        </div>
+    </footer>
+
+    <script>
+        // Hero 3D Carousel Logic
+        const heroCards = document.querySelectorAll('#heroCardsContainer .carousel-card');
+        let currentIndex = 0;
+        const totalCards = heroCards.length;
+        let autoPlayInterval;
+
+        function updateCarousel() {
+            heroCards.forEach((card, index) => {
+                // Remove all specific classes
+                card.className = 'carousel-card';
+
+                if (index === currentIndex) {
+                    card.classList.add('carousel-card-center');
+                } else if (index === (currentIndex + 1) % totalCards) {
+                    card.classList.add('carousel-card-right');
+                } else if (index === (currentIndex - 1 + totalCards) % totalCards) {
+                    card.classList.add('carousel-card-left');
+                } else {
+                    card.classList.add('carousel-card-hidden');
+                }
+            });
+        }
+
+        function heroNext() {
+            currentIndex = (currentIndex + 1) % totalCards;
+            updateCarousel();
+            resetAutoPlay();
+        }
+
+        function heroPrev() {
+            currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+            updateCarousel();
+            resetAutoPlay();
+        }
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(heroNext, 5000);
+        }
+
+        function resetAutoPlay() {
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            updateCarousel();
+            startAutoPlay();
+        });
+    </script>
+
+</body>
+
+</html>
