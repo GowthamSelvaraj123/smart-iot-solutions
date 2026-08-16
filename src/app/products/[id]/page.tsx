@@ -7,6 +7,12 @@ type Props = {
   params: { id: string };
 };
 
+export async function generateStaticParams() {
+  return products.map((product) => ({
+    id: product.id,
+  }));
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = products.find((p) => p.id === params.id);
   if (!product) return { title: "Product Not Found" };
