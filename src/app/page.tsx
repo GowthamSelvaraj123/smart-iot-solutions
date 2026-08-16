@@ -260,22 +260,7 @@ export default function IndexPage() {
                         </div>
                         
                         
-                        <div className="absolute top-[35%] right-[25%] z-20 flex flex-col items-center group cursor-default">
-                            <i className="fas fa-map-marker-alt text-[#d0a353] text-xl drop-shadow-md group-hover:scale-125 group-hover:text-[#ca9740] transition duration-300"></i>
-                            <span className="text-[9px] font-bold text-gray-800 mt-1.5 opacity-90">Andhra Pradesh</span>
-                        </div>
-                        <div className="absolute top-[48%] left-[20%] z-20 flex flex-col items-center group cursor-default">
-                            <i className="fas fa-map-marker-alt text-[#d0a353] text-xl drop-shadow-md group-hover:scale-125 group-hover:text-[#ca9740] transition duration-300"></i>
-                            <span className="text-[9px] font-bold text-gray-800 mt-1.5 opacity-90">Karnataka</span>
-                        </div>
-                        <div className="absolute top-[68%] right-[32%] z-20 flex flex-col items-center group cursor-default">
-                            <i className="fas fa-map-marker-alt text-[#d0a353] text-xl drop-shadow-md group-hover:scale-125 group-hover:text-[#ca9740] transition duration-300"></i>
-                            <span className="text-[9px] font-bold text-gray-800 mt-1.5 opacity-90">Tamil Nadu</span>
-                        </div>
-                        <div className="absolute top-[80%] left-[25%] z-20 flex flex-col items-center group cursor-default">
-                            <i className="fas fa-map-marker-alt text-[#d0a353] text-xl drop-shadow-md group-hover:scale-125 group-hover:text-[#ca9740] transition duration-300"></i>
-                            <span className="text-[9px] font-bold text-gray-800 mt-1.5 opacity-90">Kerala</span>
-                        </div>
+                        
 
                         
                         
@@ -1272,6 +1257,7 @@ export default function IndexPage() {
     </>
   );
 }
+
 
 
 
