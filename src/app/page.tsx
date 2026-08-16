@@ -220,7 +220,7 @@ export default function IndexPage() {
 
 
     
-    <section className="py-16 relative overflow-hidden bg-[#fdfcf9]">
+    <section className="py-20 lg:py-32 relative overflow-hidden bg-[#fdfcf9]">
         
         <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
             <svg className="absolute top-0 right-[-10%] w-[60%] h-full text-[#f2eee3]" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -392,7 +392,7 @@ export default function IndexPage() {
     </section>
 
     
-    <section className="py-24 bg-white relative">
+    <section className="py-20 lg:py-32 bg-white relative">
         <div className="container relative z-10">
             <div className="text-center mb-16">
                 <div
@@ -636,7 +636,7 @@ export default function IndexPage() {
     </section>
 
     
-    <section className="py-10 bg-[#fdfcf9]">
+    <section className="py-20 lg:py-32 bg-[#fdfcf9]">
         <div className="container max-w-[1400px] text-center">
             <div className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase mb-2">OUR COMPLETED PROJECTS</div>
             <h2 className="text-3xl lg:text-[2.5rem] mb-2 font-bold text-[#1a202c]" style={{ fontFamily: "var(--font-heading)" }}>
@@ -882,7 +882,7 @@ export default function IndexPage() {
     </section>
 
     
-    <section className="py-20 bg-[#fdfcf9]">
+    <section className="py-20 lg:py-32 bg-[#fdfcf9]">
         <div className="container max-w-[1400px]">
             <div className="text-center mb-12">
                 <div className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase mb-4">CHOOSE YOUR PERFECT SOLUTION</div>
@@ -1043,7 +1043,7 @@ export default function IndexPage() {
     </section>
 
     
-    <section className="relative py-16 bg-[#0a0f18] overflow-hidden">
+    <section className="relative py-20 lg:py-32 bg-[#0a0f18] overflow-hidden">
         
         <div className="absolute inset-0 z-0">
             <img src="images/hero_pool_1786093934613.png" alt="Living Room Background" className="w-full h-full object-cover opacity-20 filter grayscale blur-sm" />
@@ -1135,7 +1135,7 @@ export default function IndexPage() {
     </section>
 
     
-    <section className="relative bg-[#0c121e] overflow-hidden">
+    <section className="relative py-20 lg:py-32 bg-[#0c121e] overflow-hidden">
         
         <div className="absolute top-0 left-0 bottom-0 w-1/2 z-0">
             <img src="images/hero_pool_1786093934613.png" alt="Smart Home" className="w-full h-full object-cover" />
@@ -1197,7 +1197,7 @@ export default function IndexPage() {
     </section>
 
     
-    <section className="bg-[#fdfcf9] py-12 border-b-4 border-[#0b101a]">
+    <section className="bg-[#fdfcf9] py-20 lg:py-32 border-b-4 border-[#0b101a]">
         <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 
@@ -1272,4 +1272,6 @@ export default function IndexPage() {
     </>
   );
 }
+
+
 
