@@ -444,3 +444,5 @@ footer a:hover {
     .carousel-card-left { transform: translateX(-5.5rem) scale(0.85); }
     .carousel-card-right { transform: translateX(5.5rem) scale(0.85); }
 }
+
+@media (min-width: 768px) { .mobile-menu-btn { display: none !important; } }
