@@ -276,9 +276,7 @@ export default function IndexPage() {
                             <i className="fas fa-map-marker-alt text-[#d0a353] text-xl drop-shadow-md group-hover:scale-125 group-hover:text-[#ca9740] transition duration-300"></i>
                             <span className="text-[9px] font-bold text-gray-800 mt-1.5 opacity-90">Kerala</span>
                         </div>
-                        <div className="absolute top-[43%] -left-2 z-20 flex flex-col items-center group cursor-default">
-                            <span className="text-[9px] font-bold text-gray-500 mb-1 opacity-80">Goa</span>
-                        </div>
+
                         
                         
                         <div className="absolute top-[55%] -right-8 z-20 bg-white/95 backdrop-blur-sm rounded-[1rem] shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-[#d0a353]/20 py-4 px-5 text-center flex flex-col items-center justify-center transform hover:-translate-y-1 transition duration-300">
