@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { Metadata } from "next";
+import HeroSlider from '@/components/HeroSlider';
+import TrustBadgeSlider from '@/components/TrustBadgeSlider';
 
 export const metadata: Metadata = {
   title: "Smart IoT Solutions | Automation Experts",
@@ -21,13 +23,7 @@ export default function IndexPage() {
             
             <div className="w-full lg:w-[50%] hero-content-left pt-10">
                 
-                <div className="inline-flex items-center gap-3 bg-white px-5 py-2.5 rounded-lg mb-8 shadow-xl">
-                    <div className="flex text-gold text-lg">
-                        <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i
-                            className="fas fa-star"></i><i className="fas fa-star"></i>
-                    </div>
-                    <span className="text-sm font-bold text-gray-800 tracking-wide">Trusted by 1000+ Happy Customers</span>
-                </div>
+                <TrustBadgeSlider />
 
                 
                 <h1 className="text-[4rem] font-bold text-white leading-[1.1] mb-4 tracking-wide"
@@ -49,98 +45,7 @@ export default function IndexPage() {
             
             <div className="w-full lg:w-[50%] hero-content-right pl-10 relative pt-10">
                 
-                <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
-                    <div className="w-[2px] h-20 bg-gray-300"></div>
-                    <div
-                        className="w-20 h-12 bg-white rounded-t-full shadow-lg relative overflow-hidden flex justify-center border-b-4 border-gold z-10">
-                    </div>
-                    <div className="w-64 h-64 bg-gold/20 rounded-full blur-[50px] absolute top-24 pointer-events-none">
-                    </div>
-                </div>
-
-                
-                <div className="relative w-full max-w-3xl mt-16 mb-8 flex items-center justify-center h-[350px]">
-                    
-                    <button className="absolute -left-6 z-30 text-gold text-2xl hover:scale-110 transition cursor-pointer"
-                        ><i className="fas fa-chevron-left"></i></button>
-
-                    
-                    <div id="heroCardsContainer" className="relative w-full h-full flex items-center">
-
-                        
-                        <div className="carousel-card carousel-card-center" data-index="0">
-                            <img src="images/hero_pool_1786093934613.png" alt="Swimming Pool Automation"
-                                className="w-full h-48 object-cover rounded-lg mb-4" />
-                            <div className="text-center">
-                                <div className="text-lg font-bold text-gray-900 leading-tight mb-1">Swimming Pool</div>
-                                <div className="text-gold font-bold text-sm tracking-wide">Automation</div>
-                            </div>
-                        </div>
-
-                        
-                        <div className="carousel-card carousel-card-right" data-index="1">
-                            <img src="images/hero_gate_1786093948118.png" alt="Gate Automation"
-                                className="w-full h-48 object-cover rounded-lg mb-4" />
-                            <div className="text-center">
-                                <div className="text-lg font-bold text-gray-900 leading-tight mb-1">Gate</div>
-                                <div className="text-gold font-bold text-sm tracking-wide">Automation</div>
-                            </div>
-                        </div>
-
-                        
-                        <div className="carousel-card carousel-card-hidden" data-index="2">
-                            <img src="images/auto_apartment_1786094001400.png" alt="Climate Control"
-                                className="w-full h-48 object-cover rounded-lg mb-4" />
-                            <div className="text-center">
-                                <div className="text-lg font-bold text-gray-900 leading-tight mb-1">Climate</div>
-                                <div className="text-gold font-bold text-sm tracking-wide">Control</div>
-                            </div>
-                        </div>
-
-                        
-                        <div className="carousel-card carousel-card-hidden" data-index="3">
-                            <img src="images/auto_office_1786094016416.png" alt="Security System"
-                                className="w-full h-48 object-cover rounded-lg mb-4" />
-                            <div className="text-center">
-                                <div className="text-lg font-bold text-gray-900 leading-tight mb-1">Security</div>
-                                <div className="text-gold font-bold text-sm tracking-wide">System</div>
-                            </div>
-                        </div>
-
-                        
-                        <div className="carousel-card carousel-card-hidden" data-index="4">
-                            <img src="images/auto_villa_1786093987554.png" alt="Home Entertainment"
-                                className="w-full h-48 object-cover rounded-lg mb-4" />
-                            <div className="text-center">
-                                <div className="text-lg font-bold text-gray-900 leading-tight mb-1">Home</div>
-                                <div className="text-gold font-bold text-sm tracking-wide">Entertainment</div>
-                            </div>
-                        </div>
-
-                        
-                        <div className="carousel-card carousel-card-left" data-index="5">
-                            <img src="images/hero_lighting_1786093923075.png" alt="Lighting Control"
-                                className="w-full h-48 object-cover rounded-lg mb-4" />
-                            <div className="text-center">
-                                <div className="text-lg font-bold text-gray-900 leading-tight mb-1">Lighting</div>
-                                <div className="text-gold font-bold text-sm tracking-wide">Control</div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    
-                    <button className="absolute -right-6 z-30 text-gold text-2xl hover:scale-110 transition cursor-pointer"
-                        ><i className="fas fa-chevron-right"></i></button>
-                </div>
-
-                
-                <div className="flex items-center gap-4 mb-12">
-                    <span className="w-3 h-3 rounded-full bg-gold"></span>
-                    <span className="flex gap-1 text-gold text-[10px]"><i className="fas fa-pause"></i></span>
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#e3d1a8]"></span>
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#e3d1a8]"></span>
-                </div>
+                <HeroSlider />
 
                 
                 <div

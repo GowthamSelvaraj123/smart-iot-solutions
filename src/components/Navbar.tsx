@@ -16,7 +16,7 @@ export default function Navbar() {
           <img
             src="/images/smart-iot-solutions.png"
             alt="Smart IoT Solution"
-            className="h-12 object-contain"
+            className="w-[212px] h-[90px] object-contain"
           />
         </Link>
 
@@ -64,12 +64,14 @@ export default function Navbar() {
 
         {/* Desktop Action */}
         <div className="hidden md:block">
-          <Link
-            href="/contact"
+          <a
+            href="https://wa.me/919626904991"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-outline-gold px-6 py-2.5 flex items-center gap-2 font-medium"
           >
-            <i className="fas fa-phone-alt text-sm"></i> Get a Quote
-          </Link>
+            <i className="fab fa-whatsapp text-xl"></i> Schedule Consultation
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -127,13 +129,15 @@ export default function Navbar() {
             Contact Us
           </Link>
           <div className="mt-4 mb-4">
-            <Link
-              href="/contact"
+            <a
+              href="https://wa.me/919626904991"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
               className="btn-outline-gold px-6 py-2.5 flex items-center justify-center gap-2 font-medium w-full"
             >
-              <i className="fas fa-phone-alt text-sm"></i> Get a Quote
-            </Link>
+              <i className="fab fa-whatsapp text-xl"></i> Schedule Consultation
+            </a>
           </div>
         </div>
       )}
