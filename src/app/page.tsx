@@ -416,9 +416,8 @@ export default function IndexPage() {
                     </div>
                 </div>
 
-                
                 <div className="bg-white rounded-xl shadow-[0_15px_40px_rgba(208,163,83,0.15)] border border-[#d0a353]/30 flex flex-col h-full relative">
-                    <div className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white text-center py-2 text-[0.65rem] font-bold tracking-[0.15em] uppercase font-nav">
+                    <div className="absolute w-[80%] -top-[14px] left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white text-center py-1.5 px-4 text-[0.65rem] font-bold tracking-[0.15em] uppercase rounded-[6px] shadow-md z-10">
                         MOST POPULAR
                     </div>
                     <div className="p-8 pb-6 flex-grow">
