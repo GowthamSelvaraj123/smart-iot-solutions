@@ -59,7 +59,7 @@ export default function ProductPage({ params }: Props) {
                 {product.category}
               </div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{product.code}</h1>
-              <h2 className="text-xl md:text-2xl text-[#d0a353] font-serif mb-6">{product.name}</h2>
+              <h2 className="text-xl md:text-2xl text-[#d0a353] font-heading mb-6">{product.name}</h2>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">{product.particulars}</p>
               
               <div className="flex gap-4 mt-auto">

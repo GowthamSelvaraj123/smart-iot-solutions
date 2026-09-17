@@ -8,6 +8,40 @@ export const metadata: Metadata = {
   description: "Delivering smarter, safer and more connected spaces through innovative IoT and automation solutions.",
 };
 
+
+import SolutionsSlider from '@/components/SolutionsSlider';
+
+const solutions = [
+  { title: "Luxury Villa", desc: "Smart living with advanced automation and control.", img: "images/auto_villa_1786093987554.png", category: "Residential" },
+  { title: "Apartment", desc: "Smart solutions for comfortable and convenient living.", img: "images/auto_apartment_1786094001400.png", category: "Residential" },
+  { title: "Office", desc: "Boost productivity with smart office automation.", img: "images/auto_office_1786094016416.png", category: "Commercial" },
+  { title: "Hospital", desc: "Intelligent systems for better patient care and management.", img: "images/auto_hospital_1786094034170.png", category: "Commercial" },
+  { title: "Hostel / PG", desc: "Smart & secure living for hostels and PG accommodations.", img: "images/auto_hostel_1786094051526.png", category: "Commercial" },
+  { title: "Shopping Mall", desc: "Enhance customer experience with smart technology.", img: "images/hero.png", category: "Commercial" },
+  { title: "Warehouse", desc: "Automate operations and improve overall efficiency.", img: "images/auto_office_1786094016416.png", category: "Commercial" },
+  { title: "Farmhouse", desc: "Smart automation for a greener and safer lifestyle.", img: "images/hero_pool_1786093934613.png", category: "Residential" },
+  { title: "Hotel / Resort", desc: "Deliver luxury and comfort with smart automation.", img: "images/smart_home_villa_1786093285055.png", category: "Commercial" },
+  { title: "Software / App Dev", desc: "Custom software, websites, and application development.", img: "https://picsum.photos/seed/software/400/300", category: "Specialized" },
+  { title: "Jewellery Shop", desc: "Advanced security and smart automation for premium retail.", img: "https://picsum.photos/seed/jewellery/400/300", category: "Commercial" }
+];
+
+const clients = [
+    "Motion detection Sensor", "PIR Sensor", "Temperature Controller", "Occupancy Sensor",
+    "MS builders", "Sri Builders", "Sri Surya Constructions", "Kumar builders", "Sri Sai builders",
+    "Kongu builders", "Ustar Constructions", "SP Constructions", "Kawinn buildtech", "Urukkagam Associates",
+    "Jais Developers", "Poppyes", "CTS", "Bricks Houses", "SRS Construction", "Arasan Construction",
+    "Green Nest Properties & builders", "Sri Daksha", "Sri Ram Properties", "D square city developers",
+    "Tranz Layout", "Magic Bricks", "Government of TN", "Tulip Properties", "Silicon City", "Aira Properties",
+    "Agam Interiors", "Spazio Interiors", "Redme Interio", "Sheetla Interiors", "Royal Interiors",
+    "Guhan Interiors", "Home Lane", "Dot interiors & Traders", "Arch Firm", "Seventh Sense Architect",
+    "Core Design Studio", "Innout Architecture", "Masterpiece", "Urban Space Architects", "Bead Architects",
+    "Fab Builders", "Ray Architects", "DeeJas Architects", "Feathers Architects", "DNA Studio",
+    "Squaretree Architects", "Gravity Engineering", "CASA GRAND", "PUDAVI BUILDERS", "Subway", "KFC",
+    "Naturals", "MK Builders & Promoters", "SRI Balaji builders", "Aura", "Toni&Guy", "Baby Hug",
+    "Just Born", "B.C. Studio", "Cb Emporio", "DR Probuilders", "Minn Inspiring Designers",
+    "Warp", "Green Trends", "Shree Construction"
+];
+
 export default function IndexPage() {
   return (
     <>
@@ -26,8 +60,8 @@ export default function IndexPage() {
                 <TrustBadgeSlider />
 
                 
-                <h1 className="text-[4rem] font-bold text-white leading-[1.1] mb-4 tracking-wide"
-                    style={{ fontFamily: "var(--font-heading)" }}>
+                <h1 className="font-heading text-[4rem] font-bold text-white leading-[1.1] mb-4 tracking-wide"
+                   >
                     An <span className="text-gold">Automation</span><br />Company
                 </h1>
 
@@ -76,56 +110,7 @@ export default function IndexPage() {
     </section>
 
     
-    <div className="bg-[#fdfcf9] border-t-2 border-[#d0a353] top-[80px] z-40 hidden lg:block shadow-sm">
-        <div className="container flex justify-between items-center py-4 px-2">
-
-            <a href="#" className="flex items-center gap-3 group">
-                <i className="fas fa-home text-2xl text-[#d0a353] group-hover:scale-110 transition"></i>
-                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Home Automation</span>
-            </a>
-
-            <div className="h-8 w-[1px] bg-[#d0a353] opacity-40"></div>
-
-            <a href="#" className="flex items-center gap-3 group">
-                <i className="far fa-lightbulb text-2xl text-[#d0a353] group-hover:scale-110 transition"></i>
-                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Lighting Control</span>
-            </a>
-
-            <div className="h-8 w-[1px] bg-[#d0a353] opacity-40"></div>
-
-            <a href="#" className="flex items-center gap-3 group">
-                <i className="fas fa-thermometer-half text-2xl text-[#d0a353] group-hover:scale-110 transition"></i>
-                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Climate Control</span>
-            </a>
-
-            <div className="h-8 w-[1px] bg-[#d0a353] opacity-40"></div>
-
-            <a href="#" className="flex items-center gap-3 group">
-                <i className="fas fa-video text-2xl text-[#d0a353] group-hover:scale-110 transition"></i>
-                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Security & CCTV</span>
-            </a>
-
-            <div className="h-8 w-[1px] bg-[#d0a353] opacity-40"></div>
-
-            <a href="#" className="flex items-center gap-3 group">
-                <i className="fas fa-torii-gate text-2xl text-[#d0a353] group-hover:scale-110 transition"></i>
-                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Gate Automation</span>
-            </a>
-
-            <div className="h-8 w-[1px] bg-[#d0a353] opacity-40"></div>
-
-            <a href="#" className="flex items-center gap-3 group">
-                <i className="fas fa-project-diagram text-2xl text-[#d0a353] group-hover:scale-110 transition"></i>
-                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Smart Devices</span>
-            </a>
-
-        </div>
-    </div>
-
-
-
-    
-    <section className="py-20 lg:py-32 relative overflow-hidden bg-[#fdfcf9]">
+    <section className="py-[60px] relative overflow-hidden bg-[#fdfcf9]">
         
         <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
             <svg className="absolute top-0 right-[-10%] w-[60%] h-full text-[#f2eee3]" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -138,19 +123,19 @@ export default function IndexPage() {
         </div>
 
         <div className="container relative z-10 max-w-[1400px]">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
                 
                 
                 <div className="lg:col-span-5 relative pt-4">
                     <div className="flex items-center gap-4 mb-4">
-                        <span className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase whitespace-nowrap">OUR REACH, THEIR TRUST</span>
+                        <span className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav whitespace-nowrap">OUR REACH, THEIR TRUST</span>
                         <span className="flex-grow h-[1px] bg-[#d0a353]/40 relative">
                             <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-1 bg-[#d0a353] rotate-45"></span>
                         </span>
                     </div>
-                    <h2 className="text-[2rem] lg:text-[2.2rem] mb-3 font-bold text-[#1a202c] leading-[1.1] tracking-tight" style={{ fontFamily: "var(--font-heading)" }}>
+                    <h2 className="font-heading text-[2rem] lg:text-[2.2rem] mb-3 font-bold text-[#1a202c] leading-[1.1] tracking-tight">
                         RAISES YOUR VOICE<br />
-                        <span className="text-[#d0a353] font-serif font-medium tracking-wide">RULE YOUR TERRITORY</span>
+                        <span className="text-[#d0a353] font-heading font-medium tracking-wide">RULE YOUR TERRITORY</span>
                     </h2>
                     <p className="text-[0.75rem] text-gray-600 mb-8 max-w-[300px] leading-relaxed font-medium">
                         Proudly empowering businesses and homes across South India with smart & secure solutions.
@@ -159,20 +144,10 @@ export default function IndexPage() {
                     <div className="relative w-full max-w-[420px] mx-auto lg:ml-0 mt-8 pl-4">
                         <img src="images/map.png" alt="South India Map" className="w-full drop-shadow-[0_10px_25px_rgba(208,163,83,0.2)] relative z-10 scale-105 transform origin-left" />
                         
-                        
-                        <div className="absolute -top-12 -left-4 z-20 flex items-center">
-                            <img src="https://placehold.co/200x80/transparent/d0a353?text=Make+In+India" alt="Make in India" className="h-10 mb-8 object-contain"  />
-                        </div>
-                        
-                        
-                        
-
-                        
-                        
                         <div className="absolute top-[55%] -right-8 z-20 bg-white/95 backdrop-blur-sm rounded-[1rem] shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-[#d0a353]/20 py-4 px-5 text-center flex flex-col items-center justify-center transform hover:-translate-y-1 transition duration-300">
                             <i className="far fa-handshake text-[#d0a353] text-2xl mb-1.5"></i>
                             <div className="text-[8px] text-gray-500 font-medium mb-1 tracking-wide uppercase">Trusted by</div>
-                            <div className="text-[#ca9740] font-bold text-3xl leading-none mb-1.5 font-serif">50+</div>
+                            <div className="text-[#ca9740] font-bold text-3xl leading-none mb-1.5 font-heading">50+</div>
                             <div className="text-[8px] text-gray-600 font-bold leading-tight">Brands Across<br />South India</div>
                         </div>
                     </div>
@@ -184,46 +159,48 @@ export default function IndexPage() {
                         <span className="flex-grow h-[1px] bg-[#d0a353]/30 relative">
                             <span className="absolute right-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-[#d0a353] rotate-45"></span>
                         </span>
-                        <span className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase">OUR VALUED PARTNERS & CLIENTS</span>
+                        <span className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav">OUR VALUED PARTNERS & CLIENTS</span>
                         <span className="w-12 lg:w-24 h-[1px] bg-[#d0a353]/30 relative">
                             <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-[#d0a353] rotate-45"></span>
                         </span>
                     </div>
                     
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 pr-0 lg:pr-4">
-                        
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition group"><div className="w-12 h-12 rounded-full border-[3px] border-green-600 flex items-center justify-center text-green-600 group-hover:bg-green-50 transition"><i className="fas fa-tree text-lg"></i></div></div>
-                        <div className="col-span-1 h-[70px] bg-[#1a365d] rounded-lg shadow-sm flex items-center justify-center p-2 hover:-translate-y-1 transition"><div className="flex flex-col items-center"><span className="text-white font-bold text-xl leading-none">BC</span><span className="text-white/80 text-[6px] tracking-widest mt-1 uppercase">estudiogroup</span></div></div>
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex flex-col items-center text-[#e53e3e]"><div className="flex items-center gap-1"><i className="fas fa-hard-hat text-blue-800 text-xl"></i><span className="font-black text-xl leading-none">DR</span></div><span className="text-[6px] font-bold text-blue-900 mt-0.5">DR PROBUILDERS</span></div></div>
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex flex-col items-center"><div className="bg-black w-8 h-8 mb-1 text-white flex justify-center items-center font-bold text-sm">C</div><span className="text-[6px] text-gray-500 font-bold uppercase">CB Emporio</span></div></div>
-                        
-                        <div className="col-span-2 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 relative hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex items-center pb-2"><span className="text-green-500 font-bold text-[1.35rem] tracking-tight">green</span><span className="text-pink-600 font-bold text-[1.35rem] tracking-tight">trends</span></div><div className="text-[5px] absolute bottom-2 font-bold text-gray-500 tracking-wider">UNISEX HAIR & STYLE SALON</div></div>
-                        <div className="col-span-2 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex items-center gap-3"><i className="fas fa-home text-gray-800 text-3xl"></i><div className="flex flex-col text-left"><span className="text-amber-800 font-bold text-xl leading-none">House</span><span className="text-[6px] text-gray-500 font-bold tracking-wide mt-1">DESIGN & ENGINEERING</span></div></div></div>
-                        
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex flex-col items-center"><span className="text-green-700 font-bold text-xl leading-none">minn</span><div className="bg-amber-900 text-white text-[5px] px-2 py-0.5 rounded-full mt-1 uppercase">Inspiring Designers</div></div></div>
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex flex-col items-center"><i className="fas fa-broadcast-tower text-gray-800 text-2xl mb-1"></i><span className="text-[6px] font-bold uppercase tracking-widest text-black">BRAND NAME</span></div></div>
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex flex-col items-center"><div className="w-8 h-8 bg-black text-white flex items-center justify-center font-bold text-xs relative"><span className="absolute -right-3 -top-1 text-[#2196f3] text-2xl font-black">H</span></div></div></div>
-                        <div className="col-span-1 h-[70px] bg-[#311b92] rounded-lg shadow-sm flex items-center justify-center p-2 hover:-translate-y-1 transition"><div className="flex flex-col items-center"><span className="text-white font-bold text-xl leading-none tracking-tight">naturals</span><span className="text-white/80 text-[5px] mt-1 font-medium tracking-wide">India's No.1 salon</span></div></div>
-                        
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex flex-col items-center"><div className="flex items-end gap-[2px] mb-1.5"><div className="w-2.5 h-4 bg-gray-800 rounded-sm"></div><div className="w-2.5 h-6 bg-gray-800 rounded-sm"></div><div className="w-2.5 h-4 bg-orange-500 rounded-sm"></div></div><span className="text-[7px] font-black tracking-widest text-gray-800">SHREE</span></div></div>
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex flex-col items-center"><i className="fas fa-user-circle text-red-600 text-[1.75rem] mb-1"></i><span className="text-[11px] font-black text-red-600 uppercase leading-none tracking-tighter">KFC</span></div></div>
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="w-12 h-12 rounded-full border-2 border-yellow-400 flex flex-col items-center justify-center text-center leading-none"><img src="https://ui-avatars.com/api/?name=S+F&background=fff&color=d0a353&font-size=0.4&rounded=true" className="w-8 h-8 rounded-full" /></div></div>
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><span className="text-pink-500 font-bold text-xl tracking-tight">babyhug</span></div>
-                        
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex flex-col items-center text-gray-800"><i className="fas fa-city text-2xl mb-1"></i><span className="text-[6px] font-bold tracking-widest uppercase">Architecture</span></div></div>
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex flex-col items-center text-teal-500"><i className="fas fa-tree text-2xl mb-1 text-green-500"></i><span className="text-[7px] font-bold text-gray-500">cebaca</span></div></div>
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex flex-col items-center text-[#2196f3]"><i className="fas fa-seedling text-pink-400 text-2xl mb-1"></i><span className="text-[8px] font-medium text-[#00bcd4] font-serif">Just Born</span></div></div>
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex flex-col items-center text-gray-800"><i className="fas fa-lightbulb text-yellow-500 text-xl mb-1"></i><span className="text-[6px] font-black uppercase tracking-widest text-black">SPOT INTERIORS</span></div></div>
-                        
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><span className="font-black text-[1.1rem] tracking-tighter">TONI&GUY</span></div>
-                        <div className="col-span-2 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 gap-4 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="w-2 h-2 rounded-full bg-pink-500"></div><span className="text-gray-800 font-light text-2xl tracking-[0.3em]">w a r p</span></div>
-                        <div className="col-span-1 h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition"><div className="flex flex-col items-center text-blue-700 text-center"><i className="fas fa-building text-green-500 text-lg mb-1"></i><span className="text-[6px] font-bold text-blue-900 leading-tight">SHREE CONSTRUCTION<br /><span className="font-normal text-blue-700 text-[4px]">BUILDERS & CONTRACTORS</span></span></div></div>
+                    
+                    <div className="flex flex-col gap-4 overflow-hidden pb-4" style={{ WebkitMaskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)", maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)" }}>
+                        {[
+                            clients.slice(0, 18),
+                            clients.slice(18, 36),
+                            clients.slice(36, 54),
+                            clients.slice(54)
+                        ].map((rowClients, rowIdx) => (
+                            <div key={rowIdx} className="flex relative w-max overflow-hidden hover-pause">
+                                <div className={`flex gap-4 w-max ${rowIdx % 2 !== 0 ? 'animate-marquee-reverse' : 'animate-marquee'}`}>
+                                    {[...rowClients, ...rowClients].map((client, idx) => (
+                                        <div key={idx} className="w-[180px] h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition group shrink-0">
+                                            <span className="font-badge text-[10px] sm:text-[11px] font-bold text-gray-800 text-center uppercase leading-tight tracking-wider group-hover:text-[#d0a353] transition-colors">{client}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
             
             
             <div className="mt-14 bg-white/80 backdrop-blur-md rounded-[1.25rem] p-4 lg:py-5 lg:px-8 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-[#d0a353]/20 flex flex-wrap lg:flex-nowrap items-center justify-between gap-6 relative z-30">
+                
+                <div className="flex-grow flex flex-col sm:flex-row items-center sm:items-start lg:items-center justify-between gap-4 pr-0 lg:pr-2">
+                    <div className="text-center sm:text-left">
+                        <div className="text-[0.65rem] font-bold text-gray-900 uppercase tracking-[0.1em] font-nav mb-1">LET&apos;S BUILD SMARTER TOGETHER</div>
+                        <div className="text-[0.65rem] text-gray-500 font-medium">Your vision, our technology - a smarter tomorrow.</div>
+                    </div>
+                    <a href="#" className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-6 py-2.5 rounded text-[0.65rem] font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition uppercase tracking-wider whitespace-nowrap shrink-0 font-nav">
+                        GET IN TOUCH <i className="fas fa-chevron-right text-[8px]"></i>
+                    </a>
+                </div>
+                
+                <div className="hidden lg:block w-[1px] h-12 bg-gray-200 mx-2"></div>
                 
                 <div className="flex items-center gap-3">
                     <div className="w-11 h-11 rounded-full border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] text-lg bg-[#d0a353]/5 shrink-0">
@@ -264,272 +241,20 @@ export default function IndexPage() {
                         <div className="text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">South India</div>
                     </div>
                 </div>
-                
-                <div className="hidden lg:block w-[1px] h-12 bg-gray-200 mx-2"></div>
-                
-                
-                <div className="flex-grow flex flex-col sm:flex-row items-center sm:items-start lg:items-center justify-between gap-4 pl-0 lg:pl-2">
-                    <div className="text-center sm:text-left">
-                        <div className="text-[0.65rem] font-bold text-gray-900 uppercase tracking-[0.1em] mb-1">LET'S BUILD SMARTER TOGETHER</div>
-                        <div className="text-[0.65rem] text-gray-500 font-medium">Your vision, our technology - a smarter tomorrow.</div>
-                    </div>
-                    <a href="#" className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-6 py-2.5 rounded text-[0.65rem] font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition uppercase tracking-wider whitespace-nowrap shrink-0">
-                        GET IN TOUCH <i className="fas fa-chevron-right text-[8px]"></i>
-                    </a>
-                </div>
             </div>
         </div>
     </section>
 
     
-    <section className="py-20 lg:py-32 bg-white relative">
-        <div className="container relative z-10">
-            <div className="text-center mb-16">
-                <div
-                    className="inline-flex items-center justify-center gap-3 text-[0.65rem] font-bold text-[#d0a353] tracking-[0.2em] uppercase mb-4">
-                    <span className="w-10 h-[1px] bg-[#d0a353] relative"><span
-                            className="absolute right-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 rotate-45 bg-[#d0a353]"></span></span>
-                    SOLUTIONS FOR EVERY SPACE
-                    <span className="w-10 h-[1px] bg-[#d0a353] relative"><span
-                            className="absolute left-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 rotate-45 bg-[#d0a353]"></span></span>
-                </div>
-                <h2 className="text-3xl lg:text-4xl mb-4 font-bold" style={{ fontFamily: "var(--font-heading)" }}>
-                    <span className="text-gray-800">Smart Automation</span> <span
-                        className="text-[#d0a353] font-serif tracking-wide">For Every Need</span>
-                </h2>
-                <p className="text-gray-500 text-sm max-w-md mx-auto">Explore our smart automation solutions designed
-                    for<br />different spaces and industries.</p>
-            </div>
+    <SolutionsSlider solutions={solutions} />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <a href="#" className="relative w-full h-[140px] rounded-[1.25rem] border-[1.5px] border-[#d0a353]/30 shadow-[0_4px_20px_rgba(208,163,83,0.05)] bg-white overflow-hidden flex items-center hover:-translate-y-1 hover:shadow-md transition group">
-                    <div className="w-[55%] pl-5 pr-2 py-4 flex flex-col justify-center z-10 bg-white h-full relative">
-                        <div className="mb-1">
-                            <div className="w-8 h-8 rounded-lg border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] mb-2 group-hover:bg-[#d0a353] group-hover:text-white transition">
-                                <i className="fas fa-home text-sm"></i>
-                            </div>
-                            <h3 className="text-[0.95rem] font-bold text-gray-900 mb-1 leading-tight">Luxury Villa</h3>
-                            <p className="text-[0.65rem] text-gray-500 leading-snug pr-2">Smart living with advanced automation and control.</p>
-                        </div>
-                        <div className="absolute bottom-4 -right-3 z-20 w-6 h-6 rounded-full bg-[#d0a353] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i className="fas fa-arrow-right text-[10px]"></i>
-                        </div>
-                    </div>
-                    <div className="w-[45%] h-full relative z-0 flex-shrink-0">
-                        <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
-                        <img src="images/auto_villa_1786093987554.png" className="w-full h-full object-cover" alt="Luxury Villa" />
-                    </div>
-                </a>
 
-                
-                <a href="#" className="relative w-full h-[140px] rounded-[1.25rem] border-[1.5px] border-[#d0a353]/30 shadow-[0_4px_20px_rgba(208,163,83,0.05)] bg-white overflow-hidden flex items-center hover:-translate-y-1 hover:shadow-md transition group">
-                    <div className="w-[55%] pl-5 pr-2 py-4 flex flex-col justify-center z-10 bg-white h-full relative">
-                        <div className="mb-1">
-                            <div className="w-8 h-8 rounded-lg border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] mb-2 group-hover:bg-[#d0a353] group-hover:text-white transition">
-                                <i className="far fa-building text-sm"></i>
-                            </div>
-                            <h3 className="text-[0.95rem] font-bold text-gray-900 mb-1 leading-tight">Apartment</h3>
-                            <p className="text-[0.65rem] text-gray-500 leading-snug pr-2">Smart solutions for comfortable and convenient living.</p>
-                        </div>
-                        <div className="absolute bottom-4 -right-3 z-20 w-6 h-6 rounded-full bg-[#d0a353] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i className="fas fa-arrow-right text-[10px]"></i>
-                        </div>
-                    </div>
-                    <div className="w-[45%] h-full relative z-0 flex-shrink-0">
-                        <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
-                        <img src="images/auto_apartment_1786094001400.png" className="w-full h-full object-cover" alt="Apartment" />
-                    </div>
-                </a>
-
-                
-                <a href="#" className="relative w-full h-[140px] rounded-[1.25rem] border-[1.5px] border-[#d0a353]/30 shadow-[0_4px_20px_rgba(208,163,83,0.05)] bg-white overflow-hidden flex items-center hover:-translate-y-1 hover:shadow-md transition group">
-                    <div className="w-[55%] pl-5 pr-2 py-4 flex flex-col justify-center z-10 bg-white h-full relative">
-                        <div className="mb-1">
-                            <div className="w-8 h-8 rounded-lg border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] mb-2 group-hover:bg-[#d0a353] group-hover:text-white transition">
-                                <i className="fas fa-briefcase text-sm"></i>
-                            </div>
-                            <h3 className="text-[0.95rem] font-bold text-gray-900 mb-1 leading-tight">Office</h3>
-                            <p className="text-[0.65rem] text-gray-500 leading-snug pr-2">Boost productivity with smart office automation.</p>
-                        </div>
-                        <div className="absolute bottom-4 -right-3 z-20 w-6 h-6 rounded-full bg-[#d0a353] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i className="fas fa-arrow-right text-[10px]"></i>
-                        </div>
-                    </div>
-                    <div className="w-[45%] h-full relative z-0 flex-shrink-0">
-                        <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
-                        <img src="images/auto_office_1786094016416.png" className="w-full h-full object-cover" alt="Office" />
-                    </div>
-                </a>
-
-                
-                <a href="#" className="relative w-full h-[140px] rounded-[1.25rem] border-[1.5px] border-[#d0a353]/30 shadow-[0_4px_20px_rgba(208,163,83,0.05)] bg-white overflow-hidden flex items-center hover:-translate-y-1 hover:shadow-md transition group">
-                    <div className="w-[55%] pl-5 pr-2 py-4 flex flex-col justify-center z-10 bg-white h-full relative">
-                        <div className="mb-1">
-                            <div className="w-8 h-8 rounded-lg border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] mb-2 group-hover:bg-[#d0a353] group-hover:text-white transition">
-                                <i className="far fa-hospital text-sm"></i>
-                            </div>
-                            <h3 className="text-[0.95rem] font-bold text-gray-900 mb-1 leading-tight">Hospital</h3>
-                            <p className="text-[0.65rem] text-gray-500 leading-snug pr-2">Intelligent systems for better patient care and management.</p>
-                        </div>
-                        <div className="absolute bottom-4 -right-3 z-20 w-6 h-6 rounded-full bg-[#d0a353] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i className="fas fa-arrow-right text-[10px]"></i>
-                        </div>
-                    </div>
-                    <div className="w-[45%] h-full relative z-0 flex-shrink-0">
-                        <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
-                        <img src="images/auto_hospital_1786094034170.png" className="w-full h-full object-cover" alt="Hospital" />
-                    </div>
-                </a>
-
-                
-                <a href="#" className="relative w-full h-[140px] rounded-[1.25rem] border-[1.5px] border-[#d0a353]/30 shadow-[0_4px_20px_rgba(208,163,83,0.05)] bg-white overflow-hidden flex items-center hover:-translate-y-1 hover:shadow-md transition group">
-                    <div className="w-[55%] pl-5 pr-2 py-4 flex flex-col justify-center z-10 bg-white h-full relative">
-                        <div className="mb-1">
-                            <div className="w-8 h-8 rounded-lg border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] mb-2 group-hover:bg-[#d0a353] group-hover:text-white transition">
-                                <i className="fas fa-bed text-sm"></i>
-                            </div>
-                            <h3 className="text-[0.95rem] font-bold text-gray-900 mb-1 leading-tight">Hostel / PG</h3>
-                            <p className="text-[0.65rem] text-gray-500 leading-snug pr-2">Smart & secure living for hostels and PG accommodations.</p>
-                        </div>
-                        <div className="absolute bottom-4 -right-3 z-20 w-6 h-6 rounded-full bg-[#d0a353] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i className="fas fa-arrow-right text-[10px]"></i>
-                        </div>
-                    </div>
-                    <div className="w-[45%] h-full relative z-0 flex-shrink-0">
-                        <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
-                        <img src="images/auto_hostel_1786094051526.png" className="w-full h-full object-cover" alt="Hostel / PG" />
-                    </div>
-                </a>
-
-                
-                <a href="#" className="relative w-full h-[140px] rounded-[1.25rem] border-[1.5px] border-[#d0a353]/30 shadow-[0_4px_20px_rgba(208,163,83,0.05)] bg-white overflow-hidden flex items-center hover:-translate-y-1 hover:shadow-md transition group">
-                    <div className="w-[55%] pl-5 pr-2 py-4 flex flex-col justify-center z-10 bg-white h-full relative">
-                        <div className="mb-1">
-                            <div className="w-8 h-8 rounded-lg border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] mb-2 group-hover:bg-[#d0a353] group-hover:text-white transition">
-                                <i className="fas fa-shopping-bag text-sm"></i>
-                            </div>
-                            <h3 className="text-[0.95rem] font-bold text-gray-900 mb-1 leading-tight">Shopping Mall</h3>
-                            <p className="text-[0.65rem] text-gray-500 leading-snug pr-2">Enhance customer experience with smart technology.</p>
-                        </div>
-                        <div className="absolute bottom-4 -right-3 z-20 w-6 h-6 rounded-full bg-[#d0a353] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i className="fas fa-arrow-right text-[10px]"></i>
-                        </div>
-                    </div>
-                    <div className="w-[45%] h-full relative z-0 flex-shrink-0">
-                        <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
-                        <img src="images/hero.png" className="w-full h-full object-cover" alt="Shopping Mall" />
-                    </div>
-                </a>
-
-                
-                <a href="#" className="relative w-full h-[140px] rounded-[1.25rem] border-[1.5px] border-[#d0a353]/30 shadow-[0_4px_20px_rgba(208,163,83,0.05)] bg-white overflow-hidden flex items-center hover:-translate-y-1 hover:shadow-md transition group">
-                    <div className="w-[55%] pl-5 pr-2 py-4 flex flex-col justify-center z-10 bg-white h-full relative">
-                        <div className="mb-1">
-                            <div className="w-8 h-8 rounded-lg border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] mb-2 group-hover:bg-[#d0a353] group-hover:text-white transition">
-                                <i className="fas fa-warehouse text-sm"></i>
-                            </div>
-                            <h3 className="text-[0.95rem] font-bold text-gray-900 mb-1 leading-tight">Warehouse</h3>
-                            <p className="text-[0.65rem] text-gray-500 leading-snug pr-2">Automate operations and improve overall efficiency.</p>
-                        </div>
-                        <div className="absolute bottom-4 -right-3 z-20 w-6 h-6 rounded-full bg-[#d0a353] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i className="fas fa-arrow-right text-[10px]"></i>
-                        </div>
-                    </div>
-                    <div className="w-[45%] h-full relative z-0 flex-shrink-0">
-                        <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
-                        <img src="images/auto_office_1786094016416.png" className="w-full h-full object-cover" alt="Warehouse" />
-                    </div>
-                </a>
-
-                
-                <a href="#" className="relative w-full h-[140px] rounded-[1.25rem] border-[1.5px] border-[#d0a353]/30 shadow-[0_4px_20px_rgba(208,163,83,0.05)] bg-white overflow-hidden flex items-center hover:-translate-y-1 hover:shadow-md transition group">
-                    <div className="w-[55%] pl-5 pr-2 py-4 flex flex-col justify-center z-10 bg-white h-full relative">
-                        <div className="mb-1">
-                            <div className="w-8 h-8 rounded-lg border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] mb-2 group-hover:bg-[#d0a353] group-hover:text-white transition">
-                                <i className="fas fa-seedling text-sm"></i>
-                            </div>
-                            <h3 className="text-[0.95rem] font-bold text-gray-900 mb-1 leading-tight">Farmhouse</h3>
-                            <p className="text-[0.65rem] text-gray-500 leading-snug pr-2">Smart automation for a greener and safer lifestyle.</p>
-                        </div>
-                        <div className="absolute bottom-4 -right-3 z-20 w-6 h-6 rounded-full bg-[#d0a353] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i className="fas fa-arrow-right text-[10px]"></i>
-                        </div>
-                    </div>
-                    <div className="w-[45%] h-full relative z-0 flex-shrink-0">
-                        <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
-                        <img src="images/hero_pool_1786093934613.png" className="w-full h-full object-cover" alt="Farmhouse" />
-                    </div>
-                </a>
-
-                
-                <a href="#" className="relative w-full h-[140px] rounded-[1.25rem] border-[1.5px] border-[#d0a353]/30 shadow-[0_4px_20px_rgba(208,163,83,0.05)] bg-white overflow-hidden flex items-center hover:-translate-y-1 hover:shadow-md transition group">
-                    <div className="w-[55%] pl-5 pr-2 py-4 flex flex-col justify-center z-10 bg-white h-full relative">
-                        <div className="mb-1">
-                            <div className="w-8 h-8 rounded-lg border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] mb-2 group-hover:bg-[#d0a353] group-hover:text-white transition">
-                                <i className="fas fa-concierge-bell text-sm"></i>
-                            </div>
-                            <h3 className="text-[0.95rem] font-bold text-gray-900 mb-1 leading-tight">Hotel / Resort</h3>
-                            <p className="text-[0.65rem] text-gray-500 leading-snug pr-2">Deliver luxury and comfort with smart automation.</p>
-                        </div>
-                        <div className="absolute bottom-4 -right-3 z-20 w-6 h-6 rounded-full bg-[#d0a353] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i className="fas fa-arrow-right text-[10px]"></i>
-                        </div>
-                    </div>
-                    <div className="w-[45%] h-full relative z-0 flex-shrink-0">
-                        <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
-                        <img src="images/smart_home_villa_1786093285055.png" className="w-full h-full object-cover" alt="Hotel / Resort" />
-                    </div>
-                </a>
-
-                {/* Software / Web / App Dev */}
-                <a href="#" className="relative w-full h-[140px] rounded-[1.25rem] border-[1.5px] border-[#d0a353]/30 shadow-[0_4px_20px_rgba(208,163,83,0.05)] bg-white overflow-hidden flex items-center hover:-translate-y-1 hover:shadow-md transition group">
-                    <div className="w-[55%] pl-5 pr-2 py-4 flex flex-col justify-center z-10 bg-white h-full relative">
-                        <div className="mb-1">
-                            <div className="w-8 h-8 rounded-lg border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] mb-2 group-hover:bg-[#d0a353] group-hover:text-white transition">
-                                <i className="fas fa-laptop-code text-sm"></i>
-                            </div>
-                            <h3 className="text-[0.95rem] font-bold text-gray-900 mb-1 leading-tight">Software / App Dev</h3>
-                            <p className="text-[0.65rem] text-gray-500 leading-snug pr-2">Custom software, websites, and application development.</p>
-                        </div>
-                        <div className="absolute bottom-4 -right-3 z-20 w-6 h-6 rounded-full bg-[#d0a353] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i className="fas fa-arrow-right text-[10px]"></i>
-                        </div>
-                    </div>
-                    <div className="w-[45%] h-full relative z-0 flex-shrink-0">
-                        <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
-                        <img src="https://picsum.photos/seed/software/400/300" className="w-full h-full object-cover" alt="Software / App Dev" />
-                    </div>
-                </a>
-
-                {/* Jewellery Shop */}
-                <a href="#" className="relative w-full h-[140px] rounded-[1.25rem] border-[1.5px] border-[#d0a353]/30 shadow-[0_4px_20px_rgba(208,163,83,0.05)] bg-white overflow-hidden flex items-center hover:-translate-y-1 hover:shadow-md transition group">
-                    <div className="w-[55%] pl-5 pr-2 py-4 flex flex-col justify-center z-10 bg-white h-full relative">
-                        <div className="mb-1">
-                            <div className="w-8 h-8 rounded-lg border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] mb-2 group-hover:bg-[#d0a353] group-hover:text-white transition">
-                                <i className="fas fa-gem text-sm"></i>
-                            </div>
-                            <h3 className="text-[0.95rem] font-bold text-gray-900 mb-1 leading-tight">Jewellery Shop</h3>
-                            <p className="text-[0.65rem] text-gray-500 leading-snug pr-2">Advanced security and smart automation for premium retail.</p>
-                        </div>
-                        <div className="absolute bottom-4 -right-3 z-20 w-6 h-6 rounded-full bg-[#d0a353] text-white flex items-center justify-center shadow-sm group-hover:scale-110 transition">
-                            <i className="fas fa-arrow-right text-[10px]"></i>
-                        </div>
-                    </div>
-                    <div className="w-[45%] h-full relative z-0 flex-shrink-0">
-                        <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
-                        <img src="https://picsum.photos/seed/jewellery/400/300" className="w-full h-full object-cover" alt="Jewellery Shop" />
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
 
     
     <section className="py-20 lg:py-32 bg-[#fdfcf9]">
         <div className="container max-w-[1400px] text-center">
-            <div className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase mb-2">OUR COMPLETED PROJECTS</div>
-            <h2 className="text-3xl lg:text-[2.5rem] mb-2 font-bold text-[#1a202c]" style={{ fontFamily: "var(--font-heading)" }}>
+            <div className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav mb-2">OUR COMPLETED PROJECTS</div>
+            <h2 className="font-heading text-3xl lg:text-[2.5rem] mb-2 font-bold text-[#1a202c]">
                 Projects That Speak for Themselves
             </h2>
             
@@ -557,7 +282,7 @@ export default function IndexPage() {
                         </div>
                     </div>
                     <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-bold text-lg text-gray-900 mb-4">Luxury Villa</h3>
+                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Luxury Villa</h3>
                         
                         <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
                             <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
@@ -582,7 +307,7 @@ export default function IndexPage() {
                         </div>
                     </div>
                     <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-bold text-lg text-gray-900 mb-4">Hill View Villa</h3>
+                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Hill View Villa</h3>
                         
                         <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
                             <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
@@ -607,7 +332,7 @@ export default function IndexPage() {
                         </div>
                     </div>
                     <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-bold text-lg text-gray-900 mb-4">Premium Residence</h3>
+                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Premium Residence</h3>
                         
                         <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
                             <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
@@ -632,7 +357,7 @@ export default function IndexPage() {
                         </div>
                     </div>
                     <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-bold text-lg text-gray-900 mb-4">Beachside Villa</h3>
+                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Beachside Villa</h3>
                         
                         <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
                             <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
@@ -657,7 +382,7 @@ export default function IndexPage() {
                         </div>
                     </div>
                     <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-bold text-lg text-gray-900 mb-4">Luxury Villa</h3>
+                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Luxury Villa</h3>
                         
                         <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
                             <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
@@ -682,7 +407,7 @@ export default function IndexPage() {
                         </div>
                     </div>
                     <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-bold text-lg text-gray-900 mb-4">Hill View Villa</h3>
+                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Hill View Villa</h3>
                         
                         <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
                             <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
@@ -707,7 +432,7 @@ export default function IndexPage() {
                         </div>
                     </div>
                     <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-bold text-lg text-gray-900 mb-4">Premium Residence</h3>
+                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Premium Residence</h3>
                         
                         <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
                             <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
@@ -732,7 +457,7 @@ export default function IndexPage() {
                         </div>
                     </div>
                     <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-bold text-lg text-gray-900 mb-4">Beachside Villa</h3>
+                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Beachside Villa</h3>
                         
                         <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
                             <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
@@ -775,9 +500,9 @@ export default function IndexPage() {
     <section className="py-20 lg:py-32 bg-[#fdfcf9]">
         <div className="container max-w-[1400px]">
             <div className="text-center mb-12">
-                <div className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase mb-4">CHOOSE YOUR PERFECT SOLUTION</div>
-                <h2 className="text-3xl lg:text-[2.5rem] mb-4 font-bold text-[#1a202c]" style={{ fontFamily: "var(--font-heading)" }}>
-                    Smart Home <span className="text-[#1a202c] font-serif">Automation Packages</span>
+                <div className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav mb-4">CHOOSE YOUR PERFECT SOLUTION</div>
+                <h2 className="font-heading text-3xl lg:text-[2.5rem] mb-4 font-bold text-[#1a202c]">
+                    Smart Home <span className="text-[#1a202c] font-heading">Automation Packages</span>
                 </h2>
                 
                 <div className="flex items-center justify-center gap-2 mt-4">
@@ -796,7 +521,7 @@ export default function IndexPage() {
                                 <i className="fas fa-home"></i>
                             </div>
                             <div>
-                                <h3 className="font-black text-xl text-gray-900 tracking-wide">ESSENTIAL</h3>
+                                <h3 className="font-heading font-black text-xl text-gray-900 tracking-wide">ESSENTIAL</h3>
                                 <p className="text-[0.75rem] text-gray-500 font-medium">Smart & Secure Living</p>
                             </div>
                         </div>
@@ -823,7 +548,7 @@ export default function IndexPage() {
 
                 
                 <div className="bg-white rounded-xl shadow-[0_15px_40px_rgba(208,163,83,0.15)] border border-[#d0a353]/30 flex flex-col overflow-hidden h-full relative transform lg:-translate-y-2">
-                    <div className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white text-center py-2 text-[0.65rem] font-bold tracking-[0.15em] uppercase">
+                    <div className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white text-center py-2 text-[0.65rem] font-bold tracking-[0.15em] uppercase font-nav">
                         MOST POPULAR
                     </div>
                     <div className="p-8 pb-6 flex-grow">
@@ -832,7 +557,7 @@ export default function IndexPage() {
                                 <i className="far fa-gem"></i>
                             </div>
                             <div>
-                                <h3 className="font-black text-xl text-gray-900 tracking-wide">PREMIUM</h3>
+                                <h3 className="font-heading font-black text-xl text-gray-900 tracking-wide">PREMIUM</h3>
                                 <p className="text-[0.75rem] text-gray-500 font-medium">Elevate Your Lifestyle</p>
                             </div>
                         </div>
@@ -866,7 +591,7 @@ export default function IndexPage() {
                                 <i className="fas fa-crown"></i>
                             </div>
                             <div>
-                                <h3 className="font-black text-xl text-gray-900 tracking-wide">LUXURY VILLA</h3>
+                                <h3 className="font-heading font-black text-xl text-gray-900 tracking-wide">LUXURY VILLA</h3>
                                 <p className="text-[0.75rem] text-gray-500 font-medium">Complete Intelligent Living</p>
                             </div>
                         </div>
@@ -942,8 +667,8 @@ export default function IndexPage() {
 
         <div className="container relative z-10 max-w-[1400px]">
             <div className="text-center mb-12">
-                <div className="text-[0.6rem] font-bold text-[#d0a353] tracking-[0.2em] uppercase mb-3">EXPERIENCE INTELLIGENT LIVING</div>
-                <h2 className="text-3xl lg:text-4xl text-white mb-4" style={{ fontFamily: "var(--font-heading)" }}>
+                <div className="text-[0.6rem] font-bold text-[#d0a353] tracking-[0.2em] uppercase font-nav mb-3">EXPERIENCE INTELLIGENT LIVING</div>
+                <h2 className="font-heading text-3xl lg:text-4xl text-white mb-4">
                     Everything Under Your Control
                 </h2>
                 
@@ -1041,9 +766,9 @@ export default function IndexPage() {
             
             
             <div className="lg:col-span-4 text-white text-center lg:text-left">
-                <h2 className="text-4xl lg:text-[2.75rem] mb-4 font-bold leading-tight" style={{ fontFamily: "var(--font-heading)" }}>
+                <h2 className="font-heading text-4xl lg:text-[2.75rem] mb-4 font-bold leading-tight">
                     Let's Build Your<br />
-                    <span className="text-[#d0a353] font-serif tracking-wide">Smart Home</span>
+                    <span className="text-[#d0a353] font-heading tracking-wide">Smart Home</span>
                 </h2>
                 <p className="text-[0.8rem] text-gray-300 mb-8 max-w-md mx-auto lg:mx-0 leading-relaxed pr-4">
                     Schedule a free consultation and let our experts design the perfect automation solution for your space.
@@ -1093,7 +818,7 @@ export default function IndexPage() {
                 
                 
                 <div>
-                    <h4 className="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">GET IN TOUCH</h4>
+                    <h4 className="font-heading text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase font-nav mb-6">GET IN TOUCH</h4>
                     <ul className="space-y-4">
                         <li className="flex items-start gap-4">
                             <div className="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i className="fas fa-phone-alt text-[10px]"></i></div>
@@ -1118,7 +843,7 @@ export default function IndexPage() {
                 
                 
                 <div className="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
-                    <h4 className="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">SCAN TO CONNECT</h4>
+                    <h4 className="font-heading text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase font-nav mb-6">SCAN TO CONNECT</h4>
                     <p className="text-[0.8rem] text-gray-700 mb-4 max-w-[180px]">Scan the QR code to chat with us on WhatsApp</p>
                     <div className="inline-block border border-gray-200 p-2 rounded-lg bg-white shadow-sm relative">
                         <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://wa.me/919876543210" alt="WhatsApp QR" className="w-20 h-20" />
@@ -1132,7 +857,7 @@ export default function IndexPage() {
                 
                 
                 <div className="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
-                    <h4 className="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">FOLLOW US</h4>
+                    <h4 className="font-heading text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase font-nav mb-6">FOLLOW US</h4>
                     <div className="flex gap-3 mt-4">
                         <a href="#" className="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i className="fab fa-facebook-f text-sm"></i></a>
                         <a href="#" className="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i className="fab fa-instagram text-sm"></i></a>
@@ -1143,7 +868,7 @@ export default function IndexPage() {
                 
                 
                 <div className="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
-                    <h4 className="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">OUR LOCATION</h4>
+                    <h4 className="font-heading text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase font-nav mb-6">OUR LOCATION</h4>
                     <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm relative h-32 max-w-xs">
                         <img src="images/map.png" alt="Map View" className="w-full h-full object-cover opacity-80" />
                         <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/30">

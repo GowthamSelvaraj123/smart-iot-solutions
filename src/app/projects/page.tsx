@@ -23,7 +23,7 @@ export default function ProjectsPage() {
                 <span className="text-gray-600">/</span> PROJECTS
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style={{ fontFamily: "var(--font-heading)" }}>
-                Our <span className="text-[#d0a353] font-serif">Masterpieces.</span>
+                Our <span className="text-[#d0a353] font-heading">Masterpieces.</span>
             </h1>
             <p className="text-gray-300 max-w-xl text-sm leading-relaxed">
                 Explore a curated selection of our finest installations. We take pride in delivering flawless integration across a diverse range of architectures and client requirements.
@@ -116,7 +116,7 @@ export default function ProjectsPage() {
             <div className="lg:col-span-4 text-white text-center lg:text-left">
                 <h2 className="text-4xl lg:text-[2.75rem] mb-4 font-bold leading-tight" style={{ fontFamily: "var(--font-heading)" }}>
                     Let's Build Your<br />
-                    <span className="text-[#d0a353] font-serif tracking-wide">Smart Home</span>
+                    <span className="text-[#d0a353] font-heading tracking-wide">Smart Home</span>
                 </h2>
                 <p className="text-[0.8rem] text-gray-300 mb-8 max-w-md mx-auto lg:mx-0 leading-relaxed pr-4">
                     Schedule a free consultation and let our experts design the perfect automation solution for your space.

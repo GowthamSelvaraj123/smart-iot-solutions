@@ -23,7 +23,7 @@ export default function SolutionsPage() {
                 <span className="text-gray-600">/</span> SOLUTIONS
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style={{ fontFamily: "var(--font-heading)" }}>
-                Comprehensive <span className="text-[#d0a353] font-serif">Solutions.</span>
+                Comprehensive <span className="text-[#d0a353] font-heading">Solutions.</span>
             </h1>
             <p className="text-gray-300 max-w-xl text-sm leading-relaxed">
                 We engineer intelligent ecosystems tailored to the specific needs of residential, commercial, and hospitality environments. Experience the perfect synergy of comfort, security, and efficiency.
@@ -40,7 +40,7 @@ export default function SolutionsPage() {
                         <span className="w-8 h-[1px] bg-[#d0a353]"></span> RESIDENTIAL
                     </div>
                     <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 leading-tight" style={{ fontFamily: "var(--font-heading)" }}>
-                        Transform your house into a <span className="text-[#d0a353] font-serif italic">responsive home.</span>
+                        Transform your house into a <span className="text-[#d0a353] font-heading italic">responsive home.</span>
                     </h2>
                     <p className="text-gray-600 text-sm mb-8 leading-relaxed">
                         Imagine a home that anticipates your needs. Wake up to natural light as smart curtains open, enjoy the perfect climate when you return from work, and secure your entire perimeter with a single "Goodnight" command. Our residential solutions merge luxury with unparalleled convenience.
@@ -103,7 +103,7 @@ export default function SolutionsPage() {
                         <span className="w-8 h-[1px] bg-[#d0a353]"></span> COMMERCIAL
                     </div>
                     <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 leading-tight" style={{ fontFamily: "var(--font-heading)" }}>
-                        Smart infrastructure for <span className="text-[#d0a353] font-serif italic">modern business.</span>
+                        Smart infrastructure for <span className="text-[#d0a353] font-heading italic">modern business.</span>
                     </h2>
                     <p className="text-gray-600 text-sm mb-8 leading-relaxed">
                         Optimize your workplace with intelligent systems that boost productivity, reduce energy costs, and ensure absolute security. From corporate boardrooms to sprawling tech parks, we deliver robust, scalable automation.
@@ -199,7 +199,7 @@ export default function SolutionsPage() {
             <div className="lg:col-span-4 text-white text-center lg:text-left">
                 <h2 className="text-4xl lg:text-[2.75rem] mb-4 font-bold leading-tight" style={{ fontFamily: "var(--font-heading)" }}>
                     Let's Build Your<br />
-                    <span className="text-[#d0a353] font-serif tracking-wide">Smart Home</span>
+                    <span className="text-[#d0a353] font-heading tracking-wide">Smart Home</span>
                 </h2>
                 <p className="text-[0.8rem] text-gray-300 mb-8 max-w-md mx-auto lg:mx-0 leading-relaxed pr-4">
                     Schedule a free consultation and let our experts design the perfect automation solution for your space.

@@ -9,14 +9,14 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="navbar py-4 relative">
+    <nav className="navbar py-2 relative">
       <div className="container flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <img
             src="/images/smart-iot-solutions.png"
             alt="Smart IoT Solution"
-            className="w-[212px] h-[90px] object-contain"
+            className="w-[180px] h-[65px] object-contain"
           />
         </Link>
 

@@ -85,7 +85,7 @@ export default function HeroSlider() {
 
   return (
     <>
-      <div className="relative w-full max-w-3xl mt-16 mb-8 flex items-center justify-center h-[350px]">
+      <div className="relative w-full max-w-3xl mt-8 mb-4 flex items-center justify-center h-[350px]">
         <button 
           onClick={prevSlide}
           className="absolute -left-6 z-30 text-gold text-2xl hover:scale-110 transition cursor-pointer"
@@ -118,7 +118,7 @@ export default function HeroSlider() {
         </button>
       </div>
 
-      <div className="flex items-center gap-4 mb-12">
+      <div className="flex items-center gap-4 mb-6">
         {getVisibleDots().map((i) => (
           <button 
             key={i} 

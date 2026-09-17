@@ -24,7 +24,7 @@ export default function AboutPage() {
                 <span className="text-gray-600">/</span> ABOUT US
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style={{ fontFamily: "var(--font-heading)" }}>
-                Designing the future<br />of <span className="text-[#d0a353] font-serif">smart living.</span>
+                Designing the future<br />of <span className="text-[#d0a353] font-heading">smart living.</span>
             </h1>
             <p className="text-gray-300 max-w-xl text-sm leading-relaxed">
                 Smart IoT Solutions is South India's premier automation integration company. We bring architecture and technology together, creating spaces that respond to your needs seamlessly and elegantly.
@@ -52,7 +52,7 @@ export default function AboutPage() {
                         <span className="w-8 h-[1px] bg-[#d0a353]"></span> OUR PHILOSOPHY
                     </div>
                     <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 leading-tight" style={{ fontFamily: "var(--font-heading)" }}>
-                        Technology should be <span className="text-[#d0a353] font-serif italic">invisible</span> until you need it.
+                        Technology should be <span className="text-[#d0a353] font-heading italic">invisible</span> until you need it.
                     </h2>
                     <p className="text-gray-600 text-sm mb-6 leading-relaxed">
                         Founded in Coimbatore, Smart IoT Solutions was born from a simple observation: smart home technology was often too complicated, unreliable, and visually obtrusive. We set out to change that.
@@ -168,7 +168,7 @@ export default function AboutPage() {
             <div className="lg:col-span-4 text-white text-center lg:text-left">
                 <h2 className="text-4xl lg:text-[2.75rem] mb-4 font-bold leading-tight" style={{ fontFamily: "var(--font-heading)" }}>
                     Let's Build Your<br />
-                    <span className="text-[#d0a353] font-serif tracking-wide">Smart Home</span>
+                    <span className="text-[#d0a353] font-heading tracking-wide">Smart Home</span>
                 </h2>
                 <p className="text-[0.8rem] text-gray-300 mb-8 max-w-md mx-auto lg:mx-0 leading-relaxed pr-4">
                     Schedule a free consultation and let our experts design the perfect automation solution for your space.

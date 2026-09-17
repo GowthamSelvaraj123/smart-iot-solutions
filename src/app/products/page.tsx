@@ -44,7 +44,7 @@ export default function ProductsPage() {
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            Product <span className="text-[#d0a353] font-serif">Catalog.</span>
+            Product <span className="text-[#d0a353] font-heading">Catalog.</span>
           </h1>
           <p className="text-gray-300 max-w-xl text-sm leading-relaxed">
             Browse our comprehensive range of high-quality Swing Gate Operators and Boom Barriers, designed for security and ease of access.
@@ -63,7 +63,7 @@ export default function ProductsPage() {
             </div>
             <div className="md:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">LR300G-P</h2>
-              <h3 className="text-xl text-[#d0a353] font-serif mb-6">10-Port Cloud Managed Router with 110W PoE Budget</h3>
+              <h3 className="text-xl text-[#d0a353] font-heading mb-6">10-Port Cloud Managed Router with 110W PoE Budget</h3>
               
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start text-sm text-gray-600">
