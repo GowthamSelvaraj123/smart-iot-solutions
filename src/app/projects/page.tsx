@@ -34,10 +34,10 @@ export default function ProjectsPage() {
     <section className="py-12 bg-white border-b border-gray-100">
         <div className="container">
             <div className="flex flex-wrap justify-center gap-4">
-                <button className="px-6 py-2 rounded-full bg-[#121417] text-white text-xs font-bold uppercase tracking-wider">All Projects</button>
-                <button className="px-6 py-2 rounded-full bg-[#f9f8f4] text-gray-600 hover:text-[#d0a353] border border-gray-200 text-xs font-bold uppercase tracking-wider transition">Residential</button>
-                <button className="px-6 py-2 rounded-full bg-[#f9f8f4] text-gray-600 hover:text-[#d0a353] border border-gray-200 text-xs font-bold uppercase tracking-wider transition">Commercial</button>
-                <button className="px-6 py-2 rounded-full bg-[#f9f8f4] text-gray-600 hover:text-[#d0a353] border border-gray-200 text-xs font-bold uppercase tracking-wider transition">Hospitality</button>
+                <button className="cursor-pointer px-6 py-2 rounded-full bg-[#121417] text-white text-xs font-bold uppercase tracking-wider">All Projects</button>
+                <button className="cursor-pointer px-6 py-2 rounded-full bg-[#f9f8f4] text-gray-600 hover:text-[#d0a353] border border-gray-200 text-xs font-bold uppercase tracking-wider transition">Residential</button>
+                <button className="cursor-pointer px-6 py-2 rounded-full bg-[#f9f8f4] text-gray-600 hover:text-[#d0a353] border border-gray-200 text-xs font-bold uppercase tracking-wider transition">Commercial</button>
+                <button className="cursor-pointer px-6 py-2 rounded-full bg-[#f9f8f4] text-gray-600 hover:text-[#d0a353] border border-gray-200 text-xs font-bold uppercase tracking-wider transition">Hospitality</button>
             </div>
         </div>
     </section>

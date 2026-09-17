@@ -177,7 +177,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-[#0b101a] px-4 text-[0.65rem] font-bold tracking-wide hover:opacity-90 transition"
+              className="cursor-pointer bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-[#0b101a] px-4 text-[0.65rem] font-bold tracking-wide hover:opacity-90 transition"
             >
               SUBSCRIBE
             </button>

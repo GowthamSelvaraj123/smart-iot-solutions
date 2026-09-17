@@ -76,7 +76,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button 
-          className="mobile-menu-btn text-gray-800 text-2xl focus:outline-none"
+          className="cursor-pointer mobile-menu-btn text-gray-800 text-2xl focus:outline-none"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>

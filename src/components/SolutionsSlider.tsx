@@ -33,22 +33,22 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
                         <div className="flex flex-wrap gap-2">
                             <button 
                                 onClick={() => setActiveCategory('All')}
-                                className={`px-5 py-2 rounded-full text-sm font-bold transition shadow-sm ${activeCategory === 'All' ? 'bg-[#1a202c] text-white hover:bg-black' : 'bg-transparent text-gray-700 hover:bg-gray-200 border border-transparent hover:border-gray-200'}`}>
+                                className={`cursor-pointer px-5 py-2 rounded-full text-sm font-bold transition shadow-sm ${activeCategory === 'All' ? 'bg-[#1a202c] text-white hover:bg-black' : 'bg-transparent text-gray-700 hover:bg-gray-200 border border-transparent hover:border-gray-200'}`}>
                                 All solutions
                             </button>
                             <button 
                                 onClick={() => setActiveCategory('Residential')}
-                                className={`px-5 py-2 rounded-full text-sm font-bold transition ${activeCategory === 'Residential' ? 'bg-[#1a202c] text-white shadow-sm hover:bg-black' : 'bg-transparent text-gray-700 hover:bg-gray-200 border border-transparent hover:border-gray-200'}`}>
+                                className={`cursor-pointer px-5 py-2 rounded-full text-sm font-bold transition ${activeCategory === 'Residential' ? 'bg-[#1a202c] text-white shadow-sm hover:bg-black' : 'bg-transparent text-gray-700 hover:bg-gray-200 border border-transparent hover:border-gray-200'}`}>
                                 Residential
                             </button>
                             <button 
                                 onClick={() => setActiveCategory('Commercial')}
-                                className={`px-5 py-2 rounded-full text-sm font-bold transition ${activeCategory === 'Commercial' ? 'bg-[#1a202c] text-white shadow-sm hover:bg-black' : 'bg-transparent text-gray-700 hover:bg-gray-200 border border-transparent hover:border-gray-200'}`}>
+                                className={`cursor-pointer px-5 py-2 rounded-full text-sm font-bold transition ${activeCategory === 'Commercial' ? 'bg-[#1a202c] text-white shadow-sm hover:bg-black' : 'bg-transparent text-gray-700 hover:bg-gray-200 border border-transparent hover:border-gray-200'}`}>
                                 Commercial
                             </button>
                             <button 
                                 onClick={() => setActiveCategory('Specialized')}
-                                className={`px-5 py-2 rounded-full text-sm font-bold transition ${activeCategory === 'Specialized' ? 'bg-[#1a202c] text-white shadow-sm hover:bg-black' : 'bg-transparent text-gray-700 hover:bg-gray-200 border border-transparent hover:border-gray-200'}`}>
+                                className={`cursor-pointer px-5 py-2 rounded-full text-sm font-bold transition ${activeCategory === 'Specialized' ? 'bg-[#1a202c] text-white shadow-sm hover:bg-black' : 'bg-transparent text-gray-700 hover:bg-gray-200 border border-transparent hover:border-gray-200'}`}>
                                 Specialized
                             </button>
                         </div>
@@ -92,7 +92,7 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
                         <p className="text-[0.85rem] text-gray-500 mb-8 font-medium px-2 text-center leading-relaxed flex-grow">{item.desc}</p>
                         
                         <div className="mt-auto flex justify-center items-center gap-6">
-                            <button className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] hover:shadow-lg hover:-translate-y-0.5 text-white px-5 py-2 rounded-full text-[0.7rem] font-bold transition uppercase tracking-wider">Learn more</button>
+                            <button className="cursor-pointer bg-gradient-to-r from-[#ca9740] to-[#dfb45e] hover:shadow-lg hover:-translate-y-0.5 text-white px-5 py-2 rounded-full text-[0.7rem] font-bold transition uppercase tracking-wider">Learn more</button>
                             <span className="text-[#ca9740] hover:underline text-[0.75rem] cursor-pointer font-bold tracking-wide uppercase">Quote <i className="fas fa-chevron-right text-[8px] ml-1"></i></span>
                         </div>
                     </div>

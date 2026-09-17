@@ -105,7 +105,7 @@ export default function ContactPage() {
                                 <textarea name="message" className="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm focus:outline-none focus:border-[#d0a353] h-32 resize-none" placeholder="Tell us about your project..." required></textarea>
                             </div>
                             <div id="form-status" className="text-xs font-bold hidden"></div>
-                            <button type="submit" id="submit-button" className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-8 py-3.5 rounded text-sm font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition uppercase tracking-wider w-full">
+                            <button type="submit" id="submit-button" className="cursor-pointer bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-8 py-3.5 rounded text-sm font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition uppercase tracking-wider w-full">
                                 Send Request
                             </button>
                         </form>

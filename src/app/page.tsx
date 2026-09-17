@@ -109,6 +109,8 @@ export default function IndexPage() {
         </div>
     </section>
 
+    <SolutionsSlider solutions={solutions} />
+
     
     <section className="py-[60px] relative overflow-hidden bg-[#fdfcf9]">
         
@@ -123,10 +125,10 @@ export default function IndexPage() {
         </div>
 
         <div className="container relative z-10 max-w-[1400px]">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
                 
                 
-                <div className="lg:col-span-5 relative pt-4">
+                <div className="lg:col-span-5 relative pt-0">
                     <div className="flex items-center gap-4 mb-4">
                         <span className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav whitespace-nowrap">OUR REACH, THEIR TRUST</span>
                         <span className="flex-grow h-[1px] bg-[#d0a353]/40 relative">
@@ -154,7 +156,7 @@ export default function IndexPage() {
                 </div>
                 
                 
-                <div className="lg:col-span-7 pt-2">
+                <div className="lg:col-span-7 pt-0">
                     <div className="flex items-center gap-4 mb-10">
                         <span className="flex-grow h-[1px] bg-[#d0a353]/30 relative">
                             <span className="absolute right-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-[#d0a353] rotate-45"></span>
@@ -244,11 +246,6 @@ export default function IndexPage() {
             </div>
         </div>
     </section>
-
-    
-    <SolutionsSlider solutions={solutions} />
-
-
 
     
     <section className="py-20 lg:py-32 bg-[#fdfcf9]">
@@ -481,11 +478,11 @@ export default function IndexPage() {
                     <i className="fas fa-chevron-left text-xs"></i>
                 </button>
                 <div id="carousel-dots" className="flex items-center gap-2">
-                    <button className="carousel-dot w-2 h-2 rounded-full bg-[#d0a353] transition-all duration-300" data-index="0"></button>
-                    <button className="carousel-dot w-2 h-2 rounded-full border border-[#d0a353]/50 hover:bg-[#d0a353]/30 transition-all duration-300" data-index="1"></button>
-                    <button className="carousel-dot w-2 h-2 rounded-full border border-[#d0a353]/50 hover:bg-[#d0a353]/30 transition-all duration-300" data-index="2"></button>
-                    <button className="carousel-dot w-2 h-2 rounded-full border border-[#d0a353]/50 hover:bg-[#d0a353]/30 transition-all duration-300" data-index="3"></button>
-                    <button className="carousel-dot w-2 h-2 rounded-full border border-[#d0a353]/50 hover:bg-[#d0a353]/30 transition-all duration-300" data-index="4"></button>
+                    <button className="cursor-pointer carousel-dot w-2 h-2 rounded-full bg-[#d0a353] transition-all duration-300" data-index="0"></button>
+                    <button className="cursor-pointer carousel-dot w-2 h-2 rounded-full border border-[#d0a353]/50 hover:bg-[#d0a353]/30 transition-all duration-300" data-index="1"></button>
+                    <button className="cursor-pointer carousel-dot w-2 h-2 rounded-full border border-[#d0a353]/50 hover:bg-[#d0a353]/30 transition-all duration-300" data-index="2"></button>
+                    <button className="cursor-pointer carousel-dot w-2 h-2 rounded-full border border-[#d0a353]/50 hover:bg-[#d0a353]/30 transition-all duration-300" data-index="3"></button>
+                    <button className="cursor-pointer carousel-dot w-2 h-2 rounded-full border border-[#d0a353]/50 hover:bg-[#d0a353]/30 transition-all duration-300" data-index="4"></button>
                 </div>
                 <button id="next-project" className="w-8 h-8 rounded-full border-2 border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] hover:border-[#d0a353] hover:bg-[#d0a353] hover:text-white transition cursor-pointer">
                     <i className="fas fa-chevron-right text-xs"></i>
@@ -542,7 +539,7 @@ export default function IndexPage() {
                         </ul>
                     </div>
                     <div className="px-8 pb-8 mt-auto">
-                        <button className="w-full py-3.5 border-2 border-[#d0a353] text-[#d0a353] text-[0.8rem] font-bold rounded tracking-wide hover:bg-[#d0a353] hover:text-white transition">GET STARTED</button>
+                        <button className="cursor-pointer w-full py-3.5 border-2 border-[#d0a353] text-[#d0a353] text-[0.8rem] font-bold rounded tracking-wide hover:bg-[#d0a353] hover:text-white transition">GET STARTED</button>
                     </div>
                 </div>
 
@@ -579,7 +576,7 @@ export default function IndexPage() {
                         </ul>
                     </div>
                     <div className="px-8 pb-8 mt-auto">
-                        <button className="w-full py-3.5 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white text-[0.8rem] font-bold rounded tracking-wide hover:opacity-90 shadow-md transition">GET STARTED</button>
+                        <button className="cursor-pointer w-full py-3.5 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white text-[0.8rem] font-bold rounded tracking-wide hover:opacity-90 shadow-md transition">GET STARTED</button>
                     </div>
                 </div>
 
@@ -613,7 +610,7 @@ export default function IndexPage() {
                         </ul>
                     </div>
                     <div className="px-8 pb-8 mt-auto">
-                        <button className="w-full py-3.5 border-2 border-[#d0a353] text-[#d0a353] text-[0.8rem] font-bold rounded tracking-wide hover:bg-[#d0a353] hover:text-white transition">GET STARTED</button>
+                        <button className="cursor-pointer w-full py-3.5 border-2 border-[#d0a353] text-[#d0a353] text-[0.8rem] font-bold rounded tracking-wide hover:bg-[#d0a353] hover:text-white transition">GET STARTED</button>
                     </div>
                 </div>
 
