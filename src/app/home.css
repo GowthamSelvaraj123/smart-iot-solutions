@@ -433,3 +433,12 @@ footer a:hover {
 }
 
 @media (min-width: 768px) { .mobile-menu-btn { display: none !important; } }
+
+/* Hide scrollbar for horizontal sliders */
+.hide-scroll-bar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}

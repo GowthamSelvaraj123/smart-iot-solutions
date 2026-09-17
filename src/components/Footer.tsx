@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0b101a] pt-16 pb-6">
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
+    <footer className="bg-[#0b101a] pt-24 pb-16">
+      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 ">
         {/* Logo & About */}
-        <div className="lg:col-span-4 lg:pr-6">
-          <Link href="/" className="inline-flex items-center mb-6">
+        <div className="">
+          <Link href="/" className="inline-flex items-center mb-10">
             <img
               src="/images/smart-iot-solutions.png"
               alt="Smart IoT Solution"
@@ -19,11 +19,11 @@ export default function Footer() {
         </div>
 
         {/* OUR SERVICES */}
-        <div className="lg:col-span-3">
-          <h4 className="text-white text-xs font-bold tracking-wide uppercase mb-6">
+        <div className="">
+          <h4 className="text-white text-xs font-bold tracking-wide uppercase mb-10">
             OUR SERVICES
           </h4>
-          <div className="grid grid-cols-2 gap-x-2 gap-y-3">
+          <div className="grid grid-cols-2 gap-x-2 gap-y-8">
             <Link
               href="/solutions"
               className="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"
@@ -91,79 +91,80 @@ export default function Footer() {
         </div>
 
         {/* QUICK LINKS */}
-        <div className="lg:col-span-2">
-          <h4 className="text-white text-xs font-bold tracking-wide uppercase mb-6">
+        <div className="">
+          <h4 className="text-white text-xs font-bold tracking-wide uppercase mb-10">
             QUICK LINKS
           </h4>
-          <div className="grid grid-cols-2 gap-x-2 gap-y-3">
-            <div className="flex flex-col gap-3">
-              <Link
-                href="/"
-                className="text-[0.65rem] text-gray-400 hover:text-white"
-              >
-                Home
-              </Link>
-              <Link
-                href="/about"
-                className="text-[0.65rem] text-gray-400 hover:text-white"
-              >
-                About Us
-              </Link>
-              <Link
-                href="/solutions"
-                className="text-[0.65rem] text-gray-400 hover:text-white"
-              >
-                Solutions
-              </Link>
-              <Link
-                href="/products"
-                className="text-[0.65rem] text-gray-400 hover:text-white"
-              >
-                Products
-              </Link>
-              <Link
-                href="/projects"
-                className="text-[0.65rem] text-gray-400 hover:text-white"
-              >
-                Our Projects
-              </Link>
-            </div>
-            <div className="flex flex-col gap-3">
-              <Link
-                href="/about"
-                className="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"
-              >
-                <i className="fas fa-chevron-right text-gray-600 text-[8px]"></i>{" "}
-                Why Choose Us
-              </Link>
-              <Link
-                href="#"
-                className="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"
-              >
-                <i className="fas fa-chevron-right text-gray-600 text-[8px]"></i>{" "}
-                Blog
-              </Link>
-              <Link
-                href="/contact"
-                className="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"
-              >
-                <i className="fas fa-chevron-right text-gray-600 text-[8px]"></i>{" "}
-                Careers
-              </Link>
-              <Link
-                href="/contact"
-                className="text-[0.65rem] text-gray-400 hover:text-white flex items-center gap-1.5"
-              >
-                <i className="fas fa-chevron-right text-gray-600 text-[8px]"></i>{" "}
-                Contact Us
-              </Link>
-            </div>
+          <div className="grid grid-cols-2 gap-x-2 gap-y-8">
+            <Link
+              href="/"
+              className="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"
+            >
+              <i className="fas fa-chevron-right text-[#d0a353] text-[8px]"></i>{" "}
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"
+            >
+              <i className="fas fa-chevron-right text-[#d0a353] text-[8px]"></i>{" "}
+              Why Choose Us
+            </Link>
+            <Link
+              href="/about"
+              className="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"
+            >
+              <i className="fas fa-chevron-right text-[#d0a353] text-[8px]"></i>{" "}
+              About Us
+            </Link>
+            <Link
+              href="#"
+              className="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"
+            >
+              <i className="fas fa-chevron-right text-[#d0a353] text-[8px]"></i>{" "}
+              Blog
+            </Link>
+            <Link
+              href="/solutions"
+              className="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"
+            >
+              <i className="fas fa-chevron-right text-[#d0a353] text-[8px]"></i>{" "}
+              Solutions
+            </Link>
+            <Link
+              href="/contact"
+              className="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"
+            >
+              <i className="fas fa-chevron-right text-[#d0a353] text-[8px]"></i>{" "}
+              Careers
+            </Link>
+            <Link
+              href="/products"
+              className="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"
+            >
+              <i className="fas fa-chevron-right text-[#d0a353] text-[8px]"></i>{" "}
+              Products
+            </Link>
+            <Link
+              href="/contact"
+              className="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5"
+            >
+              <i className="fas fa-chevron-right text-[#d0a353] text-[8px]"></i>{" "}
+              Contact Us
+            </Link>
+            <Link
+              href="/projects"
+              className="text-[0.65rem] text-gray-400 hover:text-[#d0a353] flex items-center gap-1.5 col-span-2"
+            >
+              <i className="fas fa-chevron-right text-[#d0a353] text-[8px]"></i>{" "}
+              Our Projects
+            </Link>
           </div>
         </div>
 
         {/* NEWSLETTER */}
-        <div className="lg:col-span-3 pl-0 lg:pl-4">
-          <h4 className="text-[#d0a353] text-xs font-bold tracking-wide uppercase mb-6">
+        <div className="pl-0 lg:pl-4">
+          <h4 className="text-[#d0a353] text-xs font-bold tracking-wide uppercase mb-10">
             NEWSLETTER
           </h4>
           <p className="text-[0.7rem] text-gray-400 mb-4">
@@ -186,7 +187,8 @@ export default function Footer() {
       </div>
 
       {/* FOOTER BOTTOM */}
-      <div className="container border-t border-gray-800 pt-6 mt-8 flex flex-wrap justify-between items-center text-[0.65rem] text-gray-400">
+      <div className="w-full border-t border-gray-800 mt-12">
+        <div className="container flex flex-wrap justify-between items-center text-[0.65rem] text-gray-400" style={{ paddingTop: "24px", paddingBottom: "24px" }}>
         <div>&copy; 2024 Smart Solution IoT. All Rights Reserved.</div>
         <div className="flex items-center justify-center gap-6 my-3 lg:my-0">
           <Link href="#" className="hover:text-white">
@@ -204,6 +206,7 @@ export default function Footer() {
         <div>
           Designed with <i className="fas fa-heart text-[#d0a353] mx-1"></i> for a smarter tomorrow
         </div>
+      </div>
       </div>
     </footer>
   );

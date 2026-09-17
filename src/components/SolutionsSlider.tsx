@@ -23,7 +23,7 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
 
     return (
         <section className="py-[60px] bg-white relative overflow-hidden">
-            <div className="container relative z-10 max-w-[1400px]">
+            <div className="container relative z-10">
                 <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
                     <div className="flex flex-col gap-6">
                         <h2 className="font-heading text-4xl lg:text-[3.2rem] font-bold text-[#1a202c] tracking-tight">
@@ -69,11 +69,11 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
             {/* Full-width slider container that bleeds to the right but aligns with the left container edge */}
             <div 
                 ref={sliderRef} 
-                className="flex overflow-x-auto snap-x snap-mandatory gap-6 hide-scroll-bar pb-8 pt-4 w-full" 
+                className="flex overflow-x-auto snap-x snap-mandatory gap-6 hide-scroll-bar pb-8 pt-4" 
                 style={{ 
                     scrollBehavior: 'smooth',
-                    paddingLeft: 'calc(max(0px, (100vw - 1400px) / 2) + 1.5rem)',
-                    paddingRight: 'calc(max(0px, (100vw - 1400px) / 2) + 1.5rem)'
+                    marginLeft: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)',
+                    paddingRight: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)'
                 }}
             >
                 {filteredSolutions.map((item, idx) => (

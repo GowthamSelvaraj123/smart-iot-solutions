@@ -181,7 +181,7 @@ export default function ContactPage() {
     
     <section className="bg-[#fdfcf9] py-12 border-b-4 border-[#0b101a]">
         <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 
                 <div>
@@ -206,20 +206,6 @@ export default function ContactPage() {
                             <span className="text-[0.8rem] font-bold text-gray-700 mt-1">Mon - Sat : 9:00 AM - 7:00 PM</span>
                         </li>
                     </ul>
-                </div>
-                
-                
-                <div className="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
-                    <h4 className="text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase mb-6">SCAN TO CONNECT</h4>
-                    <p className="text-[0.8rem] text-gray-700 mb-4 max-w-[180px]">Scan the QR code to chat with us on WhatsApp</p>
-                    <div className="inline-block border border-gray-200 p-2 rounded-lg bg-white shadow-sm relative">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://wa.me/919876543210" alt="WhatsApp QR" className="w-20 h-20" />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="bg-white rounded-full p-0.5 shadow-sm">
-                                <i className="fab fa-whatsapp text-green-500 text-lg"></i>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 
                 

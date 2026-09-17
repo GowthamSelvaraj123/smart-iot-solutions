@@ -248,245 +248,118 @@ export default function IndexPage() {
     </section>
 
     
-    <section className="py-20 lg:py-32 bg-[#fdfcf9]">
-        <div className="container max-w-[1400px] text-center">
+    <section className="py-[60px] bg-white">
+        <div className="container max-w-[1400px]">
             <div className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav mb-2">OUR COMPLETED PROJECTS</div>
             <h2 className="font-heading text-3xl lg:text-[2.5rem] mb-2 font-bold text-[#1a202c]">
                 Projects That Speak for Themselves
             </h2>
             
             
-            <div className="flex items-center justify-center gap-2 mt-2 mb-2">
-                <span className="w-16 h-[1px] bg-gradient-to-r from-transparent to-[#d0a353]/50"></span>
+            <div className="flex items-center justify-start gap-3 mt-3 mb-4">
                 <i className="fas fa-gem text-[#d0a353] text-[10px]"></i>
-                <span className="w-16 h-[1px] bg-gradient-to-l from-transparent to-[#d0a353]/50"></span>
+                <span className="w-24 h-[1px] bg-gradient-to-r from-[#d0a353]/50 to-transparent"></span>
             </div>
             
             <p className="text-sm text-gray-600 font-medium mb-8">Smart Solutions. Beautiful Spaces. Happy Clients.</p>
 
-            <style>{`
-                .hide-scroll-bar::-webkit-scrollbar { display: none; }
-                .hide-scroll-bar { -ms-overflow-style: none; scrollbar-width: none; }
-            `}</style>
-            <div id="projects-carousel" className="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scroll-bar pb-4 text-left">
+                        {/* Creative Bento Box Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-4 lg:gap-6 mt-10 lg:h-[600px] mb-8">
                 
-                
-                <div className="flex-none w-[90%] md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] snap-start bg-white border border-gray-100 rounded-xl overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-lg transition flex flex-col">
-                    <div className="relative h-56">
-                        <img src="images/auto_villa_1786093987554.png" alt="Luxury Villa" className="w-full h-full object-cover" />
-                        <div className="absolute top-4 left-4 bg-[#1a202c]/90 backdrop-blur-sm text-white text-[0.65rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm font-bold tracking-wide">
-                            <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Coimbatore
-                        </div>
+                {/* 1. Large Feature Card (Luxury Villa) */}
+                <div className="group relative overflow-hidden rounded-2xl md:col-span-2 lg:col-span-2 lg:row-span-2 shadow-lg cursor-pointer">
+                    <img src="images/auto_villa_1786093987554.png" alt="Luxury Villa" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
+                    
+                    {/* Gradient Overlay for text readability */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c121e]/90 via-[#0c121e]/40 to-transparent"></div>
+                    
+                    {/* Location Badge */}
+                    <div className="absolute top-5 left-5 bg-white/10 backdrop-blur-md text-white text-[0.65rem] px-4 py-2 rounded-full flex items-center gap-2 shadow-sm font-bold tracking-wide z-10 border border-white/20">
+                        <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Coimbatore
                     </div>
-                    <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Luxury Villa</h3>
+                    
+                    {/* Glassmorphism Content Panel */}
+                    <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 className="font-heading font-black text-3xl lg:text-4xl text-white mb-4 tracking-wide group-hover:text-[#d0a353] transition-colors">Luxury Villa</h3>
                         
-                        <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
-                            <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-video text-[#d0a353]"></i> CCTV</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-torii-gate text-[#d0a353]"></i> Gate Automation</span>
+                        <div className="flex flex-wrap gap-x-5 gap-y-3 mb-6 text-[0.75rem] font-bold text-gray-300">
+                            <span className="flex items-center gap-2"><i className="fas fa-home text-[#d0a353] text-sm"></i> Home Automation</span>
+                            <span className="flex items-center gap-2"><i className="fas fa-video text-[#d0a353] text-sm"></i> CCTV</span>
+                            <span className="flex items-center gap-2"><i className="fas fa-torii-gate text-[#d0a353] text-sm"></i> Gate Automation</span>
                         </div>
                         
-                        <div className="mt-auto">
-                            <a href="#" className="inline-flex items-center justify-center gap-2 border border-[#d0a353] text-[#d0a353] px-6 py-2 rounded text-[0.7rem] font-bold hover:bg-[#d0a353] hover:text-white transition w-full md:w-max">
-                                View Project <i className="fas fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div className="flex-none w-[90%] md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] snap-start bg-white border border-gray-100 rounded-xl overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-lg transition flex flex-col">
-                    <div className="relative h-56">
-                        <img src="images/hero_pool_1786093934613.png" alt="Hill View Villa" className="w-full h-full object-cover" />
-                        <div className="absolute top-4 left-4 bg-[#1a202c]/90 backdrop-blur-sm text-white text-[0.65rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm font-bold tracking-wide">
-                            <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Ooty
-                        </div>
-                    </div>
-                    <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Hill View Villa</h3>
-                        
-                        <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
-                            <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-video text-[#d0a353]"></i> CCTV</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-lock text-[#d0a353]"></i> Smart Lock</span>
-                        </div>
-                        
-                        <div className="mt-auto">
-                            <a href="#" className="inline-flex items-center justify-center gap-2 border border-[#d0a353] text-[#d0a353] px-6 py-2 rounded text-[0.7rem] font-bold hover:bg-[#d0a353] hover:text-white transition w-full md:w-max">
-                                View Project <i className="fas fa-arrow-right text-[10px]"></i>
-                            </a>
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                            <button className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-[#0c121e] px-7 py-3 rounded-full text-xs font-black tracking-wide shadow-[0_0_15px_rgba(208,163,83,0.4)] hover:shadow-[0_0_25px_rgba(208,163,83,0.6)] transition-all">
+                                EXPLORE PROJECT <i className="fas fa-arrow-right ml-2"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-                
-                
-                <div className="flex-none w-[90%] md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] snap-start bg-white border border-gray-100 rounded-xl overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-lg transition flex flex-col">
-                    <div className="relative h-56">
-                        <img src="images/auto_apartment_1786094001400.png" alt="Premium Residence" className="w-full h-full object-cover" />
-                        <div className="absolute top-4 left-4 bg-[#1a202c]/90 backdrop-blur-sm text-white text-[0.65rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm font-bold tracking-wide">
-                            <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Bangalore
-                        </div>
-                    </div>
-                    <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Premium Residence</h3>
-                        
-                        <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
-                            <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-video text-[#d0a353]"></i> CCTV</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-mobile-alt text-[#d0a353]"></i> Video Door Phone</span>
-                        </div>
-                        
-                        <div className="mt-auto">
-                            <a href="#" className="inline-flex items-center justify-center gap-2 border border-[#d0a353] text-[#d0a353] px-6 py-2 rounded text-[0.7rem] font-bold hover:bg-[#d0a353] hover:text-white transition w-full md:w-max">
-                                View Project <i className="fas fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div className="flex-none w-[90%] md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] snap-start bg-white border border-gray-100 rounded-xl overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-lg transition flex flex-col">
-                    <div className="relative h-56">
-                        <img src="images/hero_gate_1786093948118.png" alt="Beachside Villa" className="w-full h-full object-cover" />
-                        <div className="absolute top-4 left-4 bg-[#1a202c]/90 backdrop-blur-sm text-white text-[0.65rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm font-bold tracking-wide">
-                            <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Chennai
-                        </div>
-                    </div>
-                    <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Beachside Villa</h3>
-                        
-                        <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
-                            <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-video text-[#d0a353]"></i> CCTV</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-torii-gate text-[#d0a353]"></i> Gate Automation</span>
-                        </div>
-                        
-                        <div className="mt-auto">
-                            <a href="#" className="inline-flex items-center justify-center gap-2 border border-[#d0a353] text-[#d0a353] px-6 py-2 rounded text-[0.7rem] font-bold hover:bg-[#d0a353] hover:text-white transition w-full md:w-max">
-                                View Project <i className="fas fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div className="flex-none w-[90%] md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] snap-start bg-white border border-gray-100 rounded-xl overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-lg transition flex flex-col">
-                    <div className="relative h-56">
-                        <img src="images/auto_villa_1786093987554.png" alt="Luxury Villa" className="w-full h-full object-cover" />
-                        <div className="absolute top-4 left-4 bg-[#1a202c]/90 backdrop-blur-sm text-white text-[0.65rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm font-bold tracking-wide">
-                            <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Coimbatore
-                        </div>
-                    </div>
-                    <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Luxury Villa</h3>
-                        
-                        <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
-                            <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-video text-[#d0a353]"></i> CCTV</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-torii-gate text-[#d0a353]"></i> Gate Automation</span>
-                        </div>
-                        
-                        <div className="mt-auto">
-                            <a href="#" className="inline-flex items-center justify-center gap-2 border border-[#d0a353] text-[#d0a353] px-6 py-2 rounded text-[0.7rem] font-bold hover:bg-[#d0a353] hover:text-white transition w-full md:w-max">
-                                View Project <i className="fas fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div className="flex-none w-[90%] md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] snap-start bg-white border border-gray-100 rounded-xl overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-lg transition flex flex-col">
-                    <div className="relative h-56">
-                        <img src="images/hero_pool_1786093934613.png" alt="Hill View Villa" className="w-full h-full object-cover" />
-                        <div className="absolute top-4 left-4 bg-[#1a202c]/90 backdrop-blur-sm text-white text-[0.65rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm font-bold tracking-wide">
-                            <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Ooty
-                        </div>
-                    </div>
-                    <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Hill View Villa</h3>
-                        
-                        <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
-                            <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-video text-[#d0a353]"></i> CCTV</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-lock text-[#d0a353]"></i> Smart Lock</span>
-                        </div>
-                        
-                        <div className="mt-auto">
-                            <a href="#" className="inline-flex items-center justify-center gap-2 border border-[#d0a353] text-[#d0a353] px-6 py-2 rounded text-[0.7rem] font-bold hover:bg-[#d0a353] hover:text-white transition w-full md:w-max">
-                                View Project <i className="fas fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div className="flex-none w-[90%] md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] snap-start bg-white border border-gray-100 rounded-xl overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-lg transition flex flex-col">
-                    <div className="relative h-56">
-                        <img src="images/auto_apartment_1786094001400.png" alt="Premium Residence" className="w-full h-full object-cover" />
-                        <div className="absolute top-4 left-4 bg-[#1a202c]/90 backdrop-blur-sm text-white text-[0.65rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm font-bold tracking-wide">
-                            <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Bangalore
-                        </div>
-                    </div>
-                    <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Premium Residence</h3>
-                        
-                        <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
-                            <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-video text-[#d0a353]"></i> CCTV</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-mobile-alt text-[#d0a353]"></i> Video Door Phone</span>
-                        </div>
-                        
-                        <div className="mt-auto">
-                            <a href="#" className="inline-flex items-center justify-center gap-2 border border-[#d0a353] text-[#d0a353] px-6 py-2 rounded text-[0.7rem] font-bold hover:bg-[#d0a353] hover:text-white transition w-full md:w-max">
-                                View Project <i className="fas fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div className="flex-none w-[90%] md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] snap-start bg-white border border-gray-100 rounded-xl overflow-hidden shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-lg transition flex flex-col">
-                    <div className="relative h-56">
-                        <img src="images/hero_gate_1786093948118.png" alt="Beachside Villa" className="w-full h-full object-cover" />
-                        <div className="absolute top-4 left-4 bg-[#1a202c]/90 backdrop-blur-sm text-white text-[0.65rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm font-bold tracking-wide">
-                            <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Chennai
-                        </div>
-                    </div>
-                    <div className="p-5 flex-grow flex flex-col">
-                        <h3 className="font-heading font-bold text-lg text-gray-900 mb-4">Beachside Villa</h3>
-                        
-                        <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6 text-[0.65rem] font-bold text-gray-500">
-                            <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Home Automation</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-video text-[#d0a353]"></i> CCTV</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-torii-gate text-[#d0a353]"></i> Gate Automation</span>
-                        </div>
-                        
-                        <div className="mt-auto">
-                            <a href="#" className="inline-flex items-center justify-center gap-2 border border-[#d0a353] text-[#d0a353] px-6 py-2 rounded text-[0.7rem] font-bold hover:bg-[#d0a353] hover:text-white transition w-full md:w-max">
-                                View Project <i className="fas fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
 
-            
-            <div className="flex justify-center items-center gap-3 mt-4">
-                <button id="prev-project" className="w-8 h-8 rounded-full border-2 border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] hover:border-[#d0a353] hover:bg-[#d0a353] hover:text-white transition cursor-pointer">
-                    <i className="fas fa-chevron-left text-xs"></i>
-                </button>
-                <div id="carousel-dots" className="flex items-center gap-2">
-                    <button className="cursor-pointer carousel-dot w-2 h-2 rounded-full bg-[#d0a353] transition-all duration-300" data-index="0"></button>
-                    <button className="cursor-pointer carousel-dot w-2 h-2 rounded-full border border-[#d0a353]/50 hover:bg-[#d0a353]/30 transition-all duration-300" data-index="1"></button>
-                    <button className="cursor-pointer carousel-dot w-2 h-2 rounded-full border border-[#d0a353]/50 hover:bg-[#d0a353]/30 transition-all duration-300" data-index="2"></button>
-                    <button className="cursor-pointer carousel-dot w-2 h-2 rounded-full border border-[#d0a353]/50 hover:bg-[#d0a353]/30 transition-all duration-300" data-index="3"></button>
-                    <button className="cursor-pointer carousel-dot w-2 h-2 rounded-full border border-[#d0a353]/50 hover:bg-[#d0a353]/30 transition-all duration-300" data-index="4"></button>
+                {/* 2. Top Right Square (Hill View Villa) */}
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer min-h-[300px] lg:min-h-0">
+                    <img src="images/hero_pool_1786093934613.png" alt="Hill View Villa" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c121e]/90 via-[#0c121e]/20 to-transparent"></div>
+                    
+                    <div className="absolute top-4 left-4 bg-white/10 backdrop-blur-md text-white text-[0.6rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 border border-white/20 z-10 font-bold">
+                        <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Ooty
+                    </div>
+                    
+                    <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 className="font-heading font-bold text-xl text-white mb-2 group-hover:text-[#d0a353] transition-colors">Hill View Villa</h3>
+                        <div className="flex flex-wrap gap-x-3 gap-y-2 mb-3 text-[0.65rem] font-bold text-gray-300">
+                            <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Automation</span>
+                            <span className="flex items-center gap-1.5"><i className="fas fa-video text-[#d0a353]"></i> CCTV</span>
+                        </div>
+                        <button className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#d0a353] text-[0.65rem] font-bold tracking-wide hover:text-white">
+                            VIEW DETAILS <i className="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
                 </div>
-                <button id="next-project" className="w-8 h-8 rounded-full border-2 border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] hover:border-[#d0a353] hover:bg-[#d0a353] hover:text-white transition cursor-pointer">
-                    <i className="fas fa-chevron-right text-xs"></i>
-                </button>
+
+                {/* 3. Tall Right Panel (Premium Residence) */}
+                <div className="group relative overflow-hidden rounded-2xl lg:row-span-2 shadow-lg cursor-pointer min-h-[350px] lg:min-h-0">
+                    <img src="images/auto_apartment_1786094001400.png" alt="Premium Residence" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c121e]/90 via-[#0c121e]/30 to-transparent"></div>
+                    
+                    <div className="absolute top-4 left-4 bg-white/10 backdrop-blur-md text-white text-[0.6rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 border border-white/20 z-10 font-bold">
+                        <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Bangalore
+                    </div>
+                    
+                    <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8 transform translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 className="font-heading font-bold text-2xl text-white mb-4 group-hover:text-[#d0a353] transition-colors">Premium Residence</h3>
+                        <div className="flex flex-col gap-3 mb-6 text-[0.7rem] font-bold text-gray-300">
+                            <span className="flex items-center gap-2"><i className="fas fa-home text-[#d0a353] w-3"></i> Home Automation</span>
+                            <span className="flex items-center gap-2"><i className="fas fa-video text-[#d0a353] w-3"></i> CCTV Security</span>
+                            <span className="flex items-center gap-2"><i className="fas fa-mobile-alt text-[#d0a353] w-3"></i> Video Door Phone</span>
+                        </div>
+                        <button className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white border-2 border-[#d0a353]/80 bg-[#d0a353]/10 px-5 py-2.5 rounded-full text-[0.65rem] font-bold hover:bg-[#d0a353] hover:text-[#0c121e] tracking-wide transition-colors">
+                            DISCOVER <i className="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                {/* 4. Bottom Right Square (Beachside Villa) */}
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer min-h-[300px] lg:min-h-0">
+                    <img src="images/hero_gate_1786093948118.png" alt="Beachside Villa" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c121e]/90 via-[#0c121e]/20 to-transparent"></div>
+                    
+                    <div className="absolute top-4 left-4 bg-white/10 backdrop-blur-md text-white text-[0.6rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 border border-white/20 z-10 font-bold">
+                        <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Chennai
+                    </div>
+                    
+                    <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 className="font-heading font-bold text-xl text-white mb-2 group-hover:text-[#d0a353] transition-colors">Beachside Villa</h3>
+                        <div className="flex flex-wrap gap-x-3 gap-y-2 mb-3 text-[0.65rem] font-bold text-gray-300">
+                            <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Automation</span>
+                            <span className="flex items-center gap-1.5"><i className="fas fa-torii-gate text-[#d0a353]"></i> Gate</span>
+                        </div>
+                        <button className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#d0a353] text-[0.65rem] font-bold tracking-wide hover:text-white">
+                            VIEW DETAILS <i className="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
             </div>
 
             
@@ -494,18 +367,18 @@ export default function IndexPage() {
     </section>
 
     
-    <section className="py-20 lg:py-32 bg-[#fdfcf9]">
+    <section className="py-[60px] bg-[#d0a353]">
         <div className="container max-w-[1400px]">
             <div className="text-center mb-12">
-                <div className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav mb-4">CHOOSE YOUR PERFECT SOLUTION</div>
+                <div className="text-[0.65rem] font-bold text-white tracking-[0.15em] uppercase font-nav mb-4">CHOOSE YOUR PERFECT SOLUTION</div>
                 <h2 className="font-heading text-3xl lg:text-[2.5rem] mb-4 font-bold text-[#1a202c]">
-                    Smart Home <span className="text-[#1a202c] font-heading">Automation Packages</span>
+                    Smart Home <span className="text-white font-heading">Automation Packages</span>
                 </h2>
                 
                 <div className="flex items-center justify-center gap-2 mt-4">
-                    <span className="w-16 h-[1px] bg-gradient-to-r from-transparent to-[#d0a353]"></span>
-                    <i className="fas fa-gem text-[#d0a353] text-[10px]"></i>
-                    <span className="w-16 h-[1px] bg-gradient-to-l from-transparent to-[#d0a353]"></span>
+                    <span className="w-16 h-[1px] bg-gradient-to-r from-transparent to-white/60"></span>
+                    <i className="fas fa-gem text-white text-[10px]"></i>
+                    <span className="w-16 h-[1px] bg-gradient-to-l from-transparent to-white/60"></span>
                 </div>
             </div>
 
@@ -513,18 +386,18 @@ export default function IndexPage() {
                 
                 <div className="bg-white rounded-xl shadow-[0_5px_20px_rgba(0,0,0,0.03)] border border-gray-100 flex flex-col overflow-hidden h-full">
                     <div className="p-8 pb-6 flex-grow">
-                        <div className="flex items-center gap-4 mb-8">
-                            <div className="w-16 h-16 rounded-full bg-[#d0a353] text-white flex items-center justify-center text-3xl shadow-md shadow-[#d0a353]/30">
+                        <div className="flex items-center gap-3 mb-6">
+                            <div className="shrink-0 w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#d0a353] text-white flex items-center justify-center text-3xl shadow-md shadow-[#d0a353]/30">
                                 <i className="fas fa-home"></i>
                             </div>
-                            <div>
-                                <h3 className="font-heading font-black text-xl text-gray-900 tracking-wide">ESSENTIAL</h3>
-                                <p className="text-[0.75rem] text-gray-500 font-medium">Smart & Secure Living</p>
+                            <div className="min-w-0 flex-1">
+                                <h3 className="font-black text-sm lg:text-base text-gray-900 tracking-wide break-words leading-tight mb-1">ESSENTIAL</h3>
+                                <p className="text-[0.65rem] lg:text-[0.7rem] text-gray-500 font-medium leading-tight">Smart & Secure Living</p>
                             </div>
                         </div>
                         
                         <div className="mb-2">
-                            <span className="text-3xl font-black text-gray-900">₹ 99,000</span>
+                            <span className="text-2xl lg:text-[1.75rem] font-black text-gray-900 tracking-tight">₹ 99,000</span>
                         </div>
                         <p className="text-[0.65rem] text-gray-400 font-bold mb-6">* Starting Price</p>
                         
@@ -544,23 +417,23 @@ export default function IndexPage() {
                 </div>
 
                 
-                <div className="bg-white rounded-xl shadow-[0_15px_40px_rgba(208,163,83,0.15)] border border-[#d0a353]/30 flex flex-col overflow-hidden h-full relative transform lg:-translate-y-2">
+                <div className="bg-white rounded-xl shadow-[0_15px_40px_rgba(208,163,83,0.15)] border border-[#d0a353]/30 flex flex-col h-full relative">
                     <div className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white text-center py-2 text-[0.65rem] font-bold tracking-[0.15em] uppercase font-nav">
                         MOST POPULAR
                     </div>
                     <div className="p-8 pb-6 flex-grow">
-                        <div className="flex items-center gap-4 mb-8">
-                            <div className="w-16 h-16 rounded-full bg-[#1a202c] text-white flex items-center justify-center text-3xl shadow-lg">
+                        <div className="flex items-center gap-3 mb-6">
+                            <div className="shrink-0 w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#1a202c] text-white flex items-center justify-center text-3xl shadow-lg">
                                 <i className="far fa-gem"></i>
                             </div>
-                            <div>
-                                <h3 className="font-heading font-black text-xl text-gray-900 tracking-wide">PREMIUM</h3>
-                                <p className="text-[0.75rem] text-gray-500 font-medium">Elevate Your Lifestyle</p>
+                            <div className="min-w-0 flex-1">
+                                <h3 className="font-black text-sm lg:text-base text-gray-900 tracking-wide break-words leading-tight mb-1">PREMIUM</h3>
+                                <p className="text-[0.65rem] lg:text-[0.7rem] text-gray-500 font-medium leading-tight">Elevate Your Lifestyle</p>
                             </div>
                         </div>
                         
                         <div className="mb-2">
-                            <span className="text-3xl font-black text-gray-900">₹ 1,79,000</span>
+                            <span className="text-2xl lg:text-[1.75rem] font-black text-gray-900 tracking-tight">₹ 2,99,000</span>
                         </div>
                         <p className="text-[0.65rem] text-gray-400 font-bold mb-6">* Starting Price</p>
                         
@@ -583,20 +456,20 @@ export default function IndexPage() {
                 
                 <div className="bg-white rounded-xl shadow-[0_5px_20px_rgba(0,0,0,0.03)] border border-gray-100 flex flex-col overflow-hidden h-full">
                     <div className="p-8 pb-6 flex-grow">
-                        <div className="flex items-center gap-4 mb-8">
-                            <div className="w-16 h-16 rounded-full bg-[#d0a353] text-white flex items-center justify-center text-3xl shadow-md shadow-[#d0a353]/30">
+                        <div className="flex items-center gap-3 mb-6">
+                            <div className="shrink-0 w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#d0a353] text-white flex items-center justify-center text-3xl shadow-md shadow-[#d0a353]/30">
                                 <i className="fas fa-crown"></i>
                             </div>
-                            <div>
-                                <h3 className="font-heading font-black text-xl text-gray-900 tracking-wide">LUXURY VILLA</h3>
-                                <p className="text-[0.75rem] text-gray-500 font-medium">Complete Intelligent Living</p>
+                            <div className="min-w-0 flex-1">
+                                <h3 className="font-black text-sm lg:text-base text-gray-900 tracking-wide break-words leading-tight mb-1">LUXURY VILLA</h3>
+                                <p className="text-[0.65rem] lg:text-[0.7rem] text-gray-500 font-medium leading-tight">Complete Intelligent Living</p>
                             </div>
                         </div>
                         
                         <div className="mb-2">
-                            <span className="text-3xl font-black text-gray-900">₹ 3,49,000</span>
+                            <span className="text-2xl lg:text-[1.75rem] font-black text-gray-900 tracking-tight">₹ 6,99,000</span>
                         </div>
-                        <p className="text-[0.65rem] text-gray-400 font-bold mb-6">* Starting Price</p>
+                        <p className="text-[0.65rem] text-gray-400 font-bold mb-6">* Starting Price and above</p>
                         
                         <div className="w-full h-[1px] bg-gray-100 mb-6"></div>
                         
@@ -655,17 +528,17 @@ export default function IndexPage() {
     </section>
 
     
-    <section className="relative py-20 lg:py-32 bg-[#0a0f18] overflow-hidden">
+    <section className="relative py-20 lg:py-32 bg-white overflow-hidden">
         
         <div className="absolute inset-0 z-0">
-            <img src="images/hero_pool_1786093934613.png" alt="Living Room Background" className="w-full h-full object-cover opacity-20 filter grayscale blur-sm" />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#0a0f18]/90 via-[#0a0f18]/80 to-[#0a0f18]"></div>
+            <img src="images/hero_pool_1786093934613.png" alt="Living Room Background" className="w-full h-full object-cover opacity-[0.03] filter grayscale blur-sm" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/80 to-white"></div>
         </div>
 
         <div className="container relative z-10 max-w-[1400px]">
             <div className="text-center mb-12">
                 <div className="text-[0.6rem] font-bold text-[#d0a353] tracking-[0.2em] uppercase font-nav mb-3">EXPERIENCE INTELLIGENT LIVING</div>
-                <h2 className="font-heading text-3xl lg:text-4xl text-white mb-4">
+                <h2 className="font-heading text-3xl lg:text-4xl text-[#1a202c] mb-4 font-bold">
                     Everything Under Your Control
                 </h2>
                 
@@ -682,64 +555,64 @@ export default function IndexPage() {
                 
                 <div className="flex flex-col items-center text-center px-4 relative lg:w-1/8">
                     <i className="far fa-lightbulb text-[#d0a353] text-3xl mb-4 h-8 flex items-center justify-center"></i>
-                    <div className="text-sm font-bold text-white mb-2 tracking-wide">Lighting</div>
-                    <div className="text-[0.65rem] text-gray-400 leading-snug">Set the mood<br />with smart lights</div>
+                    <div className="text-sm font-bold text-gray-900 mb-2 tracking-wide">Lighting</div>
+                    <div className="text-[0.65rem] text-gray-500 leading-snug font-medium">Set the mood<br />with smart lights</div>
                     <div className="hidden lg:block absolute right-0 top-[10%] bottom-[10%] w-[1px] bg-gradient-to-b from-transparent via-[#d0a353]/30 to-transparent"></div>
                 </div>
 
                 
                 <div className="flex flex-col items-center text-center px-4 relative lg:w-1/8">
                     <i className="fas fa-shield-alt text-[#d0a353] text-3xl mb-4 h-8 flex items-center justify-center"></i>
-                    <div className="text-sm font-bold text-white mb-2 tracking-wide">Security</div>
-                    <div className="text-[0.65rem] text-gray-400 leading-snug">Complete protection<br />for your home</div>
+                    <div className="text-sm font-bold text-gray-900 mb-2 tracking-wide">Security</div>
+                    <div className="text-[0.65rem] text-gray-500 leading-snug font-medium">Complete protection<br />for your home</div>
                     <div className="hidden lg:block absolute right-0 top-[10%] bottom-[10%] w-[1px] bg-gradient-to-b from-transparent via-[#d0a353]/30 to-transparent"></div>
                 </div>
 
                 
                 <div className="flex flex-col items-center text-center px-4 relative lg:w-1/8">
                     <i className="fas fa-person-booth text-[#d0a353] text-3xl mb-4 h-8 flex items-center justify-center"></i>
-                    <div className="text-sm font-bold text-white mb-2 tracking-wide">Curtains</div>
-                    <div className="text-[0.65rem] text-gray-400 leading-snug">Open or close with<br />a single touch</div>
+                    <div className="text-sm font-bold text-gray-900 mb-2 tracking-wide">Curtains</div>
+                    <div className="text-[0.65rem] text-gray-500 leading-snug font-medium">Open or close with<br />a single touch</div>
                     <div className="hidden lg:block absolute right-0 top-[10%] bottom-[10%] w-[1px] bg-gradient-to-b from-transparent via-[#d0a353]/30 to-transparent"></div>
                 </div>
 
                 
                 <div className="flex flex-col items-center text-center px-4 relative lg:w-1/8">
                     <i className="fas fa-thermometer-half text-[#d0a353] text-3xl mb-4 h-8 flex items-center justify-center"></i>
-                    <div className="text-sm font-bold text-white mb-2 tracking-wide">Climate</div>
-                    <div className="text-[0.65rem] text-gray-400 leading-snug">Perfect temperature,<br />always</div>
+                    <div className="text-sm font-bold text-gray-900 mb-2 tracking-wide">Climate</div>
+                    <div className="text-[0.65rem] text-gray-500 leading-snug font-medium">Perfect temperature,<br />always</div>
                     <div className="hidden lg:block absolute right-0 top-[10%] bottom-[10%] w-[1px] bg-gradient-to-b from-transparent via-[#d0a353]/30 to-transparent"></div>
                 </div>
 
                 
                 <div className="flex flex-col items-center text-center px-4 relative lg:w-1/8">
                     <i className="fas fa-music text-[#d0a353] text-3xl mb-4 h-8 flex items-center justify-center"></i>
-                    <div className="text-sm font-bold text-white mb-2 tracking-wide">Entertainment</div>
-                    <div className="text-[0.65rem] text-gray-400 leading-snug">Multi-room audio<br />at your command</div>
+                    <div className="text-sm font-bold text-gray-900 mb-2 tracking-wide">Entertainment</div>
+                    <div className="text-[0.65rem] text-gray-500 leading-snug font-medium">Multi-room audio<br />at your command</div>
                     <div className="hidden lg:block absolute right-0 top-[10%] bottom-[10%] w-[1px] bg-gradient-to-b from-transparent via-[#d0a353]/30 to-transparent"></div>
                 </div>
 
                 
                 <div className="flex flex-col items-center text-center px-4 relative lg:w-1/8">
                     <i className="fas fa-unlock-alt text-[#d0a353] text-3xl mb-4 h-8 flex items-center justify-center"></i>
-                    <div className="text-sm font-bold text-white mb-2 tracking-wide">Access</div>
-                    <div className="text-[0.65rem] text-gray-400 leading-snug">Smart locks for<br />safe access</div>
+                    <div className="text-sm font-bold text-gray-900 mb-2 tracking-wide">Access</div>
+                    <div className="text-[0.65rem] text-gray-500 leading-snug font-medium">Smart locks for<br />safe access</div>
                     <div className="hidden lg:block absolute right-0 top-[10%] bottom-[10%] w-[1px] bg-gradient-to-b from-transparent via-[#d0a353]/30 to-transparent"></div>
                 </div>
 
                 
                 <div className="flex flex-col items-center text-center px-4 relative lg:w-1/8">
                     <i className="fas fa-eye text-[#d0a353] text-3xl mb-4 h-8 flex items-center justify-center"></i>
-                    <div className="text-sm font-bold text-white mb-2 tracking-wide">Monitoring</div>
-                    <div className="text-[0.65rem] text-gray-400 leading-snug">Watch live from<br />anywhere</div>
+                    <div className="text-sm font-bold text-gray-900 mb-2 tracking-wide">Monitoring</div>
+                    <div className="text-[0.65rem] text-gray-500 leading-snug font-medium">Watch live from<br />anywhere</div>
                     <div className="hidden lg:block absolute right-0 top-[10%] bottom-[10%] w-[1px] bg-gradient-to-b from-transparent via-[#d0a353]/30 to-transparent"></div>
                 </div>
 
                 
                 <div className="flex flex-col items-center text-center px-4 relative lg:w-1/8">
                     <i className="fas fa-broadcast-tower text-[#d0a353] text-3xl mb-4 h-8 flex items-center justify-center"></i>
-                    <div className="text-sm font-bold text-white mb-2 tracking-wide">Sensors</div>
-                    <div className="text-[0.65rem] text-gray-400 leading-snug">Smart sensors for<br />maximum safety</div>
+                    <div className="text-sm font-bold text-gray-900 mb-2 tracking-wide">Sensors</div>
+                    <div className="text-[0.65rem] text-gray-500 leading-snug font-medium">Smart sensors for<br />maximum safety</div>
                 </div>
 
             </div>
@@ -748,60 +621,66 @@ export default function IndexPage() {
 
     
     <section className="relative py-20 lg:py-32 bg-[#0c121e] overflow-hidden">
-        
-        <div className="absolute top-0 left-0 bottom-0 w-1/2 z-0">
-            <img src="images/hero_pool_1786093934613.png" alt="Smart Home" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#0c121e]/80 to-[#0c121e]"></div>
+        {/* Real Gold Glitter Texture Background */}
+        <div className="absolute inset-0 z-0">
+            <img src="/images/gold_glitter.jpg" alt="Gold Glitter Background" className="w-full h-full object-cover" />
+            {/* Dark overlay so text is readable, but glitter clearly shows through */}
+            <div className="absolute inset-0 bg-[#0c121e]/75"></div>
+            {/* Soft Gold Glow Overlay */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#d0a353]/30 via-transparent to-transparent pointer-events-none"></div>
         </div>
         
-        
-        <div className="absolute bottom-0 right-0 w-1/3 h-full z-0 opacity-20 pointer-events-none" style={{ background: "radial-gradient(circle at bottom right, transparent 0%, transparent 40%, rgba(208,163,83,0.3) 41%, transparent 42%)" }}></div>
-    
         <div className="container relative z-10 py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div className="lg:col-span-5 hidden lg:block"></div>
             
-            
-            <div className="lg:col-span-4 text-white text-center lg:text-left">
-                <h2 className="font-heading text-4xl lg:text-[2.75rem] mb-4 font-bold leading-tight">
+            <div className="lg:col-span-4 text-white text-center lg:text-left relative">
+                {/* Background glow just for text */}
+                <div className="absolute -inset-10 bg-[#d0a353]/10 blur-3xl rounded-full z-0 pointer-events-none"></div>
+                
+                <h2 className="font-heading text-4xl lg:text-[2.75rem] mb-4 font-bold leading-tight relative z-10">
                     Let's Build Your<br />
-                    <span className="text-[#d0a353] font-heading tracking-wide">Smart Home</span>
+                    <span className="font-heading tracking-wide bg-gradient-to-r from-[#d0a353] via-[#f7d084] to-[#d0a353] text-transparent bg-clip-text drop-shadow-[0_0_15px_rgba(208,163,83,0.5)]">Smart Home</span>
                 </h2>
-                <p className="text-[0.8rem] text-gray-300 mb-8 max-w-md mx-auto lg:mx-0 leading-relaxed pr-4">
+                <p className="text-[0.8rem] text-gray-300 mb-8 max-w-md mx-auto lg:mx-0 leading-relaxed pr-4 relative z-10">
                     Schedule a free consultation and let our experts design the perfect automation solution for your space.
                 </p>
                 
-                <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                    <a href="#" className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-4 py-2.5 rounded text-[0.65rem] font-bold whitespace-nowrap shadow-md hover:shadow-lg transition flex items-center gap-2">
+                <div className="flex flex-wrap gap-4 justify-center lg:justify-start relative z-10">
+                    <a href="#" className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-[#0c121e] px-6 py-3.5 rounded text-[0.7rem] font-black whitespace-nowrap shadow-[0_0_20px_rgba(208,163,83,0.4)] hover:shadow-[0_0_25px_rgba(208,163,83,0.6)] hover:-translate-y-0.5 transition-all flex items-center gap-2">
                         <i className="far fa-calendar-alt"></i> SCHEDULE FREE CONSULTATION
                     </a>
-                    <a href="#" className="border border-[#d0a353] text-[#d0a353] px-4 py-2.5 rounded text-[0.65rem] font-bold whitespace-nowrap hover:bg-[#d0a353] hover:text-white transition flex items-center gap-2">
+                    <a href="#" className="border-2 border-[#d0a353]/70 text-[#d0a353] px-6 py-3.5 rounded text-[0.7rem] font-bold whitespace-nowrap hover:bg-[#d0a353]/10 hover:border-[#d0a353] hover:shadow-[0_0_15px_rgba(208,163,83,0.3)] transition-all flex items-center gap-2">
                         <i className="fab fa-whatsapp text-lg"></i> WHATSAPP US
-                    </a>
-                    <a href="#" className="border border-[#d0a353] text-[#d0a353] px-4 py-2.5 rounded text-[0.65rem] font-bold whitespace-nowrap hover:bg-[#d0a353] hover:text-white transition flex items-center gap-2">
-                        <i className="fas fa-phone-alt"></i> CALL NOW
                     </a>
                 </div>
             </div>
             
-            
-            <div className="lg:col-span-3 pl-0 lg:pl-10 border-t lg:border-t-0 lg:border-l border-white/10 pt-8 lg:pt-0">
+            <div className="lg:col-span-3 pl-0 lg:pl-12 border-t lg:border-t-0 lg:border-l border-[#d0a353]/30 pt-10 lg:pt-0 relative z-10">
                 <ul className="space-y-6">
-                    <li className="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
-                        <i className="fas fa-shield-alt text-[#d0a353] text-xl w-6 text-center"></i>
-                        Free Site Visit
+                    <li className="flex items-center gap-5 text-white text-[0.85rem] font-medium tracking-wide">
+                        <div className="w-10 h-10 rounded-full bg-[#d0a353]/10 border border-[#d0a353]/40 flex items-center justify-center shadow-[0_0_15px_rgba(208,163,83,0.2)] shrink-0">
+                            <i className="fas fa-shield-alt text-[#d0a353] text-[0.85rem]"></i>
+                        </div>
+                        <span className="drop-shadow-md">Free Site Visit</span>
                     </li>
-                    <li className="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
-                        <i className="fas fa-user-cog text-[#d0a353] text-xl w-6 text-center"></i>
-                        Personalized Solution
+                    <li className="flex items-center gap-5 text-white text-[0.85rem] font-medium tracking-wide">
+                        <div className="w-10 h-10 rounded-full bg-[#d0a353]/10 border border-[#d0a353]/40 flex items-center justify-center shadow-[0_0_15px_rgba(208,163,83,0.2)] shrink-0">
+                            <i className="fas fa-user-cog text-[#d0a353] text-[0.85rem]"></i>
+                        </div>
+                        <span className="drop-shadow-md">Personalized Solution</span>
                     </li>
-                    <li className="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
-                        <i className="fas fa-certificate text-[#d0a353] text-xl w-6 text-center"></i>
-                        Expert Guidance
+                    <li className="flex items-center gap-5 text-white text-[0.85rem] font-medium tracking-wide">
+                        <div className="w-10 h-10 rounded-full bg-[#d0a353]/10 border border-[#d0a353]/40 flex items-center justify-center shadow-[0_0_15px_rgba(208,163,83,0.2)] shrink-0">
+                            <i className="fas fa-certificate text-[#d0a353] text-[0.85rem]"></i>
+                        </div>
+                        <span className="drop-shadow-md">Expert Guidance</span>
                     </li>
-                    <li className="flex items-center gap-4 text-white text-[0.85rem] font-medium tracking-wide">
-                        <i className="fas fa-shield-check text-[#d0a353] text-xl w-6 text-center"></i>
-                        Best Price Guarantee
+                    <li className="flex items-center gap-5 text-white text-[0.85rem] font-medium tracking-wide">
+                        <div className="w-10 h-10 rounded-full bg-[#d0a353]/10 border border-[#d0a353]/40 flex items-center justify-center shadow-[0_0_15px_rgba(208,163,83,0.2)] shrink-0">
+                            <i className="fas fa-shield-check text-[#d0a353] text-[0.85rem]"></i>
+                        </div>
+                        <span className="drop-shadow-md">Best Price Guarantee</span>
                     </li>
                 </ul>
             </div>
@@ -809,72 +688,47 @@ export default function IndexPage() {
     </section>
 
     
-    <section className="bg-[#fdfcf9] py-20 lg:py-32 border-b-4 border-[#0b101a]">
-        <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                
-                <div>
-                    <h4 className="font-heading text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase font-nav mb-6">GET IN TOUCH</h4>
-                    <ul className="space-y-4">
-                        <li className="flex items-start gap-4">
-                            <div className="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i className="fas fa-phone-alt text-[10px]"></i></div>
-                            <span className="text-sm font-bold text-gray-700 mt-1">+91 98765 43210</span>
-                        </li>
-                        <li className="flex items-start gap-4">
-                            <div className="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i className="fas fa-envelope text-[10px]"></i></div>
-                            <a href="mailto:info@smartsolutioniot.com" className="text-[0.8rem] font-bold text-gray-700 mt-1 hover:text-[#d0a353]">info@smartsolutioniot.com</a>
-                        </li>
-                        <li className="flex items-start gap-4">
-                            <div className="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i className="fas fa-map-marker-alt text-[10px]"></i></div>
-                            <div className="text-[0.7rem] font-medium text-gray-600 leading-relaxed pt-1 pr-4">
-                                No. 123, 1st Floor, Tech Park,<br />Coimbatore - 641062, Tamil Nadu, India
-                            </div>
-                        </li>
-                        <li className="flex items-start gap-4">
-                            <div className="w-8 h-8 rounded-full border border-[#d0a353]/30 flex items-center justify-center text-[#d0a353] shrink-0 mt-0.5"><i className="far fa-clock text-[10px]"></i></div>
-                            <span className="text-[0.8rem] font-bold text-gray-700 mt-1">Mon - Sat : 9:00 AM - 7:00 PM</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                
-                <div className="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
-                    <h4 className="font-heading text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase font-nav mb-6">SCAN TO CONNECT</h4>
-                    <p className="text-[0.8rem] text-gray-700 mb-4 max-w-[180px]">Scan the QR code to chat with us on WhatsApp</p>
-                    <div className="inline-block border border-gray-200 p-2 rounded-lg bg-white shadow-sm relative">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://wa.me/919876543210" alt="WhatsApp QR" className="w-20 h-20" />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="bg-white rounded-full p-0.5 shadow-sm">
-                                <i className="fab fa-whatsapp text-green-500 text-lg"></i>
-                            </div>
+    <section className="bg-[#fdfcf9] py-20 lg:py-24 border-b-4 border-[#0b101a] relative">
+        <div className="container max-w-[1200px]">
+            <div className="bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-gray-100 p-10 lg:p-14">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 md:divide-x divide-gray-100">
+                    
+                    {/* GET IN TOUCH */}
+                    <div className="flex flex-col items-center text-center px-4">
+                        <div className="w-16 h-16 rounded-full bg-[#d0a353]/10 flex items-center justify-center text-[#d0a353] text-2xl mb-6 shadow-sm">
+                            <i className="fas fa-headset"></i>
+                        </div>
+                        <h4 className="font-heading text-gray-900 text-lg font-black mb-3 tracking-wide">Get In Touch</h4>
+                        <p className="text-[0.8rem] text-gray-600 font-bold mb-1">+91 98765 43210</p>
+                        <a href="mailto:info@smartsolutioniot.com" className="text-[0.8rem] text-[#d0a353] font-bold hover:underline cursor-pointer">info@smartsolutioniot.com</a>
+                    </div>
+                    
+                    {/* OUR LOCATION */}
+                    <div className="flex flex-col items-center text-center px-4">
+                        <div className="w-16 h-16 rounded-full bg-[#d0a353]/10 flex items-center justify-center text-[#d0a353] text-2xl mb-6 shadow-sm">
+                            <i className="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h4 className="font-heading text-gray-900 text-lg font-black mb-3 tracking-wide">Our Location</h4>
+                        <p className="text-[0.8rem] text-gray-600 font-medium leading-relaxed max-w-[220px]">
+                            No. 123, 1st Floor, Tech Park,<br/>Coimbatore - 641062, Tamil Nadu
+                        </p>
+                    </div>
+                    
+                    {/* FOLLOW US */}
+                    <div className="flex flex-col items-center text-center px-4">
+                        <div className="w-16 h-16 rounded-full bg-[#d0a353]/10 flex items-center justify-center text-[#d0a353] text-2xl mb-6 shadow-sm">
+                            <i className="fas fa-share-alt"></i>
+                        </div>
+                        <h4 className="font-heading text-gray-900 text-lg font-black mb-5 tracking-wide">Follow Us</h4>
+                        <div className="flex gap-3">
+                            <a href="#" className="w-10 h-10 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-600 hover:bg-[#d0a353] hover:text-white hover:border-[#d0a353] shadow-sm transition-all"><i className="fab fa-facebook-f"></i></a>
+                            <a href="#" className="w-10 h-10 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-600 hover:bg-[#d0a353] hover:text-white hover:border-[#d0a353] shadow-sm transition-all"><i className="fab fa-instagram"></i></a>
+                            <a href="#" className="w-10 h-10 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-600 hover:bg-[#d0a353] hover:text-white hover:border-[#d0a353] shadow-sm transition-all"><i className="fab fa-linkedin-in"></i></a>
+                            <a href="#" className="w-10 h-10 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-600 hover:bg-[#d0a353] hover:text-white hover:border-[#d0a353] shadow-sm transition-all"><i className="fab fa-youtube"></i></a>
                         </div>
                     </div>
+
                 </div>
-                
-                
-                <div className="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
-                    <h4 className="font-heading text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase font-nav mb-6">FOLLOW US</h4>
-                    <div className="flex gap-3 mt-4">
-                        <a href="#" className="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i className="fab fa-facebook-f text-sm"></i></a>
-                        <a href="#" className="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i className="fab fa-instagram text-sm"></i></a>
-                        <a href="#" className="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i className="fab fa-linkedin-in text-sm"></i></a>
-                        <a href="#" className="w-8 h-8 rounded-full border border-[#d0a353]/50 flex items-center justify-center text-[#d0a353] hover:bg-[#d0a353] hover:text-white transition"><i className="fab fa-youtube text-sm"></i></a>
-                    </div>
-                </div>
-                
-                
-                <div className="lg:border-l lg:border-[#d0a353]/20 lg:pl-8">
-                    <h4 className="font-heading text-[#d0a353] text-xs font-bold tracking-[0.15em] uppercase font-nav mb-6">OUR LOCATION</h4>
-                    <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm relative h-32 max-w-xs">
-                        <img src="images/map.png" alt="Map View" className="w-full h-full object-cover opacity-80" />
-                        <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/30">
-                            <i className="fas fa-map-marker-alt text-red-500 text-3xl drop-shadow-md"></i>
-                            <span className="text-[0.55rem] font-bold text-red-600 bg-white/90 px-2 py-0.5 rounded shadow mt-1">Smart Solution IoT</span>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </section>
