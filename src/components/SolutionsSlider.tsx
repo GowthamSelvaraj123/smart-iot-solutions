@@ -4,10 +4,11 @@ import React, { useRef, useState } from 'react';
 export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
     const sliderRef = useRef<HTMLDivElement>(null);
     const [activeCategory, setActiveCategory] = useState('All');
+    const [wishlist, setWishlist] = useState<number[]>([]);
 
     const scrollLeft = () => {
         if (sliderRef.current) {
-            sliderRef.current.scrollBy({ left: -364, behavior: 'smooth' }); // 340 + 24(gap)
+            sliderRef.current.scrollBy({ left: -364, behavior: 'smooth' });
         }
     };
 
@@ -17,86 +18,180 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
         }
     };
 
-    const filteredSolutions = activeCategory === 'All' 
-        ? solutions 
+    const toggleWishlist = (idx: number) => {
+        setWishlist(prev =>
+            prev.includes(idx) ? prev.filter(i => i !== idx) : [...prev, idx]
+        );
+    };
+
+    const filteredSolutions = activeCategory === 'All'
+        ? solutions
         : solutions.filter(s => s.category === activeCategory);
 
+    const categoryIcons: Record<string, string> = {
+        Residential: 'fa-home',
+        Commercial: 'fa-building',
+        Specialized: 'fa-microchip',
+    };
+
     return (
-        <section className="py-[60px] bg-white relative overflow-hidden">
+        <section className="py-[60px] bg-[#f8f8f6] relative overflow-hidden">
             <div className="container relative z-10">
                 <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-5">
+                        <div className="flex items-center gap-3">
+                            <span className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav">OUR SMART SOLUTIONS</span>
+                            <span className="w-10 h-[1px] bg-[#d0a353]/40"></span>
+                        </div>
                         <h2 className="font-heading text-4xl lg:text-[3.2rem] font-bold text-[#1a202c] tracking-tight">
                             Explore smart automation.
                         </h2>
-                        
+
                         <div className="flex flex-wrap gap-2">
-                            <button 
-                                onClick={() => setActiveCategory('All')}
-                                className={`cursor-pointer px-5 py-2 rounded-full text-sm font-bold transition shadow-sm ${activeCategory === 'All' ? 'bg-[#1a202c] text-white hover:bg-black' : 'bg-transparent text-gray-700 hover:bg-gray-200 border border-transparent hover:border-gray-200'}`}>
-                                All solutions
-                            </button>
-                            <button 
-                                onClick={() => setActiveCategory('Residential')}
-                                className={`cursor-pointer px-5 py-2 rounded-full text-sm font-bold transition ${activeCategory === 'Residential' ? 'bg-[#1a202c] text-white shadow-sm hover:bg-black' : 'bg-transparent text-gray-700 hover:bg-gray-200 border border-transparent hover:border-gray-200'}`}>
-                                Residential
-                            </button>
-                            <button 
-                                onClick={() => setActiveCategory('Commercial')}
-                                className={`cursor-pointer px-5 py-2 rounded-full text-sm font-bold transition ${activeCategory === 'Commercial' ? 'bg-[#1a202c] text-white shadow-sm hover:bg-black' : 'bg-transparent text-gray-700 hover:bg-gray-200 border border-transparent hover:border-gray-200'}`}>
-                                Commercial
-                            </button>
-                            <button 
-                                onClick={() => setActiveCategory('Specialized')}
-                                className={`cursor-pointer px-5 py-2 rounded-full text-sm font-bold transition ${activeCategory === 'Specialized' ? 'bg-[#1a202c] text-white shadow-sm hover:bg-black' : 'bg-transparent text-gray-700 hover:bg-gray-200 border border-transparent hover:border-gray-200'}`}>
-                                Specialized
-                            </button>
+                            {['All', 'Residential', 'Commercial', 'Specialized'].map(cat => (
+                                <button
+                                    key={cat}
+                                    onClick={() => setActiveCategory(cat)}
+                                    className={`cursor-pointer px-5 py-2 rounded-full text-sm font-bold transition-all duration-200 ${
+                                        activeCategory === cat
+                                            ? 'bg-[#1a202c] text-white shadow-md'
+                                            : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200 shadow-sm'
+                                    }`}
+                                >
+                                    {cat === 'All' ? 'All solutions' : cat}
+                                </button>
+                            ))}
                         </div>
                     </div>
-                    
+
                     {/* Navigation Arrows */}
                     <div className="hidden md:flex gap-3 pb-2">
-                        <button onClick={scrollLeft} className="w-11 h-11 rounded-full bg-white border border-[#d0a353]/30 flex items-center justify-center text-[#ca9740] hover:bg-[#ca9740] hover:text-white transition shadow-sm font-nav cursor-pointer z-10">
+                        <button
+                            onClick={scrollLeft}
+                            className="w-11 h-11 rounded-full bg-white border border-[#d0a353]/30 flex items-center justify-center text-[#ca9740] hover:bg-[#ca9740] hover:text-white transition shadow-sm cursor-pointer z-10"
+                        >
                             <i className="fas fa-chevron-left text-sm"></i>
                         </button>
-                        <button onClick={scrollRight} className="w-11 h-11 rounded-full bg-white border border-[#d0a353]/30 flex items-center justify-center text-[#ca9740] hover:bg-[#ca9740] hover:text-white transition shadow-sm font-nav cursor-pointer z-10">
+                        <button
+                            onClick={scrollRight}
+                            className="w-11 h-11 rounded-full bg-white border border-[#d0a353]/30 flex items-center justify-center text-[#ca9740] hover:bg-[#ca9740] hover:text-white transition shadow-sm cursor-pointer z-10"
+                        >
                             <i className="fas fa-chevron-right text-sm"></i>
                         </button>
                     </div>
                 </div>
             </div>
 
-            {/* Full-width slider container that bleeds to the right but aligns with the left container edge */}
-            <div 
-                ref={sliderRef} 
-                className="flex overflow-x-auto snap-x snap-mandatory gap-6 hide-scroll-bar pb-8 pt-4" 
-                style={{ 
+            {/* Full-width slider */}
+            <div
+                ref={sliderRef}
+                className="flex overflow-x-auto snap-x snap-mandatory gap-5 hide-scroll-bar pb-6 pt-2"
+                style={{
                     scrollBehavior: 'smooth',
                     marginLeft: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)',
                     paddingRight: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)'
                 }}
             >
                 {filteredSolutions.map((item, idx) => (
-                    <div key={idx} className="w-[85vw] md:w-[320px] lg:w-[340px] shrink-0 snap-start bg-white rounded-[2rem] p-6 flex flex-col transition hover:shadow-[0_15px_40px_rgba(208,163,83,0.1)] hover:-translate-y-1 shadow-[0_5px_15px_rgba(0,0,0,0.03)] border border-[#d0a353]/10 group">
-                        <div className="w-full h-48 mb-6 relative overflow-hidden rounded-xl border border-gray-100">
-                            <img src={item.img} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt={item.title} />
+                    <div
+                        key={idx}
+                        className="w-[80vw] md:w-[280px] lg:w-[300px] shrink-0 snap-start group bg-white rounded-2xl overflow-hidden shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.13)] transition-all duration-300 hover:-translate-y-1 flex flex-col border border-gray-100"
+                    >
+                        {/* Image Area */}
+                        <div className="relative w-full h-52 overflow-hidden bg-gray-50">
+                            <img
+                                src={item.img}
+                                alt={item.title}
+                                className="w-full h-full object-cover group-hover:scale-107 transition-transform duration-700 ease-in-out"
+                                style={{ transform: 'scale(1)', transition: 'transform 0.7s ease' }}
+                                onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.07)')}
+                                onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
+                            />
+
+                            {/* Category Badge - top left */}
+                            <div className="absolute top-3 left-3">
+                                <span className="inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-sm text-[#ca9740] text-[0.6rem] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow-sm border border-[#d0a353]/20">
+                                    <i className={`fas ${categoryIcons[item.category] || 'fa-star'} text-[8px]`}></i>
+                                    {item.category}
+                                </span>
+                            </div>
+
+                            {/* Wishlist / Save button - top right */}
+                            <button
+                                onClick={() => toggleWishlist(idx)}
+                                className={`absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center shadow-md transition-all duration-200 cursor-pointer ${
+                                    wishlist.includes(idx)
+                                        ? 'bg-[#ca9740] text-white'
+                                        : 'bg-white/90 backdrop-blur-sm text-gray-400 hover:text-[#ca9740]'
+                                }`}
+                                aria-label="Save"
+                            >
+                                <i className={`${wishlist.includes(idx) ? 'fas' : 'far'} fa-heart text-xs`}></i>
+                            </button>
+
+                            {/* Gradient overlay at bottom */}
+                            <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
-                        
-                        <div className="flex justify-center gap-1.5 mb-5">
-                            <span className="w-2 h-2 rounded-full bg-[#ca9740]/40"></span>
-                            <span className="w-2 h-2 rounded-full bg-[#ca9740]/80"></span>
-                            <span className="w-2 h-2 rounded-full bg-[#1a202c]"></span>
-                        </div>
-                        
-                        <h3 className="font-heading text-xl lg:text-2xl font-bold text-[#1a202c] mb-2 text-center">{item.title}</h3>
-                        <p className="text-[0.85rem] text-gray-500 mb-8 font-medium px-2 text-center leading-relaxed flex-grow">{item.desc}</p>
-                        
-                        <div className="mt-auto flex justify-center items-center gap-6">
-                            <button className="cursor-pointer bg-gradient-to-r from-[#ca9740] to-[#dfb45e] hover:shadow-lg hover:-translate-y-0.5 text-white px-5 py-2 rounded-full text-[0.7rem] font-bold transition uppercase tracking-wider">Learn more</button>
-                            <span className="text-[#ca9740] hover:underline text-[0.75rem] cursor-pointer font-bold tracking-wide uppercase">Quote <i className="fas fa-chevron-right text-[8px] ml-1"></i></span>
+
+                        {/* Card Body */}
+                        <div className="flex flex-col flex-grow p-5">
+
+                            {/* Rating stars */}
+                            <div className="flex items-center gap-1.5 mb-3">
+                                <div className="flex gap-0.5">
+                                    {[1,2,3,4,5].map(s => (
+                                        <i key={s} className={`fas fa-star text-[10px] ${s <= 4 ? 'text-[#ca9740]' : 'text-gray-200'}`}></i>
+                                    ))}
+                                </div>
+                                <span className="text-[0.65rem] text-gray-400 font-medium">(4.8)</span>
+                                <span className="ml-auto text-[0.6rem] text-emerald-600 font-bold bg-emerald-50 px-1.5 py-0.5 rounded">
+                                    <i className="fas fa-circle text-[5px] mr-1"></i>Available
+                                </span>
+                            </div>
+
+                            {/* Title */}
+                            <h3 className="font-heading text-[1.05rem] font-bold text-[#1a202c] mb-1.5 leading-tight group-hover:text-[#ca9740] transition-colors duration-200">
+                                {item.title}
+                            </h3>
+
+                            {/* Description */}
+                            <p className="text-[0.78rem] text-gray-500 leading-relaxed mb-4 flex-grow">
+                                {item.desc}
+                            </p>
+
+                            {/* Features pills */}
+                            <div className="flex flex-wrap gap-1.5 mb-4">
+                                {['Smart Control', 'App Ready', 'Warranty'].map(tag => (
+                                    <span key={tag} className="text-[0.6rem] bg-[#f9f6ef] text-[#b07e2a] font-semibold px-2 py-0.5 rounded-full border border-[#d0a353]/15">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+
+                            {/* Divider */}
+                            <div className="w-full h-px bg-gray-100 mb-4"></div>
+
+                            {/* CTA Buttons */}
+                            <div className="flex items-center gap-2 mt-auto">
+                                <button className="flex-1 cursor-pointer bg-gradient-to-r from-[#ca9740] to-[#dfb45e] hover:from-[#b88530] hover:to-[#ca9740] text-white py-2.5 rounded-xl text-[0.75rem] font-bold tracking-wide transition-all duration-200 shadow-sm hover:shadow-[0_4px_16px_rgba(208,163,83,0.4)] flex items-center justify-center gap-2">
+                                    <i className="fas fa-bolt text-[10px]"></i>
+                                    Get Quote
+                                </button>
+                                <button className="w-10 h-10 rounded-xl border-2 border-[#d0a353]/30 text-[#ca9740] hover:bg-[#d0a353] hover:text-white hover:border-[#d0a353] flex items-center justify-center transition-all duration-200 cursor-pointer shrink-0">
+                                    <i className="fas fa-arrow-right text-xs"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 ))}
+            </div>
+
+            {/* Bottom row count */}
+            <div className="container mt-4">
+                <p className="text-[0.72rem] text-gray-400 font-medium">
+                    Showing <span className="text-[#ca9740] font-bold">{filteredSolutions.length}</span> solutions
+                    {activeCategory !== 'All' && <> in <span className="text-[#1a202c] font-bold">{activeCategory}</span></>}
+                </p>
             </div>
         </section>
     );

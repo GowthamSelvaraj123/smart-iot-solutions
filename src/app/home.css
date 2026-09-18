@@ -6,17 +6,17 @@
     --text-primary: #2a2a2a;
     --text-muted: #666666;
     --bg-light: #fbfbfb;
-            --transition: 0.3s ease;
+    --transition: 0.3s ease;
 }
 
 body {
-        color: var(--text-primary);
+    color: var(--text-primary);
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    }
+}
 
 /* Base Utilities */
 .container {
@@ -152,7 +152,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(0) scale(1.1);
     z-index: 20;
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-    border: 2px solid #fff;
 }
 .carousel-card-hidden {
     transform: translateX(0) scale(0.6);
@@ -194,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-size: 1rem;
     color: var(--text-muted);
-        margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 /* Clients Grid */
@@ -224,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 .stat-box h3 {
-        font-size: 2rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--brand-dark);
 }
@@ -365,7 +364,7 @@ footer h4 {
     color: #fff;
     font-size: 1rem;
     margin-bottom: 1.5rem;
-    }
+}
 footer a {
     transition: var(--transition);
 }
@@ -377,6 +376,7 @@ footer a:hover {
     padding: 1.5rem 0;
     margin-top: 3rem;
 }
+
 @media (max-width: 1024px) {
     .hero-wrapper::before {
         width: 100%;

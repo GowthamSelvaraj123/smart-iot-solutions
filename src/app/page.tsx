@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 
 import SolutionsSlider from '@/components/SolutionsSlider';
+import ProjectsBento from '@/components/ProjectsBento';
 
 const solutions = [
   { title: "Luxury Villa", desc: "Smart living with advanced automation and control.", img: "images/auto_villa_1786093987554.png", category: "Residential" },
@@ -263,104 +264,8 @@ export default function IndexPage() {
             
             <p className="text-sm text-gray-600 font-medium mb-8">Smart Solutions. Beautiful Spaces. Happy Clients.</p>
 
-                        {/* Creative Bento Box Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-4 lg:gap-6 mt-10 lg:h-[600px] mb-8">
-                
-                {/* 1. Large Feature Card (Luxury Villa) */}
-                <div className="group relative overflow-hidden rounded-2xl md:col-span-2 lg:col-span-2 lg:row-span-2 shadow-lg cursor-pointer">
-                    <img src="images/auto_villa_1786093987554.png" alt="Luxury Villa" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
-                    
-                    {/* Gradient Overlay for text readability */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c121e]/90 via-[#0c121e]/40 to-transparent"></div>
-                    
-                    {/* Location Badge */}
-                    <div className="absolute top-5 left-5 bg-white/10 backdrop-blur-md text-white text-[0.65rem] px-4 py-2 rounded-full flex items-center gap-2 shadow-sm font-bold tracking-wide z-10 border border-white/20">
-                        <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Coimbatore
-                    </div>
-                    
-                    {/* Glassmorphism Content Panel */}
-                    <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
-                        <h3 className="font-heading font-black text-3xl lg:text-4xl text-white mb-4 tracking-wide group-hover:text-[#d0a353] transition-colors">Luxury Villa</h3>
-                        
-                        <div className="flex flex-wrap gap-x-5 gap-y-3 mb-6 text-[0.75rem] font-bold text-gray-300">
-                            <span className="flex items-center gap-2"><i className="fas fa-home text-[#d0a353] text-sm"></i> Home Automation</span>
-                            <span className="flex items-center gap-2"><i className="fas fa-video text-[#d0a353] text-sm"></i> CCTV</span>
-                            <span className="flex items-center gap-2"><i className="fas fa-torii-gate text-[#d0a353] text-sm"></i> Gate Automation</span>
-                        </div>
-                        
-                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                            <button className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-[#0c121e] px-7 py-3 rounded-full text-xs font-black tracking-wide shadow-[0_0_15px_rgba(208,163,83,0.4)] hover:shadow-[0_0_25px_rgba(208,163,83,0.6)] transition-all">
-                                EXPLORE PROJECT <i className="fas fa-arrow-right ml-2"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                {/* 2. Top Right Square (Hill View Villa) */}
-                <div className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer min-h-[300px] lg:min-h-0">
-                    <img src="images/hero_pool_1786093934613.png" alt="Hill View Villa" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c121e]/90 via-[#0c121e]/20 to-transparent"></div>
-                    
-                    <div className="absolute top-4 left-4 bg-white/10 backdrop-blur-md text-white text-[0.6rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 border border-white/20 z-10 font-bold">
-                        <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Ooty
-                    </div>
-                    
-                    <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                        <h3 className="font-heading font-bold text-xl text-white mb-2 group-hover:text-[#d0a353] transition-colors">Hill View Villa</h3>
-                        <div className="flex flex-wrap gap-x-3 gap-y-2 mb-3 text-[0.65rem] font-bold text-gray-300">
-                            <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Automation</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-video text-[#d0a353]"></i> CCTV</span>
-                        </div>
-                        <button className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#d0a353] text-[0.65rem] font-bold tracking-wide hover:text-white">
-                            VIEW DETAILS <i className="fas fa-arrow-right ml-1"></i>
-                        </button>
-                    </div>
-                </div>
-
-                {/* 3. Tall Right Panel (Premium Residence) */}
-                <div className="group relative overflow-hidden rounded-2xl lg:row-span-2 shadow-lg cursor-pointer min-h-[350px] lg:min-h-0">
-                    <img src="images/auto_apartment_1786094001400.png" alt="Premium Residence" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c121e]/90 via-[#0c121e]/30 to-transparent"></div>
-                    
-                    <div className="absolute top-4 left-4 bg-white/10 backdrop-blur-md text-white text-[0.6rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 border border-white/20 z-10 font-bold">
-                        <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Bangalore
-                    </div>
-                    
-                    <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8 transform translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
-                        <h3 className="font-heading font-bold text-2xl text-white mb-4 group-hover:text-[#d0a353] transition-colors">Premium Residence</h3>
-                        <div className="flex flex-col gap-3 mb-6 text-[0.7rem] font-bold text-gray-300">
-                            <span className="flex items-center gap-2"><i className="fas fa-home text-[#d0a353] w-3"></i> Home Automation</span>
-                            <span className="flex items-center gap-2"><i className="fas fa-video text-[#d0a353] w-3"></i> CCTV Security</span>
-                            <span className="flex items-center gap-2"><i className="fas fa-mobile-alt text-[#d0a353] w-3"></i> Video Door Phone</span>
-                        </div>
-                        <button className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white border-2 border-[#d0a353]/80 bg-[#d0a353]/10 px-5 py-2.5 rounded-full text-[0.65rem] font-bold hover:bg-[#d0a353] hover:text-[#0c121e] tracking-wide transition-colors">
-                            DISCOVER <i className="fas fa-arrow-right ml-1"></i>
-                        </button>
-                    </div>
-                </div>
-                
-                {/* 4. Bottom Right Square (Beachside Villa) */}
-                <div className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer min-h-[300px] lg:min-h-0">
-                    <img src="images/hero_gate_1786093948118.png" alt="Beachside Villa" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c121e]/90 via-[#0c121e]/20 to-transparent"></div>
-                    
-                    <div className="absolute top-4 left-4 bg-white/10 backdrop-blur-md text-white text-[0.6rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 border border-white/20 z-10 font-bold">
-                        <i className="fas fa-map-marker-alt text-[#d0a353]"></i> Chennai
-                    </div>
-                    
-                    <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                        <h3 className="font-heading font-bold text-xl text-white mb-2 group-hover:text-[#d0a353] transition-colors">Beachside Villa</h3>
-                        <div className="flex flex-wrap gap-x-3 gap-y-2 mb-3 text-[0.65rem] font-bold text-gray-300">
-                            <span className="flex items-center gap-1.5"><i className="fas fa-home text-[#d0a353]"></i> Automation</span>
-                            <span className="flex items-center gap-1.5"><i className="fas fa-torii-gate text-[#d0a353]"></i> Gate</span>
-                        </div>
-                        <button className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#d0a353] text-[0.65rem] font-bold tracking-wide hover:text-white">
-                            VIEW DETAILS <i className="fas fa-arrow-right ml-1"></i>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
+                        {/* Creative Bento Box Grid – cycling images handled by ProjectsBento */}
+            <ProjectsBento />
 
             
         </div>
