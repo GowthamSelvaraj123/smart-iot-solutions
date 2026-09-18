@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 
 import SolutionsSlider from '@/components/SolutionsSlider';
 import ProjectsBento from '@/components/ProjectsBento';
+import GetStartedButton from '@/components/GetStartedButton';
 
 const solutions = [
   { title: "Luxury Villa", desc: "Smart living with advanced automation and control.", img: "images/auto_villa_1786093987554.png", category: "Residential" },
@@ -288,7 +289,6 @@ export default function IndexPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
                 <div className="bg-white rounded-xl shadow-[0_5px_20px_rgba(0,0,0,0.03)] border border-gray-100 flex flex-col overflow-hidden h-full">
                     <div className="p-8 pb-6 flex-grow">
                         <div className="flex items-center gap-3 mb-6">
@@ -297,34 +297,24 @@ export default function IndexPage() {
                             </div>
                             <div className="min-w-0 flex-1">
                                 <h3 className="font-black text-sm lg:text-base text-gray-900 tracking-wide break-words leading-tight mb-1">ESSENTIAL</h3>
-                                <p className="text-[0.65rem] lg:text-[0.7rem] text-gray-500 font-medium leading-tight">Smart & Secure Living</p>
+                                <p className="text-[0.65rem] lg:text-[0.7rem] text-gray-500 font-medium leading-tight">Smart &amp; Secure Living</p>
                             </div>
                         </div>
-                        
-                        <div className="mb-2">
-                            <span className="text-2xl lg:text-[1.75rem] font-black text-gray-900 tracking-tight">₹ 99,000</span>
-                        </div>
+                        <div className="mb-2"><span className="text-2xl lg:text-[1.75rem] font-black text-gray-900 tracking-tight">&#8377; 99,000</span></div>
                         <p className="text-[0.65rem] text-gray-400 font-bold mb-6">* Starting Price</p>
-                        
                         <div className="w-full h-[1px] bg-gray-100 mb-6"></div>
-                        
                         <ul className="text-[0.8rem] text-gray-600 space-y-4 font-medium">
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Smart Lighting</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Smart Door Lock</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> CCTV (4 Cameras)</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Mobile App Control</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Basic Automation</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Smart Lighting</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Smart Door Lock</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> CCTV (4 Cameras)</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Mobile App Control</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Basic Automation</li>
                         </ul>
                     </div>
-                    <div className="px-8 pb-8 mt-auto">
-                        <button className="cursor-pointer w-full py-3.5 border-2 border-[#d0a353] text-[#d0a353] text-[0.8rem] font-bold rounded tracking-wide hover:bg-[#d0a353] hover:text-white transition">GET STARTED</button>
-                    </div>
+                    <div className="px-8 pb-8 mt-auto"><GetStartedButton planName="Essential" variant="outline" /></div>
                 </div>
-
                 <div className="bg-white rounded-xl shadow-[0_15px_40px_rgba(208,163,83,0.15)] border border-[#d0a353]/30 flex flex-col h-full relative">
-                    <div className="absolute w-[80%] -top-[14px] left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white text-center py-1.5 px-4 text-[0.65rem] font-bold tracking-[0.15em] uppercase rounded-[6px] shadow-md z-10">
-                        MOST POPULAR
-                    </div>
+                    <div className="absolute w-[80%] -top-[14px] left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white text-center py-1.5 px-4 text-[0.65rem] font-bold tracking-[0.15em] uppercase rounded-[6px] shadow-md z-10">MOST POPULAR</div>
                     <div className="p-8 pb-6 flex-grow">
                         <div className="flex items-center gap-3 mb-6">
                             <div className="shrink-0 w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#1a202c] text-white flex items-center justify-center text-3xl shadow-lg">
@@ -335,29 +325,20 @@ export default function IndexPage() {
                                 <p className="text-[0.65rem] lg:text-[0.7rem] text-gray-500 font-medium leading-tight">Elevate Your Lifestyle</p>
                             </div>
                         </div>
-                        
-                        <div className="mb-2">
-                            <span className="text-2xl lg:text-[1.75rem] font-black text-gray-900 tracking-tight">₹ 2,99,000</span>
-                        </div>
+                        <div className="mb-2"><span className="text-2xl lg:text-[1.75rem] font-black text-gray-900 tracking-tight">&#8377; 2,99,000</span></div>
                         <p className="text-[0.65rem] text-gray-400 font-bold mb-6">* Starting Price</p>
-                        
                         <div className="w-full h-[1px] bg-gray-100 mb-6"></div>
-                        
                         <ul className="text-[0.8rem] text-gray-600 space-y-4 font-medium">
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Everything in Essential</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Curtain Automation</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> AC / TV Control</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Voice Control (Alexa/Google)</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Advanced App Control</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Scene Automation</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Everything in Essential</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Curtain Automation</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> AC / TV Control</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Voice Control (Alexa/Google)</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Advanced App Control</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Scene Automation</li>
                         </ul>
                     </div>
-                    <div className="px-8 pb-8 mt-auto">
-                        <button className="cursor-pointer w-full py-3.5 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white text-[0.8rem] font-bold rounded tracking-wide hover:opacity-90 shadow-md transition">GET STARTED</button>
-                    </div>
+                    <div className="px-8 pb-8 mt-auto"><GetStartedButton planName="Premium" variant="filled" /></div>
                 </div>
-
-                
                 <div className="bg-white rounded-xl shadow-[0_5px_20px_rgba(0,0,0,0.03)] border border-gray-100 flex flex-col overflow-hidden h-full">
                     <div className="p-8 pb-6 flex-grow">
                         <div className="flex items-center gap-3 mb-6">
@@ -369,66 +350,32 @@ export default function IndexPage() {
                                 <p className="text-[0.65rem] lg:text-[0.7rem] text-gray-500 font-medium leading-tight">Complete Intelligent Living</p>
                             </div>
                         </div>
-                        
-                        <div className="mb-2">
-                            <span className="text-2xl lg:text-[1.75rem] font-black text-gray-900 tracking-tight">₹ 6,99,000</span>
-                        </div>
+                        <div className="mb-2"><span className="text-2xl lg:text-[1.75rem] font-black text-gray-900 tracking-tight">&#8377; 6,99,000</span></div>
                         <p className="text-[0.65rem] text-gray-400 font-bold mb-6">* Starting Price and above</p>
-                        
                         <div className="w-full h-[1px] bg-gray-100 mb-6"></div>
-                        
                         <ul className="text-[0.8rem] text-gray-600 space-y-4 font-medium">
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Everything in Premium</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Multi-Room Audio</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Video Door Phone</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Energy Management</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Motion & Safety Sensors</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 bg-white text-base"></i> Priority Support & AMC</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Everything in Premium</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Multi-Room Audio</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Video Door Phone</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Energy Management</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Motion &amp; Safety Sensors</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-check-circle text-[#d0a353] mt-0.5 text-base"></i> Priority Support &amp; AMC</li>
                         </ul>
                     </div>
-                    <div className="px-8 pb-8 mt-auto">
-                        <button className="cursor-pointer w-full py-3.5 border-2 border-[#d0a353] text-[#d0a353] text-[0.8rem] font-bold rounded tracking-wide hover:bg-[#d0a353] hover:text-white transition">GET STARTED</button>
-                    </div>
+                    <div className="px-8 pb-8 mt-auto"><GetStartedButton planName="Luxury Villa" variant="outline" /></div>
                 </div>
-
-                
                 <div className="bg-[#fcfbf9] rounded-xl border border-gray-100 p-6 flex flex-col h-full shadow-[0_5px_20px_rgba(0,0,0,0.02)] relative">
                     <div className="absolute inset-0 border border-[#d0a353]/10 rounded-xl m-2 pointer-events-none"></div>
                     <div className="grid grid-cols-2 gap-0 h-full relative z-10">
-                        
-                        <div className="flex flex-col items-center justify-center p-4 text-center border-b border-r border-gray-200">
-                            <i className="fas fa-couch text-[#d0a353] text-2xl mb-3"></i>
-                            <p className="text-[0.7rem] font-bold text-gray-800 leading-tight">Premium<br />Global Brands</p>
-                        </div>
-                        
-                        <div className="flex flex-col items-center justify-center p-4 text-center border-b border-gray-200">
-                            <i className="fas fa-tools text-[#d0a353] text-2xl mb-3"></i>
-                            <p className="text-[0.7rem] font-bold text-gray-800 leading-tight">Expert<br />Installation</p>
-                        </div>
-                        
-                        <div className="flex flex-col items-center justify-center p-4 text-center border-b border-r border-gray-200">
-                            <i className="fas fa-project-diagram text-[#d0a353] text-2xl mb-3"></i>
-                            <p className="text-[0.7rem] font-bold text-gray-800 leading-tight">Customized<br />Solutions</p>
-                        </div>
-                        
-                        <div className="flex flex-col items-center justify-center p-4 text-center border-b border-gray-200">
-                            <i className="fas fa-microchip text-[#d0a353] text-2xl mb-3"></i>
-                            <p className="text-[0.7rem] font-bold text-gray-800 leading-tight">Neat & Clean<br />Wiring</p>
-                        </div>
-                        
-                        <div className="flex flex-col items-center justify-center p-4 text-center border-r border-gray-200">
-                            <i className="fas fa-shield-alt text-[#d0a353] text-2xl mb-3"></i>
-                            <p className="text-[0.7rem] font-bold text-gray-800 leading-tight">5 Year<br />Warranty</p>
-                        </div>
-                        
-                        <div className="flex flex-col items-center justify-center p-4 text-center">
-                            <i className="fas fa-headset text-[#d0a353] text-2xl mb-3"></i>
-                            <p className="text-[0.7rem] font-bold text-gray-800 leading-tight">AMC & 24/7<br />Support</p>
-                        </div>
+                        <div className="flex flex-col items-center justify-center p-4 text-center border-b border-r border-gray-200"><i className="fas fa-couch text-[#d0a353] text-2xl mb-3"></i><p className="text-[0.7rem] font-bold text-gray-800 leading-tight">Premium<br />Global Brands</p></div>
+                        <div className="flex flex-col items-center justify-center p-4 text-center border-b border-gray-200"><i className="fas fa-tools text-[#d0a353] text-2xl mb-3"></i><p className="text-[0.7rem] font-bold text-gray-800 leading-tight">Expert<br />Installation</p></div>
+                        <div className="flex flex-col items-center justify-center p-4 text-center border-b border-r border-gray-200"><i className="fas fa-project-diagram text-[#d0a353] text-2xl mb-3"></i><p className="text-[0.7rem] font-bold text-gray-800 leading-tight">Customized<br />Solutions</p></div>
+                        <div className="flex flex-col items-center justify-center p-4 text-center border-b border-gray-200"><i className="fas fa-microchip text-[#d0a353] text-2xl mb-3"></i><p className="text-[0.7rem] font-bold text-gray-800 leading-tight">Neat &amp; Clean<br />Wiring</p></div>
+                        <div className="flex flex-col items-center justify-center p-4 text-center border-r border-gray-200"><i className="fas fa-shield-alt text-[#d0a353] text-2xl mb-3"></i><p className="text-[0.7rem] font-bold text-gray-800 leading-tight">5 Year<br />Warranty</p></div>
+                        <div className="flex flex-col items-center justify-center p-4 text-center"><i className="fas fa-headset text-[#d0a353] text-2xl mb-3"></i><p className="text-[0.7rem] font-bold text-gray-800 leading-tight">AMC &amp; 24/7<br />Support</p></div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     

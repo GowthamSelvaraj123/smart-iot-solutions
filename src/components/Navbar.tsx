@@ -63,7 +63,17 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Action */}
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          {/* Phone Call Button */}
+          <a
+            href="tel:+919626904991"
+            className="flex items-center gap-2 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-5 py-2.5 rounded font-medium hover:shadow-[0_0_20px_rgba(207,168,94,0.4)] hover:-translate-y-0.5 transition-all duration-200 group"
+            title="Call Us Now"
+          >
+            <i className="fas fa-phone-alt text-sm group-hover:animate-bounce"></i>
+            <span className="text-sm font-semibold">Call Now</span>
+          </a>
+          {/* WhatsApp / Schedule Consultation Button */}
           <a
             href="https://wa.me/919626904991"
             target="_blank"
@@ -128,7 +138,16 @@ export default function Navbar() {
           >
             Contact Us
           </Link>
-          <div className="mt-4 mb-4">
+          <div className="mt-4 mb-4 flex flex-col gap-3">
+            {/* Phone Call Button - Mobile */}
+            <a
+              href="tel:+919626904991"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-6 py-2.5 rounded font-medium w-full"
+            >
+              <i className="fas fa-phone-alt text-sm"></i>
+              <span className="font-semibold">Call Now</span>
+            </a>
             <a
               href="https://wa.me/919626904991"
               target="_blank"
