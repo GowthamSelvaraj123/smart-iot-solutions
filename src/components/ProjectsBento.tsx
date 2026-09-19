@@ -2,6 +2,13 @@
 import { useState, useEffect } from "react";
 
 /* ---------- image pools for each auto-cycling card ---------- */
+const card1Images = [
+    { src: "images/auto_villa_1786093987554.png",        location: "Coimbatore" },
+    { src: "images/smart_home_villa_1786093285055.png",  location: "Bangalore" },
+    { src: "images/hero_pool_1786093934613.png",         location: "Chennai" },
+    { src: "images/hero_gate_1786093948118.png",         location: "Ooty" },
+];
+
 const card2Images = [
     { src: "images/hero_pool_1786093934613.png",        location: "Ooty" },
     { src: "images/auto_villa_1786093987554.png",        location: "Kodaikanal" },
@@ -52,11 +59,13 @@ function CyclingCard({
     images,
     interval,
     className = "",
+    badgeClassName = "top-4 left-4 px-3 py-1.5 text-[0.6rem]",
     children,
 }: {
     images: { src: string; location: string }[];
     interval: number;
     className?: string;
+    badgeClassName?: string;
     children: (location: string) => React.ReactNode;
 }) {
     const { cur, prev, fading } = useCycling(images.length, interval);
@@ -92,7 +101,7 @@ function CyclingCard({
             {/* Location badge – updates with image */}
             <div
                 key={cur}
-                className="absolute top-4 left-4 bg-white/10 backdrop-blur-md text-white text-[0.6rem] px-3 py-1.5 rounded-full flex items-center gap-1.5 border border-white/20 z-[4] font-bold animate-fadeIn"
+                className={`absolute bg-white/10 backdrop-blur-md text-white rounded-full flex items-center gap-1.5 border border-white/20 z-[4] font-bold animate-fadeIn ${badgeClassName}`}
             >
                 <i className="fas fa-map-marker-alt text-[#d0a353]" />
                 &nbsp;{images[cur].location}
@@ -113,33 +122,31 @@ export default function ProjectsBento() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-4 lg:gap-6 mt-10 lg:h-[600px] mb-8">
 
-            {/* ── 1. Large Feature Card (Luxury Villa) – static ── */}
-            <div className="group relative overflow-hidden rounded-2xl md:col-span-2 lg:col-span-2 lg:row-span-2 shadow-lg cursor-pointer">
-                <img
-                    src="images/auto_villa_1786093987554.png"
-                    alt="Luxury Villa"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0c121e]/90 via-[#0c121e]/40 to-transparent" />
-                <div className="absolute top-5 left-5 bg-white/10 backdrop-blur-md text-white text-[0.65rem] px-4 py-2 rounded-full flex items-center gap-2 shadow-sm font-bold tracking-wide z-10 border border-white/20">
-                    <i className="fas fa-map-marker-alt text-[#d0a353]" /> Coimbatore
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
-                    <h3 className="font-heading font-black text-3xl lg:text-4xl text-white mb-4 tracking-wide group-hover:text-[#d0a353] transition-colors">
-                        Luxury Villa
-                    </h3>
-                    <div className="flex flex-wrap gap-x-5 gap-y-3 mb-6 text-[0.75rem] font-bold text-gray-300">
-                        <span className="flex items-center gap-2"><i className="fas fa-home text-[#d0a353] text-sm" /> Home Automation</span>
-                        <span className="flex items-center gap-2"><i className="fas fa-video text-[#d0a353] text-sm" /> CCTV</span>
-                        <span className="flex items-center gap-2"><i className="fas fa-torii-gate text-[#d0a353] text-sm" /> Gate Automation</span>
+            {/* ── 1. Large Feature Card (Luxury Villa) – auto-cycling ── */}
+            <CyclingCard 
+                images={card1Images} 
+                interval={4500} 
+                className="md:col-span-2 lg:col-span-2 lg:row-span-2"
+                badgeClassName="top-5 left-5 px-4 py-2 text-[0.65rem] shadow-sm tracking-wide"
+            >
+                {() => (
+                    <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500 pointer-events-auto">
+                        <h3 className="font-heading font-black text-3xl lg:text-4xl text-white mb-4 tracking-wide group-hover:text-[#d0a353] transition-colors">
+                            Luxury Villa
+                        </h3>
+                        <div className="flex flex-wrap gap-x-5 gap-y-3 mb-6 text-[0.75rem] font-bold text-gray-300">
+                            <span className="flex items-center gap-2"><i className="fas fa-home text-[#d0a353] text-sm" /> Home Automation</span>
+                            <span className="flex items-center gap-2"><i className="fas fa-video text-[#d0a353] text-sm" /> CCTV</span>
+                            <span className="flex items-center gap-2"><i className="fas fa-torii-gate text-[#d0a353] text-sm" /> Gate Automation</span>
+                        </div>
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                            <button className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-[#0c121e] px-7 py-3 rounded-full text-xs font-black tracking-wide shadow-[0_0_15px_rgba(208,163,83,0.4)] hover:shadow-[0_0_25px_rgba(208,163,83,0.6)] transition-all cursor-pointer">
+                                EXPLORE PROJECT <i className="fas fa-arrow-right ml-2" />
+                            </button>
+                        </div>
                     </div>
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                        <button className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-[#0c121e] px-7 py-3 rounded-full text-xs font-black tracking-wide shadow-[0_0_15px_rgba(208,163,83,0.4)] hover:shadow-[0_0_25px_rgba(208,163,83,0.6)] transition-all">
-                            EXPLORE PROJECT <i className="fas fa-arrow-right ml-2" />
-                        </button>
-                    </div>
-                </div>
-            </div>
+                )}
+            </CyclingCard>
 
             {/* ── 2. Top-middle (Hill View Villa) – auto-cycling ── */}
             <CyclingCard images={card2Images} interval={3200} className="min-h-[300px] lg:min-h-0">

@@ -13,56 +13,56 @@ export interface Product {
 export const products: Product[] = [
   // SWING GATE OPERATORS
   {
-    id: "sg-1", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW600-1.2M",
+    id: "sg-1", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "QUIK - Single Pedestrian Gate Operator",
     code: "AZSW600-1.2M",
     particulars: "OPERATOR - 1 NO, SMPS - 1 No, TRANSMITTER - 2 NOS",
     category: "Swing Gate Operators",
   },
   {
-    id: "sg-2", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW1062.5%2F250KG-L",
+    id: "sg-2", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80",
     name: "ICON - Swing Gate Single operator Left DC 2.5 Mtr 250 kg",
     code: "AZSW1062.5/250KG-L",
     particulars: "Operator - 1 No, Control Panel - 1No, TRANSMITTER - 2 Nos",
     category: "Swing Gate Operators",
   },
   {
-    id: "sg-3", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW1062.5%2F250KG-R",
+    id: "sg-3", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "ICON - Swing Gate Single Operator Right DC 2.5 Mtr 250 kg",
     code: "AZSW1062.5/250KG-R",
     particulars: "Operator - 1 No, Control Panel - 1No, TRANSMITTER - 2 Nos",
     category: "Swing Gate Operators",
   },
   {
-    id: "sg-4", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW110A%2F300KG%2F3MTR%2F1",
+    id: "sg-4", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "LINK - Swing Gate Single Operator DC 3 Mtr 300 kg",
     code: "AZSW110A/300KG/3MTR/1",
     particulars: "Operator - 1 No, Control Panel - 1 No, TRANSMITTER - 2 Nos",
     category: "Swing Gate Operators",
   },
   {
-    id: "sg-5", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW107B%2F4MTR%20400KG-L",
+    id: "sg-5", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80",
     name: "LITE - Swing Gate articulator Single operator LEFT DC 4 mtr 400 Kg",
     code: "AZSW107B/4MTR 400KG-L",
     particulars: "Operator - 1 No, Control Panel - 1 No, TRANSMITTER - 2 Nos",
     category: "Swing Gate Operators",
   },
   {
-    id: "sg-6", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW108A%2F400KG%201",
+    id: "sg-6", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
     name: "ECO - Swing gate Single Roller operator 400 Kg",
     code: "AZSW108A/400KG 1",
     particulars: "Operator - 1 No, Control Panel - 1 No, TRANSMITTER - 2 Nos",
     category: "Swing Gate Operators",
   },
   {
-    id: "sg-7", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW109A%2F1000KG%201",
+    id: "sg-7", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "ROBO - Swing Gate Single Roller Operator 1000 kg",
     code: "AZSW109A/1000KG 1",
     particulars: "Operator - 1 No, Control Panel - 1 No, TRANSMITTER - 2 Nos",
     category: "Swing Gate Operators",
   },
   {
-    id: "sg-8", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW1062.5%2F250KG%2F2",
+    id: "sg-8", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "ICON - Swing Gate Two Operator DC 2.5mtr 500 kg Kit",
     code: "AZSW1062.5/250KG/2",
     particulars: "Operator - 2 No, Control Panel - 1No, TRANSMITTER - 2 Nos, Photocell - 1 pair",
@@ -70,455 +70,455 @@ export const products: Product[] = [
   },
 
     {
-    id: "sg-9", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW1063%2F300KG%2F2",
+    id: "sg-9", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
     name: "ICON - Swing Gate Two Operator DC 3 mtr 600 kgs Kit",
     code: "AZSW1063/300KG/2",
     particulars: "Operator - 2 No, Control Panel - 1No, TRANSMITTER - 2 Nos, Photocell - 1 pair",
     category: "Swing Gate Operators"
   },
   {
-    id: "sg-10", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW110A%2F3MTR%2F300KG%202",
+    id: "sg-10", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "LINK - Swing Gate operator DC 3 mtr 600 kgs Kit",
     code: "AZSW110A/3MTR/300KG 2",
     particulars: "Operator - 2 No, Control Panel - 1No, TRANSMITTER - 2 Nos, Photocell - 1 pair",
     category: "Swing Gate Operators"
   },
   {
-    id: "sg-11", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW107B%2F2",
+    id: "sg-11", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "LITE - Swing Gate articulator operator DC",
     code: "AZSW107B/2",
     particulars: "Operator - 2 No, Control Panel - 1No, TRANSMITTER - 2 Nos, Photocell - 1 pair",
     category: "Swing Gate Operators"
   },
   {
-    id: "sg-12", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW108A%2F400KG%2F2",
+    id: "sg-12", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "ECO - SWING GATE ROLLER OPERATOR 800Kgs - KIT",
     code: "AZSW108A/400KG/2",
     particulars: "Operator - 2 No, Control Panel - 1No, TRANSMITTER - 2 Nos, Photocell - 1 pair",
     category: "Swing Gate Operators"
   },
   {
-    id: "sg-13", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW108B%2F800KG%2F2",
+    id: "sg-13", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "ECO - Swing gate roller operator 1600Kgs - Kit",
     code: "AZSW108B/800KG/2",
     particulars: "Operator - 2 No, Control Panel - 1No, TRANSMITTER - 2 Nos, Photocell - 1 pair",
     category: "Swing Gate Operators"
   },
   {
-    id: "sg-14", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW109A%2F1000KG%2F2",
+    id: "sg-14", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80",
     name: "ROBO - Swing gate roller operator 2000Kgs - Kit",
     code: "AZSW109A/1000KG/2",
     particulars: "Operator - 2 No, Control Panel - 1No, TRANSMITTER - 2 Nos, Photocell - 1 pair",
     category: "Swing Gate Operators"
   },
   {
-    id: "sg-15", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW111PGO",
+    id: "sg-15", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "GRID - Pedestrian Gate Operator 75KG",
     code: "AZSW111PGO",
     particulars: "Operator kit with Control board & Accessories",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-1", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZT30A",
+    id: "acc-1", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "IND TRANSMITTER",
     code: "AZT30A",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-2", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZT23B",
+    id: "acc-2", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
     name: "IND TRANSMITTER",
     code: "AZT23B",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-3", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZT23G",
+    id: "acc-3", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "IND TRANSMITTER",
     code: "AZT23G",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-4", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZTMB701A",
+    id: "acc-4", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
     name: "Multi Brand Transmitter",
     code: "AZTMB701A",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-5", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPGOT757",
+    id: "acc-5", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "TRANSMITTER PG",
     code: "AZPGOT757",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-6", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZT600",
+    id: "acc-6", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
     name: "TRANSMITTER SUITABLE FOR (AZSW600)",
     code: "AZT600",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-7", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZT31",
+    id: "acc-7", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "TRANSMITTER SUITABLE FOR (AZSW107B)",
     code: "AZT31",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-8", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPC10A",
+    id: "acc-8", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "BOLT-Photocell",
     code: "AZPC10A",
     particulars: "1 Pair",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-9", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPCWL11A",
+    id: "acc-9", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "BOLT-Photocell Wireless",
     code: "AZPCWL11A",
     particulars: "1 Pair",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-10", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZLPC12",
+    id: "acc-10", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "Laser Photocell",
     code: "AZLPC12",
     particulars: "1 NO",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-11", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZIR20",
+    id: "acc-11", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "Infrared Photocell",
     code: "AZIR20",
     particulars: "1 NO",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-12", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZIS4F20",
+    id: "acc-12", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "Infrared Sensor 4 BEAM 20M",
     code: "AZIS4F20",
     particulars: "1 pair",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-13", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZIS6F20",
+    id: "acc-13", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "Infrared Sensor 6 BEAM 20M",
     code: "AZIS6F20",
     particulars: "1 pair",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-14", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZRFPC41A8M",
+    id: "acc-14", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "REFLECTIVE PHOTOCELL",
     code: "AZRFPC41A8M",
     particulars: "1 Pair",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-15", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSR519",
+    id: "acc-15", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
     name: "Smart Receiver",
     code: "AZSR519",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-16", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZST518",
+    id: "acc-16", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "Samart Tag",
     code: "AZST518",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-17", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZER141",
+    id: "acc-17", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
     name: "External Receiver (4 CHANNEL)",
     code: "AZER141",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-18", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZRFWIFI31A",
+    id: "acc-18", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "RF WIFI MODULE",
     code: "AZRFWIFI31A",
     particulars: "1 no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-19", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZRER140",
+    id: "acc-19", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80",
     name: "Long Range External Reciver",
     code: "AZRER140",
     particulars: "1 Pair",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-20", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZGSM30",
+    id: "acc-20", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "GSM MODULE 2G",
     code: "AZGSM30",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-21", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZKS15",
+    id: "acc-21", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80",
     name: "KEYSWITCH",
     code: "AZKS15",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-22", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZWLKP17",
+    id: "acc-22", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "WIRELESS KEY PAD",
     code: "AZWLKP17",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-23", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPB16A",
+    id: "acc-23", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
     name: "PUSHBUTTON",
     code: "AZPB16A",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-24", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPBIP65",
+    id: "acc-24", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "PUSHBUTTON WATERPROOF",
     code: "AZPBIP65",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-25", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPBK16B",
+    id: "acc-25", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "PUSHBUTTON WITH KEY",
     code: "AZPBK16B",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-26", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPB16C",
+    id: "acc-26", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "PUSHBUTTON",
     code: "AZPB16C",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-27", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPB16E",
+    id: "acc-27", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "PCB PUSHBUTTON",
     code: "AZPB16E",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-28", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPB16F",
+    id: "acc-28", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "TWO BUTTON PUSHBUTTON",
     code: "AZPB16F",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-29", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPFAC452",
+    id: "acc-29", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "Finger Print & Password/card",
     code: "AZPFAC452",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-30", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZFL19",
+    id: "acc-30", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
     name: "FLASH LAMP",
     code: "AZFL19",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-31", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZFL20",
+    id: "acc-31", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "FLASH LAMP",
     code: "AZFL20",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-32", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZAFLAC19A",
+    id: "acc-32", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "ALARM FLASH LAMP",
     code: "AZAFLAC19A",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-33", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZAFLDC19B",
+    id: "acc-33", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "ALARM FLASH LAMP",
     code: "AZAFLDC19B",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-34", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZFLAC21",
+    id: "acc-34", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80",
     name: "FLASH LAMP",
     code: "AZFLAC21",
     particulars: "1 no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-35", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL12AADC",
+    id: "acc-35", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "SIGNAL LIGHT 24V",
     code: "AZSL12AADC",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-36", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL12AAC",
+    id: "acc-36", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "SIGNAL LIGHT 230V",
     code: "AZSL12AAC",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-37", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSWELBL32",
+    id: "acc-37", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "ELECTRONIC BOTTOM LOCK",
     code: "AZSWELBL32",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-38", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSWELCL33",
+    id: "acc-38", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80",
     name: "ELECTRONIC CENTER LOCK",
     code: "AZSWELCL33",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-39", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW231A",
+    id: "acc-39", image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
     name: "CONTROLLER FOR AC",
     code: "AZSW231A",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-40", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSW229A",
+    id: "acc-40", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
     name: "CONTROLLER",
     code: "AZSW229A",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-41", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSWDC227A",
+    id: "acc-41", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "CONTROLLER",
     code: "AZSWDC227A",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-42", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSWPCB600",
+    id: "acc-42", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "PCB ONLY FOR AZSW600",
     code: "AZSWPCB600",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-43", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSWSMPS600",
+    id: "acc-43", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "SMPS FOR AZSW600",
     code: "AZSWSMPS600",
     particulars: "1 NO",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-44", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSWDPCB200A",
+    id: "acc-44", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "PCB ONLY DIGITAL BOARD - ID200",
     code: "AZSWDPCB200A",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-45", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSWPCB580C",
+    id: "acc-45", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "PCB ONLY",
     code: "AZSWPCB580C",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-46", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSWDPCB228",
+    id: "acc-46", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80",
     name: "PCB ONLY DC ANALOG BOARD - T90",
     code: "AZSWDPCB228",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-47", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSWACPCB231A",
+    id: "acc-47", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "PCB ONLY AC",
     code: "AZSWACPCB231A",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-48", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSWPCB107B",
+    id: "acc-48", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80",
     name: "PCB ONLY - K280",
     code: "AZSWPCB107B",
     particulars: "1no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-49", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPGOCB751",
+    id: "acc-49", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "PEDESTRIAN CONTROL BOARD (PCB)",
     code: "AZPGOCB751",
     particulars: "1 no",
     category: "Swing Gate Operators"
   },
   {
-    id: "acc-50", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSWRS234",
+    id: "acc-50", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80",
     name: "Gate Rubber stopper",
     code: "AZSWRS234",
     particulars: "1NOS",
     category: "Swing Gate Operators"
   },
   {
-    id: "safe-1", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEGR206",
+    id: "safe-1", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "RUBBER PROFILE (60*40)",
     code: "AZSEGR206",
     particulars: "1 Meter",
     category: "Swing Gate Operators"
   },
   {
-    id: "safe-2", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEGAT106",
+    id: "safe-2", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
     name: "ALUMINIUM TRACK (60*40)",
     code: "AZSEGAT106",
     particulars: "1 - No (2m)",
     category: "Swing Gate Operators"
   },
   {
-    id: "safe-3", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEST3",
+    id: "safe-3", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
     name: "Sensor Tape",
     code: "AZSEST3",
     particulars: "1 Meter",
     category: "Swing Gate Operators"
   },
   {
-    id: "safe-4", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEP206",
+    id: "safe-4", image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80",
     name: "End Plug",
     code: "AZSEP206",
     particulars: "1 PAIR",
     category: "Swing Gate Operators"
   },
   {
-    id: "safe-5", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEEP05",
+    id: "safe-5", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
     name: "End Cap",
     code: "AZSEEP05",
     particulars: "1 PAIR",
     category: "Swing Gate Operators"
   },
   {
-    id: "safe-6", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZHSDBES64B",
+    id: "safe-6", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "SAFETY EDGE SENSOR STRIP",
     code: "AZHSDBES64B",
     particulars: "1 Nos",
     category: "Swing Gate Operators"
   },
   {
-    id: "safe-7", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEGR304",
+    id: "safe-7", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
     name: "RUBBER PROFILE (40*30)",
     code: "AZSEGR304",
     particulars: "1 Meter",
     category: "Swing Gate Operators"
   },
   {
-    id: "safe-8", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEGAT113",
+    id: "safe-8", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "ALUMINIUM TRACK (40*30)",
     code: "AZSEGAT113",
     particulars: "1 - No (2m/pc)",
@@ -527,56 +527,56 @@ export const products: Product[] = [
 
   // BOOM BARRIERS
   {
-    id: "bb-1", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBB113%2FAZBTO12M",
+    id: "bb-1", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "ZEN-BLDC BOOM BARRIER",
     code: "AZBB113/AZBTO12M",
     particulars: "BOOM 2M ROUND LED, TRANSMITTER (2 NOS)",
     category: "Boom Barriers",
   },
   {
-    id: "bb-2", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBB115A%2FAZBT01A6M",
+    id: "bb-2", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80",
     name: "ROD - TELESCOPIC HYBRID BLDC BOOM BARRIER",
     code: "AZBB115A/AZBT01A6M",
     particulars: "TELESCOPIC BOOM 6 MTR, TRANSMITTER (2 Nos), V HOLDER",
     category: "Boom Barriers",
   },
   {
-    id: "bb-3", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBB115A%2FAZBA06A",
+    id: "bb-3", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "ROD-ARM OUT HYBRID BLDC BOOM BARRIER",
     code: "AZBB115A/AZBA06A",
     particulars: "ARM OUT SQURE BOOM 6 MTR, TRANSMITTER (2 Nos)",
     category: "Boom Barriers",
   },
   {
-    id: "bb-4", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBB115A%2FAZBLO7A6M",
+    id: "bb-4", image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80",
     name: "ROD - LED BLDC HYBRID BOOM BARRIER",
     code: "AZBB115A/AZBLO7A6M",
     particulars: "LED BOOM 6 MTR, TRANSMITTER (2 Nos)",
     category: "Boom Barriers",
   },
   {
-    id: "bb-5", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBB115A%2FAZBF05A90D",
+    id: "bb-5", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
     name: "ROD - FOLDING HYBRID BLDC BOOM BARRIER 90 DEGREE",
     code: "AZBB115A/AZBF05A90D",
     particulars: "FOLDING BOOM 4 MTR, TRANSMITTER (2 Nos)",
     category: "Boom Barriers",
   },
   {
-    id: "bb-6", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBB115A%2FAZBFO3A4.5M",
+    id: "bb-6", image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80",
     name: "ROD - FENCE HYBRID BLDC BOOM BARRIER",
     code: "AZBB115A/AZBFO3A4.5M",
     particulars: "FENCH BOOM 4.5 MTR, TRANSMITTER (2 Nos)",
     category: "Boom Barriers",
   },
   {
-    id: "bb-7", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBL18%2FAZBT01A6M",
+    id: "bb-7", image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80",
     name: "RUSH- TELESCOPIC BLDC BOOM BARRIER",
     code: "AZBBL18/AZBT01A6M",
     particulars: "TELESCOPIC BOOM 6 MTR, TRANSMITTER (2 Nos)",
     category: "Boom Barriers",
   },
   {
-    id: "bb-8", image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBB119%2FAZBT088M",
+    id: "bb-8", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
     name: "TITAN- 8M TELESCOPIC BLDC BOOM BARRIER",
     code: "AZBB119/AZBT088M",
     particulars: "TELESCOPIC BOOM 8 MTR, TRANSMITTER (2 Nos)",
@@ -589,7 +589,7 @@ export const products: Product[] = [
     code: "AZBB115A/AZBF10A180D",
     particulars: "FOLDING BOOM 4 MTR, TRANSMITTER (2 Nos)",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBB115A%2FAZBF10A180D"
+    image: "https://images.unsplash.com/photo-1626229562768-45ee6cc3f374?q=80&w=600&auto=format&fit=crop"
   },
   {
     id: "bb-10",
@@ -597,7 +597,7 @@ export const products: Product[] = [
     code: "AZBBL18/AZBA06A",
     particulars: "ARM OUT SQURE BOOM 6 MTR, TRANSMITTER (2 Nos)",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBL18%2FAZBA06A"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-11",
@@ -605,7 +605,7 @@ export const products: Product[] = [
     code: "AZBBL18/AZBLO7A6M",
     particulars: "LED BOOM 6 MTR, TRANSMITTER (2 Nos)",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBL18%2FAZBLO7A6M"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-12",
@@ -613,7 +613,7 @@ export const products: Product[] = [
     code: "AZBBL18/AZBF05A90D",
     particulars: "FOLDING BOOM 4 MTR, TRANSMITTER (2 Nos)",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBL18%2FAZBF05A90D"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-13",
@@ -621,7 +621,7 @@ export const products: Product[] = [
     code: "AZBBL18/AZBF10A180D",
     particulars: "FOLDING BOOM 4 MTR, TRANSMITTER (2 Nos)",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBL18%2FAZBF10A180D"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-14",
@@ -629,7 +629,7 @@ export const products: Product[] = [
     code: "AZBBL18/AZBFO3A4.5M",
     particulars: "FENCH BOOM 4.5 MTR, TRANSMITTER (2 Nos)",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBL18%2FAZBFO3A4.5M"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-15",
@@ -637,7 +637,7 @@ export const products: Product[] = [
     code: "AZBB115/AZBF036M",
     particulars: "FENCH BOOM 6MTR, TRANSMITTER - 2 NOS",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBB115%2FAZBF036M"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-16",
@@ -645,7 +645,7 @@ export const products: Product[] = [
     code: "AZBBA117B/AZBA09A",
     particulars: "BOOM - 4 MTR 6SEC, TRANSMITTER (2 Nos)",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBA117B%2FAZBA09A"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-1",
@@ -653,7 +653,7 @@ export const products: Product[] = [
     code: "AZBLDCTX22",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBLDCTX22"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-2",
@@ -661,7 +661,7 @@ export const products: Product[] = [
     code: "AZBLDCTX23",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBLDCTX23"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-15",
@@ -669,7 +669,7 @@ export const products: Product[] = [
     code: "AZT142",
     particulars: "1 NO",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZT142"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-24",
@@ -677,7 +677,7 @@ export const products: Product[] = [
     code: "AZLB33",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZLB33"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-25",
@@ -685,7 +685,7 @@ export const products: Product[] = [
     code: "AZLB34",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZLB34"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-33",
@@ -693,7 +693,7 @@ export const products: Product[] = [
     code: "AZBBVH01",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBVH01"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-34",
@@ -701,7 +701,7 @@ export const products: Product[] = [
     code: "AZBBVH01A",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBVH01A"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-35",
@@ -709,7 +709,7 @@ export const products: Product[] = [
     code: "AZBBMVH02",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBMVH02"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-36",
@@ -717,7 +717,7 @@ export const products: Product[] = [
     code: "AZBT016M",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBT016M"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-37",
@@ -725,7 +725,7 @@ export const products: Product[] = [
     code: "AZBT014M",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBT014M"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-38",
@@ -733,7 +733,7 @@ export const products: Product[] = [
     code: "AZBF0590D",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBF0590D"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-39",
@@ -741,7 +741,7 @@ export const products: Product[] = [
     code: "AZBL076M",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBL076M"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-40",
@@ -749,7 +749,7 @@ export const products: Product[] = [
     code: "AZBA04",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBA04"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-41",
@@ -757,7 +757,7 @@ export const products: Product[] = [
     code: "AZBF034.5M",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBF034.5M"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-42",
@@ -765,7 +765,7 @@ export const products: Product[] = [
     code: "AZBF036M",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBF036M"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-43",
@@ -773,7 +773,7 @@ export const products: Product[] = [
     code: "AZBBLDCCB730",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBLDCCB730"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-44",
@@ -781,7 +781,7 @@ export const products: Product[] = [
     code: "AZBBLDCCB704",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBLDCCB704"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-45",
@@ -789,7 +789,7 @@ export const products: Product[] = [
     code: "AZBBAI606",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBAI606"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-46",
@@ -797,7 +797,7 @@ export const products: Product[] = [
     code: "AZBT01A6M",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBT01A6M"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-47",
@@ -805,7 +805,7 @@ export const products: Product[] = [
     code: "AZBL07A6M",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBL07A6M"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-48",
@@ -813,7 +813,7 @@ export const products: Product[] = [
     code: "AZBF03A4.5M",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBF03A4.5M"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-49",
@@ -821,7 +821,7 @@ export const products: Product[] = [
     code: "AZBF05A90D",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBF05A90D"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-50",
@@ -829,7 +829,7 @@ export const products: Product[] = [
     code: "AZBF10A180D",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBF10A180D"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-51",
@@ -837,7 +837,7 @@ export const products: Product[] = [
     code: "AZBT088M",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBT088M"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-52",
@@ -845,7 +845,7 @@ export const products: Product[] = [
     code: "AZBA09A",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBA09A"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-53",
@@ -853,7 +853,7 @@ export const products: Product[] = [
     code: "AZBA06A",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBA06A"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-54",
@@ -861,7 +861,7 @@ export const products: Product[] = [
     code: "AZBBCBNS03",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBCBNS03"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-55",
@@ -869,7 +869,7 @@ export const products: Product[] = [
     code: "AZBBCBNS04",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBCBNS04"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-56",
@@ -877,7 +877,7 @@ export const products: Product[] = [
     code: "AZBBCBNS05",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBCBNS05"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-57",
@@ -885,7 +885,7 @@ export const products: Product[] = [
     code: "AZBBAOM01",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBAOM01"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-58",
@@ -893,7 +893,7 @@ export const products: Product[] = [
     code: "AZBBBM19",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBBM19"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-59",
@@ -901,7 +901,7 @@ export const products: Product[] = [
     code: "AZBBPS708",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBPS708"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-60",
@@ -909,7 +909,7 @@ export const products: Product[] = [
     code: "AZBBPS720",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBPS720"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-61",
@@ -917,7 +917,7 @@ export const products: Product[] = [
     code: "AZBBPS709",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBPS709"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-62",
@@ -925,7 +925,7 @@ export const products: Product[] = [
     code: "AZBBPS710",
     particulars: "1 no",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBPS710"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-63",
@@ -933,7 +933,7 @@ export const products: Product[] = [
     code: "AZBBLEDS20",
     particulars: "6 MTR",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBLEDS20"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-64",
@@ -941,7 +941,7 @@ export const products: Product[] = [
     code: "AZBTED21",
     particulars: "3 MTR",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBTED21"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "bb-acc-65",
@@ -949,7 +949,7 @@ export const products: Product[] = [
     code: "AZBBSSB01",
     particulars: "1 No",
     category: "Boom Barriers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZBBSSB01"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   }
 ,
   // SLIDING GATE OPERATORS
@@ -959,7 +959,7 @@ export const products: Product[] = [
     code: "AZSL97",
     particulars: "Operator only 24V DC, TRANSMITTER - 2 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL97"
+    image: "https://images.unsplash.com/photo-1517420879524-86d64ac2f339?q=80&w=600&auto=format&fit=crop"
   },
   {
     id: "sl-2",
@@ -967,7 +967,7 @@ export const products: Product[] = [
     code: "AZSL99B",
     particulars: "Operator only 24V DC, TRANSMITTER - 2 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL99B"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-3",
@@ -975,7 +975,7 @@ export const products: Product[] = [
     code: "AZSL100B",
     particulars: "Operator only 220V AC, TRANSMITTER - 2 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL100B"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-4",
@@ -983,7 +983,7 @@ export const products: Product[] = [
     code: "AZSL101B",
     particulars: "Operator only 220V AC, TRANSMITTER - 2 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL101B"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-5",
@@ -991,7 +991,7 @@ export const products: Product[] = [
     code: "AZSL102B",
     particulars: "Operator only 220V AC, TRANSMITTER - 2 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL102B"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-6",
@@ -999,7 +999,7 @@ export const products: Product[] = [
     code: "AZSL1021B",
     particulars: "Operator only 220V AC, TRANSMITTER - 2 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL1021B"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-7",
@@ -1007,7 +1007,7 @@ export const products: Product[] = [
     code: "AZSL103I",
     particulars: "Operator Only 220V AC, TRANSMITTER - 2 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL103I"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-8",
@@ -1015,7 +1015,7 @@ export const products: Product[] = [
     code: "AZSL104I",
     particulars: "Operator Only 220V AC, TRANSMITTER - 2 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL104I"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-9",
@@ -1023,7 +1023,7 @@ export const products: Product[] = [
     code: "AZSL105I",
     particulars: "Operator Only 220V AC, TRANSMITTER - 2 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL105I"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-10",
@@ -1031,7 +1031,7 @@ export const products: Product[] = [
     code: "AZSL605I",
     particulars: "Operator Only 220V AC, TRANSMITTER - 2 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL605I"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-11",
@@ -1039,7 +1039,7 @@ export const products: Product[] = [
     code: "AZSL606I",
     particulars: "Operator Only 220V AC, TRANSMITTER - 2 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL606I"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-12",
@@ -1047,7 +1047,7 @@ export const products: Product[] = [
     code: "AZSL99B/KIT",
     particulars: "Operator 24V DC, TRANSMITTER - 2 Nos, BOLT-Photocells, GI Rack - 4 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL99B%2FKIT"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-13",
@@ -1055,7 +1055,7 @@ export const products: Product[] = [
     code: "AZSL100B/KIT",
     particulars: "Operator 220V AC, TRANSMITTER - 2 Nos, BOLT-Photocells, GI Rack - 4 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL100B%2FKIT"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-14",
@@ -1063,7 +1063,7 @@ export const products: Product[] = [
     code: "AZSL101B/KIT",
     particulars: "Operator 220V AC, TRANSMITTER - 2 Nos, BOLT-Photocells, GI Rack - 4 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL101B%2FKIT"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-15",
@@ -1071,7 +1071,7 @@ export const products: Product[] = [
     code: "AZSL102B/KIT",
     particulars: "Operator 220V AC, TRANSMITTER - 2 Nos, BOLT-Photocells, GI Rack - 4 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL102B%2FKIT"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-16",
@@ -1079,7 +1079,7 @@ export const products: Product[] = [
     code: "AZSL1021B/KIT",
     particulars: "Operator 220V AC, TRANSMITTER - 2 Nos, BOLT-Photocells, GI Rack - 4 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL1021B%2FKIT"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-1",
@@ -1087,7 +1087,7 @@ export const products: Product[] = [
     code: "AZT30A",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZT30A"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-2",
@@ -1095,7 +1095,7 @@ export const products: Product[] = [
     code: "AZT23B",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZT23B"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-3",
@@ -1103,7 +1103,7 @@ export const products: Product[] = [
     code: "AZT23G",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZT23G"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-4",
@@ -1111,7 +1111,7 @@ export const products: Product[] = [
     code: "AZTMB701A",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZTMB701A"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-5",
@@ -1119,7 +1119,7 @@ export const products: Product[] = [
     code: "AZPC10A",
     particulars: "1 Pair",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPC10A"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-6",
@@ -1127,7 +1127,7 @@ export const products: Product[] = [
     code: "AZPCWL11A",
     particulars: "1 Pair",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPCWL11A"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-7",
@@ -1135,7 +1135,7 @@ export const products: Product[] = [
     code: "AZLPC12",
     particulars: "1 NO",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZLPC12"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-8",
@@ -1143,7 +1143,7 @@ export const products: Product[] = [
     code: "AZIR20",
     particulars: "1 NO",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZIR20"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-9",
@@ -1151,7 +1151,7 @@ export const products: Product[] = [
     code: "AZIS4F20",
     particulars: "1 pair",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZIS4F20"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-10",
@@ -1159,7 +1159,7 @@ export const products: Product[] = [
     code: "AZIS6F20",
     particulars: "1 pair",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZIS6F20"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-11",
@@ -1167,7 +1167,7 @@ export const products: Product[] = [
     code: "AZRFPC41A8M",
     particulars: "1 Pair",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZRFPC41A8M"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-12",
@@ -1175,7 +1175,7 @@ export const products: Product[] = [
     code: "AZSR519",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSR519"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-13",
@@ -1183,7 +1183,7 @@ export const products: Product[] = [
     code: "AZST518",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZST518"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-14",
@@ -1191,7 +1191,7 @@ export const products: Product[] = [
     code: "AZER141",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZER141"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-15",
@@ -1199,7 +1199,7 @@ export const products: Product[] = [
     code: "AZRFWIFI31A",
     particulars: "1 no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZRFWIFI31A"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-16",
@@ -1207,7 +1207,7 @@ export const products: Product[] = [
     code: "AZRER140",
     particulars: "1 Pair",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZRER140"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-17",
@@ -1215,7 +1215,7 @@ export const products: Product[] = [
     code: "AZT142",
     particulars: "1 NO",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZT142"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-18",
@@ -1223,7 +1223,7 @@ export const products: Product[] = [
     code: "AZGSM30",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZGSM30"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-19",
@@ -1231,7 +1231,7 @@ export const products: Product[] = [
     code: "AZKS15",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZKS15"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-20",
@@ -1239,7 +1239,7 @@ export const products: Product[] = [
     code: "AZWLKP17",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZWLKP17"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-21",
@@ -1247,7 +1247,7 @@ export const products: Product[] = [
     code: "AZPB16A",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPB16A"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-22",
@@ -1255,7 +1255,7 @@ export const products: Product[] = [
     code: "AZPBIP65",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPBIP65"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-23",
@@ -1263,7 +1263,7 @@ export const products: Product[] = [
     code: "AZPBK16B",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPBK16B"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-24",
@@ -1271,7 +1271,7 @@ export const products: Product[] = [
     code: "AZPB16C",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPB16C"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-25",
@@ -1279,7 +1279,7 @@ export const products: Product[] = [
     code: "AZPB16E",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPB16E"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-26",
@@ -1287,7 +1287,7 @@ export const products: Product[] = [
     code: "AZPB16F",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPB16F"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-27",
@@ -1295,7 +1295,7 @@ export const products: Product[] = [
     code: "AZPFAC452",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPFAC452"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-28",
@@ -1303,7 +1303,7 @@ export const products: Product[] = [
     code: "AZFL19",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZFL19"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-29",
@@ -1311,7 +1311,7 @@ export const products: Product[] = [
     code: "AZFL20",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZFL20"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-30",
@@ -1319,7 +1319,7 @@ export const products: Product[] = [
     code: "AZAFLAC19A",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZAFLAC19A"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-31",
@@ -1327,7 +1327,7 @@ export const products: Product[] = [
     code: "AZAFLDC19B",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZAFLDC19B"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-32",
@@ -1335,7 +1335,7 @@ export const products: Product[] = [
     code: "AZFLAC21",
     particulars: "1 no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZFLAC21"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-33",
@@ -1343,7 +1343,7 @@ export const products: Product[] = [
     code: "AZSL12ADC",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL12ADC"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-34",
@@ -1351,7 +1351,7 @@ export const products: Product[] = [
     code: "AZSL12AAC",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSL12AAC"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-35",
@@ -1359,7 +1359,7 @@ export const products: Product[] = [
     code: "AZSLBB99B",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLBB99B"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-36",
@@ -1367,7 +1367,7 @@ export const products: Product[] = [
     code: "AZSLSP319",
     particulars: "1 no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLSP319"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-37",
@@ -1375,7 +1375,7 @@ export const products: Product[] = [
     code: "AZ9MM",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZ9MM"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-38",
@@ -1383,7 +1383,7 @@ export const products: Product[] = [
     code: "AZ12MM",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZ12MM"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-39",
@@ -1391,7 +1391,7 @@ export const products: Product[] = [
     code: "AZ22MM",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZ22MM"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-40",
@@ -1399,7 +1399,7 @@ export const products: Product[] = [
     code: "AZ8MMSS",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZ8MMSS"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-41",
@@ -1407,7 +1407,7 @@ export const products: Product[] = [
     code: "AZ30MMM6",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZ30MMM6"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-42",
@@ -1415,7 +1415,7 @@ export const products: Product[] = [
     code: "AZNR25MM",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZNR25MM"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-43",
@@ -1423,7 +1423,7 @@ export const products: Product[] = [
     code: "AZSLPCB97",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLPCB97"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-44",
@@ -1431,7 +1431,7 @@ export const products: Product[] = [
     code: "AZSLAPCB300A",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLAPCB300A"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-45",
@@ -1439,7 +1439,7 @@ export const products: Product[] = [
     code: "AZSLDPCB317A",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLDPCB317A"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-46",
@@ -1447,7 +1447,7 @@ export const products: Product[] = [
     code: "AZSLAFPCB330",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLAFPCB330"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-47",
@@ -1455,7 +1455,7 @@ export const products: Product[] = [
     code: "AZSLPCB500",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLPCB500"
+    image: "https://images.unsplash.com/photo-1600573472591-ee6981cf35b6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-48",
@@ -1463,7 +1463,7 @@ export const products: Product[] = [
     code: "AZSLPCB300B",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLPCB300B"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-acc-49",
@@ -1471,7 +1471,7 @@ export const products: Product[] = [
     code: "AZSLPCB317B",
     particulars: "1no",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLPCB317B"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-safe-1",
@@ -1479,7 +1479,7 @@ export const products: Product[] = [
     code: "AZSEGR206",
     particulars: "1 Meter",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEGR206"
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-safe-2",
@@ -1487,7 +1487,7 @@ export const products: Product[] = [
     code: "AZSEGAT106",
     particulars: "1 - No (2m/pc)",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEGAT106"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-safe-3",
@@ -1495,7 +1495,7 @@ export const products: Product[] = [
     code: "AZSEST3",
     particulars: "1 Meter",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEST3"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-safe-4",
@@ -1503,7 +1503,7 @@ export const products: Product[] = [
     code: "AZSEP206",
     particulars: "1 PAIR",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEP206"
+    image: "https://images.unsplash.com/photo-1613490908571-9ce224ce0258?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-safe-5",
@@ -1511,7 +1511,7 @@ export const products: Product[] = [
     code: "AZSEEP05",
     particulars: "1 PAIR",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEEP05"
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-safe-6",
@@ -1519,7 +1519,7 @@ export const products: Product[] = [
     code: "AZHSDBES64B",
     particulars: "1 Nos",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZHSDBES64B"
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-safe-7",
@@ -1527,7 +1527,7 @@ export const products: Product[] = [
     code: "AZSEGR304",
     particulars: "1 Meter",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEGR304"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sl-safe-8",
@@ -1535,7 +1535,7 @@ export const products: Product[] = [
     code: "AZSEGAT113",
     particulars: "1 - No (2m/pc)",
     category: "Sliding Gate Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSEGAT113"
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
   }
 ,
   // SLIDING GLASS DOOR OPERATORS
@@ -1545,7 +1545,7 @@ export const products: Product[] = [
     code: "AZSLD207/2M/KIT",
     particulars: "Operator, Controller, Belt, Pulley, Guide Rail 2M, Push Button",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLD207%2F2M%2FKIT"
+    image: "https://images.unsplash.com/photo-1626229562768-45ee6cc3f374?q=80&w=600&auto=format&fit=crop"
   },
   {
     id: "gd-2",
@@ -1553,7 +1553,7 @@ export const products: Product[] = [
     code: "AZSLD200/2.5MTR/KIT",
     particulars: "Operator, Controller, Guide Rail 2.5M, Glass Clamp, Push Button",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLD200%2F2.5MTR%2FKIT"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-3",
@@ -1561,7 +1561,7 @@ export const products: Product[] = [
     code: "AZSLD201F/4.2 M/KIT",
     particulars: "Operator, Controller, Guide Rail 4.2M, Microwave Sensor, Photocell",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLD201F%2F4.2%20M%2FKIT"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-4",
@@ -1569,7 +1569,7 @@ export const products: Product[] = [
     code: "AZSLD201F/6M/KIT",
     particulars: "Operator, Controller, Guide Rail 6M, Microwave Sensor, Photocell",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLD201F%2F6M%2FKIT"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-1",
@@ -1577,7 +1577,7 @@ export const products: Product[] = [
     code: "AZMW98A",
     particulars: "1 no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZMW98A"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-2",
@@ -1585,7 +1585,7 @@ export const products: Product[] = [
     code: "AZRIS99A",
     particulars: "1no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZRIS99A"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-3",
@@ -1593,7 +1593,7 @@ export const products: Product[] = [
     code: "AZSLDTLS73",
     particulars: "1 no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLDTLS73"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-4",
@@ -1601,7 +1601,7 @@ export const products: Product[] = [
     code: "AZSLDPBWL70A",
     particulars: "1 no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLDPBWL70A"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-5",
@@ -1609,7 +1609,7 @@ export const products: Product[] = [
     code: "AZSWDKS430",
     particulars: "1 no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSWDKS430"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-6",
@@ -1617,7 +1617,7 @@ export const products: Product[] = [
     code: "AZFS92",
     particulars: "1 no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZFS92"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-7",
@@ -1625,7 +1625,7 @@ export const products: Product[] = [
     code: "AZPFAC452",
     particulars: "1no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZPFAC452"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-8",
@@ -1633,7 +1633,7 @@ export const products: Product[] = [
     code: "AZSLDSBP71",
     particulars: "1 no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLDSBP71"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-9",
@@ -1641,7 +1641,7 @@ export const products: Product[] = [
     code: "AZSLDDB75",
     particulars: "1 no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLDDB75"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-10",
@@ -1649,7 +1649,7 @@ export const products: Product[] = [
     code: "AZIS4F20",
     particulars: "1 pair",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZIS4F20"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-11",
@@ -1657,7 +1657,7 @@ export const products: Product[] = [
     code: "AZIS6F20",
     particulars: "1 pair",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZIS6F20"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-12",
@@ -1665,7 +1665,7 @@ export const products: Product[] = [
     code: "AZLSEC46",
     particulars: "1no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZLSEC46"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-13",
@@ -1673,7 +1673,7 @@ export const products: Product[] = [
     code: "AZCGT98",
     particulars: "1no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZCGT98"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-14",
@@ -1681,7 +1681,7 @@ export const products: Product[] = [
     code: "AZCGB99",
     particulars: "1no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZCGB99"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-15",
@@ -1689,7 +1689,7 @@ export const products: Product[] = [
     code: "AZGAS100",
     particulars: "1no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZGAS100"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-16",
@@ -1697,7 +1697,7 @@ export const products: Product[] = [
     code: "AZGRS101",
     particulars: "1no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZGRS101"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-17",
@@ -1705,7 +1705,7 @@ export const products: Product[] = [
     code: "AZSLDGHTE411(1MTR)",
     particulars: "1 no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLDGHTE411(1MTR)"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "gd-acc-18",
@@ -1713,7 +1713,7 @@ export const products: Product[] = [
     code: "AZSLDGHTE411(1.5MTR)",
     particulars: "1 no",
     category: "Sliding Glass Door Operators",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=AZSLDGHTE411(1.5MTR)"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   }
 ,
   // SMART HOME PRODUCTS
@@ -1723,7 +1723,7 @@ export const products: Product[] = [
     code: "DS-RFT-1N",
     particulars: "",
     category: "Switches & Controls",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-RFT-1N"
+    image: "https://images.unsplash.com/photo-1517420879524-86d64ac2f339?q=80&w=600&auto=format&fit=crop"
   },
   {
     id: "sh-b447d2c9",
@@ -1731,7 +1731,7 @@ export const products: Product[] = [
     code: "DS-RFT-2N",
     particulars: "",
     category: "Switches & Controls",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-RFT-2N"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-f798c1fe",
@@ -1739,7 +1739,7 @@ export const products: Product[] = [
     code: "DS-RFT-3N",
     particulars: "",
     category: "Switches & Controls",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-RFT-3N"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-c75001bb",
@@ -1747,7 +1747,7 @@ export const products: Product[] = [
     code: "DS-RFT-4N",
     particulars: "",
     category: "Switches & Controls",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-RFT-4N"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-2a6303c4",
@@ -1755,7 +1755,7 @@ export const products: Product[] = [
     code: "DS-RFT-CRT",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-RFT-CRT"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-d84280d4",
@@ -1763,7 +1763,7 @@ export const products: Product[] = [
     code: "DS-RFT-2CRT",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-RFT-2CRT"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-50c4d04d",
@@ -1771,7 +1771,7 @@ export const products: Product[] = [
     code: "DS-RFT-3N+1F",
     particulars: "",
     category: "Accessories",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-RFT-3N%2B1F"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-31543173",
@@ -1779,7 +1779,7 @@ export const products: Product[] = [
     code: "DS-GAT-1MM",
     particulars: "",
     category: "Switches & Controls",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-GAT-1MM"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-9771b0c5",
@@ -1787,7 +1787,7 @@ export const products: Product[] = [
     code: "DS-GAT-1MWG",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-GAT-1MWG"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-ff2c4b24",
@@ -1795,7 +1795,7 @@ export const products: Product[] = [
     code: "DS-GAT-1WMMG",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-GAT-1WMMG"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-895b76c8",
@@ -1803,7 +1803,7 @@ export const products: Product[] = [
     code: "DS-GAT-1R",
     particulars: "",
     category: "Gateways & Controllers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-GAT-1R"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-e01786dc",
@@ -1811,7 +1811,7 @@ export const products: Product[] = [
     code: "DS-CPS-3.5INCH",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CPS-3.5INCH"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-5f55262d",
@@ -1819,7 +1819,7 @@ export const products: Product[] = [
     code: "DS-CPS-4INCH",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CPS-4INCH"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-cdca19e7",
@@ -1827,7 +1827,7 @@ export const products: Product[] = [
     code: "DS-CPS-8INCH",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CPS-8INCH"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-202ad76e",
@@ -1835,7 +1835,7 @@ export const products: Product[] = [
     code: "DS-CPS-10INCH",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CPS-10INCH"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-140cbdb1",
@@ -1843,7 +1843,7 @@ export const products: Product[] = [
     code: "DS-UIR-01",
     particulars: "",
     category: "Gateways & Controllers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-UIR-01"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-f7334ea3",
@@ -1851,7 +1851,7 @@ export const products: Product[] = [
     code: "DS-UIR-02",
     particulars: "",
     category: "Gateways & Controllers",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-UIR-02"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-b954e283",
@@ -1859,7 +1859,7 @@ export const products: Product[] = [
     code: "DS-WMS-12SW",
     particulars: "",
     category: "Accessories",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-WMS-12SW"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-fc5e1543",
@@ -1867,7 +1867,7 @@ export const products: Product[] = [
     code: "DS-WMS-18SW",
     particulars: "",
     category: "Accessories",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-WMS-18SW"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-3197720d",
@@ -1875,7 +1875,7 @@ export const products: Product[] = [
     code: "DS-ROT-02",
     particulars: "",
     category: "Accessories",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ROT-02"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-7a4d50f3",
@@ -1883,7 +1883,7 @@ export const products: Product[] = [
     code: "DS-ZLD-812",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ZLD-812"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-33226d33",
@@ -1891,7 +1891,7 @@ export const products: Product[] = [
     code: "DS-ZLD-1218",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ZLD-1218"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-e076750d",
@@ -1899,7 +1899,7 @@ export const products: Product[] = [
     code: "DS-ZLD-715",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ZLD-715"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-a71bbba2",
@@ -1907,7 +1907,7 @@ export const products: Product[] = [
     code: "DS-ZLD-1624",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ZLD-1624"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-0cad3668",
@@ -1915,7 +1915,7 @@ export const products: Product[] = [
     code: "DS-ZSD-2CH16A",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ZSD-2CH16A"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-3cae9c02",
@@ -1923,7 +1923,7 @@ export const products: Product[] = [
     code: "DS-ZSD-5CH16A",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ZSD-5CH16A"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-2971d3e6",
@@ -1931,7 +1931,7 @@ export const products: Product[] = [
     code: "DS-PL-CCTDS12",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-PL-CCTDS12"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-0736a080",
@@ -1939,7 +1939,7 @@ export const products: Product[] = [
     code: "DS-PL-CCTDS18",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-PL-CCTDS18"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-2051f5be",
@@ -1947,7 +1947,7 @@ export const products: Product[] = [
     code: "DS-PL-CCTDR12",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-PL-CCTDR12"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-b7089838",
@@ -1955,7 +1955,7 @@ export const products: Product[] = [
     code: "DS-PL-CCTDR18",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-PL-CCTDR18"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-c0707919",
@@ -1963,7 +1963,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB1",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB1"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-667441dc",
@@ -1971,7 +1971,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB2",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB2"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-6b12df27",
@@ -1979,7 +1979,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB3",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB3"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-5d71726d",
@@ -1987,7 +1987,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB4",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB4"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-ce7a91a9",
@@ -1995,7 +1995,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB5",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB5"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-c3f97630",
@@ -2003,7 +2003,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB6",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB6"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-0c9b0f32",
@@ -2011,7 +2011,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB7",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB7"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-6f8dd468",
@@ -2019,7 +2019,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB8",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB8"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-833cfda8",
@@ -2027,7 +2027,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB9",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB9"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-c2da44c5",
@@ -2035,7 +2035,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB10",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB10"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-3e41a124",
@@ -2043,7 +2043,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB11",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB11"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-94aab2ec",
@@ -2051,7 +2051,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB12",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB12"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-a1e95ec7",
@@ -2059,7 +2059,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB13",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB13"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-b1382307",
@@ -2067,7 +2067,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB14",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB14"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-5f9825c2",
@@ -2075,7 +2075,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB15",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB15"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-c6ef22d9",
@@ -2083,7 +2083,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB16",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB16"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-580f875e",
@@ -2091,7 +2091,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB17",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB17"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-05c8d253",
@@ -2099,7 +2099,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB18",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB18"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-13363a08",
@@ -2107,7 +2107,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB19",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB19"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-7e2f59d0",
@@ -2115,7 +2115,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB20",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB20"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-c8bbf247",
@@ -2123,7 +2123,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB21",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB21"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-e60377ce",
@@ -2131,7 +2131,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB22",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB22"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-d36d89e5",
@@ -2139,7 +2139,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB23",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB23"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-b366f27f",
@@ -2147,7 +2147,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB24",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB24"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-8035717d",
@@ -2155,7 +2155,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB25",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB25"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-a3a6d12f",
@@ -2163,7 +2163,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB26",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB26"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-448b9c40",
@@ -2171,7 +2171,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB27",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB27"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-6941dd44",
@@ -2179,7 +2179,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB28",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB28"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-cb9b27b2",
@@ -2187,7 +2187,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB29",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB29"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-81544dd0",
@@ -2195,7 +2195,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB30",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB30"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-571edd8e",
@@ -2203,7 +2203,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB31",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB31"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-a59b3466",
@@ -2211,7 +2211,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB32",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB32"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-d52ac22e",
@@ -2219,7 +2219,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB33",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB33"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-c803b5f5",
@@ -2227,7 +2227,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB34",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB34"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-798afc2c",
@@ -2235,7 +2235,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB35",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB35"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-a6c5a2c9",
@@ -2243,7 +2243,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB36",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB36"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-a67e6ccd",
@@ -2251,7 +2251,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB37",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB37"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-8f2df5c2",
@@ -2259,7 +2259,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB38",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB38"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-1dc6bf65",
@@ -2267,7 +2267,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB39",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB39"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-405884b0",
@@ -2275,7 +2275,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB40",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB40"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-dc1226f8",
@@ -2283,7 +2283,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB41",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB41"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-eee9d177",
@@ -2291,7 +2291,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB42",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB42"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-dacbd36a",
@@ -2299,7 +2299,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB43",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB43"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-5a2d89c5",
@@ -2307,7 +2307,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB44",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB44"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-6500ee6b",
@@ -2315,7 +2315,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB45",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB45"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-0dba0413",
@@ -2323,7 +2323,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB46",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB46"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-a316c3fd",
@@ -2331,7 +2331,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB47",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB47"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-eba9edae",
@@ -2339,7 +2339,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB48",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB48"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-ca3d556b",
@@ -2347,7 +2347,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB49",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB49"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-bcefe75e",
@@ -2355,7 +2355,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB50",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB50"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-2fdf7630",
@@ -2363,7 +2363,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB51",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB51"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-ad37da06",
@@ -2371,7 +2371,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB52",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB52"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-83454f36",
@@ -2379,7 +2379,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB53",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB53"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-9e5f9bee",
@@ -2387,7 +2387,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB54",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB54"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-95ab143d",
@@ -2395,7 +2395,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB55",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB55"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-ecda82b9",
@@ -2403,7 +2403,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB56",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB56"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-9c78f230",
@@ -2411,7 +2411,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB57",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB57"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-295ce972",
@@ -2419,7 +2419,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB58",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB58"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-675fe769",
@@ -2427,7 +2427,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB59",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB59"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-54804d67",
@@ -2435,7 +2435,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB60",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB60"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-534140a9",
@@ -2443,7 +2443,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB61",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB61"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-3b443742",
@@ -2451,7 +2451,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB62",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB62"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-7925e21a",
@@ -2459,7 +2459,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB63",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB63"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-5f0e91ff",
@@ -2467,7 +2467,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB64",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB64"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-47c93f72",
@@ -2475,7 +2475,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB65",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB65"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-34d0cde8",
@@ -2483,7 +2483,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB66",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB66"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-40f6f2cd",
@@ -2491,7 +2491,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB67",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB67"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-92858b07",
@@ -2499,7 +2499,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB68",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB68"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-ea99c09e",
@@ -2507,7 +2507,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB69",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB69"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-01cba25e",
@@ -2515,7 +2515,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB70",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB70"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-df5e95b4",
@@ -2523,7 +2523,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB71",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB71"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-2ca517a6",
@@ -2531,7 +2531,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB72",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB72"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-0fae65d3",
@@ -2539,7 +2539,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB73",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB73"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-3f6ace2f",
@@ -2547,7 +2547,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB74",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB74"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-8e23abdb",
@@ -2555,7 +2555,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB75",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB75"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-79a07921",
@@ -2563,7 +2563,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB76",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB76"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-d9a3e541",
@@ -2571,7 +2571,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB77",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB77"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-30aa5ecd",
@@ -2579,7 +2579,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB78",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB78"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-f5b3e7c9",
@@ -2587,7 +2587,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB79",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB79"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-11b5a9cc",
@@ -2595,7 +2595,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB80",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB80"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-b59f3e3e",
@@ -2603,7 +2603,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB81",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB81"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-eaebf593",
@@ -2611,7 +2611,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB82",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB82"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-b83a3a23",
@@ -2619,7 +2619,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB83",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB83"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-1811c371",
@@ -2627,7 +2627,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB84",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB84"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-d6017fbb",
@@ -2635,7 +2635,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB85",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB85"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-1e97e97c",
@@ -2643,7 +2643,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB86",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB86"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-c44fad0f",
@@ -2651,7 +2651,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB87",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB87"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-b5dc091c",
@@ -2659,7 +2659,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB88",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB88"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-069bd1bf",
@@ -2667,7 +2667,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB89",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB89"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-e457bdf2",
@@ -2675,7 +2675,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB90",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB90"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-43f39e24",
@@ -2683,7 +2683,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB91",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB91"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-198683fe",
@@ -2691,7 +2691,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB92",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB92"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-060b5188",
@@ -2699,7 +2699,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB93",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB93"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-2d8017c8",
@@ -2707,7 +2707,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB94",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB94"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-5623af23",
@@ -2715,7 +2715,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB95",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB95"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-13c5fdaa",
@@ -2723,7 +2723,7 @@ export const products: Product[] = [
     code: "DS-CCTDIM-COB96",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CCTDIM-COB96"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-4afeb3a2",
@@ -2731,7 +2731,7 @@ export const products: Product[] = [
     code: "DS-CURM-1.2Z",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CURM-1.2Z"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-ffc12e3b",
@@ -2739,7 +2739,7 @@ export const products: Product[] = [
     code: "DS-ECMT-10F",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ECMT-10F"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-b7e78ce9",
@@ -2747,7 +2747,7 @@ export const products: Product[] = [
     code: "DS-ECMT-15F",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ECMT-15F"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-ffdb8137",
@@ -2755,7 +2755,7 @@ export const products: Product[] = [
     code: "DS-CMT-1F01",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CMT-1F01"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-806d32f1",
@@ -2763,7 +2763,7 @@ export const products: Product[] = [
     code: "DS-CMR-2CH",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CMR-2CH"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-919bf376",
@@ -2771,7 +2771,7 @@ export const products: Product[] = [
     code: "DS-DL-B1",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-DL-B1"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-3899fa9b",
@@ -2779,7 +2779,7 @@ export const products: Product[] = [
     code: "DS-DL-B2",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-DL-B2"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-6d34b7e6",
@@ -2787,7 +2787,7 @@ export const products: Product[] = [
     code: "DS-DL-S1ProBasic",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-DL-S1ProBasic"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-0e414455",
@@ -2795,7 +2795,7 @@ export const products: Product[] = [
     code: "DS-DL-S1ProWIFI",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-DL-S1ProWIFI"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-f9c8ab84",
@@ -2803,7 +2803,7 @@ export const products: Product[] = [
     code: "DS-DL-S1ProZigBee",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-DL-S1ProZigBee"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-6b8aa979",
@@ -2811,7 +2811,7 @@ export const products: Product[] = [
     code: "DS-DL-S1ProRXTX",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-DL-S1ProRXTX"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-2ae94f34",
@@ -2819,7 +2819,7 @@ export const products: Product[] = [
     code: "DS-DL-S1Pro-G-Basic",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-DL-S1Pro-G-Basic"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-797b228d",
@@ -2827,7 +2827,7 @@ export const products: Product[] = [
     code: "DS-DL-S1Pro-G-WIFI",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-DL-S1Pro-G-WIFI"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-ab84194a",
@@ -2835,7 +2835,7 @@ export const products: Product[] = [
     code: "DS-DL-S1Pro-G-ZigBee",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-DL-S1Pro-G-ZigBee"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-d8e16236",
@@ -2843,7 +2843,7 @@ export const products: Product[] = [
     code: "DS-DL-S1Pro-G-RXTX",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-DL-S1Pro-G-RXTX"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-1453902f",
@@ -2851,7 +2851,7 @@ export const products: Product[] = [
     code: "DS-WDL-S3",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-WDL-S3"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-705bb829",
@@ -2859,7 +2859,7 @@ export const products: Product[] = [
     code: "DS-ZDL-S3Z",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ZDL-S3Z"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-d550b0f6",
@@ -2867,7 +2867,7 @@ export const products: Product[] = [
     code: "DS-ZDL-S3Pro",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ZDL-S3Pro"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-3b7fddc4",
@@ -2875,7 +2875,7 @@ export const products: Product[] = [
     code: "DS-ZDL-S4Lite",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ZDL-S4Lite"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-b28e1185",
@@ -2883,7 +2883,7 @@ export const products: Product[] = [
     code: "DS-ZDL-S4",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ZDL-S4"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-e7faa7bc",
@@ -2891,7 +2891,7 @@ export const products: Product[] = [
     code: "DS-ZDL-S4Curv",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-ZDL-S4Curv"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-015c1464",
@@ -2899,7 +2899,7 @@ export const products: Product[] = [
     code: "DS-WDL-S5",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-WDL-S5"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-6d7edc2b",
@@ -2907,7 +2907,7 @@ export const products: Product[] = [
     code: "DS-WDL-S5Pro",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-WDL-S5Pro"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-36a0bc1f",
@@ -2915,7 +2915,7 @@ export const products: Product[] = [
     code: "DS-WDL-S6",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-WDL-S6"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-1763dce8",
@@ -2923,7 +2923,7 @@ export const products: Product[] = [
     code: "DS-WDL-S7",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-WDL-S7"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-40dda2d2",
@@ -2931,7 +2931,7 @@ export const products: Product[] = [
     code: "DS-GDL-GS1",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-GDL-GS1"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-2c154587",
@@ -2939,7 +2939,7 @@ export const products: Product[] = [
     code: "DS-WD1",
     particulars: "",
     category: "Smart Locks & Security",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-WD1"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-3780a2ff",
@@ -2947,7 +2947,7 @@ export const products: Product[] = [
     code: "DS-WD2",
     particulars: "",
     category: "Smart Locks & Security",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-WD2"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-4d5ea084",
@@ -2955,7 +2955,7 @@ export const products: Product[] = [
     code: "DS-DB-DC02",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-DB-DC02"
+    image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-45b74188",
@@ -2963,7 +2963,7 @@ export const products: Product[] = [
     code: "DS-CPS-5INCH",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CPS-5INCH"
+    image: "https://images.unsplash.com/photo-1600607687644-b7171b6ba110?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-2325a5cc",
@@ -2971,7 +2971,7 @@ export const products: Product[] = [
     code: "DS-CPS-6INCH",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-CPS-6INCH"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-604869e6",
@@ -2979,7 +2979,7 @@ export const products: Product[] = [
     code: "DS-STAND",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-STAND"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-a984131d",
@@ -2987,7 +2987,7 @@ export const products: Product[] = [
     code: "DS-BATT",
     particulars: "",
     category: "Accessories",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-BATT"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-8238bc96",
@@ -2995,7 +2995,7 @@ export const products: Product[] = [
     code: "DS-RXTX",
     particulars: "",
     category: "Accessories",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-RXTX"
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-accf2504",
@@ -3003,7 +3003,7 @@ export const products: Product[] = [
     code: "DS-RFID",
     particulars: "",
     category: "Smart Locks & Security",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-RFID"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-9638b001",
@@ -3011,7 +3011,7 @@ export const products: Product[] = [
     code: "DS-MORTISE",
     particulars: "",
     category: "Smart Curtains",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-MORTISE"
+    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-c3412583",
@@ -3019,7 +3019,7 @@ export const products: Product[] = [
     code: "DS-BEZEL",
     particulars: "",
     category: "Accessories",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-BEZEL"
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-ba4f15e7",
@@ -3027,7 +3027,7 @@ export const products: Product[] = [
     code: "DS-GLASS",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-GLASS"
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
   },
   {
     id: "sh-4044341c",
@@ -3035,7 +3035,7 @@ export const products: Product[] = [
     code: "DS-EXTBEZEL",
     particulars: "",
     category: "Lighting",
-    image: "https://placehold.co/600x400/fdfcf9/d0a353?text=DS-EXTBEZEL"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
   }
 ,
   // FEATURED ROUTER

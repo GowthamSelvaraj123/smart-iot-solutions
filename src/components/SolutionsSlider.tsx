@@ -35,7 +35,7 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
     };
 
     return (
-        <section className="py-[60px] bg-[#f8f8f6] relative overflow-hidden">
+        <section className="py-[60px] bg-white relative overflow-hidden">
             <div className="container relative z-10">
                 <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
                     <div className="flex flex-col gap-5">

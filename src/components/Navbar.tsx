@@ -29,24 +29,16 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            href="/about"
-            className={`nav-link ${pathname === "/about" ? "active" : ""}`}
-          >
-            About Us
-          </Link>
-          <Link
-            href="/solutions"
-            className={`nav-link flex items-center gap-1 ${
-              pathname === "/solutions" ? "active" : ""
-            }`}
-          >
-            Solutions <i className="fas fa-chevron-down text-xs"></i>
-          </Link>
-          <Link
             href="/products"
             className={`nav-link ${pathname === "/products" ? "active" : ""}`}
           >
             Products
+          </Link>
+          <Link
+            href="/services"
+            className={`nav-link ${pathname === "/services" ? "active" : ""}`}
+          >
+            Services
           </Link>
           <Link
             href="/projects"
@@ -55,10 +47,16 @@ export default function Navbar() {
             Projects
           </Link>
           <Link
+            href="/about"
+            className={`nav-link ${pathname === "/about" ? "active" : ""}`}
+          >
+            About
+          </Link>
+          <Link
             href="/contact"
             className={`nav-link ${pathname === "/contact" ? "active" : ""}`}
           >
-            Contact Us
+            Contact
           </Link>
         </div>
 
@@ -70,7 +68,7 @@ export default function Navbar() {
             className="flex items-center gap-2 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-5 py-2.5 rounded font-medium hover:shadow-[0_0_20px_rgba(207,168,94,0.4)] hover:-translate-y-0.5 transition-all duration-200 group"
             title="Call Us Now"
           >
-            <i className="fas fa-phone-alt text-sm group-hover:animate-bounce"></i>
+            <i className="fas fa-phone-alt fa-flip-horizontal text-sm group-hover:animate-bounce"></i>
             <span className="text-sm font-semibold">Call Now</span>
           </a>
           {/* WhatsApp / Schedule Consultation Button */}
@@ -104,25 +102,18 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            href="/about"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className={`block py-3 border-b border-gray-50 ${pathname === "/about" ? "text-[#cfa85e] font-bold" : "text-gray-800 font-medium"}`}
-          >
-            About Us
-          </Link>
-          <Link
-            href="/solutions"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className={`block py-3 border-b border-gray-50 ${pathname === "/solutions" ? "text-[#cfa85e] font-bold" : "text-gray-800 font-medium"}`}
-          >
-            Solutions
-          </Link>
-          <Link
             href="/products"
             onClick={() => setIsMobileMenuOpen(false)}
             className={`block py-3 border-b border-gray-50 ${pathname === "/products" ? "text-[#cfa85e] font-bold" : "text-gray-800 font-medium"}`}
           >
             Products
+          </Link>
+          <Link
+            href="/services"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className={`block py-3 border-b border-gray-50 ${pathname === "/services" ? "text-[#cfa85e] font-bold" : "text-gray-800 font-medium"}`}
+          >
+            Services
           </Link>
           <Link
             href="/projects"
@@ -132,11 +123,18 @@ export default function Navbar() {
             Projects
           </Link>
           <Link
+            href="/about"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className={`block py-3 border-b border-gray-50 ${pathname === "/about" ? "text-[#cfa85e] font-bold" : "text-gray-800 font-medium"}`}
+          >
+            About
+          </Link>
+          <Link
             href="/contact"
             onClick={() => setIsMobileMenuOpen(false)}
             className={`block py-3 ${pathname === "/contact" ? "text-[#cfa85e] font-bold" : "text-gray-800 font-medium"}`}
           >
-            Contact Us
+            Contact
           </Link>
           <div className="mt-4 mb-4 flex flex-col gap-3">
             {/* Phone Call Button - Mobile */}
@@ -145,7 +143,7 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-6 py-2.5 rounded font-medium w-full"
             >
-              <i className="fas fa-phone-alt text-sm"></i>
+              <i className="fas fa-phone-alt fa-flip-horizontal text-sm"></i>
               <span className="font-semibold">Call Now</span>
             </a>
             <a
