@@ -8,16 +8,19 @@ import Footer from "@/components/Footer";
 const outfit = Outfit({ 
   subsets: ["latin"],
   variable: "--font-outfit",
+  display: "swap",
 });
 
 const inter = Inter({ 
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({ 
   subsets: ["latin"],
   variable: "--font-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
