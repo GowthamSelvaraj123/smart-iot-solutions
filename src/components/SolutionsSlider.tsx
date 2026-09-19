@@ -95,14 +95,15 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
                 {filteredSolutions.map((item, idx) => (
                     <div
                         key={idx}
-                        className="w-[80vw] md:w-[280px] lg:w-[300px] shrink-0 snap-start group bg-white rounded-2xl overflow-hidden shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.13)] transition-all duration-300 hover:-translate-y-1 flex flex-col border border-gray-100"
+                        className="w-[80vw] md:w-[280px] lg:w-[300px] shrink-0 snap-start group bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.1rem] shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_12px_40px_rgba(208,163,83,0.3)] transition-all duration-500 hover:-translate-y-1 h-full"
                     >
+                        <div className="bg-white rounded-2xl overflow-hidden flex flex-col h-full relative group/inner">
                         {/* Image Area */}
                         <div className="relative w-full h-52 overflow-hidden bg-gray-50">
                             <img
                                 src={item.img}
                                 alt={item.title}
-                                className="w-full h-full object-cover group-hover:scale-107 transition-transform duration-700 ease-in-out"
+                                className="w-full h-full object-cover group-hover/inner:scale-107 transition-transform duration-700 ease-in-out"
                                 style={{ transform: 'scale(1)', transition: 'transform 0.7s ease' }}
                                 onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.07)')}
                                 onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
@@ -150,7 +151,7 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
                             </div>
 
                             {/* Title */}
-                            <h3 className="font-heading text-[1.05rem] font-bold text-[#1a202c] mb-1.5 leading-tight group-hover:text-[#ca9740] transition-colors duration-200">
+                            <h3 className="font-heading text-[1.05rem] font-bold text-[#1a202c] mb-1.5 leading-tight group-hover/inner:text-[#ca9740] transition-colors duration-200">
                                 {item.title}
                             </h3>
 
@@ -181,6 +182,7 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
                                     <i className="fas fa-arrow-right text-xs"></i>
                                 </button>
                             </div>
+                        </div>
                         </div>
                     </div>
                 ))}

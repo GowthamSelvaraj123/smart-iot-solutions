@@ -114,68 +114,65 @@ export default function ProductsPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {filteredProducts.map((product) => (
-                  <div
-                    key={product.id}
-                    className="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-[0_20px_50px_rgba(208,163,83,0.12)] hover:border-[#d0a353]/30 transition-all duration-500 group flex flex-col h-full transform hover:-translate-y-1"
-                  >
-                    {/* Image Area */}
-                    <div className="w-full aspect-[4/3] bg-[#f9f8f4] relative flex items-center justify-center border-b border-gray-50 overflow-hidden">
-                      {product.isFeatured && (
-                        <div className="absolute top-3 left-3 bg-gradient-to-r from-red-600 to-red-500 text-white text-[0.6rem] font-bold px-3 py-1 rounded-full shadow-lg z-10 uppercase tracking-widest">
-                          Featured
-                        </div>
-                      )}
+                  <div key={product.id} className="bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.1rem] hover:shadow-[0_20px_50px_rgba(208,163,83,0.3)] transition-all duration-500 transform hover:-translate-y-1 h-full group/wrapper">
+                    <div className="bg-white rounded-2xl overflow-hidden flex flex-col h-full relative group">
                       
-                      <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-[#0c121e] text-[0.6rem] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full shadow-sm border border-gray-200/50 z-20">
-                        {product.code}
-                      </div>
+                      {/* Image Area */}
+                      <div className="w-full aspect-[4/3] bg-[#f9f8f4] relative flex items-center justify-center border-b border-gray-100 overflow-hidden">
+                        {product.isFeatured && (
+                          <div className="absolute top-3 left-3 bg-gradient-to-r from-red-600 to-red-500 text-white text-[0.6rem] font-bold px-3 py-1 rounded-full shadow-lg z-10 uppercase tracking-widest">
+                            Featured
+                          </div>
+                        )}
+                        
+                        <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-[#0c121e] text-[0.6rem] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full shadow-sm border border-gray-200/50 z-20">
+                          {product.code}
+                        </div>
 
-                      {product.image ? (
-                        <img
-                          src={product.image}
-                          alt={product.name}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
-                        />
-                      ) : (
-                        <i className="fas fa-box text-gray-300 text-5xl group-hover:scale-110 transition-transform duration-500"></i>
-                      )}
-                      
-                      {/* Hover Actions Overlay */}
-                      <div className="absolute inset-0 bg-[#0c121e]/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-4 z-10">
-                        <Link href={`/contact?product=${product.code}`} className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#0c121e] hover:bg-gradient-to-r hover:from-[#d0a353] hover:to-[#dfb45e] hover:text-[#0c121e] transition-all shadow-xl hover:scale-110" title="Request Quote">
-                          <i className="fas fa-file-invoice-dollar text-lg"></i>
-                        </Link>
-                        <button className="w-12 h-12 bg-gradient-to-r from-[#d0a353] to-[#dfb45e] rounded-full flex items-center justify-center text-[#0c121e] hover:from-[#0c121e] hover:to-[#1a202c] hover:text-white transition-all shadow-xl hover:scale-110" title="View Details">
-                          <i className="fas fa-eye text-lg"></i>
-                        </button>
-                      </div>
-                    </div>
-                    
-                    {/* Content Area */}
-                    <div className="p-6 flex flex-col flex-grow relative bg-white">
-                      
-                      <h3 className="text-[1.1rem] font-bold text-[#0c121e] mb-3 leading-snug group-hover:text-[#d0a353] transition-colors truncate" style={{ fontFamily: "var(--font-heading)" }}>
-                        {product.name}
-                      </h3>
-                      
-                      <div className="text-[0.8rem] text-gray-500 mb-6 flex-grow flex items-start gap-3">
-                        <div className="mt-0.5 bg-[#fdfcf9] w-6 h-6 rounded-full flex items-center justify-center shrink-0 border border-[#d0a353]/20 shadow-sm">
-                          <i className="fas fa-info text-[#d0a353] text-[0.6rem]"></i>
-                        </div>
-                        <span className="line-clamp-2 leading-relaxed pt-0.5">{product.particulars || "Standard configuration. Contact us for detailed specifications."}</span>
+                        {product.image ? (
+                          <img
+                            src={product.image}
+                            alt={product.name}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                          />
+                        ) : (
+                          <i className="fas fa-box text-gray-300 text-5xl group-hover:scale-105 transition-transform duration-500"></i>
+                        )}
                       </div>
                       
-                      <div className="mt-auto pt-5 border-t border-gray-100 flex items-center justify-between">
-                        <div className="flex flex-col">
-                           <span className="text-[0.65rem] font-bold text-gray-400 uppercase tracking-widest mb-0.5">Price</span>
-                           <span className="text-[#0c121e] font-bold text-sm">Quote Required</span>
+                      {/* Content Area */}
+                      <div className="p-5 flex flex-col flex-grow relative bg-white">
+                        
+                        <div className="flex justify-between items-start gap-3 mb-4 flex-grow">
+                          <h3 className="text-[0.95rem] font-bold text-[#0c121e] leading-snug group-hover:text-[#d0a353] transition-colors truncate pt-1" style={{ fontFamily: "var(--font-heading)" }}>
+                            {product.name}
+                          </h3>
+                          
+                          <div className="relative group/tooltip shrink-0 z-20">
+                              <div className="cursor-help bg-[#fdfcf9] w-7 h-7 rounded-full flex items-center justify-center border border-[#d0a353]/30 shadow-sm group-hover/tooltip:bg-[#d0a353] group-hover/tooltip:text-white transition-colors text-[#d0a353]">
+                                <i className="fas fa-info text-[10px] transition-colors"></i>
+                              </div>
+                              
+                              <div className="absolute bottom-full right-0 mb-2 w-56 p-3 bg-[#0c121e] text-white text-[0.7rem] leading-relaxed rounded-lg shadow-xl opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none border border-white/10">
+                                <div className="font-bold text-[#d0a353] mb-1 uppercase tracking-widest text-[0.6rem]">Specifications</div>
+                                {product.particulars || "Standard configuration. Contact us for detailed specifications."}
+                                <div className="absolute top-full right-2 border-4 border-transparent border-t-[#0c121e]"></div>
+                              </div>
+                          </div>
                         </div>
-                        <Link
-                          href={`/contact?product=${product.code}`}
-                          className="bg-gradient-to-r from-[#ca9740] to-[#dfb45e] hover:from-[#b58635] hover:to-[#ca9740] text-[#0c121e] text-[0.7rem] font-bold uppercase tracking-wider px-5 py-2.5 rounded-lg transition-all shadow-[0_4px_10px_rgba(208,163,83,0.3)] hover:shadow-[0_6px_15px_rgba(208,163,83,0.4)] hover:-translate-y-0.5 flex items-center gap-2"
-                        >
-                          Request <i className="fas fa-arrow-right text-[0.6rem]"></i>
-                        </Link>
+                        
+                        <div className="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between gap-2">
+                          <div className="flex flex-col min-w-0">
+                            <span className="text-[0.6rem] font-bold text-gray-400 uppercase tracking-widest mb-0.5">Price</span>
+                            <span className="text-[#0c121e] font-bold text-[0.8rem] truncate">Quote Req.</span>
+                          </div>
+                          <Link
+                            href={`/contact?product=${product.code}`}
+                            className="shrink-0 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] hover:from-[#b58635] hover:to-[#ca9740] text-[#0c121e] text-[0.65rem] font-bold uppercase tracking-wider px-4 py-2 rounded-lg transition-all shadow-[0_4px_10px_rgba(208,163,83,0.3)] hover:shadow-[0_6px_15px_rgba(208,163,83,0.4)] hover:-translate-y-0.5 flex items-center gap-1.5"
+                          >
+                            Request <i className="fas fa-arrow-right text-[0.5rem]"></i>
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
