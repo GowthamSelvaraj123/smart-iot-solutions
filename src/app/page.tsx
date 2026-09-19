@@ -62,46 +62,45 @@ export default function IndexPage() {
                 <TrustBadgeSlider />
 
                 
-                <h1 className="font-heading text-[4rem] font-bold text-white leading-[1.1] mb-4 tracking-wide"
-                   >
+                <h1 className="font-heading text-5xl lg:text-[4rem] font-bold text-white leading-[1.1] mb-4 tracking-wide">
                     An <span className="text-gold">Automation</span><br />Company
                 </h1>
 
                 
-                <p className="text-gray-300 text-xl mb-12 tracking-wide font-light">Smart Solutions for a Smarter Tomorrow
+                <p className="text-gray-300 text-lg lg:text-xl mb-10 lg:mb-12 tracking-wide font-light">Smart Solutions for a Smarter Tomorrow
                 </p>
 
                 
                 <a href="#"
-                    className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-10 py-4 rounded text-sm font-medium hover:shadow-[0_0_30px_rgba(207,168,94,0.5)] transition">
+                    className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-8 lg:px-10 py-3.5 lg:py-4 rounded text-sm font-medium hover:shadow-[0_0_30px_rgba(207,168,94,0.5)] transition">
                     Explore Solutions <i className="fas fa-chevron-right text-xs"></i>
                 </a>
             </div>
 
             
-            <div className="w-full lg:w-[45%] hero-content-right pl-10 relative pt-10">
+            <div className="w-full lg:w-[45%] hero-content-right pl-0 lg:pl-10 relative pt-10">
                 
                 <HeroSlider />
 
                 
                 <div
-                    className="hero-features-box w-full max-w-lg rounded-xl p-6 flex justify-between items-start mx-auto shadow-sm">
-                    <div className="flex flex-col items-center text-center w-1/4 px-1">
+                    className="hero-features-box w-full max-w-lg rounded-xl p-6 grid grid-cols-2 gap-y-6 md:flex md:justify-between items-start mx-auto shadow-sm mt-4 lg:mt-0">
+                    <div className="flex flex-col items-center text-center w-full md:w-1/4 px-1">
                         <i className="fas fa-home text-gold text-[1.7rem] mb-3"></i>
                         <span className="text-[0.65rem] font-bold text-gray-600 leading-snug">Smart
                             Living<br />Solutions</span>
                     </div>
-                    <div className="flex flex-col items-center text-center w-1/4 px-1">
+                    <div className="flex flex-col items-center text-center w-full md:w-1/4 px-1">
                         <i className="fas fa-leaf text-gold text-[1.7rem] mb-3"></i>
                         <span
                             className="text-[0.65rem] font-bold text-gray-600 leading-snug">Energy<br />Efficient<br />Systems</span>
                     </div>
-                    <div className="flex flex-col items-center text-center w-1/4 px-1">
+                    <div className="flex flex-col items-center text-center w-full md:w-1/4 px-1">
                         <i className="fas fa-shield-alt text-gold text-[1.7rem] mb-3"></i>
                         <span className="text-[0.65rem] font-bold text-gray-600 leading-snug">Secure
                             &<br />Reliable<br />Technology</span>
                     </div>
-                    <div className="flex flex-col items-center text-center w-1/4 px-1">
+                    <div className="flex flex-col items-center text-center w-full md:w-1/4 px-1">
                         <i className="fas fa-mobile-alt text-gold text-[1.7rem] mb-3"></i>
                         <span className="text-[0.65rem] font-bold text-gray-600 leading-snug">Easy
                             to<br />Control<br />Anywhere</span>
@@ -114,7 +113,7 @@ export default function IndexPage() {
     <SolutionsSlider solutions={solutions} />
 
     
-    <section className="py-[60px] relative overflow-hidden bg-[#fdfcf9]">
+    <section className="py-12 lg:py-[60px] relative overflow-hidden bg-[#fdfcf9]">
         
         <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
             <svg className="absolute top-0 right-[-10%] w-[60%] h-full text-[#f2eee3]" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -137,7 +136,7 @@ export default function IndexPage() {
                             <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-1 bg-[#d0a353] rotate-45"></span>
                         </span>
                     </div>
-                    <h2 className="font-heading text-[2rem] lg:text-[2.2rem] mb-3 font-bold text-[#1a202c] leading-[1.1] tracking-tight">
+                    <h2 className="font-heading text-3xl lg:text-[2.2rem] mb-3 font-bold text-[#1a202c] leading-[1.1] tracking-tight">
                         RAISES YOUR VOICE<br />
                         <span className="text-[#d0a353] font-heading font-medium tracking-wide">RULE YOUR TERRITORY</span>
                     </h2>
@@ -145,25 +144,25 @@ export default function IndexPage() {
                         Proudly empowering businesses and homes across South India with smart & secure solutions.
                     </p>
                     
-                    <div className="relative w-full max-w-[420px] mx-auto lg:ml-0 mt-8 pl-4">
-                        <img src="images/map.png" alt="South India Map" className="w-full drop-shadow-[0_10px_25px_rgba(208,163,83,0.2)] relative z-10 scale-105 transform origin-left" />
+                    <div className="relative w-full max-w-[320px] lg:max-w-[420px] mx-auto lg:ml-0 mt-8 pl-4 lg:pl-4">
+                        <img src="images/map.png" alt="South India Map" className="w-full drop-shadow-[0_10px_25px_rgba(208,163,83,0.2)] relative z-10 scale-100 lg:scale-105 transform origin-left" />
                         
-                        <div className="absolute top-[55%] -right-8 z-20 bg-white/95 backdrop-blur-sm rounded-[1rem] shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-[#d0a353]/20 py-4 px-5 text-center flex flex-col items-center justify-center transform hover:-translate-y-1 transition duration-300">
-                            <i className="far fa-handshake text-[#d0a353] text-2xl mb-1.5"></i>
-                            <div className="text-[8px] text-gray-500 font-medium mb-1 tracking-wide uppercase">Trusted by</div>
-                            <div className="text-[#ca9740] font-bold text-3xl leading-none mb-1.5 font-heading">50+</div>
-                            <div className="text-[8px] text-gray-600 font-bold leading-tight">Brands Across<br />South India</div>
+                        <div className="absolute top-[55%] -right-4 lg:-right-8 z-20 bg-white/95 backdrop-blur-sm rounded-[1rem] shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-[#d0a353]/20 py-3 px-4 lg:py-4 lg:px-5 text-center flex flex-col items-center justify-center transform hover:-translate-y-1 transition duration-300">
+                            <i className="far fa-handshake text-[#d0a353] text-xl lg:text-2xl mb-1 lg:mb-1.5"></i>
+                            <div className="text-[7px] lg:text-[8px] text-gray-500 font-medium mb-1 tracking-wide uppercase">Trusted by</div>
+                            <div className="text-[#ca9740] font-bold text-2xl lg:text-3xl leading-none mb-1 lg:mb-1.5 font-heading">50+</div>
+                            <div className="text-[7px] lg:text-[8px] text-gray-600 font-bold leading-tight">Brands Across<br />South India</div>
                         </div>
                     </div>
                 </div>
                 
                 
-                <div className="lg:col-span-7 pt-0">
-                    <div className="flex items-center gap-4 mb-10">
-                        <span className="flex-grow h-[1px] bg-[#d0a353]/30 relative">
+                <div className="lg:col-span-7 pt-0 mt-8 lg:mt-0">
+                    <div className="flex items-center gap-4 mb-8 lg:mb-10">
+                        <span className="flex-grow h-[1px] bg-[#d0a353]/30 relative hidden sm:block">
                             <span className="absolute right-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-[#d0a353] rotate-45"></span>
                         </span>
-                        <span className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav">OUR VALUED PARTNERS & CLIENTS</span>
+                        <span className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav whitespace-nowrap">OUR VALUED PARTNERS & CLIENTS</span>
                         <span className="w-12 lg:w-24 h-[1px] bg-[#d0a353]/30 relative">
                             <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-[#d0a353] rotate-45"></span>
                         </span>
@@ -178,10 +177,10 @@ export default function IndexPage() {
                             clients.slice(54)
                         ].map((rowClients, rowIdx) => (
                             <div key={rowIdx} className="flex relative w-max overflow-hidden hover-pause">
-                                <div className={`flex gap-4 w-max ${rowIdx % 2 !== 0 ? 'animate-marquee-reverse' : 'animate-marquee'}`}>
+                                <div className={`flex gap-3 lg:gap-4 w-max ${rowIdx % 2 !== 0 ? 'animate-marquee-reverse' : 'animate-marquee'}`}>
                                     {[...rowClients, ...rowClients].map((client, idx) => (
-                                        <div key={idx} className="w-[180px] h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition group shrink-0">
-                                            <span className="font-badge text-[10px] sm:text-[11px] font-bold text-gray-800 text-center uppercase leading-tight tracking-wider group-hover:text-[#d0a353] transition-colors">{client}</span>
+                                        <div key={idx} className="w-[150px] lg:w-[180px] h-[60px] lg:h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition group shrink-0">
+                                            <span className="font-badge text-[9px] sm:text-[11px] font-bold text-gray-800 text-center uppercase leading-tight tracking-wider group-hover:text-[#d0a353] transition-colors">{client}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -192,57 +191,59 @@ export default function IndexPage() {
             </div>
             
             
-            <div className="mt-14 bg-white/80 backdrop-blur-md rounded-[1.25rem] p-4 lg:py-5 lg:px-8 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-[#d0a353]/20 flex flex-wrap lg:flex-nowrap items-center justify-between gap-6 relative z-30">
+            <div className="mt-14 bg-white/80 backdrop-blur-md rounded-[1.25rem] p-5 lg:py-5 lg:px-8 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-[#d0a353]/20 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-6 relative z-30">
                 
-                <div className="flex-grow flex flex-col sm:flex-row items-center sm:items-start lg:items-center justify-between gap-4 pr-0 lg:pr-2">
+                <div className="w-full lg:w-auto flex flex-col sm:flex-row items-center sm:items-start lg:items-center justify-between gap-4">
                     <div className="text-center sm:text-left">
                         <div className="text-[0.65rem] font-bold text-gray-900 uppercase tracking-[0.1em] font-nav mb-1">LET&apos;S BUILD SMARTER TOGETHER</div>
                         <div className="text-[0.65rem] text-gray-500 font-medium">Your vision, our technology - a smarter tomorrow.</div>
                     </div>
-                    <a href="#" className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-6 py-2.5 rounded text-[0.65rem] font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition uppercase tracking-wider whitespace-nowrap shrink-0 font-nav">
+                    <a href="#" className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-white px-6 py-2.5 rounded text-[0.65rem] font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition uppercase tracking-wider whitespace-nowrap shrink-0 font-nav mt-3 sm:mt-0">
                         GET IN TOUCH <i className="fas fa-chevron-right text-[8px]"></i>
                     </a>
                 </div>
                 
                 <div className="hidden lg:block w-[1px] h-12 bg-gray-200 mx-2"></div>
                 
-                <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-full border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] text-lg bg-[#d0a353]/5 shrink-0">
-                        <i className="fas fa-users"></i>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 lg:gap-4 w-full lg:w-auto lg:flex">
+                    <div className="flex flex-col lg:flex-row items-center text-center lg:text-left gap-2 lg:gap-3">
+                        <div className="w-10 h-10 lg:w-11 lg:h-11 rounded-full border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] text-base lg:text-lg bg-[#d0a353]/5 shrink-0">
+                            <i className="fas fa-users"></i>
+                        </div>
+                        <div>
+                            <div className="font-bold text-lg lg:text-xl text-gray-900 leading-none mb-1">50+</div>
+                            <div className="text-[0.6rem] lg:text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">Happy Clients</div>
+                        </div>
                     </div>
-                    <div>
-                        <div className="font-bold text-xl text-gray-900 leading-none mb-1">50+</div>
-                        <div className="text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">Happy Clients</div>
+                    
+                    <div className="flex flex-col lg:flex-row items-center text-center lg:text-left gap-2 lg:gap-3">
+                        <div className="w-10 h-10 lg:w-11 lg:h-11 rounded-full border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] text-base lg:text-lg bg-[#d0a353]/5 shrink-0">
+                            <i className="fas fa-briefcase"></i>
+                        </div>
+                        <div>
+                            <div className="font-bold text-lg lg:text-xl text-gray-900 leading-none mb-1">100+</div>
+                            <div className="text-[0.6rem] lg:text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">Projects Delivered</div>
+                        </div>
                     </div>
-                </div>
-                
-                <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-full border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] text-lg bg-[#d0a353]/5 shrink-0">
-                        <i className="fas fa-briefcase"></i>
+                    
+                    <div className="flex flex-col lg:flex-row items-center text-center lg:text-left gap-2 lg:gap-3">
+                        <div className="w-10 h-10 lg:w-11 lg:h-11 rounded-full border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] text-base lg:text-lg bg-[#d0a353]/5 shrink-0">
+                            <i className="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <div className="font-bold text-lg lg:text-xl text-gray-900 leading-none mb-1">5+</div>
+                            <div className="text-[0.6rem] lg:text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">Years of Trust</div>
+                        </div>
                     </div>
-                    <div>
-                        <div className="font-bold text-xl text-gray-900 leading-none mb-1">100+</div>
-                        <div className="text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">Projects Delivered</div>
-                    </div>
-                </div>
-                
-                <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-full border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] text-lg bg-[#d0a353]/5 shrink-0">
-                        <i className="fas fa-shield-alt"></i>
-                    </div>
-                    <div>
-                        <div className="font-bold text-xl text-gray-900 leading-none mb-1">5+</div>
-                        <div className="text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">Years of Trust</div>
-                    </div>
-                </div>
-                
-                <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-full border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] text-lg bg-[#d0a353]/5 shrink-0">
-                        <i className="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div>
-                        <div className="font-bold text-[0.8rem] text-gray-900 leading-tight mb-0.5">Across</div>
-                        <div className="text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">South India</div>
+                    
+                    <div className="flex flex-col lg:flex-row items-center text-center lg:text-left gap-2 lg:gap-3">
+                        <div className="w-10 h-10 lg:w-11 lg:h-11 rounded-full border border-[#d0a353]/40 flex items-center justify-center text-[#d0a353] text-base lg:text-lg bg-[#d0a353]/5 shrink-0">
+                            <i className="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <div className="font-bold text-[0.75rem] lg:text-[0.8rem] text-gray-900 leading-tight mb-0.5">Across</div>
+                            <div className="text-[0.6rem] lg:text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">South India</div>
+                        </div>
                     </div>
                 </div>
             </div>

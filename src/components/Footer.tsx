@@ -321,17 +321,17 @@ export default function Footer() {
 
       {/* FOOTER BOTTOM */}
       <div className="w-full border-t border-gray-800 mt-12">
-        <div className="container flex flex-wrap justify-between items-center text-[0.65rem] text-gray-400" style={{ paddingTop: "24px", paddingBottom: "24px" }}>
+        <div className="container flex flex-col md:flex-row flex-wrap justify-between items-center gap-4 text-[0.65rem] text-gray-400 text-center md:text-left" style={{ paddingTop: "24px", paddingBottom: "24px" }}>
         <div>&copy; 2024 Smart Solution IoT. All Rights Reserved.</div>
-        <div className="flex items-center justify-center gap-6 my-3 lg:my-0">
+        <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-6 my-2 lg:my-0">
           <Link href="#" className="hover:text-white">
             Privacy Policy
           </Link>
-          <span className="text-gray-700">|</span>
+          <span className="text-gray-700 hidden sm:inline">|</span>
           <Link href="#" className="hover:text-white">
             Terms & Conditions
           </Link>
-          <span className="text-gray-700">|</span>
+          <span className="text-gray-700 hidden sm:inline">|</span>
           <Link href="#" className="hover:text-white">
             Sitemap
           </Link>

@@ -16,7 +16,7 @@ export default function Navbar() {
           <img
             src="/images/smart-iot-solutions.png"
             alt="Smart IoT Solution"
-            className="w-[180px] h-[65px] object-contain"
+            className="w-[150px] md:w-[180px] h-[55px] md:h-[65px] object-contain"
           />
         </Link>
 
