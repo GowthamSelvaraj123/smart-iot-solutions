@@ -95,19 +95,33 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
                 {filteredSolutions.map((item, idx) => (
                     <div
                         key={idx}
-                        className="w-[80vw] md:w-[280px] lg:w-[300px] shrink-0 snap-start group bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.1rem] shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_12px_40px_rgba(208,163,83,0.3)] transition-all duration-500 hover:-translate-y-1 h-full"
+                        className="w-[80vw] md:w-[280px] lg:w-[300px] shrink-0 snap-start group bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.1rem] shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_12px_40px_rgba(208,163,83,0.3)] transition-all duration-500 hover:-translate-y-1 h-full cursor-pointer"
                     >
                         <div className="bg-white rounded-2xl overflow-hidden flex flex-col h-full relative group/inner">
                         {/* Image Area */}
                         <div className="relative w-full h-52 overflow-hidden bg-gray-50">
-                            <img
-                                src={item.img}
-                                alt={item.title}
-                                className="w-full h-full object-cover group-hover/inner:scale-107 transition-transform duration-700 ease-in-out"
-                                style={{ transform: 'scale(1)', transition: 'transform 0.7s ease' }}
-                                onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.07)')}
-                                onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
-                            />
+                            {item.img?.match(/\.(mp4|webm)$/i) ? (
+                                <video
+                                    src={item.img}
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className="w-full h-full object-cover group-hover/inner:scale-107 transition-transform duration-700 ease-in-out"
+                                    style={{ transform: 'scale(1)', transition: 'transform 0.7s ease' }}
+                                    onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.07)')}
+                                    onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
+                                />
+                            ) : (
+                                <img
+                                    src={item.img}
+                                    alt={item.title}
+                                    className="w-full h-full object-cover group-hover/inner:scale-107 transition-transform duration-700 ease-in-out"
+                                    style={{ transform: 'scale(1)', transition: 'transform 0.7s ease' }}
+                                    onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.07)')}
+                                    onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
+                                />
+                            )}
 
                             {/* Category Badge - top left */}
                             <div className="absolute top-3 left-3">

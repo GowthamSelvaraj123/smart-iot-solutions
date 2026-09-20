@@ -14,17 +14,17 @@ import ProjectsBento from '@/components/ProjectsBento';
 import GetStartedButton from '@/components/GetStartedButton';
 
 const solutions = [
-  { title: "Luxury Villa", desc: "Smart living with advanced automation and control.", img: "images/auto_villa_1786093987554.png", category: "Residential" },
-  { title: "Apartment", desc: "Smart solutions for comfortable and convenient living.", img: "images/auto_apartment_1786094001400.png", category: "Residential" },
-  { title: "Office", desc: "Boost productivity with smart office automation.", img: "images/auto_office_1786094016416.png", category: "Commercial" },
-  { title: "Hospital", desc: "Intelligent systems for better patient care and management.", img: "images/auto_hospital_1786094034170.png", category: "Commercial" },
-  { title: "Hostel / PG", desc: "Smart & secure living for hostels and PG accommodations.", img: "images/auto_hostel_1786094051526.png", category: "Commercial" },
-  { title: "Shopping Mall", desc: "Enhance customer experience with smart technology.", img: "images/hero.png", category: "Commercial" },
-  { title: "Warehouse", desc: "Automate operations and improve overall efficiency.", img: "images/auto_office_1786094016416.png", category: "Commercial" },
-  { title: "Farmhouse", desc: "Smart automation for a greener and safer lifestyle.", img: "images/hero_pool_1786093934613.png", category: "Residential" },
-  { title: "Hotel / Resort", desc: "Deliver luxury and comfort with smart automation.", img: "images/smart_home_villa_1786093285055.png", category: "Commercial" },
-  { title: "Software / App Dev", desc: "Custom software, websites, and application development.", img: "https://picsum.photos/seed/software/400/300", category: "Specialized" },
-  { title: "Jewellery Shop", desc: "Advanced security and smart automation for premium retail.", img: "https://picsum.photos/seed/jewellery/400/300", category: "Commercial" }
+  { title: "Luxury Villa", desc: "Smart living with advanced automation and control.", img: "videos/luxury_villa_360.mp4", category: "Residential" },
+  { title: "Apartment", desc: "Smart solutions for comfortable and convenient living.", img: "videos/apartment_tour.mp4", category: "Residential" },
+  { title: "Office", desc: "Boost productivity with smart office automation.", img: "videos/office_automation.mp4", category: "Commercial" },
+  { title: "Hospital", desc: "Intelligent systems for better patient care and management.", img: "videos/hospital_smart.mp4", category: "Commercial" },
+  { title: "Hostel / PG", desc: "Smart & secure living for hostels and PG accommodations.", img: "videos/hostel_secure.mp4", category: "Commercial" },
+  { title: "Shopping Mall", desc: "Enhance customer experience with smart technology.", img: "videos/mall_tech.mp4", category: "Commercial" },
+  { title: "Warehouse", desc: "Automate operations and improve overall efficiency.", img: "videos/warehouse_auto.mp4", category: "Commercial" },
+  { title: "Farmhouse", desc: "Smart automation for a greener and safer lifestyle.", img: "videos/farmhouse_green.mp4", category: "Residential" },
+  { title: "Hotel / Resort", desc: "Deliver luxury and comfort with smart automation.", img: "videos/hotel_resort.mp4", category: "Commercial" },
+  { title: "Software / App Dev", desc: "Custom software, websites, and application development.", img: "videos/software_dev.mp4", category: "Specialized" },
+  { title: "Jewellery Shop", desc: "Advanced security and smart automation for premium retail.", img: "videos/jewellery_security.mp4", category: "Commercial" }
 ];
 
 const clients = [
@@ -276,16 +276,15 @@ export default function IndexPage() {
     
     <section className="py-[60px] bg-[#d0a353]">
         <div className="container max-w-[1400px]">
-            <div className="text-center mb-12">
+            <div className="text-left mb-12">
                 <div className="text-[0.65rem] font-bold text-white tracking-[0.15em] uppercase font-nav mb-4">CHOOSE YOUR PERFECT SOLUTION</div>
                 <h2 className="font-heading text-3xl lg:text-[2.5rem] mb-4 font-bold text-[#1a202c]">
                     Smart Home <span className="text-white font-heading">Automation Packages</span>
                 </h2>
                 
-                <div className="flex items-center justify-center gap-2 mt-4">
-                    <span className="w-16 h-[1px] bg-gradient-to-r from-transparent to-white/60"></span>
-                    <i className="fas fa-gem text-white text-[10px]"></i>
-                    <span className="w-16 h-[1px] bg-gradient-to-l from-transparent to-white/60"></span>
+                <div className="flex items-center justify-start gap-3 mt-4">
+                    <i className="fas fa-gem text-white text-[12px]"></i>
+                    <span className="w-32 h-[1px] bg-gradient-to-r from-white/60 to-transparent"></span>
                 </div>
             </div>
 
@@ -389,114 +388,146 @@ export default function IndexPage() {
         </div>
 
         <div className="container relative z-10 max-w-[1200px]">
-            <div className="text-center mb-16">
-                <div className="inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-[#d0a353]/10 border border-[#d0a353]/20 mb-4">
+            <div className="text-left mb-16">
+                <div className="inline-flex items-center justify-start gap-2 px-4 py-1.5 rounded-full bg-[#d0a353]/10 border border-[#d0a353]/20 mb-4">
                     <i className="fas fa-magic text-[#d0a353] text-[10px]"></i>
                     <span className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav">EXPERIENCE INTELLIGENT LIVING</span>
                 </div>
                 <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-[#1a202c] mb-6 font-bold tracking-tight">
                     Everything Under <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ca9740] to-[#dfb45e]">Your Control</span>
                 </h2>
-                <p className="text-gray-500 text-sm md:text-base max-w-2xl mx-auto font-medium leading-relaxed">
+                <p className="text-gray-500 text-sm md:text-base max-w-2xl font-medium leading-relaxed">
                     Seamlessly connect and manage every aspect of your home or business with our intuitive and powerful automation ecosystems.
                 </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 {/* Card 1 */}
-                <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.12)] hover:-translate-y-1.5 hover:border-[#d0a353]/30 transition-all duration-300 group relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                    <div className="w-14 h-14 rounded-xl bg-[#d0a353]/10 flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-[#ca9740] group-hover:to-[#dfb45e] group-hover:text-white group-hover:shadow-lg transition-all duration-300">
-                        <i className="far fa-lightbulb"></i>
+                <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
+                    <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
+                        <div className="relative w-14 h-14 rounded-xl flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden shadow-inner bg-[#d0a353]/10">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#ca9740] to-[#dfb45e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
+                            <i className="far fa-lightbulb relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Lighting</h3>
+                        <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
+                            Set the perfect mood instantly. Control brightness, colors, and schedules with smart automated lights.
+                        </p>
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Lighting</h3>
-                    <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                        Set the perfect mood instantly. Control brightness, colors, and schedules with smart automated lights.
-                    </p>
                 </div>
                 
                 {/* 2 Security */}
-                <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.12)] hover:-translate-y-1.5 hover:border-[#d0a353]/30 transition-all duration-300 group relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                    <div className="w-14 h-14 rounded-xl bg-[#d0a353]/10 flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-[#ca9740] group-hover:to-[#dfb45e] group-hover:text-white group-hover:shadow-lg transition-all duration-300">
-                        <i className="fas fa-shield-alt"></i>
+                <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
+                    <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
+                        <div className="relative w-14 h-14 rounded-xl flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden shadow-inner bg-[#d0a353]/10">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#ca9740] to-[#dfb45e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
+                            <i className="fas fa-shield-alt relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Security</h3>
+                        <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
+                            Complete peace of mind with 24/7 smart surveillance, motion detection, and instant intrusion alerts.
+                        </p>
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Security</h3>
-                    <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                        Complete peace of mind with 24/7 smart surveillance, motion detection, and instant intrusion alerts.
-                    </p>
                 </div>
 
                 {/* 3 Curtains */}
-                <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.12)] hover:-translate-y-1.5 hover:border-[#d0a353]/30 transition-all duration-300 group relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                    <div className="w-14 h-14 rounded-xl bg-[#d0a353]/10 flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-[#ca9740] group-hover:to-[#dfb45e] group-hover:text-white group-hover:shadow-lg transition-all duration-300">
-                        <i className="fas fa-person-booth"></i>
+                <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
+                    <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
+                        <div className="relative w-14 h-14 rounded-xl flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden shadow-inner bg-[#d0a353]/10">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#ca9740] to-[#dfb45e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
+                            <i className="fas fa-person-booth relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Curtains & Blinds</h3>
+                        <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
+                            Wake up to natural light. Open or close your curtains with a single touch or automated schedules.
+                        </p>
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Curtains & Blinds</h3>
-                    <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                        Wake up to natural light. Open or close your curtains with a single touch or automated schedules.
-                    </p>
                 </div>
 
                 {/* 4 Climate */}
-                <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.12)] hover:-translate-y-1.5 hover:border-[#d0a353]/30 transition-all duration-300 group relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                    <div className="w-14 h-14 rounded-xl bg-[#d0a353]/10 flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-[#ca9740] group-hover:to-[#dfb45e] group-hover:text-white group-hover:shadow-lg transition-all duration-300">
-                        <i className="fas fa-thermometer-half"></i>
+                <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
+                    <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
+                        <div className="relative w-14 h-14 rounded-xl flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden shadow-inner bg-[#d0a353]/10">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#ca9740] to-[#dfb45e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
+                            <i className="fas fa-thermometer-half relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Climate Control</h3>
+                        <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
+                            Maintain the perfect temperature always. Smart AC control for maximum comfort and energy efficiency.
+                        </p>
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Climate Control</h3>
-                    <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                        Maintain the perfect temperature always. Smart AC control for maximum comfort and energy efficiency.
-                    </p>
                 </div>
 
                 {/* 5 Entertainment */}
-                <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.12)] hover:-translate-y-1.5 hover:border-[#d0a353]/30 transition-all duration-300 group relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                    <div className="w-14 h-14 rounded-xl bg-[#d0a353]/10 flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-[#ca9740] group-hover:to-[#dfb45e] group-hover:text-white group-hover:shadow-lg transition-all duration-300">
-                        <i className="fas fa-music"></i>
+                <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
+                    <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
+                        <div className="relative w-14 h-14 rounded-xl flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden shadow-inner bg-[#d0a353]/10">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#ca9740] to-[#dfb45e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
+                            <i className="fas fa-music relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Entertainment</h3>
+                        <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
+                            Multi-room audio and complete home theater setups, all commanded intuitively from your smartphone.
+                        </p>
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Entertainment</h3>
-                    <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                        Multi-room audio and complete home theater setups, all commanded intuitively from your smartphone.
-                    </p>
                 </div>
 
                 {/* 6 Access */}
-                <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.12)] hover:-translate-y-1.5 hover:border-[#d0a353]/30 transition-all duration-300 group relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                    <div className="w-14 h-14 rounded-xl bg-[#d0a353]/10 flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-[#ca9740] group-hover:to-[#dfb45e] group-hover:text-white group-hover:shadow-lg transition-all duration-300">
-                        <i className="fas fa-unlock-alt"></i>
+                <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
+                    <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
+                        <div className="relative w-14 h-14 rounded-xl flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden shadow-inner bg-[#d0a353]/10">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#ca9740] to-[#dfb45e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
+                            <i className="fas fa-unlock-alt relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Smart Access</h3>
+                        <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
+                            Keyless entry with advanced digital door locks and video door phones for secure visitor management.
+                        </p>
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Smart Access</h3>
-                    <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                        Keyless entry with advanced digital door locks and video door phones for secure visitor management.
-                    </p>
                 </div>
 
                 {/* 7 Monitoring */}
-                <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.12)] hover:-translate-y-1.5 hover:border-[#d0a353]/30 transition-all duration-300 group relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                    <div className="w-14 h-14 rounded-xl bg-[#d0a353]/10 flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-[#ca9740] group-hover:to-[#dfb45e] group-hover:text-white group-hover:shadow-lg transition-all duration-300">
-                        <i className="fas fa-eye"></i>
+                <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
+                    <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
+                        <div className="relative w-14 h-14 rounded-xl flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden shadow-inner bg-[#d0a353]/10">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#ca9740] to-[#dfb45e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
+                            <i className="fas fa-eye relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Monitoring</h3>
+                        <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
+                            Watch live high-definition feeds from anywhere in the world. Stay connected to what matters most.
+                        </p>
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Monitoring</h3>
-                    <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                        Watch live high-definition feeds from anywhere in the world. Stay connected to what matters most.
-                    </p>
                 </div>
 
                 {/* 8 Sensors */}
-                <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.12)] hover:-translate-y-1.5 hover:border-[#d0a353]/30 transition-all duration-300 group relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                    <div className="w-14 h-14 rounded-xl bg-[#d0a353]/10 flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-[#ca9740] group-hover:to-[#dfb45e] group-hover:text-white group-hover:shadow-lg transition-all duration-300">
-                        <i className="fas fa-broadcast-tower"></i>
+                <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
+                    <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
+                        <div className="relative w-14 h-14 rounded-xl flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden shadow-inner bg-[#d0a353]/10">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#ca9740] to-[#dfb45e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
+                            <i className="fas fa-broadcast-tower relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Smart Sensors</h3>
+                        <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
+                            Gas leak, smoke, and motion sensors that act automatically to protect your space from hazards.
+                        </p>
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Smart Sensors</h3>
-                    <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                        Gas leak, smoke, and motion sensors that act automatically to protect your space from hazards.
-                    </p>
                 </div>
             </div>
         </div>

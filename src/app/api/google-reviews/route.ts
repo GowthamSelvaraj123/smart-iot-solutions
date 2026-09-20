@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-export const dynamic = "force-static";
+export const revalidate = 3600; // Cache for 1 hour
 
 export async function GET() {
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;
@@ -15,8 +15,7 @@ export async function GET() {
 
   try {
     const response = await fetch(
-      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=rating,user_ratings_total&key=${apiKey}`,
-      { next: { revalidate: 3600 } } // Cache for 1 hour to prevent excessive API calls
+      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=rating,user_ratings_total,reviews&key=${apiKey}`
     );
 
     if (!response.ok) {
@@ -32,9 +31,10 @@ export async function GET() {
     return NextResponse.json({
       rating: data.result?.rating,
       user_ratings_total: data.result?.user_ratings_total,
+      reviews: data.result?.reviews || [],
     });
-  } catch (error) {
-    console.error("Error fetching Google Reviews:", error);
+  } catch (error: any) {
+    console.error("Error fetching Google Reviews:", error.message || error);
     return NextResponse.json(
       { error: 'Failed to fetch reviews' },
       { status: 500 }
