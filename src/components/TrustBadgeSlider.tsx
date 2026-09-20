@@ -16,7 +16,7 @@ export default function TrustBadgeSlider() {
   const [isLoading, setIsLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  const handleScriptLoad = () => {
+  const handleScriptLoad = async () => {
     const apiKey = process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY;
     const placeId = process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID;
 
@@ -26,44 +26,43 @@ export default function TrustBadgeSlider() {
       return;
     }
 
-    if (!(window as any).google || !(window as any).google.maps) {
-      setErrorMsg("API for not load error");
-      setIsLoading(false);
-      return;
-    }
+    try {
+      // Use the modern Places API (New) via importLibrary
+      const { Place } = await (window as any).google.maps.importLibrary("places");
+      
+      const place = new Place({
+        id: placeId,
+      });
 
-    // PlacesService requires an HTML node to attach to, even if we aren't rendering a map
-    const dummyElement = document.createElement('div');
-    const service = new (window as any).google.maps.places.PlacesService(dummyElement);
+      await place.fetchFields({
+        fields: ['reviews', 'rating', 'userRatingCount'],
+      });
 
-    service.getDetails(
-      {
-        placeId: placeId,
-        fields: ['rating', 'user_ratings_total', 'reviews']
-      },
-      (place: any, status: any) => {
-        if (status === (window as any).google.maps.places.PlacesServiceStatus.OK && place && place.reviews) {
-          const fiveStarReviews = place.reviews
-            .filter((r: any) => r.rating === 5)
-            .map((r: any) => ({
-              author_name: r.author_name,
-              rating: r.rating,
-              text: r.text,
-              relative_time_description: r.relative_time_description
-            }));
-          
-          if (fiveStarReviews.length > 0) {
-            setReviews(fiveStarReviews);
-          } else {
-            setErrorMsg("API for not load error");
-          }
+      if (place.reviews && place.reviews.length > 0) {
+        const fiveStarReviews = place.reviews
+          .filter((r: any) => r.rating === 5)
+          .map((r: any) => ({
+            author_name: r.authorAttribution?.displayName || "Google User",
+            rating: r.rating,
+            text: r.text || "",
+            relative_time_description: r.relativePublishTimeDescription || ""
+          }));
+        
+        if (fiveStarReviews.length > 0) {
+          setReviews(fiveStarReviews);
         } else {
-          console.error("Failed to load reviews from Google Maps JS SDK:", status);
           setErrorMsg("API for not load error");
         }
-        setIsLoading(false);
+      } else {
+        console.error("No reviews found for this place.");
+        setErrorMsg("API for not load error");
       }
-    );
+    } catch (error) {
+      console.error("Failed to load reviews from Modern Google Maps JS SDK:", error);
+      setErrorMsg("API for not load error");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   useEffect(() => {
@@ -77,7 +76,7 @@ export default function TrustBadgeSlider() {
   return (
     <>
       <Script 
-        src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY}&libraries=places`}
+        src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY}&libraries=places&loading=async`}
         strategy="lazyOnload"
         onLoad={handleScriptLoad}
       />
