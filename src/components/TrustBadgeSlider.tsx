@@ -26,9 +26,15 @@ export default function TrustBadgeSlider() {
       return;
     }
 
+    if (!(window as any).google || !(window as any).google.maps || !(window as any).google.maps.places || !(window as any).google.maps.places.Place) {
+      console.error("Modern Places API (google.maps.places.Place) did not load. Check API key and Cloud Console permissions.");
+      setErrorMsg("API for not load error");
+      setIsLoading(false);
+      return;
+    }
+
     try {
-      // Use the modern Places API (New) via importLibrary
-      const { Place } = await (window as any).google.maps.importLibrary("places");
+      const Place = (window as any).google.maps.places.Place;
       
       const place = new Place({
         id: placeId,
@@ -76,7 +82,7 @@ export default function TrustBadgeSlider() {
   return (
     <>
       <Script 
-        src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY}&libraries=places&loading=async`}
+        src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY}&libraries=places&v=weekly&loading=async`}
         strategy="lazyOnload"
         onLoad={handleScriptLoad}
       />
