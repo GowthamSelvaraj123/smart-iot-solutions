@@ -28,6 +28,23 @@ export default function TrustBadgeSlider() {
       }
 
       try {
+        const CACHE_KEY = "smart_iot_reviews_data";
+        const CACHE_TIME_KEY = "smart_iot_reviews_timestamp";
+        
+        // Check if we have cached reviews less than 5 days old
+        const cachedData = localStorage.getItem(CACHE_KEY);
+        const cachedTime = localStorage.getItem(CACHE_TIME_KEY);
+        
+        if (cachedData && cachedTime) {
+          const ageInDays = (Date.now() - parseInt(cachedTime, 10)) / (1000 * 60 * 60 * 24);
+          if (ageInDays < 5) {
+            setReviews(JSON.parse(cachedData));
+            setIsLoading(false);
+            return; // Exit early, completely skipping the API call!
+          }
+        }
+
+        // Cache expired or missing, fetch from API
         setOptions({
           key: apiKey,
           v: "weekly"
@@ -54,6 +71,10 @@ export default function TrustBadgeSlider() {
             }));
           
           if (fiveStarReviews.length > 0) {
+            // Save to localStorage for the next 5 days
+            localStorage.setItem(CACHE_KEY, JSON.stringify(fiveStarReviews));
+            localStorage.setItem(CACHE_TIME_KEY, Date.now().toString());
+            
             setReviews(fiveStarReviews);
           } else {
             setErrorMsg("API for not load error");
