@@ -124,7 +124,7 @@ export default function TrustBadgeSlider() {
       </div>
 
       {/* Review Content Slider */}
-      <div className="relative h-[85px] overflow-hidden w-full min-w-[280px]">
+      <div className="relative h-[85px] w-full min-w-[280px]">
         {isLoading ? (
           <div className="flex items-center h-full">
             <span className="text-sm font-medium text-white/50 tracking-wide animate-pulse">Loading verified reviews...</span>
@@ -134,12 +134,16 @@ export default function TrustBadgeSlider() {
             <span className="text-sm font-medium text-red-400/80 tracking-wide">{errorMsg}</span>
           </div>
         ) : (
-          <div 
-            className="flex flex-col transition-transform duration-700 ease-in-out w-full"
-            style={{ transform: `translateY(-${currentIndex * 85}px)` }}
-          >
+          <div className="relative w-full h-full">
             {reviews.map((review, index) => (
-              <div key={index} className="h-[85px] flex flex-col justify-start w-full">
+              <div 
+                key={index} 
+                className={`absolute inset-0 flex flex-col justify-start w-full transition-all duration-1000 ease-in-out ${
+                  index === currentIndex 
+                    ? "opacity-100 translate-y-0 pointer-events-auto z-10" 
+                    : "opacity-0 translate-y-3 pointer-events-none -z-10"
+                }`}
+              >
                 <p className="text-sm sm:text-base text-white/90 line-clamp-2 leading-relaxed font-light italic drop-shadow-sm">
                   "{review.text}"
                 </p>
