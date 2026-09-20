@@ -82,37 +82,54 @@ export default function TrustBadgeSlider() {
   }, [reviews.length]);
 
   return (
-    <div className="inline-flex items-start gap-4 bg-white px-5 py-4 rounded-lg mb-8 shadow-xl max-w-xl w-full sm:w-auto">
-      <div className="flex text-gold text-lg shrink-0 mt-1">
-          <i className="fas fa-star"></i>
-          <i className="fas fa-star"></i>
-          <i className="fas fa-star"></i>
-          <i className="fas fa-star"></i>
-          <i className="fas fa-star"></i>
+    <div className="relative overflow-hidden bg-black/40 backdrop-blur-md border border-white/10 px-6 py-5 rounded-2xl mb-8 shadow-2xl max-w-lg w-full sm:w-auto transform transition-all duration-300 hover:scale-[1.02] hover:bg-black/50 group z-10 cursor-default">
+      
+      {/* Decorative subtle glow that appears on hover */}
+      <div className="absolute -inset-1 bg-gradient-to-r from-gold/20 to-transparent blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10 rounded-3xl pointer-events-none"></div>
+
+      {/* Header Row: Stars & Google Indicator */}
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex text-gold text-sm sm:text-base gap-1 drop-shadow-md">
+            <i className="fas fa-star"></i>
+            <i className="fas fa-star"></i>
+            <i className="fas fa-star"></i>
+            <i className="fas fa-star"></i>
+            <i className="fas fa-star"></i>
+        </div>
+        <div className="flex items-center gap-1.5 opacity-60 group-hover:opacity-100 transition-opacity duration-300">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="w-4 h-4 opacity-90" />
+          <span className="text-[10px] text-white/80 font-semibold tracking-widest uppercase">Verified</span>
+        </div>
       </div>
-      <div className="relative h-[80px] overflow-hidden w-full min-w-[250px]">
+
+      {/* Review Content Slider */}
+      <div className="relative h-[85px] overflow-hidden w-full min-w-[280px]">
         {isLoading ? (
           <div className="flex items-center h-full">
-            <span className="text-sm font-bold text-gray-400 tracking-wide animate-pulse">Loading reviews...</span>
+            <span className="text-sm font-medium text-white/50 tracking-wide animate-pulse">Loading verified reviews...</span>
           </div>
         ) : errorMsg ? (
           <div className="flex items-center h-full">
-            <span className="text-sm font-bold text-red-500 tracking-wide">{errorMsg}</span>
+            <span className="text-sm font-medium text-red-400/80 tracking-wide">{errorMsg}</span>
           </div>
         ) : (
           <div 
-            className="flex flex-col transition-transform duration-500 ease-in-out w-full"
-            style={{ transform: `translateY(-${currentIndex * 80}px)` }}
+            className="flex flex-col transition-transform duration-700 ease-in-out w-full"
+            style={{ transform: `translateY(-${currentIndex * 85}px)` }}
           >
             {reviews.map((review, index) => (
-              <div key={index} className="h-[80px] flex flex-col justify-center w-full">
-                <span className="text-sm font-bold text-gray-800 mb-1 flex justify-between items-center pr-2">
-                  {review.author_name}
-                  <span className="text-[10px] font-normal text-gray-400">{review.relative_time_description}</span>
-                </span>
-                <span className="text-xs text-gray-600 line-clamp-2 italic pr-2">
+              <div key={index} className="h-[85px] flex flex-col justify-start w-full">
+                <p className="text-sm sm:text-base text-white/90 line-clamp-2 leading-relaxed font-light italic drop-shadow-sm">
                   "{review.text}"
-                </span>
+                </p>
+                <div className="flex items-center gap-2 mt-2">
+                  <span className="text-xs font-semibold text-gold tracking-wide drop-shadow-sm">
+                    {review.author_name}
+                  </span>
+                  <span className="text-[10px] font-normal text-white/40">
+                    • {review.relative_time_description}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
