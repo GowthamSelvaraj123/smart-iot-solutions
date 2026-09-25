@@ -18,13 +18,15 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
     useEffect(() => {
         const el = sliderRef.current;
         if (!el) return;
-        // Use instant scroll (no animation) so the user never sees the jump
+        // Jump to exact start of copy 2 — card-boundary aligned, no fractional pixels
         el.style.scrollBehavior = 'auto';
-        el.scrollLeft = el.scrollWidth / 3;
+        el.scrollLeft = filteredSolutions.length * CARD_WIDTH;
         el.style.scrollBehavior = '';
     }, [activeCategory, solutions]);
 
     const CARD_WIDTH = 320; // px per card (300px card + 20px gap)
+    // Exact pixel width of one full copy — used for loop reset boundaries
+    const copyWidth = filteredSolutions.length * CARD_WIDTH;
 
     const scrollLeft = () => {
         const el = sliderRef.current;
@@ -35,10 +37,9 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
 
         // After smooth scroll finishes (~450ms), silently reset into middle copy
         setTimeout(() => {
-            const oneThird = el.scrollWidth / 3;
-            if (el.scrollLeft < oneThird) {
+            if (el.scrollLeft < copyWidth) {
                 el.style.scrollBehavior = 'auto';
-                el.scrollLeft += oneThird;
+                el.scrollLeft += copyWidth;
                 el.style.scrollBehavior = '';
             }
             isScrollingRef.current = false;
@@ -54,15 +55,15 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
 
         // After smooth scroll finishes (~450ms), silently reset into middle copy
         setTimeout(() => {
-            const oneThird = el.scrollWidth / 3;
-            if (el.scrollLeft >= oneThird * 2) {
+            if (el.scrollLeft >= copyWidth * 2) {
                 el.style.scrollBehavior = 'auto';
-                el.scrollLeft -= oneThird;
+                el.scrollLeft -= copyWidth;
                 el.style.scrollBehavior = '';
             }
             isScrollingRef.current = false;
         }, 450);
     };
+
 
     const toggleWishlist = (idx: number) => {
         setWishlist(prev =>
@@ -125,15 +126,22 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
             </div>
 
             {/* Full-width slider – arrow-controlled infinite loop */}
-            <div
-                ref={sliderRef}
-                className="flex overflow-x-auto gap-5 hide-scroll-bar pb-6 pt-2"
-                style={{
-                    scrollBehavior: 'smooth',
-                    marginLeft: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)',
-                    paddingRight: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)',
-                }}
-            >
+            <div className="relative">
+                {/* Right-side fade to hide the peeking card */}
+                <div
+                    className="pointer-events-none absolute right-0 top-0 bottom-0 z-10 w-28"
+                    style={{ background: 'linear-gradient(to right, transparent, white)' }}
+                />
+
+                <div
+                    ref={sliderRef}
+                    className="flex overflow-x-auto gap-5 hide-scroll-bar pb-6 pt-2"
+                    style={{
+                        scrollBehavior: 'smooth',
+                        marginLeft: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)',
+                        paddingRight: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)',
+                    }}
+                >
                 {loopedSolutions.map((item, idx) => (
                     <div
                         key={idx}
@@ -242,6 +250,7 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
                         </div>
                     </div>
                 ))}
+            </div>
             </div>
 
             {/* Bottom row count */}
