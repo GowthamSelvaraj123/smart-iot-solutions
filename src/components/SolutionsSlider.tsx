@@ -1,33 +1,67 @@
 "use client";
-import React, { useRef, useState, useEffect, useCallback } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
     const sliderRef = useRef<HTMLDivElement>(null);
     const [activeCategory, setActiveCategory] = useState('All');
     const [wishlist, setWishlist] = useState<number[]>([]);
-    const [isPaused, setIsPaused] = useState(false);
-    const animFrameRef = useRef<number | null>(null);
-    const scrollSpeedRef = useRef(0.6); // px per frame
-    const isPausedRef = useRef(false);
+    const isScrollingRef = useRef(false); // prevent double-reset during smooth scroll
 
     const filteredSolutions = activeCategory === 'All'
         ? solutions
         : solutions.filter(s => s.category === activeCategory);
 
-    // Triple the list so there's always content on both sides for seamless looping
+    // Triple-copy for seamless looping in both directions
     const loopedSolutions = [...filteredSolutions, ...filteredSolutions, ...filteredSolutions];
 
+    // Seed scroll to the middle copy on mount and on category change
+    useEffect(() => {
+        const el = sliderRef.current;
+        if (!el) return;
+        // Use instant scroll (no animation) so the user never sees the jump
+        el.style.scrollBehavior = 'auto';
+        el.scrollLeft = el.scrollWidth / 3;
+        el.style.scrollBehavior = '';
+    }, [activeCategory, solutions]);
+
+    const CARD_WIDTH = 320; // px per card (300px card + 20px gap)
 
     const scrollLeft = () => {
-        if (sliderRef.current) {
-            sliderRef.current.scrollBy({ left: -364, behavior: 'smooth' });
-        }
+        const el = sliderRef.current;
+        if (!el || isScrollingRef.current) return;
+        isScrollingRef.current = true;
+
+        el.scrollBy({ left: -CARD_WIDTH, behavior: 'smooth' });
+
+        // After smooth scroll finishes (~450ms), silently reset into middle copy
+        setTimeout(() => {
+            const oneThird = el.scrollWidth / 3;
+            if (el.scrollLeft < oneThird) {
+                el.style.scrollBehavior = 'auto';
+                el.scrollLeft += oneThird;
+                el.style.scrollBehavior = '';
+            }
+            isScrollingRef.current = false;
+        }, 450);
     };
 
     const scrollRight = () => {
-        if (sliderRef.current) {
-            sliderRef.current.scrollBy({ left: 364, behavior: 'smooth' });
-        }
+        const el = sliderRef.current;
+        if (!el || isScrollingRef.current) return;
+        isScrollingRef.current = true;
+
+        el.scrollBy({ left: CARD_WIDTH, behavior: 'smooth' });
+
+        // After smooth scroll finishes (~450ms), silently reset into middle copy
+        setTimeout(() => {
+            const oneThird = el.scrollWidth / 3;
+            if (el.scrollLeft >= oneThird * 2) {
+                el.style.scrollBehavior = 'auto';
+                el.scrollLeft -= oneThird;
+                el.style.scrollBehavior = '';
+            }
+            isScrollingRef.current = false;
+        }, 450);
     };
 
     const toggleWishlist = (idx: number) => {
@@ -35,41 +69,6 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
             prev.includes(idx) ? prev.filter(i => i !== idx) : [...prev, idx]
         );
     };
-
-    // ── Keep isPausedRef in sync so the rAF closure always sees current value ──
-    useEffect(() => { isPausedRef.current = isPaused; }, [isPaused]);
-
-    // ── Infinite auto-scroll via requestAnimationFrame ────────────────────────
-    useEffect(() => {
-        if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
-
-        // On category change, jump to the start of the middle copy
-        requestAnimationFrame(() => {
-            if (sliderRef.current) {
-                sliderRef.current.scrollLeft = sliderRef.current.scrollWidth / 3;
-            }
-        });
-
-        const tick = () => {
-            const el = sliderRef.current;
-            if (el) {
-                if (!isPausedRef.current) {
-                    el.scrollLeft += scrollSpeedRef.current;
-                    const oneThird = el.scrollWidth / 3;
-                    // Scrolled into the third copy → jump back to the equivalent
-                    // position in the second copy (invisible seam)
-                    if (el.scrollLeft >= oneThird * 2) el.scrollLeft -= oneThird;
-                    // Scrolled back before the first copy → jump forward
-                    if (el.scrollLeft < oneThird) el.scrollLeft += oneThird;
-                }
-            }
-            animFrameRef.current = requestAnimationFrame(tick);
-        };
-
-        animFrameRef.current = requestAnimationFrame(tick);
-        return () => { if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current); };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [activeCategory]);
 
     const categoryIcons: Record<string, string> = {
         Residential: 'fa-home',
@@ -125,19 +124,14 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
                 </div>
             </div>
 
-            {/* Full-width slider — pauses on hover */}
+            {/* Full-width slider – arrow-controlled infinite loop */}
             <div
                 ref={sliderRef}
-                onMouseEnter={() => setIsPaused(true)}
-                onMouseLeave={() => setIsPaused(false)}
-                onTouchStart={() => setIsPaused(true)}
-                onTouchEnd={() => setIsPaused(false)}
                 className="flex overflow-x-auto gap-5 hide-scroll-bar pb-6 pt-2"
                 style={{
-                    scrollBehavior: 'auto',
+                    scrollBehavior: 'smooth',
                     marginLeft: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)',
                     paddingRight: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)',
-                    userSelect: 'none',
                 }}
             >
                 {loopedSolutions.map((item, idx) => (
@@ -181,7 +175,7 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
 
                             {/* Wishlist / Save button - top right */}
                             <button
-                                onClick={(e) => { e.stopPropagation(); toggleWishlist(idx % filteredSolutions.length); }}
+                                onClick={() => toggleWishlist(idx % filteredSolutions.length)}
                                 className={`absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center shadow-md transition-all duration-200 cursor-pointer ${
                                     wishlist.includes(idx % filteredSolutions.length)
                                         ? 'bg-[#ca9740] text-white'
