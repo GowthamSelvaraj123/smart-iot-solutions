@@ -27,21 +27,82 @@ const solutions = [
   { title: "Jewellery Shop", desc: "Advanced security and smart automation for premium retail.", img: "images/hero_lighting_1786093923075.png", category: "Commercial" }
 ];
 
-const clients = [
-    "Motion detection Sensor", "PIR Sensor", "Temperature Controller", "Occupancy Sensor",
-    "MS builders", "Sri Builders", "Sri Surya Constructions", "Kumar builders", "Sri Sai builders",
-    "Kongu builders", "Ustar Constructions", "SP Constructions", "Kawinn buildtech", "Urukkagam Associates",
-    "Jais Developers", "Poppyes", "CTS", "Bricks Houses", "SRS Construction", "Arasan Construction",
-    "Green Nest Properties & builders", "Sri Daksha", "Sri Ram Properties", "D square city developers",
-    "Tranz Layout", "Magic Bricks", "Government of TN", "Tulip Properties", "Silicon City", "Aira Properties",
-    "Agam Interiors", "Spazio Interiors", "Redme Interio", "Sheetla Interiors", "Royal Interiors",
-    "Guhan Interiors", "Home Lane", "Dot interiors & Traders", "Arch Firm", "Seventh Sense Architect",
-    "Core Design Studio", "Innout Architecture", "Masterpiece", "Urban Space Architects", "Bead Architects",
-    "Fab Builders", "Ray Architects", "DeeJas Architects", "Feathers Architects", "DNA Studio",
-    "Squaretree Architects", "Gravity Engineering", "CASA GRAND", "PUDAVI BUILDERS", "Subway", "KFC",
-    "Naturals", "MK Builders & Promoters", "SRI Balaji builders", "Aura", "Toni&Guy", "Baby Hug",
-    "Just Born", "B.C. Studio", "Cb Emporio", "DR Probuilders", "Minn Inspiring Designers",
-    "Warp", "Green Trends", "Shree Construction"
+const clients: { name: string; logo?: string }[] = [
+    // ── Sensors / Products (no logos) ────────────────────────────────────────
+    { name: "Motion detection Sensor" },
+    { name: "PIR Sensor" },
+    { name: "Temperature Controller" },
+    { name: "Occupancy Sensor" },
+    // ── Builders & Constructions ──────────────────────────────────────────────
+    { name: "MS builders",                  logo: "/images/company/ms-builders.png" },
+    { name: "Sri Builders",                 logo: "/images/company/sri-builders.jpg" },
+    { name: "Sri Surya Constructions",      logo: "/images/company/sri_surya_construction.webp" },
+    { name: "Kumar builders",               logo: "/images/company/kumar-builders.png" },
+    { name: "Sri Sai builders" },
+    { name: "Kongu builders" },
+    { name: "Ustar Constructions" },
+    { name: "SP Constructions",             logo: "/images/company/sp-constructions.jpg" },
+    { name: "Kawinn buildtech",             logo: "/images/company/kawin-buildtech.webp" },
+    { name: "Urukkagam Associates" },
+    { name: "Jais Developers" },
+    { name: "Poppyes",                      logo: "/images/company/poppyes.jpg" },
+    { name: "CTS",                          logo: "/images/company/cts.svg" },
+    { name: "Bricks Houses" },
+    { name: "SRS Construction",             logo: "/images/company/srs-construction.png" },
+    { name: "Arasan Construction" },
+    { name: "Green Nest Properties & builders", logo: "/images/company/green-nest-properties-builders.png" },
+    { name: "Sri Daksha",                   logo: "/images/company/sree-daksha.png" },
+    { name: "Sri Ram Properties" },
+    { name: "D square city developers" },
+    { name: "Tranz Layout" },
+    { name: "Magic Bricks" },
+    { name: "Government of TN",             logo: "/images/company/government-of-tn.jpg" },
+    { name: "Tulip Properties" },
+    { name: "Silicon City" },
+    { name: "Aira Properties",              logo: "/images/company/aira-property-developers.png" },
+    // ── Interiors ─────────────────────────────────────────────────────────────
+    { name: "Agam Interiors",               logo: "/images/company/agam-interiors.png" },
+    { name: "Spazio Interiors" },
+    { name: "Redme Interio" },
+    { name: "Sheetla Interiors" },
+    { name: "Royal Interiors" },
+    { name: "Guhan Interiors",              logo: "/images/company/guhan-interiors.jpg" },
+    { name: "Home Lane" },
+    { name: "Dot interiors & Traders" },
+    // ── Architects ────────────────────────────────────────────────────────────
+    { name: "Arch Firm" },
+    { name: "Seventh Sense Architect" },
+    { name: "Core Design Studio",           logo: "/images/company/core-design-studio.jpg" },
+    { name: "Innout Architecture",          logo: "/images/company/innout-design-and-interios.png" },
+    { name: "Masterpiece" },
+    { name: "Urban Space Architects" },
+    { name: "Bead Architects" },
+    { name: "Fab Builders" },
+    { name: "Ray Architects",               logo: "/images/company/ray-logo-coimbatore.png" },
+    { name: "DeeJas Architects" },
+    { name: "Feathers Architects" },
+    { name: "DNA Studio",                   logo: "/images/company/dnd-studio.png" },
+    { name: "Squaretree Architects" },
+    { name: "Gravity Engineering" },
+    // ── Brands / Retail ───────────────────────────────────────────────────────
+    { name: "CASA GRAND",                   logo: "/images/company/casagrand.png" },
+    { name: "PUDAVI BUILDERS" },
+    { name: "Subway",                       logo: "/images/company/subway.jpg" },
+    { name: "KFC",                          logo: "/images/company/kfc.svg" },
+    { name: "Naturals",                     logo: "/images/company/naturals.jpg" },
+    { name: "MK Builders & Promoters",      logo: "/images/company/mk-builders-promoters.png" },
+    { name: "SRI Balaji builders" },
+    { name: "Aura" },
+    { name: "Toni&Guy",                     logo: "/images/company/toni-and-guylogo.jpg" },
+    { name: "Baby Hug",                     logo: "/images/company/baby-hug.jpg" },
+    { name: "Just Born" },
+    { name: "B.C. Studio" },
+    { name: "Cb Emporio" },
+    { name: "DR Probuilders" },
+    { name: "Minn Inspiring Designers" },
+    { name: "Warp" },
+    { name: "Green Trends",                 logo: "/images/company/green-trends.png" },
+    { name: "Shree Construction" },
 ];
 
 export default function IndexPage() {
@@ -171,16 +232,25 @@ export default function IndexPage() {
                     
                     <div className="flex flex-col gap-4 overflow-hidden pb-4" style={{ WebkitMaskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)", maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)" }}>
                         {[
-                            clients.slice(0, 18),
-                            clients.slice(18, 36),
-                            clients.slice(36, 54),
-                            clients.slice(54)
+                            clients.slice(0, 15),
+                            clients.slice(15, 30),
+                            clients.slice(30, 45),
+                            clients.slice(45, 60),
+                            clients.slice(60)
                         ].map((rowClients, rowIdx) => (
                             <div key={rowIdx} className="flex relative w-max overflow-hidden hover-pause">
                                 <div className={`flex gap-3 lg:gap-4 w-max ${rowIdx % 2 !== 0 ? 'animate-marquee-reverse' : 'animate-marquee'}`}>
                                     {[...rowClients, ...rowClients].map((client, idx) => (
                                         <div key={idx} className="w-[150px] lg:w-[180px] h-[60px] lg:h-[70px] bg-white rounded-lg border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.02)] flex items-center justify-center p-2 hover:shadow-md hover:border-[#d0a353]/30 transition group shrink-0">
-                                            <span className="font-badge text-[9px] sm:text-[11px] font-bold text-gray-800 text-center uppercase leading-tight tracking-wider group-hover:text-[#d0a353] transition-colors">{client}</span>
+                                            {client.logo ? (
+                                                <img
+                                                    src={client.logo}
+                                                    alt={client.name}
+                                                    className="max-h-full max-w-full w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                                                />
+                                            ) : (
+                                                <span className="font-badge text-[9px] sm:text-[11px] font-bold text-gray-800 text-center uppercase leading-tight tracking-wider group-hover:text-[#d0a353] transition-colors">{client.name}</span>
+                                            )}
                                         </div>
                                     ))}
                                 </div>
