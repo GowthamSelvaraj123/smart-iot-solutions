@@ -1,10 +1,22 @@
 "use client";
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect, useCallback } from 'react';
 
 export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
     const sliderRef = useRef<HTMLDivElement>(null);
     const [activeCategory, setActiveCategory] = useState('All');
     const [wishlist, setWishlist] = useState<number[]>([]);
+    const [isPaused, setIsPaused] = useState(false);
+    const animFrameRef = useRef<number | null>(null);
+    const scrollSpeedRef = useRef(0.6); // px per frame
+    const isPausedRef = useRef(false);
+
+    const filteredSolutions = activeCategory === 'All'
+        ? solutions
+        : solutions.filter(s => s.category === activeCategory);
+
+    // Triple the list so there's always content on both sides for seamless looping
+    const loopedSolutions = [...filteredSolutions, ...filteredSolutions, ...filteredSolutions];
+
 
     const scrollLeft = () => {
         if (sliderRef.current) {
@@ -24,9 +36,40 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
         );
     };
 
-    const filteredSolutions = activeCategory === 'All'
-        ? solutions
-        : solutions.filter(s => s.category === activeCategory);
+    // ── Keep isPausedRef in sync so the rAF closure always sees current value ──
+    useEffect(() => { isPausedRef.current = isPaused; }, [isPaused]);
+
+    // ── Infinite auto-scroll via requestAnimationFrame ────────────────────────
+    useEffect(() => {
+        if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
+
+        // On category change, jump to the start of the middle copy
+        requestAnimationFrame(() => {
+            if (sliderRef.current) {
+                sliderRef.current.scrollLeft = sliderRef.current.scrollWidth / 3;
+            }
+        });
+
+        const tick = () => {
+            const el = sliderRef.current;
+            if (el) {
+                if (!isPausedRef.current) {
+                    el.scrollLeft += scrollSpeedRef.current;
+                    const oneThird = el.scrollWidth / 3;
+                    // Scrolled into the third copy → jump back to the equivalent
+                    // position in the second copy (invisible seam)
+                    if (el.scrollLeft >= oneThird * 2) el.scrollLeft -= oneThird;
+                    // Scrolled back before the first copy → jump forward
+                    if (el.scrollLeft < oneThird) el.scrollLeft += oneThird;
+                }
+            }
+            animFrameRef.current = requestAnimationFrame(tick);
+        };
+
+        animFrameRef.current = requestAnimationFrame(tick);
+        return () => { if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [activeCategory]);
 
     const categoryIcons: Record<string, string> = {
         Residential: 'fa-home',
@@ -82,20 +125,25 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
                 </div>
             </div>
 
-            {/* Full-width slider */}
+            {/* Full-width slider — pauses on hover */}
             <div
                 ref={sliderRef}
-                className="flex overflow-x-auto snap-x snap-mandatory gap-5 hide-scroll-bar pb-6 pt-2"
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+                onTouchStart={() => setIsPaused(true)}
+                onTouchEnd={() => setIsPaused(false)}
+                className="flex overflow-x-auto gap-5 hide-scroll-bar pb-6 pt-2"
                 style={{
-                    scrollBehavior: 'smooth',
+                    scrollBehavior: 'auto',
                     marginLeft: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)',
-                    paddingRight: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)'
+                    paddingRight: 'calc(max(0px, (100% - 1200px) / 2) + 1.5rem)',
+                    userSelect: 'none',
                 }}
             >
-                {filteredSolutions.map((item, idx) => (
+                {loopedSolutions.map((item, idx) => (
                     <div
                         key={idx}
-                        className="w-[80vw] md:w-[280px] lg:w-[300px] shrink-0 snap-start group bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.1rem] shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_12px_40px_rgba(208,163,83,0.3)] transition-all duration-500 hover:-translate-y-1 h-full cursor-pointer"
+                        className="w-[80vw] md:w-[280px] lg:w-[300px] shrink-0 group bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.1rem] shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_12px_40px_rgba(208,163,83,0.3)] transition-all duration-500 hover:-translate-y-1 cursor-pointer"
                     >
                         <div className="bg-white rounded-2xl overflow-hidden flex flex-col h-full relative group/inner">
                         {/* Image Area */}
@@ -133,15 +181,15 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
 
                             {/* Wishlist / Save button - top right */}
                             <button
-                                onClick={() => toggleWishlist(idx)}
+                                onClick={(e) => { e.stopPropagation(); toggleWishlist(idx % filteredSolutions.length); }}
                                 className={`absolute top-3 right-3 w-8 h-8 rounded-full flex items-center justify-center shadow-md transition-all duration-200 cursor-pointer ${
-                                    wishlist.includes(idx)
+                                    wishlist.includes(idx % filteredSolutions.length)
                                         ? 'bg-[#ca9740] text-white'
                                         : 'bg-white/90 backdrop-blur-sm text-gray-400 hover:text-[#ca9740]'
                                 }`}
                                 aria-label="Save"
                             >
-                                <i className={`${wishlist.includes(idx) ? 'fas' : 'far'} fa-heart text-xs`}></i>
+                                <i className={`${wishlist.includes(idx % filteredSolutions.length) ? 'fas' : 'far'} fa-heart text-xs`}></i>
                             </button>
 
                             {/* Gradient overlay at bottom */}

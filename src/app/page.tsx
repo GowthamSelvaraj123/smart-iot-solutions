@@ -14,17 +14,17 @@ import ProjectsBento from '@/components/ProjectsBento';
 import GetStartedButton from '@/components/GetStartedButton';
 
 const solutions = [
-  { title: "Luxury Villa", desc: "Smart living with advanced automation and control.", img: "videos/luxury_villa_360.mp4", category: "Residential" },
-  { title: "Apartment", desc: "Smart solutions for comfortable and convenient living.", img: "videos/apartment_tour.mp4", category: "Residential" },
-  { title: "Office", desc: "Boost productivity with smart office automation.", img: "videos/office_automation.mp4", category: "Commercial" },
-  { title: "Hospital", desc: "Intelligent systems for better patient care and management.", img: "videos/hospital_smart.mp4", category: "Commercial" },
-  { title: "Hostel / PG", desc: "Smart & secure living for hostels and PG accommodations.", img: "videos/hostel_secure.mp4", category: "Commercial" },
-  { title: "Shopping Mall", desc: "Enhance customer experience with smart technology.", img: "videos/mall_tech.mp4", category: "Commercial" },
-  { title: "Warehouse", desc: "Automate operations and improve overall efficiency.", img: "videos/warehouse_auto.mp4", category: "Commercial" },
-  { title: "Farmhouse", desc: "Smart automation for a greener and safer lifestyle.", img: "videos/farmhouse_green.mp4", category: "Residential" },
-  { title: "Hotel / Resort", desc: "Deliver luxury and comfort with smart automation.", img: "videos/hotel_resort.mp4", category: "Commercial" },
-  { title: "Software / App Dev", desc: "Custom software, websites, and application development.", img: "videos/software_dev.mp4", category: "Specialized" },
-  { title: "Jewellery Shop", desc: "Advanced security and smart automation for premium retail.", img: "videos/jewellery_security.mp4", category: "Commercial" }
+  { title: "Luxury Villa", desc: "Smart living with advanced automation and control.", img: "images/sol_luxury_villa.jpg", category: "Residential" },
+  { title: "Apartment", desc: "Smart solutions for comfortable and convenient living.", img: "images/sol_apartment.jpg", category: "Residential" },
+  { title: "Office", desc: "Boost productivity with smart office automation.", img: "images/sol_office.jpg", category: "Commercial" },
+  { title: "Hospital", desc: "Intelligent systems for better patient care and management.", img: "images/auto_hospital_1786094034170.png", category: "Commercial" },
+  { title: "Hostel / PG", desc: "Smart & secure living for hostels and PG accommodations.", img: "images/auto_hostel_1786094051526.png", category: "Commercial" },
+  { title: "Shopping Mall", desc: "Enhance customer experience with smart technology.", img: "images/auto_office_1786094016416.png", category: "Commercial" },
+  { title: "Warehouse", desc: "Automate operations and improve overall efficiency.", img: "images/hero_background_1786093261462.png", category: "Commercial" },
+  { title: "Farmhouse", desc: "Smart automation for a greener and safer lifestyle.", img: "images/hero_pool_1786093934613.png", category: "Residential" },
+  { title: "Hotel / Resort", desc: "Deliver luxury and comfort with smart automation.", img: "images/smart_home_villa_1786093285055.png", category: "Commercial" },
+  { title: "Software / App Dev", desc: "Custom software, websites, and application development.", img: "images/auto_apartment_1786094001400.png", category: "Specialized" },
+  { title: "Jewellery Shop", desc: "Advanced security and smart automation for premium retail.", img: "images/hero_lighting_1786093923075.png", category: "Commercial" }
 ];
 
 const clients = [

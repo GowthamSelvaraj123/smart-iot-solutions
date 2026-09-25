@@ -83,8 +83,16 @@ export default function TrustBadgeSlider() {
           console.error("No reviews found for this place.");
           setErrorMsg("API for not load error");
         }
-      } catch (error) {
-        console.error("Failed to load reviews from Modern Google Maps JS SDK:", error);
+      } catch (error: any) {
+        // In development, Google API blocks localhost due to referrer restrictions.
+        // This is expected and works correctly in production — suppress the noise.
+        const isReferrerError =
+          typeof error?.message === "string" &&
+          (error.message.includes("PERMISSION_DENIED") ||
+            error.message.includes("blocked"));
+        if (process.env.NODE_ENV !== "development" || !isReferrerError) {
+          console.error("Failed to load reviews from Modern Google Maps JS SDK:", error);
+        }
         setErrorMsg("API for not load error");
       } finally {
         setIsLoading(false);
@@ -136,9 +144,13 @@ export default function TrustBadgeSlider() {
             <span className="text-xs font-medium text-white/50 tracking-wide animate-pulse">Loading verified reviews...</span>
           </div>
         ) : errorMsg ? (
-          <div className="flex items-center h-full">
-            <span className="text-xs font-medium text-red-400/80 tracking-wide">{errorMsg}</span>
-          </div>
+          // In dev: API is blocked by referrer restriction (expected). Show nothing.
+          // In prod: this state should never be reached if the API key & place ID are correct.
+          process.env.NODE_ENV === "development" ? null : (
+            <div className="flex items-center h-full">
+              <span className="text-xs font-medium text-red-400/80 tracking-wide">{errorMsg}</span>
+            </div>
+          )
         ) : (
           <div className="relative w-full h-full">
             {reviews.map((review, index) => (
