@@ -1,95 +1,159 @@
 "use client";
 import { useState, useEffect } from "react";
 
-/* ---------- image pools for each auto-cycling card ---------- */
-const card1Images = [
-    { src: "images/auto_villa_1786093987554.png",        location: "Coimbatore" },
-    { src: "images/smart_home_villa_1786093285055.png",  location: "Bangalore" },
-    { src: "images/hero_pool_1786093934613.png",         location: "Chennai" },
-    { src: "images/hero_gate_1786093948118.png",         location: "Ooty" },
+type MediaItem = { src: string; location: string; type: "image" | "video" };
+
+/* ---------- media pools for each auto-cycling card ---------- */
+const card1Media: MediaItem[] = [
+    { src: "images/real/real-video-1.mp4", type: "video", location: "Coimbatore" },
+    { src: "images/auto_villa_1786093987554.png", type: "image", location: "Coimbatore" },
+    { src: "images/real/real-video-2.mp4", type: "video", location: "Chennai" },
+    { src: "images/smart_home_villa_1786093285055.png", type: "image", location: "Bangalore" },
+    { src: "images/hero_pool_1786093934613.png", type: "image", location: "Chennai" },
+    { src: "images/hero_gate_1786093948118.png", type: "image", location: "Ooty" },
 ];
 
-const card2Images = [
-    { src: "images/hero_pool_1786093934613.png",        location: "Ooty" },
-    { src: "images/auto_villa_1786093987554.png",        location: "Kodaikanal" },
-    { src: "images/hero_lighting_1786093923075.png",     location: "Mysuru" },
-    { src: "images/smart_home_villa_1786093285055.png",  location: "Coorg" },
+const card2Media: MediaItem[] = [
+    { src: "images/real/real-portrait-video-5.mp4", type: "video", location: "Mysuru" },
+    { src: "images/hero_pool_1786093934613.png", type: "image", location: "Ooty" },
+    { src: "images/real/real-images-1.jpeg", type: "image", location: "Kodaikanal" },
+    { src: "images/auto_villa_1786093987554.png", type: "image", location: "Kodaikanal" },
+    { src: "images/hero_lighting_1786093923075.png", type: "image", location: "Mysuru" },
+    { src: "images/smart_home_villa_1786093285055.png", type: "image", location: "Coorg" },
 ];
 
-const card3Images = [
-    { src: "images/auto_apartment_1786094001400.png",    location: "Bangalore" },
-    { src: "images/auto_office_1786094016416.png",       location: "Hyderabad" },
-    { src: "images/auto_hospital_1786094034170.png",     location: "Chennai" },
-    { src: "images/auto_hostel_1786094051526.png",       location: "Pune" },
+const card3Media: MediaItem[] = [
+    { src: "images/real/real-portrait-video-1.mp4", type: "video", location: "Hyderabad" },
+    { src: "images/auto_apartment_1786094001400.png", type: "image", location: "Bangalore" },
+    { src: "images/real/real-portrait-video-2.mp4", type: "video", location: "Chennai" },
+    { src: "images/auto_office_1786094016416.png", type: "image", location: "Hyderabad" },
+    { src: "images/real/real-portrait-video-3.mp4", type: "video", location: "Pune" },
+    { src: "images/auto_hospital_1786094034170.png", type: "image", location: "Chennai" },
+    { src: "images/auto_hostel_1786094051526.png", type: "image", location: "Pune" },
+    { src: "images/real/real-portrait-video-8.mp4", type: "video", location: "Bangalore" },
 ];
 
-const card4Images = [
-    { src: "images/hero_gate_1786093948118.png",         location: "Chennai" },
-    { src: "images/auto_villa_1786093987554.png",        location: "Pondicherry" },
-    { src: "images/hero_pool_1786093934613.png",         location: "Madurai" },
-    { src: "images/auto_apartment_1786094001400.png",    location: "Salem" },
+const card4Media: MediaItem[] = [
+    { src: "images/real/real-portrait-video-4.mp4", type: "video", location: "Chennai" },
+    { src: "images/hero_gate_1786093948118.png", type: "image", location: "Chennai" },
+    { src: "images/real/real-portrait-video-6.mp4", type: "video", location: "Pondicherry" },
+    { src: "images/auto_villa_1786093987554.png", type: "image", location: "Pondicherry" },
+    { src: "images/real/real-portrait-video-7.mp4", type: "video", location: "Madurai" },
+    { src: "images/hero_pool_1786093934613.png", type: "image", location: "Madurai" },
+    { src: "images/auto_apartment_1786094001400.png", type: "image", location: "Salem" },
 ];
 
-/* ---------- hook: returns current index + prev index + fading flag ---------- */
-function useCycling(length: number, interval: number) {
-    const [cur, setCur]       = useState(0);
-    const [prev, setPrev]     = useState<number | null>(null);
+/* ---------- sub-component: a card whose media cycle ---------- */
+function CyclingCard({
+    items,
+    interval,
+    className = "",
+    badgeClassName = "top-4 left-4 px-3 py-1.5 text-[0.6rem]",
+    children,
+}: {
+    items: MediaItem[];
+    interval: number;
+    className?: string;
+    badgeClassName?: string;
+    children: (location: string) => React.ReactNode;
+}) {
+    const [cur, setCur] = useState(0);
+    const [prev, setPrev] = useState<number | null>(null);
     const [fading, setFading] = useState(false);
 
     useEffect(() => {
-        const t = setInterval(() => {
+        const currentItem = items[cur];
+        
+        // If it's a video, we wait for the video to handle the progression
+        if (currentItem.type === "video") {
+            return;
+        }
+
+        // It's an image, use standard interval
+        const t = setTimeout(() => {
             setFading(true);
             setTimeout(() => {
                 setCur(c => {
-                    const next = (c + 1) % length;
+                    const next = (c + 1) % items.length;
                     setPrev(c);
                     return next;
                 });
                 setFading(false);
             }, 600);
         }, interval);
-        return () => clearInterval(t);
-    }, [length, interval]);
 
-    return { cur, prev, fading };
-}
+        return () => clearTimeout(t);
+    }, [cur, interval, items]);
 
-/* ---------- sub-component: a card whose images cycle ---------- */
-function CyclingCard({
-    images,
-    interval,
-    className = "",
-    badgeClassName = "top-4 left-4 px-3 py-1.5 text-[0.6rem]",
-    children,
-}: {
-    images: { src: string; location: string }[];
-    interval: number;
-    className?: string;
-    badgeClassName?: string;
-    children: (location: string) => React.ReactNode;
-}) {
-    const { cur, prev, fading } = useCycling(images.length, interval);
+    const handleVideoEnd = () => {
+        setFading(true);
+        setTimeout(() => {
+            setCur(c => {
+                const next = (c + 1) % items.length;
+                setPrev(c);
+                return next;
+            });
+            setFading(false);
+        }, 600);
+    };
 
     return (
         <div className={`group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer ${className}`}>
-            {/* All images stacked; only cur/prev are visible */}
-            {images.map((img, i) => {
+            {/* All items stacked; only cur/prev are visible */}
+            {items.map((item, i) => {
                 const isCur  = i === cur;
                 const isPrev = i === prev;
                 let opacity  = 0;
                 if (isCur)  opacity = fading ? 0 : 1;
                 if (isPrev) opacity = fading ? 1 : 0;
+                const isVisible = opacity > 0 || isCur || isPrev;
+
+                if (item.type === "video") {
+                    return (
+                        <video
+                            key={i}
+                            src={item.src}
+                            muted
+                            playsInline
+                            onEnded={isCur ? handleVideoEnd : undefined}
+                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out"
+                            style={{
+                                opacity,
+                                transition: "opacity 0.6s ease-in-out",
+                                zIndex: isCur ? 2 : isPrev ? 1 : 0,
+                                display: isVisible ? 'block' : 'none'
+                            }}
+                            ref={(el) => {
+                                if (!el) return;
+                                if (isCur && !fading) {
+                                    if (el.paused) {
+                                        el.play().catch(e => {
+                                            console.warn("Autoplay prevented:", e);
+                                            handleVideoEnd();
+                                        });
+                                    }
+                                } else {
+                                    if (!el.paused) {
+                                        el.pause();
+                                        el.currentTime = 0;
+                                    }
+                                }
+                            }}
+                        />
+                    );
+                }
 
                 return (
                     <img
                         key={i}
-                        src={img.src}
-                        alt={img.location}
+                        src={item.src}
+                        alt={item.location}
                         className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out"
                         style={{
                             opacity,
                             transition: "opacity 0.6s ease-in-out",
                             zIndex: isCur ? 2 : isPrev ? 1 : 0,
+                            display: isVisible ? 'block' : 'none'
                         }}
                     />
                 );
@@ -98,18 +162,18 @@ function CyclingCard({
             {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-[#0c121e]/90 via-[#0c121e]/20 to-transparent z-[3]" />
 
-            {/* Location badge – updates with image */}
+            {/* Location badge */}
             <div
                 key={cur}
                 className={`absolute bg-white/10 backdrop-blur-md text-white rounded-full flex items-center gap-1.5 border border-white/20 z-[4] font-bold animate-fadeIn ${badgeClassName}`}
             >
                 <i className="fas fa-map-marker-alt text-[#d0a353]" />
-                &nbsp;{images[cur].location}
+                &nbsp;{items[cur].location}
             </div>
 
             {/* Content slot */}
             <div className="absolute inset-0 z-[5] pointer-events-none">
-                {children(images[cur].location)}
+                {children(items[cur].location)}
             </div>
         </div>
     );
@@ -124,7 +188,7 @@ export default function ProjectsBento() {
 
             {/* ── 1. Large Feature Card (Luxury Villa) – auto-cycling ── */}
             <CyclingCard 
-                images={card1Images} 
+                items={card1Media} 
                 interval={4500} 
                 className="md:col-span-2 lg:col-span-2 lg:row-span-2"
                 badgeClassName="top-5 left-5 px-4 py-2 text-[0.65rem] shadow-sm tracking-wide"
@@ -149,7 +213,7 @@ export default function ProjectsBento() {
             </CyclingCard>
 
             {/* ── 2. Top-middle (Hill View Villa) – auto-cycling ── */}
-            <CyclingCard images={card2Images} interval={3200} className="min-h-[300px] lg:min-h-0">
+            <CyclingCard items={card2Media} interval={3200} className="min-h-[300px] lg:min-h-0">
                 {() => (
                     <div className="absolute bottom-0 left-0 right-0 p-6 pointer-events-auto transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                         <h3 className="font-heading font-bold text-xl text-white mb-2 group-hover:text-[#d0a353] transition-colors">Hill View Villa</h3>
@@ -165,7 +229,7 @@ export default function ProjectsBento() {
             </CyclingCard>
 
             {/* ── 3. Tall-right (Premium Residence) – auto-cycling ── */}
-            <CyclingCard images={card3Images} interval={4000} className="lg:row-span-2 min-h-[350px] lg:min-h-0">
+            <CyclingCard items={card3Media} interval={4000} className="lg:row-span-2 min-h-[350px] lg:min-h-0">
                 {() => (
                     <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8 pointer-events-auto transform translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
                         <h3 className="font-heading font-bold text-2xl text-white mb-4 group-hover:text-[#d0a353] transition-colors">Premium Residence</h3>
@@ -182,7 +246,7 @@ export default function ProjectsBento() {
             </CyclingCard>
 
             {/* ── 4. Bottom-middle (Beachside Villa) – auto-cycling ── */}
-            <CyclingCard images={card4Images} interval={3600} className="min-h-[300px] lg:min-h-0">
+            <CyclingCard items={card4Media} interval={3600} className="min-h-[300px] lg:min-h-0">
                 {() => (
                     <div className="absolute bottom-0 left-0 right-0 p-6 pointer-events-auto transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                         <h3 className="font-heading font-bold text-xl text-white mb-2 group-hover:text-[#d0a353] transition-colors">Beachside Villa</h3>

@@ -208,7 +208,7 @@ export default function IndexPage() {
                     <div className="relative w-full max-w-[320px] lg:max-w-[420px] mx-auto lg:ml-0 mt-8 pl-4 lg:pl-4">
                         <img src="images/map.png" alt="South India Map" className="w-full drop-shadow-[0_10px_25px_rgba(208,163,83,0.2)] relative z-10 scale-100 lg:scale-105 transform origin-left" />
                         
-                        <div className="absolute top-[55%] -right-4 lg:-right-8 z-20 bg-white/95 backdrop-blur-sm rounded-[1rem] shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-[#d0a353]/20 py-3 px-4 lg:py-4 lg:px-5 text-center flex flex-col items-center justify-center transform hover:-translate-y-1 transition duration-300">
+                        <div className="absolute top-[55%] -left-4 lg:-left-8 z-20 bg-white/95 backdrop-blur-sm rounded-[1rem] shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-[#d0a353]/20 py-3 px-4 lg:py-4 lg:px-5 text-center flex flex-col items-center justify-center transform hover:-translate-y-1 transition duration-300">
                             <i className="far fa-handshake text-[#d0a353] text-xl lg:text-2xl mb-1 lg:mb-1.5"></i>
                             <div className="text-[7px] lg:text-[8px] text-gray-500 font-medium mb-1 tracking-wide uppercase">Trusted by</div>
                             <div className="text-[#ca9740] font-bold text-2xl lg:text-3xl leading-none mb-1 lg:mb-1.5 font-heading">50+</div>
@@ -282,7 +282,7 @@ export default function IndexPage() {
                         </div>
                         <div>
                             <div className="font-bold text-lg lg:text-xl text-gray-900 leading-none mb-1">50+</div>
-                            <div className="text-[0.6rem] lg:text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">Happy Clients</div>
+                            <div className="text-[0.6rem] lg:text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">Builders</div>
                         </div>
                     </div>
                     
@@ -291,7 +291,7 @@ export default function IndexPage() {
                             <i className="fas fa-briefcase"></i>
                         </div>
                         <div>
-                            <div className="font-bold text-lg lg:text-xl text-gray-900 leading-none mb-1">100+</div>
+                            <div className="font-bold text-lg lg:text-xl text-gray-900 leading-none mb-1">250+</div>
                             <div className="text-[0.6rem] lg:text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">Projects Delivered</div>
                         </div>
                     </div>
@@ -301,7 +301,7 @@ export default function IndexPage() {
                             <i className="fas fa-shield-alt"></i>
                         </div>
                         <div>
-                            <div className="font-bold text-lg lg:text-xl text-gray-900 leading-none mb-1">5+</div>
+                            <div className="font-bold text-lg lg:text-xl text-gray-900 leading-none mb-1">8+</div>
                             <div className="text-[0.6rem] lg:text-[0.65rem] text-gray-500 font-medium whitespace-nowrap">Years of Trust</div>
                         </div>
                     </div>
@@ -441,7 +441,7 @@ export default function IndexPage() {
                         <div className="flex flex-col items-center justify-center p-4 text-center border-b border-gray-200"><i className="fas fa-tools text-[#d0a353] text-2xl mb-3"></i><p className="text-[0.7rem] font-bold text-gray-800 leading-tight">Expert<br />Installation</p></div>
                         <div className="flex flex-col items-center justify-center p-4 text-center border-b border-r border-gray-200"><i className="fas fa-project-diagram text-[#d0a353] text-2xl mb-3"></i><p className="text-[0.7rem] font-bold text-gray-800 leading-tight">Customized<br />Solutions</p></div>
                         <div className="flex flex-col items-center justify-center p-4 text-center border-b border-gray-200"><i className="fas fa-microchip text-[#d0a353] text-2xl mb-3"></i><p className="text-[0.7rem] font-bold text-gray-800 leading-tight">Neat &amp; Clean<br />Wiring</p></div>
-                        <div className="flex flex-col items-center justify-center p-4 text-center border-r border-gray-200"><i className="fas fa-shield-alt text-[#d0a353] text-2xl mb-3"></i><p className="text-[0.7rem] font-bold text-gray-800 leading-tight">5 Year<br />Warranty</p></div>
+                        <div className="flex flex-col items-center justify-center p-4 text-center border-r border-gray-200"><i className="fas fa-shield-alt text-[#d0a353] text-2xl mb-3"></i><p className="text-[0.7rem] font-bold text-gray-800 leading-tight">Upto 5 Years<br />Warranty</p></div>
                         <div className="flex flex-col items-center justify-center p-4 text-center"><i className="fas fa-headset text-[#d0a353] text-2xl mb-3"></i><p className="text-[0.7rem] font-bold text-gray-800 leading-tight">AMC &amp; 24/7<br />Support</p></div>
                     </div>
                 </div>
@@ -472,23 +472,7 @@ export default function IndexPage() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-                {/* Card 1 */}
-                <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
-                    <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
-                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
-                        <div className="relative w-14 h-14 rounded-xl flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden shadow-inner bg-[#d0a353]/10">
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#ca9740] to-[#dfb45e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                            <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
-                            <i className="far fa-lightbulb relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
-                        </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Lighting</h3>
-                        <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                            Set the perfect mood instantly. Control brightness, colors, and schedules with smart automated lights.
-                        </p>
-                    </div>
-                </div>
-                
-                {/* 2 Security */}
+                {/* 1 Security */}
                 <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
                     <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
                         <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
@@ -504,7 +488,7 @@ export default function IndexPage() {
                     </div>
                 </div>
 
-                {/* 3 Curtains */}
+                {/* 2 Curtains */}
                 <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
                     <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
                         <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
@@ -520,23 +504,23 @@ export default function IndexPage() {
                     </div>
                 </div>
 
-                {/* 4 Climate */}
+                {/* 3 Lighting */}
                 <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
                     <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
                         <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
                         <div className="relative w-14 h-14 rounded-xl flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden shadow-inner bg-[#d0a353]/10">
                             <div className="absolute inset-0 bg-gradient-to-br from-[#ca9740] to-[#dfb45e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
-                            <i className="fas fa-thermometer-half relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
+                            <i className="far fa-lightbulb relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Climate Control</h3>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Lighting</h3>
                         <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                            Maintain the perfect temperature always. Smart AC control for maximum comfort and energy efficiency.
+                            Set the perfect mood instantly. Control brightness, colors, and schedules with smart automated lights.
                         </p>
                     </div>
                 </div>
 
-                {/* 5 Entertainment */}
+                {/* 4 Entertainment */}
                 <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
                     <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
                         <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
@@ -548,6 +532,22 @@ export default function IndexPage() {
                         <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Entertainment</h3>
                         <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
                             Multi-room audio and complete home theater setups, all commanded intuitively from your smartphone.
+                        </p>
+                    </div>
+                </div>
+
+                {/* 5 Climate */}
+                <div className="group relative bg-gradient-to-r from-[#ca9740] via-[#fdf0a6] to-[#ca9740] p-[1.5px] rounded-[1.2rem] shadow-[0_5px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(208,163,83,0.15)] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer">
+                    <div className="bg-white rounded-[1.1rem] p-8 h-full relative overflow-hidden flex flex-col">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#d0a353]/5 to-transparent rounded-bl-full pointer-events-none"></div>
+                        <div className="relative w-14 h-14 rounded-xl flex items-center justify-center text-[#d0a353] text-2xl mb-6 group-hover:scale-110 transition-all duration-300 overflow-hidden shadow-inner bg-[#d0a353]/10">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#ca9740] to-[#dfb45e] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
+                            <i className="fas fa-thermometer-half relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Climate Control</h3>
+                        <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
+                            Maintain the perfect temperature always. Smart AC control for maximum comfort and energy efficiency.
                         </p>
                     </div>
                 </div>
