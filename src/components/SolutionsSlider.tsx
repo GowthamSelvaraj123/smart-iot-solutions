@@ -83,11 +83,11 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
                 <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
                     <div className="flex flex-col gap-5">
                         <div className="flex items-center gap-3">
-                            <span className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav">OUR SMART SOLUTIONS</span>
+                            <span className="text-[0.65rem] font-bold text-[#d0a353] tracking-[0.15em] uppercase font-nav">What are you looking for</span>
                             <span className="w-10 h-[1px] bg-[#d0a353]/40"></span>
                         </div>
                         <h2 className="font-heading text-4xl lg:text-[3.2rem] font-bold text-[#1a202c] tracking-tight">
-                            Explore smart automation.
+                            We deals with
                         </h2>
 
                         <div className="flex flex-wrap gap-2">
@@ -240,7 +240,7 @@ export default function SolutionsSlider({ solutions }: { solutions: any[] }) {
                             <div className="flex items-center gap-2 mt-auto">
                                 <button className="flex-1 cursor-pointer bg-gradient-to-r from-[#ca9740] to-[#dfb45e] hover:from-[#b88530] hover:to-[#ca9740] text-white py-2.5 rounded-xl text-[0.75rem] font-bold tracking-wide transition-all duration-200 shadow-sm hover:shadow-[0_4px_16px_rgba(208,163,83,0.4)] flex items-center justify-center gap-2">
                                     <i className="fas fa-bolt text-[10px]"></i>
-                                    Get Quote
+                                    View Products
                                 </button>
                                 <button className="w-10 h-10 rounded-xl border-2 border-[#d0a353]/30 text-[#ca9740] hover:bg-[#d0a353] hover:text-white hover:border-[#d0a353] flex items-center justify-center transition-all duration-200 cursor-pointer shrink-0">
                                     <i className="fas fa-arrow-right text-xs"></i>

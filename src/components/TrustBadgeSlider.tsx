@@ -45,54 +45,57 @@ export default function TrustBadgeSlider() {
         }
 
         // Cache expired or missing, fetch from API
-        setOptions({
-          key: apiKey,
-          v: "weekly"
-        });
-
-        const { Place } = await importLibrary("places") as any;
-
-        const place = new Place({
-          id: placeId,
-        });
-
-        await place.fetchFields({
-          fields: ['reviews', 'rating', 'userRatingCount'],
-        });
-
-        if (place.reviews && place.reviews.length > 0) {
-          const fiveStarReviews = place.reviews
-            .filter((r: any) => r.rating === 5)
-            .map((r: any) => ({
-              author_name: r.authorAttribution?.displayName || "Google User",
-              rating: r.rating,
-              text: r.text || "",
-              relative_time_description: r.relativePublishTimeDescription || ""
-            }));
-          
-          if (fiveStarReviews.length > 0) {
-            // Save to localStorage for the next 5 days
-            localStorage.setItem(CACHE_KEY, JSON.stringify(fiveStarReviews));
-            localStorage.setItem(CACHE_TIME_KEY, Date.now().toString());
-            
-            setReviews(fiveStarReviews);
-          } else {
-            setErrorMsg("API for not load error");
+        try {
+          if (!window.google?.maps) {
+            setOptions({
+              key: apiKey,
+              v: "weekly"
+            });
           }
-        } else {
-          console.error("No reviews found for this place.");
-          setErrorMsg("API for not load error");
+        } catch (e) {
+          // Ignore setOptions multiple calls warning
         }
+
+        const placesLibrary = await importLibrary("places") as any;
+        
+        await new Promise<void>((resolve, reject) => {
+          const div = document.createElement('div');
+          const service = new placesLibrary.PlacesService(div);
+          
+          service.getDetails({
+            placeId: placeId,
+            fields: ['reviews', 'rating', 'user_ratings_total']
+          }, (place: any, status: string) => {
+            if (status === 'OK' && place && place.reviews && place.reviews.length > 0) {
+              const fiveStarReviews = place.reviews
+                .filter((r: any) => r.rating === 5)
+                .map((r: any) => ({
+                  author_name: r.author_name || r.authorAttribution?.displayName || "Google User",
+                  rating: r.rating,
+                  text: r.text || "",
+                  relative_time_description: r.relative_time_description || r.relativePublishTimeDescription || ""
+                }));
+              
+              if (fiveStarReviews.length > 0) {
+                // Save to localStorage for the next 5 days
+                localStorage.setItem(CACHE_KEY, JSON.stringify(fiveStarReviews));
+                localStorage.setItem(CACHE_TIME_KEY, Date.now().toString());
+                
+                setReviews(fiveStarReviews);
+                resolve();
+              } else {
+                setErrorMsg("API for not load error");
+                resolve();
+              }
+            } else {
+              // Silently handle API denials (like Billing issues) without polluting console
+              setErrorMsg("API for not load error");
+              reject(new Error("Status: " + status));
+            }
+          });
+        });
       } catch (error: any) {
-        // In development, Google API blocks localhost due to referrer restrictions.
-        // This is expected and works correctly in production — suppress the noise.
-        const isReferrerError =
-          typeof error?.message === "string" &&
-          (error.message.includes("PERMISSION_DENIED") ||
-            error.message.includes("blocked"));
-        if (process.env.NODE_ENV !== "development" || !isReferrerError) {
-          console.error("Failed to load reviews from Modern Google Maps JS SDK:", error);
-        }
+        // Silently suppress errors so they don't spam the console.
         setErrorMsg("API for not load error");
       } finally {
         setIsLoading(false);

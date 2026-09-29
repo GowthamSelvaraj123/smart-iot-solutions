@@ -53,7 +53,7 @@ export default function ContactPage() {
                             </div>
                             <div className="flex flex-col justify-center">
                                 <h4 className="font-bold text-gray-900 text-[0.7rem] uppercase tracking-wider mb-0.5">Phone</h4>
-                                <p className="text-gray-600 text-sm font-medium"><a href="tel:+919876543210" className="hover:text-[#d0a353] transition">+91 98765 43210</a></p>
+                                <p className="text-gray-600 text-sm font-medium"><a href="tel:+919626904991" className="hover:text-[#d0a353] transition">+91 96269 04991</a></p>
                             </div>
                         </div>
                         <div className="flex gap-4 group">

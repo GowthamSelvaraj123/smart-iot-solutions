@@ -14,17 +14,17 @@ import ProjectsBento from '@/components/ProjectsBento';
 import GetStartedButton from '@/components/GetStartedButton';
 
 const solutions = [
-  { title: "Luxury Villa", desc: "Smart living with advanced automation and control.", img: "images/sol_luxury_villa.jpg", category: "Residential" },
-  { title: "Apartment", desc: "Smart solutions for comfortable and convenient living.", img: "images/sol_apartment.jpg", category: "Residential" },
-  { title: "Office", desc: "Boost productivity with smart office automation.", img: "images/sol_office.jpg", category: "Commercial" },
-  { title: "Hospital", desc: "Intelligent systems for better patient care and management.", img: "images/auto_hospital_1786094034170.png", category: "Commercial" },
-  { title: "Hostel / PG", desc: "Smart & secure living for hostels and PG accommodations.", img: "images/auto_hostel_1786094051526.png", category: "Commercial" },
-  { title: "Shopping Mall", desc: "Enhance customer experience with smart technology.", img: "images/auto_office_1786094016416.png", category: "Commercial" },
-  { title: "Warehouse", desc: "Automate operations and improve overall efficiency.", img: "images/hero_background_1786093261462.png", category: "Commercial" },
-  { title: "Farmhouse", desc: "Smart automation for a greener and safer lifestyle.", img: "images/hero_pool_1786093934613.png", category: "Residential" },
-  { title: "Hotel / Resort", desc: "Deliver luxury and comfort with smart automation.", img: "images/smart_home_villa_1786093285055.png", category: "Commercial" },
-  { title: "Software / App Dev", desc: "Custom software, websites, and application development.", img: "images/auto_apartment_1786094001400.png", category: "Specialized" },
-  { title: "Jewellery Shop", desc: "Advanced security and smart automation for premium retail.", img: "images/hero_lighting_1786093923075.png", category: "Commercial" }
+  { title: "Luxury Villa", desc: "Experience unparalleled luxury with intuitive, seamless automation tailored to your exquisite lifestyle.", img: "images/sol_luxury_villa.jpg", category: "Residential" },
+  { title: "Apartment", desc: "Transform your daily routine with smart convenience. Maximize comfort and security in every corner.", img: "images/sol_apartment.jpg", category: "Residential" },
+  { title: "Office", desc: "Empower your workforce with intelligent workspaces. Streamline operations and boost energy efficiency.", img: "images/sol_office.jpg", category: "Commercial" },
+  { title: "Hospital", desc: "Revolutionize patient care with advanced automation. Ensure round-the-clock safety and operational excellence.", img: "images/auto_hospital_1786094034170.png", category: "Commercial" },
+  { title: "Hostel / PG", desc: "Upgrade shared living with smart access and energy control. Deliver ultimate safety and modern convenience.", img: "images/auto_hostel_1786094051526.png", category: "Commercial" },
+  { title: "Shopping Mall", desc: "Redefine retail experiences with immersive smart technology. Optimize energy usage and elevate visitor satisfaction.", img: "images/auto_office_1786094016416.png", category: "Commercial" },
+  { title: "Warehouse", desc: "Accelerate logistics with intelligent, automated systems. Enhance security and maximize operational efficiency.", img: "images/hero_background_1786093261462.png", category: "Commercial" },
+  { title: "Farmhouse", desc: "Blend nature with cutting-edge technology. Enjoy sustainable, remote-controlled smart living.", img: "images/hero_pool_1786093934613.png", category: "Residential" },
+  { title: "Hotel / Resort", desc: "Provide unforgettable stays with personalized automation. Elevate guest luxury and streamline hospitality.", img: "images/smart_home_villa_1786093285055.png", category: "Commercial" },
+  { title: "Software / App Dev", desc: "Build powerful digital experiences. Custom software and apps engineered for your unique business needs.", img: "images/auto_apartment_1786094001400.png", category: "Specialized" },
+  { title: "Jewellery Shop", desc: "Safeguard your assets with state-of-the-art security. Elevate the luxury retail experience effortlessly.", img: "images/hero_lighting_1786093923075.png", category: "Commercial" }
 ];
 
 const clients: { name: string; logo?: string }[] = [
@@ -45,7 +45,7 @@ const clients: { name: string; logo?: string }[] = [
     { name: "Kawinn buildtech",             logo: "/images/company/kawin-buildtech.webp" },
     { name: "Urukkagam Associates",        logo: "/images/company/uruvagam-associates.jpg" },
     { name: "Jais Developers",              logo: "/images/company/jai-dev-infra-and-developers.avif" },
-    { name: "Poppyes",                      logo: "/images/company/poppyes.jpg" },
+    { name: "Poppyes",                      logo: "/images/company/poppyes.png" },
     { name: "CTS",                          logo: "/images/company/cts.svg" },
     { name: "Bricks Houses" },
     { name: "SRS Construction",             logo: "/images/company/srs-construction.png" },
@@ -96,11 +96,11 @@ const clients: { name: string; logo?: string }[] = [
     { name: "Toni&Guy",                     logo: "/images/company/toni-and-guylogo.jpg" },
     { name: "Baby Hug",                     logo: "/images/company/baby-hug.jpg" },
     { name: "Just Born", logo:"/images/company/just-born.svg" },
-    { name: "B.C. Studio", logo:"/images/company/BC-studio.jpg" },
+    { name: "B.C. Studio", logo:"/images/company/bc-studio.jpg" },
     { name: "Cb Emporio", logo:"/images/company/cp-emporio.jpg" },
     { name: "DR Probuilders", logo:"/images/company/dr-probuilders.png" },
     { name: "Minn Inspiring Designers", logo:"/images/company/minn-interiors.jpg" },
-    { name: "Warp", logo:"/images/company/warp-logo.png" },
+    { name: "Warp", logo:"/images/company/warp-logo.webp" },
     { name: "Green Trends",                 logo: "/images/company/green-trends.png" },
     { name: "Shree Construction", logo:"/images/company/sri_surya_construction.webp" },
 ];

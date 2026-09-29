@@ -93,7 +93,7 @@ export default function ProductsPage() {
                   <div className="absolute top-0 right-0 w-24 h-24 bg-[#d0a353]/10 rounded-full blur-xl pointer-events-none transform translate-x-1/2 -translate-y-1/2"></div>
                   <h4 className="text-white font-heading font-bold text-base mb-2 relative z-10">Need Expert Advice?</h4>
                   <p className="text-gray-400 text-xs mb-4 relative z-10">Let us help you choose the right automation products.</p>
-                  <a href="tel:+919876543210" className="inline-block w-full bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-[#0c121e] py-2 rounded text-xs font-bold shadow-md hover:shadow-lg transition relative z-10">
+                  <a href="tel:+919626904991" className="inline-block w-full bg-gradient-to-r from-[#ca9740] to-[#dfb45e] text-[#0c121e] py-2 rounded text-xs font-bold shadow-md hover:shadow-lg transition relative z-10">
                     <i className="fas fa-phone-alt mr-2"></i> CONTACT SALES
                   </a>
                 </div>

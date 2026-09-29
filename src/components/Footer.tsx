@@ -98,7 +98,7 @@ export default function Footer() {
                           <i className="fas fa-headset"></i>
                       </div>
                       <h4 className="font-heading text-gray-900 text-base font-black mb-4 tracking-wide">Get In Touch</h4>
-                      <p className="text-[0.82rem] text-gray-600 font-semibold mb-2">+91 98765 43210</p>
+                      <p className="text-[0.82rem] text-gray-600 font-semibold mb-2">+91 96269 04991</p>
                       <a href="mailto:info@smartsolutioniot.com" className="text-[0.78rem] text-[#d0a353] font-medium hover:underline cursor-pointer">info@smartsolutioniot.com</a>
                   </div>
 
