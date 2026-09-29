@@ -127,8 +127,7 @@ h6 {}
     background-image: url('/images/home-banner-image-1.jpeg');
     background-size: cover;
     background-position: center;
-    opacity: 0.2;
-    mix-blend-mode: screen;
+    opacity: 0.45;
 }
 
 .hero-content-left {
