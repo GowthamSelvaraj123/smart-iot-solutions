@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 import SolutionsSlider from '@/components/SolutionsSlider';
 import ProjectsBento from '@/components/ProjectsBento';
 import GetStartedButton from '@/components/GetStartedButton';
+import FounderProfile from '@/components/FounderProfile';
 
 const solutions = [
   { title: "Luxury Villa", desc: "Experience unparalleled luxury with intuitive, seamless automation tailored to your exquisite lifestyle.", img: "images/sol_luxury_villa.jpg", category: "Residential" },
@@ -604,7 +605,7 @@ export default function IndexPage() {
         </div>
     </section>
 
-    
+    <FounderProfile />
     </>
   );
 }

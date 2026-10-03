@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar py-2 relative">
-      <div className="container flex items-center justify-between">
+      <div className="w-full px-4 md:px-8 lg:px-12 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <img
