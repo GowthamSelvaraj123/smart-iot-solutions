@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 type MediaItem = { src: string; location: string; type: "image" | "video" };
 
@@ -60,6 +60,21 @@ function CyclingCard({
     const [cur, setCur] = useState(0);
     const [prev, setPrev] = useState<number | null>(null);
     const [fading, setFading] = useState(false);
+    const [inView, setInView] = useState(false);
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    // Track visibility: browsers pause off-screen videos to save power, which
+    // interrupts play() with an AbortError. Only play while the card is visible.
+    useEffect(() => {
+        const el = containerRef.current;
+        if (!el) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => setInView(entry.isIntersecting),
+            { threshold: 0.25 }
+        );
+        observer.observe(el);
+        return () => observer.disconnect();
+    }, []);
 
     useEffect(() => {
         const currentItem = items[cur];
@@ -98,7 +113,7 @@ function CyclingCard({
     };
 
     return (
-        <div className={`group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer ${className}`}>
+        <div ref={containerRef} className={`group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer ${className}`}>
             {/* All items stacked; only cur/prev are visible */}
             {items.map((item, i) => {
                 const isCur  = i === cur;
@@ -125,9 +140,11 @@ function CyclingCard({
                             }}
                             ref={(el) => {
                                 if (!el) return;
-                                if (isCur && !fading) {
+                                if (isCur && !fading && inView) {
                                     if (el.paused) {
                                         el.play().catch(e => {
+                                            // Interrupted by pause/visibility change - not a real failure.
+                                            if (e?.name === "AbortError") return;
                                             console.warn("Autoplay prevented:", e);
                                             handleVideoEnd();
                                         });
@@ -135,7 +152,8 @@ function CyclingCard({
                                 } else {
                                     if (!el.paused) {
                                         el.pause();
-                                        el.currentTime = 0;
+                                        // Keep progress when merely scrolled off-screen; reset when cycled away.
+                                        if (!isCur) el.currentTime = 0;
                                     }
                                 }
                             }}

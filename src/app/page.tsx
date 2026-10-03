@@ -24,7 +24,8 @@ const solutions = [
   { title: "Farmhouse", desc: "Blend nature with cutting-edge technology. Enjoy sustainable, remote-controlled smart living.", img: "images/hero_pool_1786093934613.png", category: "Residential" },
   { title: "Hotel / Resort", desc: "Provide unforgettable stays with personalized automation. Elevate guest luxury and streamline hospitality.", img: "images/smart_home_villa_1786093285055.png", category: "Commercial" },
   { title: "Software / App Dev", desc: "Build powerful digital experiences. Custom software and apps engineered for your unique business needs.", img: "images/auto_apartment_1786094001400.png", category: "Specialized" },
-  { title: "Jewellery Shop", desc: "Safeguard your assets with state-of-the-art security. Elevate the luxury retail experience effortlessly.", img: "images/hero_lighting_1786093923075.png", category: "Commercial" }
+  { title: "Jewellery Shop", desc: "Safeguard your assets with state-of-the-art security. Elevate the luxury retail experience effortlessly.", img: "images/hero_lighting_1786093923075.png", category: "Commercial" },
+  { title: "Networking & IT", desc: "Reliable Wi-Fi, structured cabling, CCTV networks and servers. Keep every device connected, secure and always online.", img: "images/sol_networking.jpg", category: "Specialized" }
 ];
 
 const clients: { name: string; logo?: string }[] = [
@@ -208,7 +209,7 @@ export default function IndexPage() {
                     <div className="relative w-full max-w-[320px] lg:max-w-[420px] mx-auto lg:ml-0 mt-8 pl-4 lg:pl-4">
                         <img src="images/map.png" alt="South India Map" className="w-full drop-shadow-[0_10px_25px_rgba(208,163,83,0.2)] relative z-10 scale-100 lg:scale-105 transform origin-left" />
                         
-                        <div className="absolute top-[55%] -left-4 lg:-left-8 z-20 bg-white/95 backdrop-blur-sm rounded-[1rem] shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-[#d0a353]/20 py-3 px-4 lg:py-4 lg:px-5 text-center flex flex-col items-center justify-center transform hover:-translate-y-1 transition duration-300">
+                        <div className="absolute top-[52%] -right-2 lg:-right-6 z-20 bg-white/95 backdrop-blur-sm rounded-[1rem] shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-[#d0a353]/20 py-3 px-4 lg:py-4 lg:px-5 text-center flex flex-col items-center justify-center transform hover:-translate-y-1 transition duration-300">
                             <i className="far fa-handshake text-[#d0a353] text-xl lg:text-2xl mb-1 lg:mb-1.5"></i>
                             <div className="text-[7px] lg:text-[8px] text-gray-500 font-medium mb-1 tracking-wide uppercase">Trusted by</div>
                             <div className="text-[#ca9740] font-bold text-2xl lg:text-3xl leading-none mb-1 lg:mb-1.5 font-heading">50+</div>
@@ -481,9 +482,9 @@ export default function IndexPage() {
                             <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
                             <i className="fas fa-shield-alt relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Security</h3>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Security System</h3>
                         <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                            Complete peace of mind with 24/7 smart surveillance, motion detection, and instant intrusion alerts.
+                            24/7 smart surveillance, motion detection, and instant intrusion alerts for complete peace of mind.
                         </p>
                     </div>
                 </div>
@@ -497,9 +498,9 @@ export default function IndexPage() {
                             <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
                             <i className="fas fa-person-booth relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Curtains & Blinds</h3>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Curtain Automation</h3>
                         <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                            Wake up to natural light. Open or close your curtains with a single touch or automated schedules.
+                            Open or close curtains and blinds with a single touch, voice command, or schedule.
                         </p>
                     </div>
                 </div>
@@ -513,9 +514,9 @@ export default function IndexPage() {
                             <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
                             <i className="far fa-lightbulb relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Lighting</h3>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Appliance Automation</h3>
                         <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                            Set the perfect mood instantly. Control brightness, colors, and schedules with smart automated lights.
+                            Control lights, fans, ACs, TVs, geysers and more from one place with smart scenes and schedules.
                         </p>
                     </div>
                 </div>
@@ -529,9 +530,9 @@ export default function IndexPage() {
                             <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
                             <i className="fas fa-music relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Entertainment</h3>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Entertainment System</h3>
                         <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                            Multi-room audio and complete home theater setups, all commanded intuitively from your smartphone.
+                            Multi-room audio and home theater setups, all commanded from your smartphone.
                         </p>
                     </div>
                 </div>
@@ -545,9 +546,9 @@ export default function IndexPage() {
                             <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
                             <i className="fas fa-thermometer-half relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Climate Control</h3>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Climate Technology</h3>
                         <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                            Maintain the perfect temperature always. Smart AC control for maximum comfort and energy efficiency.
+                            Perfect temperature always, with smart AC control for comfort and energy efficiency.
                         </p>
                     </div>
                 </div>
@@ -561,9 +562,9 @@ export default function IndexPage() {
                             <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
                             <i className="fas fa-unlock-alt relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Smart Access</h3>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Access Controller</h3>
                         <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                            Keyless entry with advanced digital door locks and video door phones for secure visitor management.
+                            Keyless entry with digital door locks and video door phones for secure visitor management.
                         </p>
                     </div>
                 </div>
@@ -577,9 +578,9 @@ export default function IndexPage() {
                             <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
                             <i className="fas fa-eye relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Monitoring</h3>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Monitoring System</h3>
                         <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                            Watch live high-definition feeds from anywhere in the world. Stay connected to what matters most.
+                            Watch live high-definition feeds from anywhere in the world.
                         </p>
                     </div>
                 </div>
@@ -593,9 +594,9 @@ export default function IndexPage() {
                             <img src="/images/gold_glitter.jpg" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 mix-blend-overlay transition-opacity duration-300" alt="glitter" />
                             <i className="fas fa-broadcast-tower relative z-10 group-hover:text-white group-hover:drop-shadow-md transition-colors duration-300"></i>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Smart Sensors</h3>
+                        <h3 className="text-lg font-bold text-gray-900 mb-2 font-heading tracking-wide">Sensor Tech</h3>
                         <p className="text-[0.8rem] text-gray-500 font-medium leading-relaxed">
-                            Gas leak, smoke, and motion sensors that act automatically to protect your space from hazards.
+                            Gas leak, smoke, and motion sensors that act automatically to protect your space.
                         </p>
                     </div>
                 </div>
