@@ -210,7 +210,7 @@ export default function IndexPage() {
                     <div className="relative w-full max-w-[320px] lg:max-w-[420px] mx-auto lg:ml-0 mt-8 pl-4 lg:pl-4">
                         <img src="images/map.png" alt="South India Map" className="w-full drop-shadow-[0_10px_25px_rgba(208,163,83,0.2)] relative z-10 scale-100 lg:scale-105 transform origin-left" />
                         
-                        <div className="absolute top-[52%] -right-2 lg:-right-6 z-20 bg-white/95 backdrop-blur-sm rounded-[1rem] shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-[#d0a353]/20 py-3 px-4 lg:py-4 lg:px-5 text-center flex flex-col items-center justify-center transform hover:-translate-y-1 transition duration-300">
+                        <div className="absolute top-[49%] -right-2 lg:-right-2 z-20 bg-white/95 backdrop-blur-sm rounded-[1rem] shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-[#d0a353]/20 py-3 px-4 lg:py-4 lg:px-5 text-center flex flex-col items-center justify-center transform hover:-translate-y-1 transition duration-300">
                             <i className="far fa-handshake text-[#d0a353] text-xl lg:text-2xl mb-1 lg:mb-1.5"></i>
                             <div className="text-[7px] lg:text-[8px] text-gray-500 font-medium mb-1 tracking-wide uppercase">Trusted by</div>
                             <div className="text-[#ca9740] font-bold text-2xl lg:text-3xl leading-none mb-1 lg:mb-1.5 font-heading">50+</div>
@@ -605,7 +605,7 @@ export default function IndexPage() {
         </div>
     </section>
 
-    <FounderProfile />
+    {/* <FounderProfile /> */}
     </>
   );
 }

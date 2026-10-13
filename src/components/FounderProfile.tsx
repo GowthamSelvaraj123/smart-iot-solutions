@@ -18,7 +18,7 @@ const profile = {
     ],
     philosophy: "Technology should be invisible.",
     stats: [
-        { value: "2019", label: "Founded" },
+        { value: "2018", label: "Founded" },
         { value: "150+", label: "Projects Delivered" },
         { value: "South India", label: "Presence" },
     ],
@@ -60,7 +60,8 @@ export default function FounderProfile() {
                                             src={profile.photo}
                                             alt={profile.name}
                                             onError={() => setPhotoFailed(true)}
-                                            className="w-full h-full object-cover object-top"
+                                            className="w-full h-full object-cover"
+                                            style={{ objectPosition: "center 10%", transform: "scale(1.25)", transformOrigin: "center 20%" }}
                                         />
                                     ) : (
                                         <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#1a202c] to-[#0c121e]">
@@ -164,7 +165,7 @@ export default function FounderProfile() {
                                 href={`tel:+${profile.phone}`}
                                 className="inline-flex items-center gap-2 border border-white/20 bg-white/5 text-white px-6 py-3 rounded-full text-xs font-bold tracking-wider uppercase hover:border-[#d0a353] hover:text-[#fdf0a6] transition-all duration-200"
                             >
-                                <i className="fas fa-phone-alt text-sm"></i> Call Now
+                                <i className="fas fa-phone-alt fa-flip-horizontal text-sm"></i> Call Now
                             </a>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from "next";
+import FounderProfile from '@/components/FounderProfile';
 
 export const metadata: Metadata = {
   title: "About Us | Smart IoT Solutions",
@@ -38,7 +39,7 @@ export default function AboutPage() {
         <div className="container">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/20">
                 <div>
-                    <div className="text-3xl md:text-5xl font-bold text-white mb-1" style={{ fontFamily: "var(--font-heading)" }}>5+</div>
+                    <div className="text-3xl md:text-5xl font-bold text-white mb-1" style={{ fontFamily: "var(--font-heading)" }}>8+</div>
                     <div className="text-[0.65rem] font-bold text-[#0c121e]/70 uppercase tracking-widest font-nav">Years of Excellence</div>
                 </div>
                 <div>
@@ -57,6 +58,8 @@ export default function AboutPage() {
         </div>
     </section>
 
+    <FounderProfile />
+
     {/* Core Philosophy - Light Theme matching Home */}
     <section className="py-24 bg-[#fdfcf9] relative">
         <div className="container max-w-[1400px]">
@@ -65,7 +68,7 @@ export default function AboutPage() {
                     <span className="w-8 h-[1px] bg-[#d0a353]"></span> OUR PHILOSOPHY <span className="w-8 h-[1px] bg-[#d0a353]"></span>
                 </div>
                 <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-[#1a202c] leading-tight" style={{ fontFamily: "var(--font-heading)" }}>
-                    Technology should be <span className="text-[#ca9740] italic">invisible.</span>
+                    Do and <span className="text-[#ca9740] italic">Demand.</span>
                 </h2>
                 <p className="text-gray-600 text-sm leading-relaxed">
                     We don't just sell gadgets; we engineer experiences. By carefully selecting premium hardware and combining it with meticulous installation, we ensure that your automation system works effortlessly—enhancing your lifestyle rather than complicating it.
